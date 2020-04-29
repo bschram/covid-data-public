@@ -14,11 +14,19 @@ class CovidCareMapUpdater(object):
         "https://raw.githubusercontent.com/covidcaremap/covid19-healthsystemcapacity/"
         "master/data/published/us_healthcare_capacity-county-CovidCareMap.csv"
     )
+    STATE_DATA_URL = (
+        "https://raw.githubusercontent.com/covidcaremap/covid19-healthsystemcapacity/"
+        "master/data/published/us_healthcare_capacity-state-CovidCareMap.csv"
+    )
     COVID_CARE_MAP_ROOT = DATA_ROOT / "covid-care-map"
 
     @property
     def output_path(self) -> pathlib.Path:
         return self.COVID_CARE_MAP_ROOT / "healthcare_capacity_data_county.csv"
+
+    @property
+    def state_output_path(self) -> pathlib.Path:
+        return self.COVID_CARE_MAP_ROOT / "healthcare_capacity_data_state.csv"
 
     @property
     def version_path(self) -> pathlib.Path:
@@ -34,6 +42,8 @@ class CovidCareMapUpdater(object):
         _logger.info("Updating Covid Care Map data.")
         response = requests.get(self.COUNTY_DATA_URL)
         self.output_path.write_bytes(response.content)
+        response = requests.get(self.STATE_DATA_URL)
+        self.state_output_path.write_bytes(response.content)
 
         version_path = self.version_path
         version_path.write_text(f"Updated at {self._stamp()}\n")
