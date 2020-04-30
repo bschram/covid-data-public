@@ -1,0 +1,19 @@
+,For Human Use,,,Acute,,ICU,,Ventilators,,COVID,,,
+date,state_code,county_name,fips_code,acute_staffed,acute_occupied,icu_staffed,icu_occupied,ventilators,ventilators_occupied,covid_confirmed,covid_suspected,covid_icu,covid_ventilator
+2020-04-28,NV,Carson City,32510,188,101,24,17,15,5,2,6,2,3
+2020-04-28,NV,Churchill County,32001,25,19,6,4,4,0,1,6,3,0
+2020-04-28,NV,Clark County,32003,5743,3849,636,483,800,328,296,172,136,94
+2020-04-28,NV,Douglas County,32005,19,8,4,2,4,0,0,2,0,0
+2020-04-28,NV,Elko County,32007,75,11,7,3,6,0,0,3,1,0
+2020-04-28,NV,Esmeralda County,32009,,,,,,,,,,
+2020-04-28,NV,Eureka County,32011,,,,,,,,,,
+2020-04-28,NV,Humboldt County,32013,25,8,3,0,7,0,0,1,0,0
+2020-04-28,NV,Lander County,32015,5,1,0,0,0,0,0,0,0,0
+2020-04-28,NV,Lincoln County,32017,4,1,0,0,3,0,0,0,0,0
+2020-04-28,NV,Lyon County,32019,14,0,0,0,0,0,0,0,0,0
+2020-04-28,NV,Mineral County,32021,11,6,0,0,1,0,0,0,0,0
+2020-04-28,NV,Nye County,32023,25,17,0,0,6,0,0,3,0,0
+2020-04-28,NV,Pershing County,32027,13,0,0,0,0,0,0,0,0,0
+2020-04-28,NV,Storey County,32029,,,,,,,,,,
+2020-04-28,NV,Washoe County,32031,1286,848,162,73,198,36,65,22,16,13
+2020-04-28,NV,White Pine County,32033,25,1,2,1,5,0,0,0,0,0
