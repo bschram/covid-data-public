@@ -27,8 +27,9 @@ These are data sets that we've found that look interesting and we may want to co
   * [Historical Snapshots](https://github.com/lazd/coronadatascraper-cache)
   * [Splunk aggregation & dashboard (JHU data)](https://github.com/splunk/corona_virus)
 
-### Containment Data Sources
+### Intervention Data Sources
 
+* [covid19-vis](https://github.com/covidvis/covid19-vis/blob/master/data/quarantine-activity-US-Apr16.csv) - CSV Dataset of interventions at county/state level including start dates.
 * [US State-Level Containment Policies](https://www.multistate.us/pages/covid-19-policy-tracker)
 * [AEI Action Tracker](https://www.aei.org/covid-2019-action-tracker/)
   * Their source: [National Governors Association](https://www.nga.org/coronavirus/#actions)
