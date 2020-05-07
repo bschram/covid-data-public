@@ -1,4 +1,3 @@
-,For Human Use,,,Acute,,ICU,,Ventilators,,COVID,,,
 date,state_code,county_name,fips_code,acute_staffed,acute_occupied,icu_staffed,icu_occupied,ventilators,ventilators_occupied,covid_confirmed,covid_suspected,covid_icu,covid_ventilator
 2020-04-28,NV,Carson City,32510,188,101,24,17,22,7,2,6,2,3
 2020-04-28,NV,Churchill,32001,25,19,6,4,4,0,1,6,3,0
@@ -102,3 +101,20 @@ date,state_code,county_name,fips_code,acute_staffed,acute_occupied,icu_staffed,i
 2020-05-05,NV,Storey,32029,0,0,0,0,0,0,0,0,0,0
 2020-05-05,NV,Washoe,32031,1222,738,223,85,190,31,44,24,18,8
 2020-05-05,NV,White Pine,32033,25,3,0,0,5,0,0,0,0,0
+2020-05-06,NV,Carson City,32510,159,88,24,14,15,5,2,7,3,2
+2020-05-06,NV,Churchill,32001,25,12,2,1,4,0,0,3,0,0
+2020-05-06,NV,Clark,32003,3063,2084,425,323,524,193,179,108,87,51
+2020-05-06,NV,Douglas,32005,19,11,4,0,4,0,0,2,0,0
+2020-05-06,NV,Elko,32007,75,9,7,0,6,0,0,2,0,0
+2020-05-06,NV,Esmeralda,32009,0,0,0,0,0,0,0,0,0,0
+2020-05-06,NV,Eureka,32011,0,0,0,0,0,0,0,0,0,0
+2020-05-06,NV,Humboldt,32013,25,11,3,1,7,0,1,0,1,0
+2020-05-06,NV,Lander,32015,5,1,0,0,0,0,0,0,0,0
+2020-05-06,NV,Lincoln,32017,4,3,0,0,3,0,0,0,0,0
+2020-05-06,NV,Lyon,32019,14,3,0,0,0,0,0,1,0,0
+2020-05-06,NV,Mineral,32021,11,6,0,0,1,0,0,0,0,0
+2020-05-06,NV,Nye,32023,25,23,0,0,6,0,0,1,0,0
+2020-05-06,NV,Pershing,32027,13,0,0,0,0,0,0,0,0,0
+2020-05-06,NV,Storey,32029,0,0,0,0,0,0,0,0,0,0
+2020-05-06,NV,Washoe,32031,1222,760,223,79,190,37,34,36,21,6
+2020-05-06,NV,White Pine,32033,25,4,2,0,5,0,0,0,0,0
