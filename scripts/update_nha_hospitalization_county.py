@@ -28,7 +28,11 @@ class CsvCopy(BaseModel):
 
         for row in dropwhile(lambda row: row[0].lower() != 'date',
                              csv.reader(response.iter_lines(decode_unicode=True))):
+            if not row:
+                _logger.warning("Skipping empty row")
+                continue
             date_match = re.fullmatch(r'(\d+)/(\d+)', row[0])
+
             if date_match:
                 if not (4 <= int(date_match.group(1)) <= 12):
                     raise ValueError(f'Unexpected month in {row[0]}. Is it already January?!'
