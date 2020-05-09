@@ -1,4 +1,6 @@
 date,state_code,county_name,fips_code,acute_staffed,acute_occupied,icu_staffed,icu_occupied,ventilators,ventilators_occupied,covid_confirmed,covid_suspected,covid_icu,covid_ventilator
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
 2020-04-28,NV,Carson City,32510,188,101,24,17,22,7,2,6,2,3
 2020-04-28,NV,Churchill,32001,25,19,6,4,4,0,1,6,3,0
 2020-04-28,NV,Clark,32003,5743,3849,636,483,800,328,296,172,136,94
