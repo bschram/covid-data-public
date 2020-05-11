@@ -1,17 +1,17 @@
 """
 Updates all relevant files in the repo.
 """
-import datetime
+
 import json
 import logging
 import os
-import pytz
 import shutil
 import tempfile
-from zipfile import ZipFile
+
 from urllib.request import urlopen
 import pandas as pd
 import argparse
+from dataset_updater_base import DatasetUpdaterBase
 
 logger = logging.Logger('data update logger')
 
@@ -21,7 +21,7 @@ parser.add_argument('-jhu', '--jhu', help='Update data from John Hopkins Univers
 args = parser.parse_args()
 
 
-class CovidDatasetAutoUpdater:
+class CovidDatasetAutoUpdater(DatasetUpdaterBase):
     """Provides all functionality to auto-update the datasets in the data repository"""
     _JHU_MASTER = r'https://github.com/CSSEGISandData/COVID-19/archive/master.zip'
     _JHU_MASTER_API = r'https://api.github.com/repos/CSSEGISandData/COVID-19/branches/master'
@@ -32,20 +32,6 @@ class CovidDatasetAutoUpdater:
     _CDS_TIMESERIES = r'https://coronadatascraper.com/timeseries.csv'
     _CDS_DATA_DIR = os.path.join(_DATA_DIR, 'cases-cds')
 
-    @staticmethod
-    def _stamp():
-        #  String of the current date and time.
-        #  So that we're consistent about how we mark these
-        pacific = pytz.timezone('US/Pacific')
-        d = datetime.datetime.now(pacific)
-        return d.strftime('%A %b %d %I:%M:%S %p %Z')
-
-    def clone_repo_to_dir(self, url, _dir):
-        with open(os.path.join(_dir, 'temp.zip'), 'wb') as zip:
-            zip.write(urlopen(url).read())
-        with ZipFile(os.path.join(_dir, 'temp.zip')) as zf:
-            zf.extractall(path=os.path.join(_dir))
-        return _dir
 
     def update_jhu_data(self):
         new_temp_dir = tempfile.TemporaryDirectory()
