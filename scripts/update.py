@@ -2,13 +2,12 @@
 Updates all relevant files in the repo.
 """
 
-import json
 import logging
 import os
+import requests
 import shutil
 import tempfile
 
-from urllib.request import urlopen
 import pandas as pd
 import argparse
 from dataset_updater_base import DatasetUpdaterBase
@@ -23,7 +22,6 @@ args = parser.parse_args()
 
 class CovidDatasetAutoUpdater(DatasetUpdaterBase):
     """Provides all functionality to auto-update the datasets in the data repository"""
-    _JHU_MASTER = r'https://github.com/CSSEGISandData/COVID-19/archive/master.zip'
     _JHU_MASTER_API = r'https://api.github.com/repos/CSSEGISandData/COVID-19/branches/master'
     _DATA_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'data'))
     _JHU_DATA_DIR = os.path.join(_DATA_DIR, 'cases-jhu')
@@ -32,21 +30,27 @@ class CovidDatasetAutoUpdater(DatasetUpdaterBase):
     _CDS_TIMESERIES = r'https://coronadatascraper.com/timeseries.csv'
     _CDS_DATA_DIR = os.path.join(_DATA_DIR, 'cases-cds')
 
-
+    def _get_jhu_repo_url(self, git_sha: str) -> str:
+        return f"https://github.com/CSSEGISandData/COVID-19/archive/{git_sha}.zip"
+    
     def update_jhu_data(self):
-        new_temp_dir = tempfile.TemporaryDirectory()
-        self.clone_repo_to_dir(self._JHU_MASTER, new_temp_dir.name)
-        repo_dir = os.path.join(new_temp_dir.name, 'COVID-19-master')
-        jhu_repo_daily_reports_dir = os.path.join(repo_dir, 'csse_covid_19_data', 'csse_covid_19_daily_reports')
-        # Copy the daily reports into the local directory
-        for f in os.listdir(jhu_repo_daily_reports_dir):
-            shutil.copyfile(
-                os.path.join(jhu_repo_daily_reports_dir, f),
-                os.path.join(self._JHU_DAILY_REPORTS_DIR, f)
-            )
-        with open(os.path.join(self._JHU_DATA_DIR, 'version.txt'), 'w') as log:
-            log.write('{}\n'.format(json.loads(urlopen(self._JHU_MASTER_API).read())['commit']['sha']))
-            log.write('Updated on {}'.format(self._stamp()))
+        git_sha = requests.get(self._JHU_MASTER_API).json()['commit']['sha']
+        with open(os.path.join(self._JHU_DATA_DIR, 'version.txt'), 'w') as vf:
+            vf.write('{}\n'.format(git_sha))
+            vf.write('Updated on {}'.format(self._stamp()))
+                          
+        with tempfile.TemporaryDirectory() as new_temp_dir:
+            self.clone_repo_to_dir(self._get_jhu_repo_url(git_sha),
+                                   new_temp_dir)
+            repo_dir = os.path.join(new_temp_dir, f"COVID-19-{git_sha}")
+            jhu_repo_daily_reports_dir = os.path.join(repo_dir, 'csse_covid_19_data', 'csse_covid_19_daily_reports')
+            # Copy the daily reports into the local directory
+            for f in os.listdir(jhu_repo_daily_reports_dir):
+                shutil.copyfile(
+                    os.path.join(jhu_repo_daily_reports_dir, f),
+                    os.path.join(self._JHU_DAILY_REPORTS_DIR, f)
+                )
+            
 
     def update_cds_data(self):
         pd.read_csv(self._CDS_TIMESERIES).to_csv(os.path.join(self._CDS_DATA_DIR, 'timeseries.csv'), index=False)
