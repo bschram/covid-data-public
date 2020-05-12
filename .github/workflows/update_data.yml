@@ -1,8 +1,8 @@
 name: Update source data
 
 on:
-  schedule:
-    - cron: '0 0,12 * * *'
+#  schedule:
+#    - cron: '0 0,12 * * *'
   # Hook to trigger a manual run. 
   # See: https://goobar.io/2019/12/07/manually-trigger-a-github-actions-workflow/
   # A sample request looks like: 
@@ -11,9 +11,9 @@ on:
     types: update-source-data
 # To debug, comment out above schedule, and uncomment the stanza below.
 # Fill in your own branch name, and each push will trigger a run
-#  push:
-#    branches:
-#    - <YOUR BRANCH HERE>
+  push:
+    branches:
+    - tgb-workflow-pyversion-notify
 
 jobs:
   update-source-data:
@@ -21,6 +21,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        ref: tgb-workflow-pyversion-notify
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
