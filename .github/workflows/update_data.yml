@@ -50,5 +50,5 @@ jobs:
         STATUS: ${{job.status}}
       uses: Ilshidur/action-slack@fb92a78
       with:
-        args: 'Update Datasets in covid-data-public repo. Job status: {{STATUS}}'
+        args: 'Update Datasets in covid-data-public repo notify! Job status: {{STATUS}}'
         
