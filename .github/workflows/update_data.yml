@@ -46,9 +46,7 @@ jobs:
       if: always() # Pick up events even if the job fails or is canceled.
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_CHANNEL: eng
-        STATUS: ${{job.status}}
       uses: Ilshidur/action-slack@fb92a78
       with:
-        args: 'Update Datasets in covid-data-public repo notify, to eng! Job status: {{STATUS}}'
+        args: 'TEST message from TomGoBravo'
         
