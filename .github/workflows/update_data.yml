@@ -48,5 +48,5 @@ jobs:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       uses: Ilshidur/action-slack@fb92a78
       with:
-        args: 'TEST message from TomGoBravo'
+              args: 'TEST message from TomGoBravo, 2020-5-014 11:28'
         
