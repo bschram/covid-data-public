@@ -28,25 +28,11 @@ jobs:
       with:
         python-version: '3.7.6'
         architecture: 'x64'
-    - name: Cache Pip
-      uses: actions/cache@v1
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-          ${{ runner.os }}-
-    - name: Install Dependencies
-      run: pip install -r requirements.txt
-    - name: Update Datasets
-      run: ./update.sh
-    - name: Create Update Commit
-      run: ./push_update.sh
     - name: Slack notification
       if: always() # Pick up events even if the job fails or is canceled.
       env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_DEV_ALERTS }}
       uses: Ilshidur/action-slack@fb92a78
       with:
-              args: 'TEST message from TomGoBravo, 2020-5-014 11:28'
+              args: 'TEST message from TomGoBravo, 2020-05-15 10:59'
         
