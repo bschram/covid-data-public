@@ -4,6 +4,7 @@ import pathlib
 import pytz
 import requests
 import pandas as pd
+
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 _logger = logging.getLogger(__name__)
 
@@ -26,9 +27,9 @@ class CovidTrackingDataUpdater(object):
     def _stamp():
         #  String of the current date and time.
         #  So that we're consistent about how we mark these
-        pacific = pytz.timezone('US/Pacific')
+        pacific = pytz.timezone("US/Pacific")
         d = datetime.datetime.now(pacific)
-        return d.strftime('%A %b %d %I:%M:%S %p %Z')
+        return d.strftime("%A %b %d %I:%M:%S %p %Z")
 
     def update(self):
         _logger.info("Updating Covid Tracking data.")

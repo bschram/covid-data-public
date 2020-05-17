@@ -4,7 +4,7 @@ Repository for regularly-updated data sets used by
 
 ## Notes
 * Use README.md files to document where data has been sourced from.
-* Data is updated twice daily (midnight and noon, UTC) by a Github Action defined [here](./.github/workflows/update_data.yml). 
+* Data is updated twice daily (midnight and noon, UTC) by a Github Action defined [here](./.github/workflows/update_data.yml).
   The action runs [update.sh](./update.sh) and then [push_update.sh](./push_update.sh).
   To trigger a manual update, see details in the [workfow definition](./.github/workflows/update_data.yml#L6).
 * Don't check in multiple versions of the same data. We can rely on git history
@@ -47,3 +47,22 @@ These are data sets that we've found that look interesting and we may want to co
 * [Medicare Claims for Inpatients](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Hospital-Service-Area-File)
 * [CA Healthcare Facilities](https://data.chhs.ca.gov/dataset/licensed-healthcare-facility-listing/resource/641c5557-7d65-4379-8fea-6b7dedbda40b?inner_span=True)
 * [American Hosptial Association](https://www.ahadata.com/aha-hospital-statistics/) (paywalled)
+
+
+# Setup
+
+We recommend installing all requirements in a virtualenv. To setup your virtual env,
+you should follow the steps [here](https://github.com/covid-projections/covid-data-model/blob/master/SETUP.md).
+
+
+### Setup auto-formatting
+
+We use [black](https://github.com/psf/black) to automatically format python code.
+One way we keep this maintainable is by using a pre-commit step that automatically
+reformats modified files on commit.
+
+Steps to install this:
+```
+1. pip install -r requirements_test.txt
+2. pre-commit install
+```

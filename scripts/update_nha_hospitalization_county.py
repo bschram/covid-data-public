@@ -15,6 +15,7 @@ _logger = logging.getLogger(__name__)
 
 class CsvCopy(BaseModel):
     """Reads a CSV from Google Spreadsheets, patches the date format and writes it the local disk."""
+
     source_url: str
     destination_path: PathLike
 
@@ -22,26 +23,30 @@ class CsvCopy(BaseModel):
         arbitrary_types_allowed = True  # For PathLike
 
     def update(self):
-        _logger.info(f'Copying {self.source_url} to {self.destination_path}')
+        _logger.info(f"Copying {self.source_url} to {self.destination_path}")
         response = requests.get(self.source_url)
         patched_rows = []
 
-        for row in dropwhile(lambda row: row[0].lower() != 'date',
-                             csv.reader(response.iter_lines(decode_unicode=True))):
+        for row in dropwhile(
+            lambda row: row[0].lower() != "date",
+            csv.reader(response.iter_lines(decode_unicode=True)),
+        ):
             if not row:
                 _logger.warning("Skipping empty row")
                 continue
-            date_match = re.fullmatch(r'(\d+)/(\d+)', row[0])
+            date_match = re.fullmatch(r"(\d+)/(\d+)", row[0])
 
             if date_match:
                 if not (4 <= int(date_match.group(1)) <= 12):
-                    raise ValueError(f'Unexpected month in {row[0]}. Is it already January?!'
-                                     f'Quick fix is changing sheet date format to YYYY-MM-DD.')
+                    raise ValueError(
+                        f"Unexpected month in {row[0]}. Is it already January?!"
+                        f"Quick fix is changing sheet date format to YYYY-MM-DD."
+                    )
                 row[0] = parse(row[0]).date().isoformat()
 
             patched_rows.append(row)
 
-        with open(self.destination_path, 'w', newline='') as csvfile:
+        with open(self.destination_path, "w", newline="") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerows(patched_rows)
 

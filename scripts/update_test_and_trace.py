@@ -38,19 +38,14 @@ class TestAndTraceSyncer(BaseModel):
         """Yield all rows in all the dated local CSV files that have a # of Contact Tracers."""
 
         # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
-        state_df = pd.read_csv(
-            self.census_state_path, delimiter="|", dtype={"STATE": str}
-        )
+        state_df = pd.read_csv(self.census_state_path, delimiter="|", dtype={"STATE": str})
         state_df.rename(
-            columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"},
-            inplace=True,
+            columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
         )
         state_df.set_index("state_name", inplace=True)
 
         for file_path in self.gsheets_copy_directory.iterdir():
-            date_from_filename = re.fullmatch(
-                r"(\d{4}-\d{2}-\d{2})\.csv", file_path.name
-            ).group(1)
+            date_from_filename = re.fullmatch(r"(\d{4}-\d{2}-\d{2})\.csv", file_path.name).group(1)
             for row in csv.DictReader(open(file_path, newline="")):
                 contact_tracers_count = row.get("# of Contact Tracers", "")
                 if contact_tracers_count is "":

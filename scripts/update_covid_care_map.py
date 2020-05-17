@@ -3,6 +3,7 @@ import datetime
 import pathlib
 import pytz
 import requests
+
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 _logger = logging.getLogger(__name__)
 
@@ -34,9 +35,9 @@ class CovidCareMapUpdater(object):
 
     @staticmethod
     def _stamp():
-        pacific = pytz.timezone('UTC')
+        pacific = pytz.timezone("UTC")
         d = datetime.datetime.now(pacific)
-        return d.strftime('%A %b %d %I:%M:%S %p %Z')
+        return d.strftime("%A %b %d %I:%M:%S %p %Z")
 
     def update(self):
         _logger.info("Updating Covid Care Map data.")

@@ -23,16 +23,14 @@ class NYTimesCasesUpdater(DatasetUpdaterBase):
     NYTIMES_DATA_ROOT = DATA_ROOT / "cases-nytimes"
 
     # This is the only one being accessed currently, also available are us-states.csv and us.csv
-    _DATA_TARGET_FILES = [
-        "us-counties.csv"
-    ]
+    _DATA_TARGET_FILES = ["us-counties.csv"]
 
     def _get_repo_archive_url(self, git_sha: str) -> str:
         return f"https://github.com/nytimes/covid-19-data/archive/{git_sha}.zip"
-        
+
     def get_master_commit_sha(self) -> str:
         r = requests.get(self._NYTIMES_MASTER_API_URL)
-        return r.json()['commit']['sha']
+        return r.json()["commit"]["sha"]
 
     def write_version_file(self, git_sha) -> None:
         stamp = self._stamp()
@@ -40,7 +38,7 @@ class NYTimesCasesUpdater(DatasetUpdaterBase):
         with version_path.open("w+") as vf:
             vf.write(f"{git_sha}\n")
             vf.write(f"Updated on {stamp}")
-       
+
     def update(self) -> None:
         _logger.info("Updating NYTimes dataset.")
         git_sha = self.get_master_commit_sha()
@@ -50,13 +48,12 @@ class NYTimesCasesUpdater(DatasetUpdaterBase):
 
         with tempfile.TemporaryDirectory() as tmp_dir:
             p = pathlib.Path(tmp_dir)
-            _logger.info("Copying data files")      
+            _logger.info("Copying data files")
             self.clone_repo_to_dir(repo_url, str(p))
             repo_dir = p / f"covid-19-data-{git_sha}"
             for f in self._DATA_TARGET_FILES:
                 _logger.info("Copying file %s", f)
                 shutil.copy(str(repo_dir / f), str(self.NYTIMES_DATA_ROOT / f))
-
 
         _logger.info("Done, success!")
 
