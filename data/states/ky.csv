@@ -1,0 +1,10 @@
+country,state,aggregate_level,fips,date,current_icu_total,ventilator_capacity,current_icu,current_ventilated
+USA,KY,state,21,2020-05-06,2621,1828,,58
+USA,KY,state,21,2020-05-07,2451,1813,136,59
+USA,KY,state,21,2020-05-08,2556,1819,150,57
+USA,KY,state,21,2020-05-09,2622,1821,147,59
+USA,KY,state,21,2020-05-10,2614,1826,148,61
+USA,KY,state,21,2020-05-11,2633,1826,102,49
+USA,KY,state,21,2020-05-12,2596,1808,113,63
+USA,KY,state,21,2020-05-13,2585,1809,119,56
+USA,KY,state,21,2020-05-14,2570,1815,97,58
