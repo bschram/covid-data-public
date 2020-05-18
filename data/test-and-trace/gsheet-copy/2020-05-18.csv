@@ -1,0 +1,57 @@
+State,Total Grade,Positive Test Rate (7D Avg),Tracers / Daily Positive Tests (7D Avg),# of Contact Tracers,Daily Tests (7D Avg),Tracers / 100k Population,Tracer Grade (Tracers/Positive Test),Test Grade,Planned Tracers?,Plan Link #1
+Oklahoma,6,0.0266989204,5.872483221,500,3189,12.63592783,3,3,180,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Hawaii,6,0.003182179793,38.5,44,359.1428571,3.107625548,3,3,90,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Alaska,6,0.0016753225,98,140,852.7142857,19.13757869,3,3,500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Montana,6,0.001956468574,113.75,130,584.1428571,12.16342402,3,3,130,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+North Dakota,6,0.03816499614,5.892255892,250,1111.714286,32.80572972,3,3,500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Vermont,6,0.00394671929,21,48,579.1428571,7.692443296,3,3,48,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Utah,5,0.04007663434,8.195121951,1200,3653.714286,37.43030944,3,2,1150,
+Michigan,5,0.0395548149,7.372855853,3500,12001.42857,35.04606104,3,2,3530,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Washington,5,0.0443102545,5.971997511,1371,5181,18.00419257,3,2,1500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Oregon,4,0.03605061801,4.742857143,332,1941.714286,7.871519727,2,2,700,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Wyoming,4,0.02061248528,1,10,485.1428571,1.727834902,1,3,10,https://www.foxbusiness.com/lifestyle/states-coronavirus-contact-tracer-hiring
+California,3,0.04687443525,2.024096386,3000,31619.42857,7.592587236,1,2,20000,https://www.politico.com/states/california/story/2020/04/27/how-californias-contact-tracing-army-could-serve-as-model-for-nations-reopening-1280023
+Arkansas,3,0.0447472033,1.955307263,200,2285.857143,6.627335639,1,2,250,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+South Carolina,3,0.05001397038,2.234636872,400,3579,7.768930261,1,2,250,https://www.charlotteobserver.com/news/coronavirus/article242439461.html
+Texas,3,0.05032654858,1.654650751,2000,24017.42857,6.897531411,1,2,4000,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+West Virginia,3,0.01250893495,0,,1598.857143,0,0,3,270-300,http://wvmetronews.com/2020/04/28/justice-elaborates-on-why-and-how-west-virginia-can-start-reopening/
+Maine,3,0.08973900608,20.00102155,50,27.85714286,3.719651365,3,0,30,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Tennessee,3,0.03944596827,1.344602382,500,9427,7.321529661,1,2,174,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Kentucky,3,0.02690132353,0.3735325507,50,4975.857143,1.119150842,0,3,700,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Guam,3,0.004160887656,2.333333333,1,103,0.6089058571,0,3,,
+Virgin Islands,3,0.01694915254,16.33333333,7,25.28571429,6.693568437,0,3,,
+New Hampshire,2,0.05012604227,0.9477756286,70,1473.428571,5.148152806,0,2,50-60,https://www.wmur.com/article/nh-health-investigators-continue-to-trace-contacts-of-covid-19-patients/32215269
+Wisconsin,2,0.0651424596,1.362621359,401,4517.571429,6.887154066,1,1,1000,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+South Dakota,2,0.1394873408,2.762119504,350,908.4285714,39.56326675,2,0,131,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Louisiana,2,0.05897835835,2.024793388,700,5861.714286,15.05766872,1,1,770,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+New Mexico,2,0.03151220623,0.6746987952,80,3762.714286,3.81528489,0,2,100+,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Missouri,2,0.03090766823,0.6113924051,69,3651.428571,1.124249441,0,2,No plan found,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Florida,2,0.03956550687,2.181364911,1000,11586.57143,4.655984008,0,2,500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Nevada,2,0.03654505769,1.194539249,100,2290.714286,3.246588809,0,2,No plan found,
+Maryland,1,0.2034480185,1.283932502,1000,3828.285714,14.50851744,1,0,750,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Massachusetts,1,0.1129146799,1.048218029,1000,8448.857143,16.54073653,1,0,"1,348",https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Georgia,1,0.06234410218,0.4217883827,250,9507.142857,2.354620325,0,1,30-40,https://www.11alive.com/article/news/health/coronavirus/coronavirus-contact-tracers-georgia/85-a5e69394-6fa7-46c1-826c-ea51c5560071
+New Jersey,1,0.04322857903,0.3079178886,300,22538,3.377545403,0,1,310,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Rhode Island,1,0.07706269771,0.4710632571,100,2754.714286,9.439652772,0,1,100,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Arizona,1,0.06103727446,0.1901312811,60,5170.142857,0.8243210994,0,1,No plan found,
+North Carolina,1,0.06128139869,0.6319971109,250,6455,2.383657492,0,1,500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Idaho,1,0.0496767608,1.102739726,23,419.8571429,1.287026493,0,1,20,https://www.idahostatesman.com/news/coronavirus/article242446611.html
+Alabama,1,0.08016918664,0.5093996361,120,2938.428571,2.447388789,0,1,85,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Mississippi,1,0.05614741162,0.9838369642,200,3620.571429,6.720093651,0,1,200,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+New York,1,0.06886802692,0.3171538886,575,26325.71429,2.955757046,0,1,4575,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Kansas,1,0.09734968694,1.233480176,200,1665.571429,6.865034116,1,0,409,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Ohio,1,0.06578203264,0.8274485723,385,7073.142857,3.293666749,0,1,1750,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Iowa,0,0.1076505206,0.1059714045,36,3155.714286,1.141020643,0,0,200,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Nebraska,0,0.1113139968,1.43533123,325,2034.142857,16.80100579,0,0,"1,000",https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Minnesota,0,0.1214532141,0.2637681159,130,4058,2.305114944,0,0,130,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Pennsylvania,0,0.1388435557,0.1666418688,160,6915.285714,1.249805792,0,0,160,https://www.inquirer.com/health/coronavirus/coronavirus-pennsylvania-new-jersey-contact-tracing-npr-hires-20200429.html
+Virginia,0,0.1429323687,0.336376742,300,6239.714286,3.514724764,0,0,1000,https://www.wsls.com/news/local/2020/05/05/dozens-may-be-needed-for-contact-tracing-in-southwest-virginia/
+Illinois,0,0.1168224681,0.06125735088,125,17467.28571,0.9864407018,0,0,"Initially 300, then 3810",https://www.northernpublicradio.org/post/illinois-expand-contact-tracing-efforts
+Indiana,0,0.09821248572,0.2227163873,93,4251.714286,1.381416736,0,0,500,https://www.eaglecountryonline.com/news/local-news/gov-holcomb-announces-contact-tracing-plan-for-covid-19-cases/
+Delaware,0,0.1220218214,0.6386861314,100,1283.142857,10.26942873,0,0,300,https://delawarestatenews.net/coronavirus/contact-tracing-delawares-next-step-in-virus-battle/amp/
+District of Columbia,0,0.1249187784,0.5916775033,65,879.4285714,9.21007327,0,0,213,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Colorado,0,0.09459968012,0.1740427648,50,3036.857143,0.8682460873,0,0,50,https://www.foxbusiness.com/lifestyle/states-coronavirus-contact-tracer-hiring
+Connecticut,0,0.09589041096,0.04514672686,20,4619.857143,0.5609646573,0,0,20,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+Northern Mariana,0,0.003036437247,2.333333333,1,141.1428571,1.923298842,0,,,
+American Samoa,0,0,undefined,9,3.142857143,17.70747255,0,,,
+Puerto Rico,0,-0.04195569479,0,,56.57142857,0,0,0,,
