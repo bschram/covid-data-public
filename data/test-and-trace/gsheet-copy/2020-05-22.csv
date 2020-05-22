@@ -1,4 +1,4 @@
-State,Total Grade,Positive Test Rate (7D Avg),Tracers / Daily Positive Tests (7D Avg),# of Contact Tracers,Daily Tests (7D Avg),Tracers / 100k Population,Tracer Grade (Tracers/Positive Test),Test Grade,Planned Tracers?,Plan Link #1
+State,Total Grade,Percentage of Tests Are Positive (7-Day Avg),Contact Tracers / Daily Positive Tests (7-Day Avg),# of Contact Tracers,Daily Tests (7-Day Avg),Contact Tracers / 100k Population,Tracer Grade (Tracers/Positive Test),Test Grade,Planned Tracers?,Plan Link #1
 Hawaii,6,0.0006047411708,112,80,1181.142857,5.650228269,3,3,90,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
 Alaska,6,0.001927277399,67.66666667,145,1111.857143,19.82106364,3,3,500,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
 Oregon,6,0.01989689789,5.281818182,332,3159.142857,7.871519727,3,3,700,https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
