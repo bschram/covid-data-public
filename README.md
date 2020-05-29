@@ -54,15 +54,11 @@ These are data sets that we've found that look interesting and we may want to co
 We recommend installing all requirements in a virtualenv. To setup your virtual env,
 you should follow the steps [here](https://github.com/covid-projections/covid-data-model/blob/master/SETUP.md).
 
+Once you have activated the venv run `make setup-dev` to install packages in it.
+
 
 ### Setup auto-formatting
 
 We use [black](https://github.com/psf/black) to automatically format python code.
 One way we keep this maintainable is by using a pre-commit step that automatically
 reformats modified files on commit.
-
-Steps to install this:
-```
-1. pip install -r requirements_test.txt
-2. pre-commit install
-```
