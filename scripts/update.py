@@ -10,7 +10,7 @@ import tempfile
 
 import pandas as pd
 import argparse
-from dataset_updater_base import DatasetUpdaterBase
+from scripts.dataset_updater_base import DatasetUpdaterBase
 
 logger = logging.Logger("data update logger")
 

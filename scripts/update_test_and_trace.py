@@ -19,6 +19,15 @@ STATE_NAME_REMAP = {
 }
 
 
+def load_census_state(census_state_path: pathlib.Path) -> pd.DataFrame:
+    # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
+    state_df = pd.read_csv(census_state_path, delimiter="|", dtype={"STATE": str})
+    state_df.rename(
+        columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
+    )
+    return state_df
+
+
 class TestAndTraceSyncer(BaseModel):
     """Copies a CSV from Google Spreadsheets to the repo, then merges all the CSVs into a single timeseries output."""
 
@@ -38,10 +47,7 @@ class TestAndTraceSyncer(BaseModel):
         """Yield all rows in all the dated local CSV files that have a # of Contact Tracers."""
 
         # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
-        state_df = pd.read_csv(self.census_state_path, delimiter="|", dtype={"STATE": str})
-        state_df.rename(
-            columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
-        )
+        state_df = load_census_state(self.census_state_path)
         state_df.set_index("state_name", inplace=True)
 
         for file_path in self.gsheets_copy_directory.iterdir():
