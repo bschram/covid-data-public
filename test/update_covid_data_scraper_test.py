@@ -2,6 +2,7 @@ from io import StringIO
 
 import pandas as pd
 import pytest
+import structlog
 from covidactnow.datapublic.common_test_helpers import to_dict
 
 from scripts import update_covid_data_scraper
@@ -37,8 +38,14 @@ def test_remove_duplicate_city_data():
 
 
 def test_transform():
-    transformer = update_covid_data_scraper.TransformCovidDataScraper.make_with_data_root(
-        update_covid_data_scraper.DATA_ROOT
-    )
-    df = transformer.transform()
+    with structlog.testing.capture_logs() as logs:
+        transformer = update_covid_data_scraper.TransformCovidDataScraper.make_with_data_root(
+            update_covid_data_scraper.DATA_ROOT
+        )
+        df = transformer.transform()
     assert not df.empty
+    assert [l["event"] for l in logs] == [
+        "Removing rows without fips id",
+        "Removing duplicates",
+        "Removing columns not in CommonFields",
+    ]

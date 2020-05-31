@@ -1,3 +1,6 @@
+from enum import Enum
+from typing import Union
+
 import covidactnow.datapublic.common_df
 import covidactnow.datapublic.common_test_helpers
 import pandas as pd
@@ -5,20 +8,21 @@ import numpy
 import structlog
 from covidactnow.datapublic import common_init
 
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 import pathlib
 
 from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace
 from covidactnow.datapublic.common_fields import CommonFields
+from pydantic.dataclasses import dataclass
 from scripts.update_test_and_trace import load_census_state
 from structlog import get_logger
+from structlog._config import BoundLoggerLazyProxy
 
-log = get_logger()
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
 
-class Fields(object):
+class Fields(str, Enum):
     CITY = "city"
     COUNTY = "county"
     STATE = "state"
@@ -36,6 +40,22 @@ class Fields(object):
     DATE = "date"
     AGGREGATE_LEVEL = "aggregate_level"
     NEGATIVE_TESTS = "negative_tests"
+    HOSPITALIZED = "hospitalized"
+    ICU = "icu"
+
+
+FIELD_MAP = {
+    CommonFields.DATE: Fields.DATE,
+    CommonFields.COUNTRY: Fields.COUNTRY,
+    CommonFields.STATE: Fields.STATE,
+    CommonFields.AGGREGATE_LEVEL: Fields.AGGREGATE_LEVEL,
+    CommonFields.CASES: Fields.CASES,
+    CommonFields.POSITIVE_TESTS: Fields.CASES,
+    CommonFields.NEGATIVE_TESTS: Fields.NEGATIVE_TESTS,
+    CommonFields.POPULATION: Fields.POPULATION,
+    CommonFields.CUMULATIVE_ICU: Fields.ICU,
+    CommonFields.CUMULATIVE_HOSPITALIZED: Fields.HOSPITALIZED,
+}
 
 
 def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
@@ -65,12 +85,18 @@ class TransformCovidDataScraper(BaseModel):
 
     county_fips_csv: pathlib.Path
 
+    log: Union[structlog.BoundLoggerBase, BoundLoggerLazyProxy]
+
+    class Config:
+        arbitrary_types_allowed = True
+
     @staticmethod
     def make_with_data_root(data_root: pathlib.Path) -> "TransformCovidDataScraper":
         return TransformCovidDataScraper(
             cds_source_path=data_root / "cases-cds" / "timeseries.csv",
             census_state_path=data_root / "misc" / "state.txt",
             county_fips_csv=data_root / "misc" / "fips_population.csv",
+            log=structlog.get_logger(),
         )
 
     def transform(self) -> pd.DataFrame:
@@ -121,7 +147,7 @@ class TransformCovidDataScraper(BaseModel):
         )
         no_fips = data[CommonFields.FIPS].isna()
         if no_fips.sum() > 0:
-            log.error(
+            self.log.error(
                 "Removing rows without fips id",
                 no_fips=data.loc[no_fips, ["state", "county"]].to_dict(orient="records"),
             )
@@ -131,12 +157,18 @@ class TransformCovidDataScraper(BaseModel):
         if data.index.has_duplicates:
             # Use keep=False when logging so the output contains all duplicated rows, not just the first or last
             # instance of each duplicate.
-            log.error("Removing duplicates", duplicated=data.index.duplicated(keep=False))
+            self.log.error("Removing duplicates", duplicated=data.index.duplicated(keep=False))
             data = data.loc[~data.index.duplicated(keep=False)]
         data.reset_index(inplace=True)
 
         # ADD Negative tests
         data[Fields.NEGATIVE_TESTS] = data[Fields.TESTED] - data[Fields.CASES]
+
+        data = data.rename(columns={f: c for c, f in FIELD_MAP.items()})
+        unexpected_columns = set(data.columns) - set(CommonFields)
+        if unexpected_columns:
+            self.log.warning("Removing columns not in CommonFields", columns=unexpected_columns)
+            data = data.drop(columns=list(unexpected_columns))
 
         return data
 
@@ -144,7 +176,7 @@ class TransformCovidDataScraper(BaseModel):
 def remove_duplicate_city_data(data):
     # City data before 3-23 was not duplicated, copy the city name to the county field.
     select_pre_march_23 = data.date < "2020-03-23"
-    data.loc[select_pre_march_23, "county"] = data.loc[select_pre_march_23].apply(
+    data.loc[select_pre_march_23, Fields.COUNTY] = data.loc[select_pre_march_23].apply(
         fill_missing_county_with_city, axis=1
     )
     # Don't want to return city data because it's duplicated in county

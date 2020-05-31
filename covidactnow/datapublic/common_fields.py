@@ -1,9 +1,10 @@
 """
 Data schema shared between code in covid-data-public and covid-data-model repos.
 """
+from enum import Enum
 
 
-class CommonFields(object):
+class CommonFields(str, Enum):
     """Common field names shared across different sources of data"""
 
     FIPS = "fips"

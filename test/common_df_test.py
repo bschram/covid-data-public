@@ -1,21 +1,35 @@
 from io import StringIO
-
 import pandas as pd
+import pytest
 import temppathlib
 from covidactnow.datapublic.common_df import strip_whitespace, write_df_as_csv
 from covidactnow.datapublic.common_test_helpers import to_dict
 from covidactnow.datapublic.common_fields import CommonFields
 import structlog.testing
-from more_itertools import one
+
+# turns all warnings into errors for this module
+pytestmark = pytest.mark.filterwarnings("error")
 
 
 def test_strip_whitespace():
     input_df = pd.read_csv(
-        StringIO("col_a,col_b,col_c,col_num\n" " ,b1,c1,1\n" "a2, b2,c2,2\n" ',b3," c3 ",3\n')
+        StringIO(
+            """col_a,col_b,col_c,col_num
+,b1,c1,1
+a2, b2,c2,2
+,b3," c3 ",3
+"""
+        )
     )
     output_df = strip_whitespace(input_df)
     expected_df = pd.read_csv(
-        StringIO("col_a,col_b,col_c,col_num\n" ",b1,c1,1\n" "a2,b2,c2,2\n" ",b3,c3,3\n")
+        StringIO(
+            """col_a,col_b,col_c,col_num
+,b1,c1,1
+a2,b2,c2,2
+,b3,c3,3
+"""
+        )
     )
     assert to_dict(["col_c"], output_df) == to_dict(["col_c"], expected_df)
 
