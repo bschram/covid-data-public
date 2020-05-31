@@ -1,61 +1,49 @@
 from enum import Enum
-from typing import Union
-
-import covidactnow.datapublic.common_df
-import covidactnow.datapublic.common_test_helpers
+from typing import Union, Optional
 import pandas as pd
 import numpy
 import structlog
 from covidactnow.datapublic import common_init
-
-from pydantic import BaseModel, validator
+from pydantic import BaseModel
 import pathlib
-
 from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace
 from covidactnow.datapublic.common_fields import CommonFields
-from pydantic.dataclasses import dataclass
 from scripts.update_test_and_trace import load_census_state
-from structlog import get_logger
 from structlog._config import BoundLoggerLazyProxy
 
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
 
-class Fields(str, Enum):
-    CITY = "city"
-    COUNTY = "county"
-    STATE = "state"
-    COUNTRY = "country"
-    POPULATION = "population"
-    LATITUDE = "lat"
-    LONGITUDE = "long"
-    URL = "url"
-    CASES = "cases"
-    DEATHS = "deaths"
-    RECOVERED = "recovered"
-    ACTIVE = "active"
-    TESTED = "tested"
-    GROWTH_FACTOR = "growthFactor"
-    DATE = "date"
-    AGGREGATE_LEVEL = "aggregate_level"
-    NEGATIVE_TESTS = "negative_tests"
-    HOSPITALIZED = "hospitalized"
-    ICU = "icu"
+class FieldNameAndCommonField(str):
+    """Represents the original field/column name and CommonField it maps to or None if dropped."""
+
+    def __new__(cls, field_name: str, common_field: Optional[CommonFields]):
+        o = super(FieldNameAndCommonField, cls).__new__(cls, field_name)
+        o.common_field = common_field
+        return o
 
 
-FIELD_MAP = {
-    CommonFields.DATE: Fields.DATE,
-    CommonFields.COUNTRY: Fields.COUNTRY,
-    CommonFields.STATE: Fields.STATE,
-    CommonFields.AGGREGATE_LEVEL: Fields.AGGREGATE_LEVEL,
-    CommonFields.CASES: Fields.CASES,
-    CommonFields.POSITIVE_TESTS: Fields.CASES,
-    CommonFields.NEGATIVE_TESTS: Fields.NEGATIVE_TESTS,
-    CommonFields.POPULATION: Fields.POPULATION,
-    CommonFields.CUMULATIVE_ICU: Fields.ICU,
-    CommonFields.CUMULATIVE_HOSPITALIZED: Fields.HOSPITALIZED,
-}
+class Fields(FieldNameAndCommonField, Enum):
+    CITY = "city", CommonFields.CASES
+    COUNTY = "county", CommonFields.COUNTY
+    STATE = "state", CommonFields.STATE
+    COUNTRY = "country", CommonFields.COUNTRY
+    POPULATION = "population", CommonFields.POPULATION
+    LATITUDE = "lat", None
+    LONGITUDE = "long", None
+    URL = "url", None
+    CASES = "cases", CommonFields.POSITIVE_TESTS
+    DEATHS = "deaths", CommonFields.DEATHS
+    RECOVERED = "recovered", None
+    ACTIVE = "active", None
+    TESTED = "tested", None
+    GROWTH_FACTOR = "growthFactor", None
+    DATE = "date", CommonFields.DATE
+    AGGREGATE_LEVEL = "aggregate_level", None
+    NEGATIVE_TESTS = "negative_tests", CommonFields.NEGATIVE_TESTS
+    HOSPITALIZED = "hospitalized", CommonFields.CUMULATIVE_HOSPITALIZED
+    ICU = "icu", CommonFields.CUMULATIVE_ICU
 
 
 def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
@@ -164,11 +152,15 @@ class TransformCovidDataScraper(BaseModel):
         # ADD Negative tests
         data[Fields.NEGATIVE_TESTS] = data[Fields.TESTED] - data[Fields.CASES]
 
-        data = data.rename(columns={f: c for c, f in FIELD_MAP.items()})
+        data = data.rename(columns={f: f.common_field for f in Fields})
         unexpected_columns = set(data.columns) - set(CommonFields)
         if unexpected_columns:
             self.log.warning("Removing columns not in CommonFields", columns=unexpected_columns)
             data = data.drop(columns=list(unexpected_columns))
+        data = data.reindex(
+            columns=[CommonFields.FIPS]
+            + [f.common_field for f in Fields if f.common_field in data.columns]
+        )
 
         return data
 
@@ -176,7 +168,7 @@ class TransformCovidDataScraper(BaseModel):
 def remove_duplicate_city_data(data):
     # City data before 3-23 was not duplicated, copy the city name to the county field.
     select_pre_march_23 = data.date < "2020-03-23"
-    data.loc[select_pre_march_23, Fields.COUNTY] = data.loc[select_pre_march_23].apply(
+    data.loc[select_pre_march_23, "county"] = data.loc[select_pre_march_23].apply(
         fill_missing_county_with_city, axis=1
     )
     # Don't want to return city data because it's duplicated in county
@@ -187,6 +179,6 @@ if __name__ == "__main__":
     common_init.configure_structlog()
     write_df_as_csv(
         TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform(),
-        DATA_ROOT / "cds.csv",
+        DATA_ROOT / "cases-cds" / "timeseries-common.csv",
         structlog.get_logger(),
     )
