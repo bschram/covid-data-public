@@ -5,10 +5,11 @@ from typing import List
 
 import pandas as pd
 import pytest
+import temppathlib
 
+from covidactnow.datapublic.common_fields import CommonFields
 from scripts import update_covid_data_scraper
-from scripts.update_covid_data_scraper import strip_whitespace
-
+from scripts.update_covid_data_scraper import strip_whitespace, write_df_as_csv
 
 # turns all warnings into errors for this module
 pytestmark = pytest.mark.filterwarnings("error")
@@ -85,4 +86,37 @@ def test_transform():
         update_covid_data_scraper.DATA_ROOT
     )
     df = transformer.transform()
-    assert df
+    assert not df.empty
+
+
+def test_write_csv_empty():
+    df = pd.DataFrame([], columns=[CommonFields.DATE, CommonFields.FIPS, "some_random_field_name"])
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        write_df_as_csv(df, tmp.path)
+        assert "fips,date,some_random_field_name\n" == tmp.file.read()
+
+
+def test_write_csv():
+    df = pd.DataFrame(
+        {
+            CommonFields.DATE: ["2020-04-01", "2020-04-02"],
+            CommonFields.FIPS: ["06045", "45123"],
+            CommonFields.CASES: [234, 456],
+        }
+    )
+    expected_csv = """fips,date,cases
+06045,2020-04-01,234
+45123,2020-04-02,456
+"""
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        write_df_as_csv(df, tmp.path)
+        assert expected_csv == tmp.file.read()
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        write_df_as_csv(df.set_index(["date", "cases"]), tmp.path)
+        assert expected_csv == tmp.file.read()
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        write_df_as_csv(df.set_index(["fips", "date"]), tmp.path)
+        assert expected_csv == tmp.file.read()
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        write_df_as_csv(df.set_index(["date", "fips"]), tmp.path)
+        assert expected_csv == tmp.file.read()

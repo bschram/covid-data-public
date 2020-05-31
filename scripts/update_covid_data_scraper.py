@@ -1,5 +1,3 @@
-import csv
-from typing import Mapping
 import pandas as pd
 import numpy
 
@@ -41,6 +39,16 @@ def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
     return df
 
 
+def write_df_as_csv(df: pd.DataFrame, path: pathlib.Path):
+    if df.index.names != [CommonFields.FIPS, CommonFields.DATE]:
+        log.warning("df has unexpected index", current_index=df.index.names)
+        if df.index.names != [None]:
+            df = df.reset_index()
+        df = df.set_index([CommonFields.FIPS, CommonFields.DATE])
+    log.warning("writing df", current_index=df.index.names)
+    df.to_csv(path, date_format="iso", index=True)
+
+
 def fill_missing_county_with_city(row):
     """Fills in missing county data with city if available.
     """
@@ -55,13 +63,9 @@ def fill_missing_county_with_city(row):
 def strip_whitespace(df) -> pd.DataFrame:
     def strip_series(col):
         if col.dtypes == object:
-            not_na_mask = col.notna()
-            stripped = col.loc[not_na_mask].str.strip()
-            changed = (stripped != col.loc[not_na_mask]).sum()
-            if changed:
-                log.debug("Removed whitespace from strings", column=col.name, changed=changed)
-                col[not_na_mask] = stripped
-        return col
+            return col.str.strip()
+        else:
+            return col
 
     return df.apply(strip_series, axis=0)
 
@@ -110,7 +114,7 @@ class TransformCovidDataScraper(BaseModel):
         state_hits = numpy.where(only_state, "state", None)
         county_hits[state_hits != None] = state_hits[state_hits != None]
         county_hits[only_country] = "country"
-        data[:, Fields.AGGREGATE_LEVEL] = county_hits
+        data[Fields.AGGREGATE_LEVEL] = county_hits
 
         # Backfilling FIPS data based on county names.
         # The following abbrev mapping only makes sense for the US
@@ -159,8 +163,10 @@ def remove_duplicate_city_data(data):
         fill_missing_county_with_city, axis=1
     )
     # Don't want to return city data because it's duplicated in county
-    return data.loc[select_pre_march_23 | ((~select_pre_march_23) & data["city"].isnull())]
+    return data.loc[select_pre_march_23 | ((~select_pre_march_23) & data["city"].isnull())].copy()
 
 
 if __name__ == "__main__":
-    TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform()
+    write_df_as_csv(
+        TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform(), DATA_ROOT / "cds.csv"
+    )
