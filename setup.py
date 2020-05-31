@@ -7,8 +7,8 @@ setup(
     url="https://github.com/covid-projections/covid-data-public",
     author="covidactnow.com",
     # List Python distribution packages that need to be installed when setting up
-    # the packages above in install_requires here. So far there are no dependencies.
+    # the `packages` (above) in `install_requires` (below).
     # Somewhat confusingly there is other code in this repo that is not installed by
     # setuptools. The dependencies of that code are listed in requirements.txt.
-    install_requires=[],
+    install_requires=["pandas", "structlog", "structlog-sentry"],
 )

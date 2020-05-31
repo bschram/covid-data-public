@@ -1,9 +1,14 @@
+import covidactnow.datapublic.common_df
+import covidactnow.datapublic.common_test_helpers
 import pandas as pd
 import numpy
+import structlog
+from covidactnow.datapublic import common_init
 
 from pydantic import BaseModel
 import pathlib
 
+from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace
 from covidactnow.datapublic.common_fields import CommonFields
 from scripts.update_test_and_trace import load_census_state
 from structlog import get_logger
@@ -39,16 +44,6 @@ def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
     return df
 
 
-def write_df_as_csv(df: pd.DataFrame, path: pathlib.Path):
-    if df.index.names != [CommonFields.FIPS, CommonFields.DATE]:
-        log.warning("df has unexpected index", current_index=df.index.names)
-        if df.index.names != [None]:
-            df = df.reset_index()
-        df = df.set_index([CommonFields.FIPS, CommonFields.DATE])
-    log.warning("writing df", current_index=df.index.names)
-    df.to_csv(path, date_format="iso", index=True)
-
-
 def fill_missing_county_with_city(row):
     """Fills in missing county data with city if available.
     """
@@ -58,16 +53,6 @@ def fill_missing_county_with_city(row):
         return row.city
 
     return row.county
-
-
-def strip_whitespace(df) -> pd.DataFrame:
-    def strip_series(col):
-        if col.dtypes == object:
-            return col.str.strip()
-        else:
-            return col
-
-    return df.apply(strip_series, axis=0)
 
 
 class TransformCovidDataScraper(BaseModel):
@@ -167,6 +152,9 @@ def remove_duplicate_city_data(data):
 
 
 if __name__ == "__main__":
+    common_init.configure_structlog()
     write_df_as_csv(
-        TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform(), DATA_ROOT / "cds.csv"
+        TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform(),
+        DATA_ROOT / "cds.csv",
+        structlog.get_logger(),
     )
