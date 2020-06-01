@@ -63,14 +63,16 @@ def fill_missing_county_with_city(row):
     return row.county
 
 
-class TransformCovidDataScraper(BaseModel):
-    """Copies a CSV timeseries from Google Spreadsheets to the repo."""
+class CovidDataScraperTransformer(BaseModel):
+    """Transforms the raw CovidDataScraper timeseries on disk to a DataFrame using CAN CommonFields."""
 
+    # Source for raw CovidDataScraper timeseries.
     cds_source_path: pathlib.Path
 
     # Path of a text file of state names, copied from census.gov
     census_state_path: pathlib.Path
 
+    # FIPS for each county, by name
     county_fips_csv: pathlib.Path
 
     log: Union[structlog.BoundLoggerBase, BoundLoggerLazyProxy]
@@ -79,8 +81,8 @@ class TransformCovidDataScraper(BaseModel):
         arbitrary_types_allowed = True
 
     @staticmethod
-    def make_with_data_root(data_root: pathlib.Path) -> "TransformCovidDataScraper":
-        return TransformCovidDataScraper(
+    def make_with_data_root(data_root: pathlib.Path) -> "CovidDataScraperTransformer":
+        return CovidDataScraperTransformer(
             cds_source_path=data_root / "cases-cds" / "timeseries.csv",
             census_state_path=data_root / "misc" / "state.txt",
             county_fips_csv=data_root / "misc" / "fips_population.csv",
@@ -88,7 +90,10 @@ class TransformCovidDataScraper(BaseModel):
         )
 
     def transform(self) -> pd.DataFrame:
+        """Read data from disk and return a DataFrame using CAN CommonFields."""
         df = pd.read_csv(self.cds_source_path, parse_dates=[Fields.DATE], low_memory=False)
+        # Code from here down is copied almost verbatim from
+        # https://github.com/covid-projections/covid-data-model/blob/d1a104f/libs/datasets/sources/cds_dataset.py#L103-L152
         df = strip_whitespace(df)
 
         data = remove_duplicate_city_data(df)
@@ -195,8 +200,9 @@ def remove_duplicate_city_data(data):
 
 if __name__ == "__main__":
     common_init.configure_structlog()
+    transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT)
     write_df_as_csv(
-        TransformCovidDataScraper.make_with_data_root(DATA_ROOT).transform(),
+        transformer.transform(),
         DATA_ROOT / "cases-cds" / "timeseries-common.csv",
         structlog.get_logger(),
     )

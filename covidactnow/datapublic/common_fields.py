@@ -10,7 +10,12 @@ class GetByValueMixin:
         return cls._value2member_map_.get(value, None)
 
 
-class CommonFields(GetByValueMixin, str, Enum):
+class ValueAsStrMixin:
+    def __str__(self):
+        return self.value
+
+
+class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     """Common field names shared across different sources of data"""
 
     FIPS = "fips"

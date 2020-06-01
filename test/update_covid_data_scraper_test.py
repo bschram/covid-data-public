@@ -39,7 +39,7 @@ def test_remove_duplicate_city_data():
 
 def test_transform():
     with structlog.testing.capture_logs() as logs:
-        transformer = update_covid_data_scraper.TransformCovidDataScraper.make_with_data_root(
+        transformer = update_covid_data_scraper.CovidDataScraperTransformer.make_with_data_root(
             update_covid_data_scraper.DATA_ROOT
         )
         df = transformer.transform()
