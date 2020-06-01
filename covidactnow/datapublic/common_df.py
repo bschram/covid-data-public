@@ -1,3 +1,7 @@
+"""
+Shared code that handles `pandas.DataFrames` objects.
+"""
+
 import pathlib
 
 import pandas as pd
@@ -7,6 +11,7 @@ from covidactnow.datapublic.common_fields import CommonFields
 
 
 def fix_df_index(df: pd.DataFrame, log: stdlib.BoundLogger, inplace=False):
+    """Modify `df` to revert any existing named index and add standard the FIPS and DATE index."""
     if df.index.names != [CommonFields.FIPS, CommonFields.DATE]:
         log.warning("Fixing DataFrame index", current_index=df.index.names)
         if df.index.names != [None]:

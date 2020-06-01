@@ -4,10 +4,18 @@ Data schema shared between code in covid-data-public and covid-data-model repos.
 from enum import Enum
 
 
-class CommonFields(str, Enum):
+class GetByValueMixin:
+    @classmethod
+    def get(cls, value):
+        return cls._value2member_map_.get(value, None)
+
+
+class CommonFields(GetByValueMixin, str, Enum):
     """Common field names shared across different sources of data"""
 
     FIPS = "fips"
+
+    DATE = "date"
 
     # 2 letter state abbreviation, i.e. MA
     STATE = "state"
@@ -17,8 +25,6 @@ class CommonFields(str, Enum):
     COUNTY = "county"
 
     AGGREGATE_LEVEL = "aggregate_level"
-
-    DATE = "date"
 
     # Full state name, i.e. Massachusetts
     STATE_FULL_NAME = "state_full_name"

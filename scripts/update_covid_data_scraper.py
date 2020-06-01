@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Union, Optional
+from typing import Union, Optional, Mapping, MutableMapping
 import pandas as pd
 import numpy
 import structlog
@@ -7,7 +7,7 @@ from covidactnow.datapublic import common_init
 from pydantic import BaseModel
 import pathlib
 from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace
-from covidactnow.datapublic.common_fields import CommonFields
+from covidactnow.datapublic.common_fields import CommonFields, GetByValueMixin
 from scripts.update_test_and_trace import load_census_state
 from structlog._config import BoundLoggerLazyProxy
 
@@ -24,7 +24,7 @@ class FieldNameAndCommonField(str):
         return o
 
 
-class Fields(FieldNameAndCommonField, Enum):
+class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     CITY = "city", CommonFields.CASES
     COUNTY = "county", CommonFields.COUNTY
     STATE = "state", CommonFields.STATE
@@ -152,15 +152,33 @@ class TransformCovidDataScraper(BaseModel):
         # ADD Negative tests
         data[Fields.NEGATIVE_TESTS] = data[Fields.TESTED] - data[Fields.CASES]
 
-        data = data.rename(columns={f: f.common_field for f in Fields})
-        unexpected_columns = set(data.columns) - set(CommonFields)
-        if unexpected_columns:
-            self.log.warning("Removing columns not in CommonFields", columns=unexpected_columns)
-            data = data.drop(columns=list(unexpected_columns))
-        data = data.reindex(
-            columns=[CommonFields.FIPS]
-            + [f.common_field for f in Fields if f.common_field in data.columns]
-        )
+        # Rename and sort columns in data to match CommonFields. I'm not very happy with this code.
+        # It'd be cleaner if any column not in Fields caused a failure, but that might be annoying
+        # to maintain. columns that don't appear in the input file but are added to `data` in the
+        # above code are another annoying corner case; do they belong in Fields?
+
+        # Columns not in Fields or CommonFields will be logged
+        col_not_in_fields_or_common = []
+        # Map from name in the input/added so far -> name in the output
+        rename: MutableMapping[str, str] = {}
+        for col in data.columns:
+            field = Fields.get(col)
+            if field is not None:
+                if field.common_field is not None:
+                    rename[field.value] = field.common_field.value
+            elif CommonFields.get(col) is not None:
+                rename[col] = col
+            else:
+                col_not_in_fields_or_common.append(col)
+        # Sort contents of `rename` to match the order of CommonFields.
+        common_order = {common: i for i, common in enumerate(CommonFields)}
+        names_in, names_out = zip(*sorted(rename.items(), key=lambda f_c: common_order[f_c[1]]))
+        # Copy only columns in `rename.keys()` to a new DataFrame and rename.
+        data = data.loc[:, list(names_in)].rename(columns=rename)
+        if col_not_in_fields_or_common:
+            self.log.warning(
+                "Removing columns not in CommonFields", columns=col_not_in_fields_or_common
+            )
 
         return data
 
