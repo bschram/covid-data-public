@@ -82,7 +82,7 @@ class TransformUsaFacts(BaseModel):
                     CommonFields.COUNTY: row["County Name"],
                     CommonFields.STATE: row["State"],
                     CommonFields.CASES: int(row[source_date]),
-                    CommonFields.DATE: iso_date
+                    CommonFields.DATE: iso_date,
                 }
 
     def transform(self) -> pd.DataFrame:
@@ -104,9 +104,9 @@ class TransformUsaFacts(BaseModel):
         fips_mismatch = df.loc[fips_mismatch_mask, :]
         fips_mismatch.set_index(["fips", "county"])
         grouped = fips_mismatch.groupby(by=["fips", "county"], sort=False)
-        aggregated = grouped.agg({'date': 'max', 'cases': 'max'})
-        aggregated['count_rows'] = grouped.size()
-        aggregated = aggregated.sort_values('cases', ascending=False)
+        aggregated = grouped.agg({"date": "max", "cases": "max"})
+        aggregated["count_rows"] = grouped.size()
+        aggregated = aggregated.sort_values("cases", ascending=False)
 
         df = df.loc[~fips_mismatch_mask, [CommonFields.FIPS, CommonFields.DATE, CommonFields.CASES]]
         return df
@@ -116,5 +116,8 @@ if __name__ == "__main__":
     common_init.configure_structlog()
     transform = TransformUsaFacts.make_with_data_root(DATA_ROOT)
     # transform.fetch()
-    write_df_as_csv(transform.transform(), DATA_ROOT / "cases-usafacts" / "timeseries-common.csv", structlog.get_logger())
-
+    write_df_as_csv(
+        transform.transform(),
+        DATA_ROOT / "cases-usafacts" / "timeseries-common.csv",
+        structlog.get_logger(),
+    )
