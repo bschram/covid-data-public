@@ -61,4 +61,4 @@ Once you have activated the venv run `make setup-dev` to install packages in it.
 
 We use [black](https://github.com/psf/black) to automatically format python code.
 One way we keep this maintainable is by using a pre-commit step that automatically
-reformats modified files on commit.
+reformats modified files on commit..
