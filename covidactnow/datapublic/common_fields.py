@@ -1,12 +1,32 @@
 """
 Data schema shared between code in covid-data-public and covid-data-model repos.
 """
+from enum import Enum
 
 
-class CommonFields(object):
+class GetByValueMixin:
+    """Mixin making it easy to get an Enum object or None if not found.
+
+    This is an alternative to `YourEnumClass(value)` with raises `ValueError` when `value`
+    is not in the enum.
+    """
+
+    @classmethod
+    def get(cls, value):
+        return cls._value2member_map_.get(value, None)
+
+
+class ValueAsStrMixin:
+    def __str__(self):
+        return self.value
+
+
+class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     """Common field names shared across different sources of data"""
 
     FIPS = "fips"
+
+    DATE = "date"
 
     # 2 letter state abbreviation, i.e. MA
     STATE = "state"
@@ -16,8 +36,6 @@ class CommonFields(object):
     COUNTY = "county"
 
     AGGREGATE_LEVEL = "aggregate_level"
-
-    DATE = "date"
 
     # Full state name, i.e. Massachusetts
     STATE_FULL_NAME = "state_full_name"
