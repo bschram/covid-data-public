@@ -1,6 +1,6 @@
 State,Total Grade,Percentage of Tests Are Positive (7-Day Avg),Contact Tracers / Daily Positive Tests (7-Day Avg),# of Contact Tracers,Planned Number of Tracers?,Daily Tests (7-Day Avg),Contact Tracers / 100k Population,Tracer Grade (Tracers/Positive Test),Test Grade,Source for Contact Tracer Count,Source Confidence
 Hawaii,6,-0.005903187721,56,80,300,-242,5.650228269,3,3,News Reports,High
-Alaska,6,0.007868686014,9.408602151,125,500,1688.428571,17.08712383,3,3,Direct Contact With State or State Press Release,High
+Alaska,6,0.007868686014,9.784946237,130,500,1688.428571,17.77060878,3,3,Direct Contact With State or State Press Release,High
 Oregon,6,0.01834722505,6.43767313,332,631,2810.857143,7.871519727,3,3,Direct Contact With State or State Press Release,High
 Wyoming,6,0.01268045259,5.384615385,50,50,732.2857143,8.63917451,3,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
 Montana,6,0.005637411915,20.68181818,130,130,1115,12.16342402,3,3,Direct Contact With State or State Press Release,High
@@ -13,8 +13,8 @@ Oklahoma,5,0.01958251173,4.253472222,350,1000,4202,8.845149484,2,3,News Reports,
 Michigan,5,0.02444182604,3.028430161,1050,1050,14185.28571,10.51381831,2,3,Direct Contact With State or State Press Release,Medium
 North Dakota,5,0.03351019268,10.26666667,352,500,1023.142857,46.19046744,3,2,News Reports,High
 New Hampshire,3,0.04501607717,1.621621622,120,120,1643.857143,8.82540481,1,2,News Reports,Medium
-California,3,0.04743154158,1.421927621,3800,10000,56342.85714,9.617277165,1,2,Direct Contact With State or State Press Release,High
-Wisconsin,3,0.04078063406,1.19128659,500,1000,10292,8.587473898,1,2,Direct Contact With State or State Press Release,High
+California,3,0.04743154158,1.646442508,4400,10000,56342.85714,11.13579461,1,2,Direct Contact With State or State Press Release,High
+Wisconsin,3,0.04078063406,1.143635126,480,1000,10292,8.243974942,1,2,Direct Contact With State or State Press Release,High
 Louisiana,3,0.04842027921,1.858877086,700,700,7777.142857,15.05766872,1,2,Direct Contact With State or State Press Release,High
 Utah,3,0.07668593449,4.690117253,1200,1200,3336.428571,37.43030944,2,1,Direct Contact With State or State Press Release,High
 New Jersey,3,0.03071797623,1.158088235,900,1900,25299.28571,10.13263621,1,2,News Reports,High
