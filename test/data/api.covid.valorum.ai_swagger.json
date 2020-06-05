@@ -1,0 +1,1112 @@
+{
+  "basePath": "/", 
+  "consumes": [
+    "application/json", 
+    "application/vnd.pgrst.object+json", 
+    "text/csv"
+  ], 
+  "definitions": {
+    "counties": {
+      "description": "This table contains basic information about the U.S. counties\n\nSource(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+      "properties": {
+        "area": {
+          "description": "The size of the county (measured in square miles)", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "fips": {
+          "description": "The fips code for the county", 
+          "format": "bigint", 
+          "type": "integer"
+        }, 
+        "latitude": {
+          "description": "A latitude point interior to the county", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "longitude": {
+          "description": "A longitude point interior to the county", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "name": {
+          "description": "The county name", 
+          "format": "character varying", 
+          "maxLength": 30, 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "covid": {
+      "description": "This table contains relevant information on COVID-19\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
+      "properties": {
+        "dt": {
+          "description": "The date that corresponds to the observed variable\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the variable", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "description": "One of the variables described in the table description", 
+          "format": "text", 
+          "type": "string"
+        }, 
+        "vintage": {
+          "description": "The date/time the data was collected and stored in our database\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "demographics": {
+      "description": "This table contains information on the demographics of a particular region and is based on the American Community Survey.\n\nCurrently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nThese variables are collected from the 2018 American Community Survey (5 year) in order to ensure that we have data for each county.\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
+      "properties": {
+        "fips": {
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "bigint", 
+          "type": "integer"
+        }, 
+        "meta_date": {
+          "description": "The date for which the data applies", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "value": {
+          "description": "The value of the variable", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "variable": {
+          "description": "A description of the variable", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "economics": {
+      "description": "This table contains information on economic outcomes at different geographic levels.\n\nThese economic variables include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n* Spending\n\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
+      "properties": {
+        "dt": {
+          "description": "The date of the observation", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the variable", 
+          "format": "double precision", 
+          "type": "number"
+        }, 
+        "variable": {
+          "description": "A description of the variable", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "mobility_devices": {
+      "description": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county)\n\nThe DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
+      "properties": {
+        "dt": {
+          "description": "The date.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the variable on date `dt` in geography `fips`.", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "variable": {
+          "description": "The variable associated with the DEX value --- This will either be a number of devices or a DEX value.", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "mobility_locations": {
+      "description": "Among smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.\n\nThis index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
+      "properties": {
+        "dt": {
+          "description": "The date for which the data applies\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips_prev": {
+          "description": "The state (county) for which a device was found in the previous 14 days.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "fips_today": {
+          "description": "The state (county) for which a device was found on the given date\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "lex": {
+          "description": "The LEX number", 
+          "format": "numeric", 
+          "type": "number"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "states": {
+      "description": "This table contains basic information about the U.S. states\n\nSource(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+      "properties": {
+        "area": {
+          "description": "The size of the state (measured in square miles)", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "fips": {
+          "description": "The fips code for the state", 
+          "format": "bigint", 
+          "type": "integer"
+        }, 
+        "latitude": {
+          "description": "A latitude point interior to the state", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "longitude": {
+          "description": "A longitude point interior to the state", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "name": {
+          "description": "The state name", 
+          "format": "character varying", 
+          "maxLength": 30, 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }
+  }, 
+  "externalDocs": {
+    "description": "PostgREST Documentation", 
+    "url": "https://postgrest.org/en/v7.0/api.html"
+  }, 
+  "host": "api.covid.valorum.ai", 
+  "info": {
+    "description": "COVID Modeling Data Collaborative API", 
+    "title": "COVID Modeling Data Collaborative API", 
+    "version": "1.0"
+  }, 
+  "parameters": {
+    "body.counties": {
+      "description": "counties", 
+      "in": "body", 
+      "name": "counties", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/counties"
+      }
+    }, 
+    "body.covid": {
+      "description": "covid", 
+      "in": "body", 
+      "name": "covid", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/covid"
+      }
+    }, 
+    "body.demographics": {
+      "description": "demographics", 
+      "in": "body", 
+      "name": "demographics", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/demographics"
+      }
+    }, 
+    "body.economics": {
+      "description": "economics", 
+      "in": "body", 
+      "name": "economics", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/economics"
+      }
+    }, 
+    "body.mobility_devices": {
+      "description": "mobility_devices", 
+      "in": "body", 
+      "name": "mobility_devices", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/mobility_devices"
+      }
+    }, 
+    "body.mobility_locations": {
+      "description": "mobility_locations", 
+      "in": "body", 
+      "name": "mobility_locations", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/mobility_locations"
+      }
+    }, 
+    "body.states": {
+      "description": "states", 
+      "in": "body", 
+      "name": "states", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/states"
+      }
+    }, 
+    "limit": {
+      "description": "Limiting and Pagination", 
+      "in": "query", 
+      "name": "limit", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "offset": {
+      "description": "Limiting and Pagination", 
+      "in": "query", 
+      "name": "offset", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "on_conflict": {
+      "description": "On Conflict", 
+      "in": "query", 
+      "name": "on_conflict", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "order": {
+      "description": "Ordering", 
+      "in": "query", 
+      "name": "order", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "preferCount": {
+      "description": "Preference", 
+      "enum": [
+        "count=none"
+      ], 
+      "in": "header", 
+      "name": "Prefer", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "preferParams": {
+      "description": "Preference", 
+      "enum": [
+        "params=single-object"
+      ], 
+      "in": "header", 
+      "name": "Prefer", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "preferReturn": {
+      "description": "Preference", 
+      "enum": [
+        "return=representation", 
+        "return=minimal", 
+        "return=none"
+      ], 
+      "in": "header", 
+      "name": "Prefer", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "range": {
+      "description": "Limiting and Pagination", 
+      "in": "header", 
+      "name": "Range", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rangeUnit": {
+      "default": "items", 
+      "description": "Limiting and Pagination", 
+      "in": "header", 
+      "name": "Range-Unit", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.counties.area": {
+      "description": "The size of the county (measured in square miles)", 
+      "format": "real", 
+      "in": "query", 
+      "name": "area", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.counties.fips": {
+      "description": "The fips code for the county", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.counties.latitude": {
+      "description": "A latitude point interior to the county", 
+      "format": "real", 
+      "in": "query", 
+      "name": "latitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.counties.longitude": {
+      "description": "A longitude point interior to the county", 
+      "format": "real", 
+      "in": "query", 
+      "name": "longitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.counties.name": {
+      "description": "The county name", 
+      "format": "character varying", 
+      "in": "query", 
+      "name": "name", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid.dt": {
+      "description": "The date that corresponds to the observed variable", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid.fips": {
+      "description": "The fips code", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid.value": {
+      "description": "The value of the variable", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid.variable": {
+      "description": "One of the variables described in the table description", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid.vintage": {
+      "description": "The date/time the data was collected and stored in our database", 
+      "format": "date", 
+      "in": "query", 
+      "name": "vintage", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.demographics.fips": {
+      "description": "The fips code", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.demographics.meta_date": {
+      "description": "The date for which the data applies", 
+      "format": "date", 
+      "in": "query", 
+      "name": "meta_date", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.demographics.value": {
+      "description": "The value of the variable", 
+      "format": "real", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.demographics.variable": {
+      "description": "A description of the variable", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economics.dt": {
+      "description": "The date of the observation", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economics.fips": {
+      "description": "The fips code", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economics.value": {
+      "description": "The value of the variable", 
+      "format": "double precision", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economics.variable": {
+      "description": "A description of the variable", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_devices.dt": {
+      "description": "The date.", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_devices.fips": {
+      "description": "The fips code.", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_devices.value": {
+      "description": "The value of the variable on date `dt` in geography `fips`.", 
+      "format": "real", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_devices.variable": {
+      "description": "The variable associated with the DEX value --- This will either be a number of devices or a DEX value.", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_locations.dt": {
+      "description": "The date for which the data applies", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_locations.fips_prev": {
+      "description": "The state (county) for which a device was found in the previous 14 days.", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips_prev", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_locations.fips_today": {
+      "description": "The state (county) for which a device was found on the given date", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips_today", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.mobility_locations.lex": {
+      "description": "The LEX number", 
+      "format": "numeric", 
+      "in": "query", 
+      "name": "lex", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.states.area": {
+      "description": "The size of the state (measured in square miles)", 
+      "format": "real", 
+      "in": "query", 
+      "name": "area", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.states.fips": {
+      "description": "The fips code for the state", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.states.latitude": {
+      "description": "A latitude point interior to the state", 
+      "format": "real", 
+      "in": "query", 
+      "name": "latitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.states.longitude": {
+      "description": "A longitude point interior to the state", 
+      "format": "real", 
+      "in": "query", 
+      "name": "longitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.states.name": {
+      "description": "The state name", 
+      "format": "character varying", 
+      "in": "query", 
+      "name": "name", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "select": {
+      "description": "Filtering Columns", 
+      "in": "query", 
+      "name": "select", 
+      "required": false, 
+      "type": "string"
+    }
+  }, 
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "get_", 
+        "produces": [
+          "application/openapi+json", 
+          "application/json"
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "OpenAPI description (this document)", 
+        "tags": [
+          "Introspection"
+        ]
+      }
+    }, 
+    "/counties": {
+      "get": {
+        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+        "operationId": "get_counties", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.counties.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.counties.name"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.counties.area"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.counties.latitude"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.counties.longitude"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/counties"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains basic information about the U.S. counties", 
+        "tags": [
+          "counties"
+        ]
+      }
+    }, 
+    "/covid": {
+      "get": {
+        "description": "Currently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
+        "operationId": "get_covid", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.covid.vintage"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/covid"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains relevant information on COVID-19", 
+        "tags": [
+          "covid"
+        ]
+      }
+    }, 
+    "/demographics": {
+      "get": {
+        "description": "Currently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nThese variables are collected from the 2018 American Community Survey (5 year) in order to ensure that we have data for each county.\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
+        "operationId": "get_demographics", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.demographics.meta_date"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.demographics.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.demographics.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.demographics.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/demographics"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains information on the demographics of a particular region and is based on the American Community Survey.", 
+        "tags": [
+          "demographics"
+        ]
+      }
+    }, 
+    "/economics": {
+      "get": {
+        "description": "These economic variables include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n* Spending\n\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
+        "operationId": "get_economics", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.economics.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.economics.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.economics.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.economics.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/economics"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains information on economic outcomes at different geographic levels.", 
+        "tags": [
+          "economics"
+        ]
+      }
+    }, 
+    "/mobility_devices": {
+      "get": {
+        "description": "The DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
+        "operationId": "get_mobility_devices", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.mobility_devices.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_devices.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_devices.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_devices.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/mobility_devices"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county)", 
+        "tags": [
+          "mobility_devices"
+        ]
+      }
+    }, 
+    "/mobility_locations": {
+      "get": {
+        "description": "This index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
+        "operationId": "get_mobility_locations", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.mobility_locations.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_locations.fips_prev"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_locations.fips_today"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.mobility_locations.lex"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/mobility_locations"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "Among smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.", 
+        "tags": [
+          "mobility_locations"
+        ]
+      }
+    }, 
+    "/states": {
+      "get": {
+        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+        "operationId": "get_states", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.states.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.states.name"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.states.area"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.states.latitude"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.states.longitude"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/states"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains basic information about the U.S. states", 
+        "tags": [
+          "states"
+        ]
+      }
+    }
+  }, 
+  "produces": [
+    "application/json", 
+    "application/vnd.pgrst.object+json", 
+    "text/csv"
+  ], 
+  "schemes": [
+    "https"
+  ], 
+  "securityDefinitions": {
+    "APIKeyHeader": {
+      "in": "header", 
+      "name": "apikey", 
+      "type": "apiKey"
+    }
+  }, 
+  "swagger": "2.0"
+}

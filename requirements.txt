@@ -9,4 +9,5 @@ python-dateutil==2.8.1
 pydantic==1.4
 structlog==20.1.0
 structlog-sentry==1.2.2
+https://github.com/valorumdata/cmdc.py/archive/b6c37140a97b116d161493575ce580c7fdc57114.zip
 -e .
