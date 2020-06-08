@@ -30,7 +30,7 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     DEATHS_TOTAL = "deaths_total", CommonFields.DEATHS
     HOSPITAL_BEDS_IN_USE_COVID_CONFIRMED = "hospital_beds_in_use_covid_confirmed", None
     HOSPITAL_BEDS_IN_USE_COVID_SUSPECTED = "hospital_beds_in_use_covid_suspected", None
-    HOSPITAL_BEDS_IN_USE_COVID_TOTAL = "hospital_beds_in_use_covid_total", None
+    HOSPITAL_BEDS_IN_USE_COVID_TOTAL = "hospital_beds_in_use_covid_total", CommonFields.CURRENT_HOSPITALIZED 
     ICU_BEDS_IN_USE_COVID_CONFIRMED = "icu_beds_in_use_covid_confirmed", None
     ICU_BEDS_IN_USE_COVID_SUSPECTED = "icu_beds_in_use_covid_suspected", None
     ICU_BEDS_IN_USE_COVID_TOTAL = (
