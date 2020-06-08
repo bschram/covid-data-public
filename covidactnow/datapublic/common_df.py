@@ -28,6 +28,12 @@ def write_df_as_csv(df: pd.DataFrame, path: pathlib.Path, log: stdlib.BoundLogge
     df.to_csv(path, date_format="%Y-%m-%d", index=True)
 
 
+def read_csv_to_indexed_df(path: pathlib.Path) -> pd.DataFrame:
+    return pd.read_csv(
+        path, parse_dates=[CommonFields.DATE], dtype={CommonFields.FIPS: str}, low_memory=False,
+    ).set_index([CommonFields.FIPS, CommonFields.DATE])
+
+
 def strip_whitespace(df: pd.DataFrame) -> pd.DataFrame:
     """Return `df` with `str.strip` applied to columns with `object` dtype."""
 
