@@ -2,9 +2,15 @@ from io import StringIO
 import pandas as pd
 import pytest
 import temppathlib
-from covidactnow.datapublic.common_df import strip_whitespace, write_df_as_csv
+from more_itertools import one
+
+from covidactnow.datapublic.common_df import (
+    strip_whitespace,
+    write_df_as_csv,
+    read_csv_to_indexed_df,
+)
 from covidactnow.datapublic.common_test_helpers import to_dict
-from covidactnow.datapublic.common_fields import CommonFields
+from covidactnow.datapublic.common_fields import CommonFields, COMMON_FIELDS_TIMESERIES_KEYS
 import structlog.testing
 
 # turns all warnings into errors for this module
@@ -35,11 +41,25 @@ a2,b2,c2,2
 
 
 def test_write_csv_empty():
-    df = pd.DataFrame([], columns=[CommonFields.DATE, CommonFields.FIPS, "some_random_field_name"])
+    df = pd.DataFrame([], columns=[CommonFields.DATE, CommonFields.FIPS, CommonFields.CASES])
     with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
         write_df_as_csv(df, tmp.path, structlog.get_logger())
-        assert "fips,date,some_random_field_name\n" == tmp.file.read()
+        assert "fips,date,cases\n" == tmp.file.read()
     assert [l["event"] for l in logs] == ["Fixing DataFrame index", "Writing DataFrame"]
+
+
+def test_write_csv_extra_columns():
+    df = pd.DataFrame(
+        [], columns=[CommonFields.DATE, CommonFields.FIPS, "extra1", CommonFields.CASES, "extra2"]
+    )
+    df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+    with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
+        write_df_as_csv(df, tmp.path, structlog.get_logger())
+        assert "fips,date,cases\n" == tmp.file.read()
+    assert [l["event"] for l in logs] == [
+        "Dropping columns not in CommonFields",
+        "Writing DataFrame",
+    ]
 
 
 def test_write_csv():
@@ -79,3 +99,15 @@ def test_write_csv():
     assert [l["event"] for l in logs] == ["Fixing DataFrame index", "Writing DataFrame"]
 
     assert repr(df) == repr(df_original)
+
+
+def test_read_csv():
+    input_csv = """fips,date,cases
+06045,2020-04-01,234
+45123,2020-04-02,456
+    """
+
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        tmp.path.write_text(input_csv)
+        df = read_csv_to_indexed_df(tmp.path)
+    assert one(df.loc[("06045", "2020-04-01"), "cases"]) == 234

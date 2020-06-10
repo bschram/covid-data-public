@@ -7,7 +7,7 @@ from enum import Enum
 class GetByValueMixin:
     """Mixin making it easy to get an Enum object or None if not found.
 
-    This is an alternative to `YourEnumClass(value)` with raises `ValueError` when `value`
+    Unlike `YourEnumClass(value)`, the `get` method does not raise `ValueError` when `value`
     is not in the enum.
     """
 
@@ -68,3 +68,9 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     CURRENT_ICU_TOTAL = "current_icu_total"
 
     CONTACT_TRACERS_COUNT = "contact_tracers_count"
+
+
+COMMON_FIELDS_TIMESERIES_KEYS = [CommonFields.FIPS, CommonFields.DATE]
+
+
+COMMON_FIELDS_ORDER_MAP = {common: i for i, common in enumerate(CommonFields)}

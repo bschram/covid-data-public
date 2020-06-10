@@ -10,8 +10,12 @@ from pydantic import BaseModel
 from structlog._config import BoundLoggerLazyProxy
 
 from covidactnow.datapublic import common_init
-from covidactnow.datapublic.common_df import write_df_as_csv
-from covidactnow.datapublic.common_fields import GetByValueMixin, CommonFields
+from covidactnow.datapublic.common_df import write_df_as_csv, sort_common_field_columns
+from covidactnow.datapublic.common_fields import (
+    GetByValueMixin,
+    CommonFields,
+    COMMON_FIELDS_TIMESERIES_KEYS,
+)
 from scripts.update_covid_data_scraper import FieldNameAndCommonField, load_county_fips_data
 import cmdc
 
@@ -30,7 +34,10 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     DEATHS_TOTAL = "deaths_total", CommonFields.DEATHS
     HOSPITAL_BEDS_IN_USE_COVID_CONFIRMED = "hospital_beds_in_use_covid_confirmed", None
     HOSPITAL_BEDS_IN_USE_COVID_SUSPECTED = "hospital_beds_in_use_covid_suspected", None
-    HOSPITAL_BEDS_IN_USE_COVID_TOTAL = "hospital_beds_in_use_covid_total", CommonFields.CURRENT_HOSPITALIZED 
+    HOSPITAL_BEDS_IN_USE_COVID_TOTAL = (
+        "hospital_beds_in_use_covid_total",
+        CommonFields.CURRENT_HOSPITALIZED,
+    )
     ICU_BEDS_IN_USE_COVID_CONFIRMED = "icu_beds_in_use_covid_confirmed", None
     ICU_BEDS_IN_USE_COVID_SUSPECTED = "icu_beds_in_use_covid_suspected", None
     ICU_BEDS_IN_USE_COVID_TOTAL = (
@@ -145,11 +152,9 @@ class CmdcTransformer(BaseModel):
 
         df = pd.concat([states, counties])
 
-        # Sort columns to match the order of CommonFields.
-        common_order = {common: i for i, common in enumerate(CommonFields)}
-        df = df.loc[:, sorted(df.columns, key=lambda c: common_order[c])]
+        df = sort_common_field_columns(df)
 
-        df = df.set_index([CommonFields.FIPS, CommonFields.DATE], verify_integrity=True)
+        df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
         return df
 
 
