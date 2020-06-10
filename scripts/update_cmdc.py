@@ -10,7 +10,11 @@ from pydantic import BaseModel
 from structlog._config import BoundLoggerLazyProxy
 
 from covidactnow.datapublic import common_init
-from covidactnow.datapublic.common_df import write_df_as_csv, sort_common_field_columns
+from covidactnow.datapublic.common_df import (
+    write_df_as_csv,
+    sort_common_field_columns,
+    only_common_columns,
+)
 from covidactnow.datapublic.common_fields import (
     GetByValueMixin,
     CommonFields,
@@ -160,9 +164,10 @@ class CmdcTransformer(BaseModel):
 
 if __name__ == "__main__":
     common_init.configure_structlog()
+    log = structlog.get_logger()
     transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, os.environ.get("CMDC_KEY", None))
     write_df_as_csv(
-        transformer.transform(),
+        only_common_columns(transformer.transform(), log),
         DATA_ROOT / "cases-cmdc" / "timeseries-common.csv",
-        structlog.get_logger(),
+        log,
     )

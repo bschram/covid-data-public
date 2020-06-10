@@ -8,6 +8,7 @@ from covidactnow.datapublic.common_df import (
     strip_whitespace,
     write_df_as_csv,
     read_csv_to_indexed_df,
+    only_common_columns,
 )
 from covidactnow.datapublic.common_test_helpers import to_dict
 from covidactnow.datapublic.common_fields import CommonFields, COMMON_FIELDS_TIMESERIES_KEYS
@@ -48,16 +49,31 @@ def test_write_csv_empty():
     assert [l["event"] for l in logs] == ["Fixing DataFrame index", "Writing DataFrame"]
 
 
-def test_write_csv_extra_columns():
+def test_write_csv_extra_columns_dropped():
     df = pd.DataFrame(
         [], columns=[CommonFields.DATE, CommonFields.FIPS, "extra1", CommonFields.CASES, "extra2"]
     )
     df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS)
     with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
-        write_df_as_csv(df, tmp.path, structlog.get_logger())
+        log = structlog.get_logger()
+        write_df_as_csv(only_common_columns(df, log), tmp.path, log)
         assert "fips,date,cases\n" == tmp.file.read()
     assert [l["event"] for l in logs] == [
         "Dropping columns not in CommonFields",
+        "Writing DataFrame",
+    ]
+
+
+def test_write_csv_columns_are_sorted_in_output_with_extras():
+    df = pd.DataFrame(
+        [], columns=[CommonFields.DATE, CommonFields.FIPS, "extra2", CommonFields.CASES, "extra1"]
+    )
+    df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+    with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
+        log = structlog.get_logger()
+        write_df_as_csv(df, tmp.path, log)
+        assert "fips,date,cases,extra1,extra2\n" == tmp.file.read()
+    assert [l["event"] for l in logs] == [
         "Writing DataFrame",
     ]
 

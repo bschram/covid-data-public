@@ -6,7 +6,7 @@ import structlog
 from covidactnow.datapublic import common_init
 from pydantic import BaseModel
 import pathlib
-from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace
+from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace, only_common_columns
 from covidactnow.datapublic.common_fields import CommonFields, GetByValueMixin
 from scripts.update_test_and_trace import load_census_state
 from structlog._config import BoundLoggerLazyProxy
@@ -202,9 +202,10 @@ def remove_duplicate_city_data(data):
 
 if __name__ == "__main__":
     common_init.configure_structlog()
+    log = structlog.get_logger()
     transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT)
     write_df_as_csv(
-        transformer.transform(),
+        only_common_columns(transformer.transform(), log),
         DATA_ROOT / "cases-cds" / "timeseries-common.csv",
-        structlog.get_logger(),
+        log,
     )

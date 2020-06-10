@@ -73,4 +73,15 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
 COMMON_FIELDS_TIMESERIES_KEYS = [CommonFields.FIPS, CommonFields.DATE]
 
 
+# Fields that are currently expected when representing a region in a DataFrame and CSV. Newer code is expected
+# to only depend on the character field FIPS.
+COMMON_LEGACY_REGION_FIELDS = [
+    CommonFields.FIPS,
+    CommonFields.STATE,
+    CommonFields.COUNTRY,
+    CommonFields.COUNTY,
+    CommonFields.AGGREGATE_LEVEL,
+]
+
+
 COMMON_FIELDS_ORDER_MAP = {common: i for i, common in enumerate(CommonFields)}

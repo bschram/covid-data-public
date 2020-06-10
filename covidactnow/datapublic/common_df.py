@@ -22,12 +22,18 @@ def fix_df_index(df: pd.DataFrame, log: stdlib.BoundLogger) -> pd.DataFrame:
             df = df.reset_index(inplace=False)
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, inplace=False)
     df = df.sort_index()
+
+    df = sort_common_field_columns(df)
+
+    return df
+
+
+def only_common_columns(df: pd.DataFrame, log: stdlib.BoundLogger) -> pd.DataFrame:
+    """Return a DataFrame with columns not in CommonFields dropped."""
     extra_columns = {col for col in df.columns if CommonFields.get(col) is None}
     if extra_columns:
         log.warning("Dropping columns not in CommonFields", extra_columns=extra_columns)
         df = df.drop(columns=extra_columns)
-    df = sort_common_field_columns(df)
-
     return df
 
 
@@ -58,5 +64,9 @@ def strip_whitespace(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def sort_common_field_columns(df: pd.DataFrame) -> pd.DataFrame:
-    """Sort columns to match the order of CommonFields."""
-    return df.loc[:, sorted(df.columns, key=lambda c: COMMON_FIELDS_ORDER_MAP[c])]
+    """Sort columns to match the order of CommonFields, followed by remaining columns in alphabetical order."""
+    this_columns_order = {
+        col: COMMON_FIELDS_ORDER_MAP.get(col, i + len(COMMON_FIELDS_ORDER_MAP))
+        for i, col in enumerate(sorted(df.columns))
+    }
+    return df.loc[:, sorted(df.columns, key=lambda c: this_columns_order[c])]

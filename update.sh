@@ -10,3 +10,4 @@ python scripts/update_nha_hospitalization_county.py
 python scripts/update_nytimes_data.py
 python scripts/update_test_and_trace.py
 python scripts/update_state_of_kentucky.py
+python scripts/update_aws_lake.py --replace_local_mirror

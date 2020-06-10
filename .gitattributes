@@ -1,1 +1,2 @@
 data/cases-cmdc/timeseries-common.csv filter=lfs diff=lfs merge=lfs -text
+data/aws-lake/** filter=lfs diff=lfs merge=lfs -text
