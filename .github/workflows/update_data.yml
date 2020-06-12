@@ -43,13 +43,14 @@ jobs:
     - name: Slack notification
       if: always() # Pick up events even if the job fails or is canceled.
       env:
-        # Susan copied webhook URLs (one per channel) from
-        # https://api.slack.com/apps/A0122UH75HQ/incoming-webhooks to
-        # https://github.com/covid-projections/covid-data-public/settings/secrets with
+        # Susan created webhook URLs (one per channel) at
+        # https://api.slack.com/apps/A0122UH75HQ/incoming-webhooks and Tom copied them to
+        # https://github.com/organizations/covid-projections/settings/secrets with
         # names SLACK_WEBHOOK_DEV_ALERTS and SLACK_WEBHOOK_ENG. The webhook determines
         # the channel. See also
         # https://covidactnow.slack.com/archives/C0110QQAPJA/p1589322334246900 and
-        # https://trello.com/c/gq2JlOU9/123-add-slack-notification-for-covid-data-public-update-source-data-success-or-failure-needs-github-admin-access
+        # https://trello.com/c/gq2JlOU9/123-add-slack-notification-for-covid-data-public and
+        # https://trello.com/c/irJrdQZc/211-fix-update-source-data-slack-notification
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_DEV_ALERTS }}
         STATUS: ${{job.status}}
       uses: Ilshidur/action-slack@fb92a78
