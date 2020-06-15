@@ -11,3 +11,8 @@ python scripts/update_nytimes_data.py
 python scripts/update_test_and_trace.py
 python scripts/update_state_of_kentucky.py
 python scripts/update_aws_lake.py --replace_local_mirror
+
+# Needs to run after scripts/update.py call to update_cds_data returns.
+python scripts/update_covid_data_scraper.py
+
+python scripts/update_cmdc.py

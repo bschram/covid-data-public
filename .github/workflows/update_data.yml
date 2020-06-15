@@ -38,6 +38,11 @@ jobs:
       run: pip install -r requirements.txt
     - name: Update Datasets
       run: ./update.sh
+      env:
+        # API key information at https://github.com/valorumdata/cmdc.py#api-keys
+        # Key was created for tom@covidactnow.org, then copied from ~/.cmdc/apikey to
+        # https://github.com/organizations/covid-projections/settings/secrets
+        CMDC_API_KEY: ${{ secrets.CMDC_API_KEY }}
     - name: Create Update Commit
       run: ./push_update.sh
     - name: Slack notification

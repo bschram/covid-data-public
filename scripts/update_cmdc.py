@@ -165,7 +165,9 @@ class CmdcTransformer(BaseModel):
 if __name__ == "__main__":
     common_init.configure_structlog()
     log = structlog.get_logger()
-    transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, os.environ.get("CMDC_KEY", None))
+    transformer = CmdcTransformer.make_with_data_root(
+        DATA_ROOT, os.environ.get("CMDC_API_KEY", None)
+    )
     write_df_as_csv(
         only_common_columns(transformer.transform(), log),
         DATA_ROOT / "cases-cmdc" / "timeseries-common.csv",
