@@ -127,3 +127,54 @@ def test_read_csv():
         tmp.path.write_text(input_csv)
         df = read_csv_to_indexed_df(tmp.path)
     assert one(df.loc[("06045", "2020-04-01"), "cases"]) == 234
+
+
+def test_float_formatting():
+    input_csv = """fips,date,col_1,col_2,col_3,col_4,col_5,col_6
+99123,2020-04-01,1,2.0000000,3,0.0004,0.00005,6000000000
+99123,2020-04-02,,,,,,
+99123,2020-04-03,1,2,3.1234567,4,5,6.0
+"""
+    input_df = read_csv_to_indexed_df(StringIO(input_csv))
+
+    expected_csv = """fips,date,col_1,col_2,col_3,col_4,col_5,col_6
+99123,2020-04-01,1,2,3,0.0004,5e-05,6000000000
+99123,2020-04-02,,,,,,
+99123,2020-04-03,1,2,3.1234567,4,5,6
+"""
+
+    with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
+        write_df_as_csv(input_df, tmp.path, structlog.get_logger())
+        assert expected_csv == tmp.file.read()
+
+    assert [l["event"] for l in logs] == ["Writing DataFrame"]
+
+
+def test_float_na_formatting():
+    df = pd.DataFrame(
+        [("99", "2020-04-01", 1.0, 2, 3), ("99", "2020-04-02", pd.NA, pd.NA, None)],
+        columns="fips date metric_a metric_b metric_c".split(),
+    ).set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+
+    expected_csv = """fips,date,metric_a,metric_b,metric_c
+99,2020-04-01,1,2,3
+99,2020-04-02,,,
+"""
+
+    with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
+        write_df_as_csv(df, tmp.path, structlog.get_logger())
+        assert expected_csv == tmp.file.read()
+
+    assert [l["event"] for l in logs] == ["Writing DataFrame"]
+
+
+def test_remove_index_column():
+    df = pd.DataFrame(
+        [("99", "2020-04-01", "a", 123)], columns=["fips", "date", "index", "cases"]
+    ).set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+
+    with temppathlib.NamedTemporaryFile("w+") as tmp, structlog.testing.capture_logs() as logs:
+        write_df_as_csv(df, tmp.path, structlog.get_logger())
+        assert "fips,date,cases\n99,2020-04-01,123\n" == tmp.file.read()
+
+    assert [l["event"] for l in logs] == ["Dropping column named 'index'", "Writing DataFrame"]
