@@ -6,6 +6,12 @@ import requests_mock
 
 
 def test_update_cmdc():
+    # This test and others depend on data files that can be updated by:
+    # curl https://api.covid.valorum.ai/swagger.json > test/data/api.covid.valorum.ai_swagger.json
+    # curl https://api.covid.valorum.ai/covid |grep -P '"fips":(6|6075),' |  \
+    #   grep -P '"dt":"2020-06-1[0123]"' > test/data/api.covid.valorum.ai_covid
+    # followed by manual fixing of JSON in api.covid.valorum.ai_covid to wrap the list in [] and remove
+    # the last ','.
     with structlog.testing.capture_logs() as logs, requests_mock.Mocker() as m:
         m.get(
             "https://api.covid.valorum.ai/swagger.json",

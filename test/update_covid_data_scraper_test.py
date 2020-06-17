@@ -46,6 +46,6 @@ def test_transform():
     assert not df.empty
     assert [l["event"] for l in logs] == [
         "Removing rows without fips id",
-        "Removing duplicates",
+        "Removing duplicate timeseries points",
         "Removing columns not in CommonFields",
     ]

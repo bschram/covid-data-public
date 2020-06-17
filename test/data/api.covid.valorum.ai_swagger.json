@@ -39,7 +39,34 @@
       "type": "object"
     }, 
     "covid": {
-      "description": "This table contains relevant information on COVID-19\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
+      "properties": {
+        "dt": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "format": "text", 
+          "type": "string"
+        }, 
+        "vintage": {
+          "format": "date", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "covid_historical": {
+      "description": "This table contains relevant information on COVID-19\n\nThis table returns all vintages (data from different collection dates) of data in our system.\n\nFor only the most recent data, please use the `covid` endpoint.\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
       "properties": {
         "dt": {
           "description": "The date that corresponds to the observed variable\n\nNote:\nThis is a Primary Key.<pk/>", 
@@ -212,7 +239,7 @@
   }, 
   "host": "api.covid.valorum.ai", 
   "info": {
-    "description": "COVID Modeling Data Collaborative API", 
+    "description": "\nThis page provides documentation for the data available in the COVID Modeling Data Collaborative's database. It contains:\n\n1. A description of the different datasets, the variables in those datasets, and from where the datasets were sourced\n2. An interactive description of the API which describes the fields and allows you to submit sample requests\n\nIt is useful to note that the data is mostly stored in _long form_ rather than\n_wide form_. In long form each data observation, or value, is associated with\nits unique identifiers. For example, in many of our datasets the identifiers\nare `dt` (date of the observation), `fips` (geography of the observation), and\n`variable` (name of the variable being observed), and the value of the\nobservation is stored in `value`. This can be seen in the \n[table in the example subsection](##Examples).\n\n## Query Parameters\n\n\nThere are a two types of parameters that can be included in the queries:\n\n* _Data parameters_: Data parameters are used to select subsets of the data by performing some type of comparison between the parameter argument and the data.\n* _Keyword parameters_: Keyword parameters interact with how the data is returned. For example, `select` can modify which columns are returned, `order` changes how the data is ordered when it is returned, and `limit` changes the number of observations returned.\n\nBelow we will provide some examples for how to use the different types of parameters.\n\nOur API is build using [PostgREST](http://postgrest.org/en/v7.0.0/). For more information on the different features of our API, please see their [documentation](http://postgrest.org/en/v7.0.0/api.html).\n\n## Examples\n\nWe will do some examples using the example table below:\n\n| dt         | fips | variable             | value  |\n| ---------- | ---- | -------------------- | ------ |\n| 2020-06-01 | 6    | deaths_total         | 4251   |\n| 2020-06-01 | 12   | deaths_total         | 2543   |\n| 2020-06-01 | 48   | deaths_total         | 1678   |\n| 2020-06-02 | 6    | deaths_total         | 4286   |\n| 2020-06-02 | 12   | deaths_total         | 2613   |\n| 2020-06-02 | 48   | deaths_total         | 1698   |\n| 2020-06-01 | 6    | positive_tests_total | 113006 |\n| 2020-06-01 | 12   | positive_tests_total | 56830  |\n| 2020-06-01 | 48   | positive_tests_total | 64880  |\n| 2020-06-02 | 6    | positive_tests_total | 115310 |\n| 2020-06-02 | 12   | positive_tests_total | 57447  |\n| 2020-06-02 | 48   | positive_tests_total | 66568  |\n\n\n### Only data from CA\n\nIn order to select data from only California (fips code 06) we would use the parameter\n\n* `fips=eq.06`\n\n\n### Only observations with more than 100,000 tests\n\nIn order to only select observations with more than 100,000 tests, we would want to use the following parameters\n\n* `variable=eq.positive_tests_total`\n* `value=gt.100000`\n\n\n### Only observations after June 1, 2020\n\nIn order to only select the data from after June 1, 2020, we would use the following parameter\n\n* `dt=gt.\"2020-06-01\"`\n\n\n### Select total deaths for Texas ordered by date\n\nIn order to select only the total deaths variable for Texas and have the results be ordered by date, we would use the following parameters\n\n* `fips=eq.48`\n* `variable=eq.positive_tests_total`\n* `order=dt`\n\n\n## Software\n\nWe use the following open source technologies for this API.\n\n* The data is hosted in a [PostgreSQL database](https://www.postgresql.org/)\n* The API is built using [PostgREST](http://postgrest.org/en/v7.0.0/)\n* The documentation is generated using [RapiDoc](https://mrin9.github.io/RapiDoc/).\n\nWe are grateful to all of these projects for simplifying the task of building, deploying, and documenting our API. We are also grateful to Google Cloud for helping us host and distribute our data.\n", 
     "title": "COVID Modeling Data Collaborative API", 
     "version": "1.0"
   }, 
@@ -233,6 +260,15 @@
       "required": false, 
       "schema": {
         "$ref": "#/definitions/covid"
+      }
+    }, 
+    "body.covid_historical": {
+      "description": "covid_historical", 
+      "in": "body", 
+      "name": "covid_historical", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/covid_historical"
       }
     }, 
     "body.demographics": {
@@ -396,7 +432,6 @@
       "type": "string"
     }, 
     "rowFilter.covid.dt": {
-      "description": "The date that corresponds to the observed variable", 
       "format": "date", 
       "in": "query", 
       "name": "dt", 
@@ -404,7 +439,6 @@
       "type": "string"
     }, 
     "rowFilter.covid.fips": {
-      "description": "The fips code", 
       "format": "integer", 
       "in": "query", 
       "name": "fips", 
@@ -412,7 +446,6 @@
       "type": "string"
     }, 
     "rowFilter.covid.value": {
-      "description": "The value of the variable", 
       "format": "integer", 
       "in": "query", 
       "name": "value", 
@@ -420,7 +453,6 @@
       "type": "string"
     }, 
     "rowFilter.covid.variable": {
-      "description": "One of the variables described in the table description", 
       "format": "text", 
       "in": "query", 
       "name": "variable", 
@@ -428,6 +460,45 @@
       "type": "string"
     }, 
     "rowFilter.covid.vintage": {
+      "format": "date", 
+      "in": "query", 
+      "name": "vintage", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_historical.dt": {
+      "description": "The date that corresponds to the observed variable", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_historical.fips": {
+      "description": "The fips code", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_historical.value": {
+      "description": "The value of the variable", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_historical.variable": {
+      "description": "One of the variables described in the table description", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_historical.vintage": {
       "description": "The date/time the data was collected and stored in our database", 
       "format": "date", 
       "in": "query", 
@@ -612,29 +683,6 @@
     }
   }, 
   "paths": {
-    "/": {
-      "get": {
-        "operationId": "get_", 
-        "produces": [
-          "application/openapi+json", 
-          "application/json"
-        ], 
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }, 
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ], 
-        "summary": "OpenAPI description (this document)", 
-        "tags": [
-          "Introspection"
-        ]
-      }
-    }, 
     "/counties": {
       "get": {
         "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
@@ -704,7 +752,6 @@
     }, 
     "/covid": {
       "get": {
-        "description": "Currently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
         "operationId": "get_covid", 
         "parameters": [
           {
@@ -763,9 +810,75 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "This table contains relevant information on COVID-19", 
         "tags": [
           "covid"
+        ]
+      }
+    }, 
+    "/covid_historical": {
+      "get": {
+        "description": "This table returns all vintages (data from different collection dates) of data in our system.\n\nFor only the most recent data, please use the `covid` endpoint.\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
+        "operationId": "get_covid_historical", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.covid_historical.vintage"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_historical.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_historical.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_historical.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_historical.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/covid_historical"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains relevant information on COVID-19", 
+        "tags": [
+          "covid_historical"
         ]
       }
     }, 
@@ -1089,6 +1202,29 @@
         "summary": "This table contains basic information about the U.S. states", 
         "tags": [
           "states"
+        ]
+      }
+    }, 
+    "/swagger.json": {
+      "get": {
+        "operationId": "get_", 
+        "produces": [
+          "application/openapi+json", 
+          "application/json"
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "OpenAPI description (this document)", 
+        "tags": [
+          "Introspection"
         ]
       }
     }

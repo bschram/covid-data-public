@@ -64,6 +64,7 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     MAX_BED_COUNT = "max_bed_count"
     VENTILATOR_CAPACITY = "ventilator_capacity"
 
+    HOSPITAL_BEDS_IN_USE_ANY = "hospital_beds_in_use_any"
     CURRENT_HOSPITALIZED_TOTAL = "current_hospitalized_total"
     CURRENT_ICU_TOTAL = "current_icu_total"
 

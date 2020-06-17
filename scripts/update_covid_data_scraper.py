@@ -7,7 +7,11 @@ from covidactnow.datapublic import common_init
 from pydantic import BaseModel
 import pathlib
 from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace, only_common_columns
-from covidactnow.datapublic.common_fields import CommonFields, GetByValueMixin
+from covidactnow.datapublic.common_fields import (
+    CommonFields,
+    GetByValueMixin,
+    COMMON_FIELDS_TIMESERIES_KEYS,
+)
 from scripts.update_test_and_trace import load_census_state
 from structlog._config import BoundLoggerLazyProxy
 
@@ -25,6 +29,7 @@ class FieldNameAndCommonField(str):
 
 
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
+    NAME = "name", None
     CITY = "city", CommonFields.CASES
     COUNTY = "county", CommonFields.COUNTY
     STATE = "state", CommonFields.STATE
@@ -144,17 +149,20 @@ class CovidDataScraperTransformer(BaseModel):
         if no_fips.sum() > 0:
             self.log.error(
                 "Removing rows without fips id",
-                no_fips=data.loc[no_fips, ["state", "county"]].to_dict(orient="records"),
+                no_fips=data[no_fips].groupby(["state", "county"]).size().to_dict(),
             )
             data = data.loc[~no_fips]
 
-        data.set_index(["date", "fips"], inplace=True)
-        if data.index.has_duplicates:
-            # Use keep=False when logging so the output contains all duplicated rows, not just the first or last
-            # instance of each duplicate.
-            self.log.error("Removing duplicates", duplicated=data.index.duplicated(keep=False))
-            data = data.loc[~data.index.duplicated(keep=False)]
-        data.reset_index(inplace=True)
+        # Use keep=False when logging so the output contains all duplicated rows, not just the first or last
+        # instance of each duplicate.
+        duplicates_mask = data.duplicated(COMMON_FIELDS_TIMESERIES_KEYS, keep=False)
+        duplicates_df = data.loc[duplicates_mask, :]
+        if not duplicates_df.empty:
+            names_by_fips = duplicates_df.groupby([CommonFields.FIPS])[Fields.NAME].unique()
+            self.log.error(
+                "Removing duplicate timeseries points", names_by_fips=names_by_fips.to_dict()
+            )
+            data = data.loc[~duplicates_mask, :]
 
         # ADD Negative tests
         data[Fields.NEGATIVE_TESTS] = data[Fields.TESTED] - data[Fields.CASES]

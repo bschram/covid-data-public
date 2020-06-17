@@ -29,32 +29,53 @@ DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
 
 # Keep in sync with COMMON_FIELD_MAP in cmdc.py in the covid-data-model repo.
+# Fields commented out with tag 20200616 were not found in the data used by update_cmdc_test.py.
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     VINTAGE = "vintage", None
     FIPS = "fips", CommonFields.FIPS
     DT = "dt", CommonFields.DATE
-    ACTIVE_TOTAL = "active_total", None
-    CASES_TOTAL = "cases_total", None
+
+    NEGATIVE_TESTS_TOTAL = "negative_tests_total", CommonFields.NEGATIVE_TESTS
+    POSITIVE_TESTS_TOTAL = "positive_tests_total", CommonFields.POSITIVE_TESTS
+
+    # Not found 20200616 ACTIVE_TOTAL = "active_total", None
+    CASES_TOTAL = "cases_total", CommonFields.CASES
+    # Not found 20200616 CASES_CONFIRMED = "cases_confirmed", None
+    # Not found 20200616 RECOVERED_TOTAL = "recovered_total", CommonFields.RECOVERED
     DEATHS_TOTAL = "deaths_total", CommonFields.DEATHS
+    # Not found 20200616 DEATHS_CONFIRMED = "deaths_confirmed", None
+    # Not found 20200616 DEATHS_SUSPECTED = "deaths_suspected", None
+
+    HOSPITAL_BEDS_CAPACITY_COUNT = "hospital_beds_capacity_count", CommonFields.STAFFED_BEDS
     HOSPITAL_BEDS_IN_USE_COVID_CONFIRMED = "hospital_beds_in_use_covid_confirmed", None
+    # Not found 20200616 HOSPITAL_BEDS_IN_USE_COVID_NEW = "hospital_beds_in_use_covid_new", None
     HOSPITAL_BEDS_IN_USE_COVID_SUSPECTED = "hospital_beds_in_use_covid_suspected", None
+    HOSPITAL_BEDS_IN_USE_ANY = "hospital_beds_in_use_any", CommonFields.HOSPITAL_BEDS_IN_USE_ANY
     HOSPITAL_BEDS_IN_USE_COVID_TOTAL = (
         "hospital_beds_in_use_covid_total",
         CommonFields.CURRENT_HOSPITALIZED,
     )
+
+    ICU_BEDS_CAPACITY_COUNT = "icu_beds_capacity_count", CommonFields.ICU_BEDS
     ICU_BEDS_IN_USE_COVID_CONFIRMED = "icu_beds_in_use_covid_confirmed", None
     ICU_BEDS_IN_USE_COVID_SUSPECTED = "icu_beds_in_use_covid_suspected", None
+    ICU_BEDS_IN_USE_ANY = "icu_beds_in_use_any", CommonFields.CURRENT_ICU_TOTAL
     ICU_BEDS_IN_USE_COVID_TOTAL = (
         "icu_beds_in_use_covid_total",
         CommonFields.CURRENT_ICU,
     )
-    NEGATIVE_TESTS_TOTAL = "negative_tests_total", CommonFields.NEGATIVE_TESTS
-    POSITIVE_TESTS_TOTAL = "positive_tests_total", CommonFields.POSITIVE_TESTS
-    RECOVERED_TOTAL = "recovered_total", None
-    VENTILATORS_IN_USE_COVID_TOTAL = (
-        "ventilators_in_use_covid_total",
-        CommonFields.CURRENT_VENTILATED,
-    )
+
+    # Not found 20200616 VENTILATORS_CAPACITY_COUNT = "ventilators_capacity_count", None
+    # Not found 20200616 VENTILATORS_IN_USE_COVID_TOTAL = (
+    #    "ventilators_in_use_covid_total",
+    #    CommonFields.CURRENT_VENTILATED,
+    # )
+    # Not found 20200616 VENTILATORS_IN_USE_COVID_CONFIRMED = "ventilators_in_use_covid_confirmed", None
+    # Not found 20200616 VENTILATORS_IN_USE_COVID_SUSPECTED = "ventilators_in_use_covid_suspected", None
+    # Not found 20200616 VENTILATORS_IN_USE_ANY = (
+    #    "ventilators_in_use_any",
+    #    None,
+    # )
 
 
 class CmdcTransformer(BaseModel):
@@ -139,7 +160,7 @@ class CmdcTransformer(BaseModel):
         if no_match_counties_mask.sum() > 0:
             self.log.warning(
                 "Some counties did not match by fips",
-                bad_fips=counties.loc[no_match_counties_mask][CommonFields.FIPS].tolist(),
+                bad_fips=counties.loc[no_match_counties_mask, CommonFields.FIPS].unique().tolist(),
             )
         counties = counties.loc[~no_match_counties_mask, :]
         counties[CommonFields.AGGREGATE_LEVEL] = "county"
