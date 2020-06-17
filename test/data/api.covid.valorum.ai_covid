@@ -21,6 +21,8 @@
  {"vintage":"2020-06-16","dt":"2020-06-10","fips":6,"variable":"icu_beds_capacity_count","value":1326},
  {"vintage":"2020-06-16","dt":"2020-06-13","fips":6,"variable":"hospital_beds_capacity_count","value":1313},
  {"vintage":"2020-06-16","dt":"2020-06-13","fips":6,"variable":"hospital_beds_in_use_any","value":1313},
+ {"vintage":"2020-06-16","dt":"2020-06-13","fips":6,"variable":"ventilators_in_use_covid_total","value":1313},
+ {"vintage":"2020-06-16","dt":"2020-06-13","fips":6,"variable":"icu_beds_in_use_any","value":1313},
  {"vintage":"2020-06-16","dt":"2020-06-13","fips":6075,"variable":"cases_total","value":2834},
  {"vintage":"2020-06-16","dt":"2020-06-12","fips":6075,"variable":"cases_total","value":2823}, 
  {"vintage":"2020-06-16","dt":"2020-06-11","fips":6075,"variable":"cases_total","value":2766}, 

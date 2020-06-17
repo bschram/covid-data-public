@@ -66,10 +66,10 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     )
 
     # Not found 20200616 VENTILATORS_CAPACITY_COUNT = "ventilators_capacity_count", None
-    # Not found 20200616 VENTILATORS_IN_USE_COVID_TOTAL = (
-    #    "ventilators_in_use_covid_total",
-    #    CommonFields.CURRENT_VENTILATED,
-    # )
+    VENTILATORS_IN_USE_COVID_TOTAL = (
+        "ventilators_in_use_covid_total",
+        CommonFields.CURRENT_VENTILATED,
+    )
     # Not found 20200616 VENTILATORS_IN_USE_COVID_CONFIRMED = "ventilators_in_use_covid_confirmed", None
     # Not found 20200616 VENTILATORS_IN_USE_COVID_SUSPECTED = "ventilators_in_use_covid_suspected", None
     # Not found 20200616 VENTILATORS_IN_USE_ANY = (
