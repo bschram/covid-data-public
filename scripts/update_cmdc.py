@@ -31,8 +31,7 @@ DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 # Keep in sync with COMMON_FIELD_MAP in cmdc.py in the covid-data-model repo.
 # Fields commented out with tag 20200616 were not found in the data used by update_cmdc_test.py.
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
-    VINTAGE = "vintage", None
-    FIPS = "fips", CommonFields.FIPS
+    LOCATION = "location", None  # Special transformation to FIPS
     DT = "dt", CommonFields.DATE
 
     NEGATIVE_TESTS_TOTAL = "negative_tests_total", CommonFields.NEGATIVE_TESTS
@@ -110,18 +109,20 @@ class CmdcTransformer(BaseModel):
     def transform(self) -> pd.DataFrame:
         cmdc_client = cmdc.Client(apikey=self.cmdc_key)
 
-        cmdc_client.covid()
+        cmdc_client.covid_us()
         df = cmdc_client.fetch()
-        # Keep only the most recent VINTAGE of each FIPS, DT. See
-        # https://github.com/valorumdata/cmdc.py/issues/2
-        df = df.sort_values(Fields.VINTAGE).groupby([Fields.FIPS, Fields.DT]).last().reset_index()
         # Transform FIPS from an int64 to a string of 2 or 5 chars. See
         # https://github.com/valorumdata/cmdc.py/issues/3
-        df[Fields.FIPS] = df[Fields.FIPS].apply(lambda v: f"{v:0>{2 if v < 100 else 5}}")
+        df[CommonFields.FIPS] = df[Fields.LOCATION].apply(lambda v: f"{v:0>{2 if v < 100 else 5}}")
 
-        extra_fields = set(df.columns) - set(Fields)
+        # Already transformed from Fields to CommonFields
+        already_transformed_fields = {CommonFields.FIPS}
+
+        extra_fields = set(df.columns) - set(Fields) - already_transformed_fields
         missing_fields = set(Fields) - set(df.columns)
         if extra_fields or missing_fields:
+            # If this warning happens in a test you may need to edit the sample data in test/data
+            # to make sure all the expected fields appear in the sample.
             self.log.warning(
                 "columns from cmdc do not match Fields",
                 extra_fields=extra_fields,
@@ -131,10 +132,12 @@ class CmdcTransformer(BaseModel):
         # TODO(tom): Factor out this rename and re-order code. It is stricter than
         # update_covid_data_scraper because this code expects every field in the source DataFrame
         # to appear in Fields.
-        rename: MutableMapping[str, str] = {}
+        rename: MutableMapping[str, str] = {f: f for f in already_transformed_fields}
         for col in df.columns:
             field = Fields.get(col)
             if field and field.common_field:
+                if field.value in rename:
+                    raise AssertionError("Field misconfigured")
                 rename[field.value] = field.common_field.value
 
         # Copy only columns in `rename.keys()` to a new DataFrame and rename.

@@ -6,59 +6,31 @@
     "text/csv"
   ], 
   "definitions": {
-    "counties": {
-      "description": "This table contains basic information about the U.S. counties\n\nSource(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
-      "properties": {
-        "area": {
-          "description": "The size of the county (measured in square miles)", 
-          "format": "real", 
-          "type": "number"
-        }, 
-        "fips": {
-          "description": "The fips code for the county", 
-          "format": "bigint", 
-          "type": "integer"
-        }, 
-        "latitude": {
-          "description": "A latitude point interior to the county", 
-          "format": "real", 
-          "type": "number"
-        }, 
-        "longitude": {
-          "description": "A longitude point interior to the county", 
-          "format": "real", 
-          "type": "number"
-        }, 
-        "name": {
-          "description": "The county name", 
-          "format": "character varying", 
-          "maxLength": 30, 
-          "type": "string"
-        }
-      }, 
-      "type": "object"
-    }, 
     "covid": {
+      "description": "This table contains relevant information on COVID-19\n\nThis table only includes the most recent observation for each date, location, and variable. For a full history of all data we have collected see `covid_historical`\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
       "properties": {
         "dt": {
-          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "description": "The date that corresponds to the observed variable\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "date", 
           "type": "string"
         }, 
         "fips": {
-          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "integer", 
           "type": "integer"
         }, 
         "value": {
+          "description": "The value of the variable", 
           "format": "integer", 
           "type": "integer"
         }, 
         "variable": {
+          "description": "One of the variables described in the table description", 
           "format": "text", 
           "type": "string"
         }, 
         "vintage": {
+          "description": "The date/time the data was collected and stored in our database. Only the most recent vintage is returned. See `covid_historical` for data with all", 
           "format": "date", 
           "type": "string"
         }
@@ -96,18 +68,36 @@
       }, 
       "type": "object"
     }, 
-    "demographics": {
-      "description": "This table contains information on the demographics of a particular region and is based on the American Community Survey.\n\nCurrently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nThese variables are collected from the 2018 American Community Survey (5 year) in order to ensure that we have data for each county.\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
+    "covid_us": {
       "properties": {
-        "fips": {
-          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
-          "format": "bigint", 
-          "type": "integer"
-        }, 
-        "meta_date": {
-          "description": "The date for which the data applies", 
+        "dt": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
           "format": "date", 
           "type": "string"
+        }, 
+        "location": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "demographics": {
+      "description": "This table contains information on the demographics of a particular geography\n\nFor the United States, this data comes from the American Community Survey that is administered by the US Census. Currently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
+      "properties": {
+        "location": {
+          "description": "This value is a numerical representation of a geography. For the United States, this number is the FIPS code. See our documentation page for more information.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "bigint", 
+          "type": "integer"
         }, 
         "value": {
           "description": "The value of the variable", 
@@ -122,21 +112,15 @@
       }, 
       "type": "object"
     }, 
-    "economics": {
-      "description": "This table contains information on economic outcomes at different geographic levels.\n\nThese economic variables include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n* Spending\n\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
+    "economic_snapshots": {
+      "description": "This table contains information on economic characteristics of different geographic areas.\n\nThese variables are not typically collected at a sufficiently high frequency to use them as time-series data but rather we use\nthem to characterize the economic features of different locations. For example, while unemployment claims is observed on a\nweekly basis, data on the industry make-up of a geographic region is only available at a yearly frequency.\n\nThe variables currently included here are:\n\n* Industry specific GDP at the county/state level\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Bureau of Economic Analysis\n", 
       "properties": {
-        "dt": {
-          "description": "The date of the observation", 
-          "format": "date", 
-          "type": "string"
-        }, 
-        "fips": {
-          "description": "The fips code", 
+        "location": {
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "integer", 
           "type": "integer"
         }, 
         "value": {
-          "description": "The value of the variable", 
           "format": "double precision", 
           "type": "number"
         }, 
@@ -148,15 +132,64 @@
       }, 
       "type": "object"
     }, 
+    "economics": {
+      "description": "This table contains information on economic outcomes as time series data\n\nThese variables tend to be observed at a daily/weekly/monthly/quarterly frequency and we can use them to think\nabout changes in the economy as opposed to the slow moving variables included in the `economic_snapshots` table\n\nThese economic variables currently include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
+      "properties": {
+        "dt": {
+          "description": "The date of the observation", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "location": {
+          "description": "The fips code", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the variable", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "variable": {
+          "description": "A description of the variable", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "jhu_covid": {
+      "properties": {
+        "dt": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
     "mobility_devices": {
-      "description": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county)\n\nThe DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
+      "description": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county). This data is currently only available for the US.\n\nThe DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
       "properties": {
         "dt": {
           "description": "The date.\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "date", 
           "type": "string"
         }, 
-        "fips": {
+        "location": {
           "description": "The fips code.\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "integer", 
           "type": "integer"
@@ -175,7 +208,7 @@
       "type": "object"
     }, 
     "mobility_locations": {
-      "description": "Among smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.\n\nThis index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
+      "description": "The Location Exposure Index (LEX) is a measure of how much exposure there is across different geographies. This data is currently only available for the US.\n\nAmong smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.\n\nThis index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
       "properties": {
         "dt": {
           "description": "The date for which the data applies\n\nNote:\nThis is a Primary Key.<pk/>", 
@@ -200,7 +233,65 @@
       }, 
       "type": "object"
     }, 
-    "states": {
+    "nytimes_covid": {
+      "description": "This table contains the data from the NY Times COVID data\n\nThis table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the NYT data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe data only includes total number of cases and total number of COVID related deaths. If you use this data, we recommend that you read the corresponding documentation on their github site as it provides useful insights to when certain variables changed how they were collected etc...\n\nThe NYTimes COVID data can be found online at https://github.com/nytimes/covid-19-data and is released under the following license:\n\nCopyright 2020 by The New York Times Company\n\nIn light of the current public health emergency, The New York Times Company is\nproviding this database under the following free-of-cost, perpetual,\nnon-exclusive license. Anyone may copy, distribute, and display the database, or\nany part thereof, and make derivative works based on it, provided  (a) any such\nuse is for non-commercial purposes only and (b) credit is given to The New York\nTimes in any public display of the database, in any publication derived in part\nor in full from the database, and in any other public use of the data contained\nin or derived from the database.\n\nBy accessing or copying any part of the database, the user accepts the terms of\nthis license. Anyone seeking to use the database for other purposes is required\nto contact The New York Times Company at covid-data@nytimes.com to obtain\npermission.\n\nThe New York Times has made every effort to ensure the accuracy of the\ninformation. However, the database may contain typographic errors or\ninaccuracies and may not be complete or current at any given time. Licensees\nfurther agree to assume all liability for any claims that may arise from or\nrelate in any way to their use of the database and to hold The New York Times\nCompany harmless from any such claims.\n", 
+      "properties": {
+        "dt": {
+          "description": "The date of the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the observation", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "description": "Denotes whether observation is total cases or total deaths", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "us_counties": {
+      "description": "This table contains basic information about the U.S. counties\n\nSource(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+      "properties": {
+        "area": {
+          "description": "The size of the county (measured in square miles)", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "latitude": {
+          "description": "A latitude point interior to the county", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "location": {
+          "description": "The fips code for the county", 
+          "format": "bigint", 
+          "type": "integer"
+        }, 
+        "longitude": {
+          "description": "A longitude point interior to the county", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "name": {
+          "description": "The county name", 
+          "format": "character varying", 
+          "maxLength": 30, 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "us_states": {
       "description": "This table contains basic information about the U.S. states\n\nSource(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
       "properties": {
         "area": {
@@ -208,15 +299,15 @@
           "format": "real", 
           "type": "number"
         }, 
-        "fips": {
-          "description": "The fips code for the state", 
-          "format": "bigint", 
-          "type": "integer"
-        }, 
         "latitude": {
           "description": "A latitude point interior to the state", 
           "format": "real", 
           "type": "number"
+        }, 
+        "location": {
+          "description": "The fips code for the state", 
+          "format": "bigint", 
+          "type": "integer"
         }, 
         "longitude": {
           "description": "A longitude point interior to the state", 
@@ -227,6 +318,32 @@
           "description": "The state name", 
           "format": "character varying", 
           "maxLength": 30, 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "usafacts_covid": {
+      "description": "This table the USAFacts COVID data\n\nThis table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the USAFacts data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe data only includes total number of cases and total number of COVID related deaths. If you use this data, we recommend that you read the corresponding documentation on their webpage as it provides useful insights to how the data were collected and how they should be used etc...\n\nThe USAFacts COVID data can be found online at https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/ and is released under the Creative Commons Share Alike 4.0 license:\n\nTo see the terms of this license refer to https://creativecommons.org/licenses/by-sa/4.0/\n", 
+      "properties": {
+        "dt": {
+          "description": "The date of the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the observation", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "description": "Denotes whether observation is total cases or total deaths", 
+          "format": "text", 
           "type": "string"
         }
       }, 
@@ -244,15 +361,6 @@
     "version": "1.0"
   }, 
   "parameters": {
-    "body.counties": {
-      "description": "counties", 
-      "in": "body", 
-      "name": "counties", 
-      "required": false, 
-      "schema": {
-        "$ref": "#/definitions/counties"
-      }
-    }, 
     "body.covid": {
       "description": "covid", 
       "in": "body", 
@@ -271,6 +379,15 @@
         "$ref": "#/definitions/covid_historical"
       }
     }, 
+    "body.covid_us": {
+      "description": "covid_us", 
+      "in": "body", 
+      "name": "covid_us", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/covid_us"
+      }
+    }, 
     "body.demographics": {
       "description": "demographics", 
       "in": "body", 
@@ -280,6 +397,15 @@
         "$ref": "#/definitions/demographics"
       }
     }, 
+    "body.economic_snapshots": {
+      "description": "economic_snapshots", 
+      "in": "body", 
+      "name": "economic_snapshots", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/economic_snapshots"
+      }
+    }, 
     "body.economics": {
       "description": "economics", 
       "in": "body", 
@@ -287,6 +413,15 @@
       "required": false, 
       "schema": {
         "$ref": "#/definitions/economics"
+      }
+    }, 
+    "body.jhu_covid": {
+      "description": "jhu_covid", 
+      "in": "body", 
+      "name": "jhu_covid", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/jhu_covid"
       }
     }, 
     "body.mobility_devices": {
@@ -307,13 +442,40 @@
         "$ref": "#/definitions/mobility_locations"
       }
     }, 
-    "body.states": {
-      "description": "states", 
+    "body.nytimes_covid": {
+      "description": "nytimes_covid", 
       "in": "body", 
-      "name": "states", 
+      "name": "nytimes_covid", 
       "required": false, 
       "schema": {
-        "$ref": "#/definitions/states"
+        "$ref": "#/definitions/nytimes_covid"
+      }
+    }, 
+    "body.us_counties": {
+      "description": "us_counties", 
+      "in": "body", 
+      "name": "us_counties", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/us_counties"
+      }
+    }, 
+    "body.us_states": {
+      "description": "us_states", 
+      "in": "body", 
+      "name": "us_states", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/us_states"
+      }
+    }, 
+    "body.usafacts_covid": {
+      "description": "usafacts_covid", 
+      "in": "body", 
+      "name": "usafacts_covid", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/usafacts_covid"
       }
     }, 
     "limit": {
@@ -391,47 +553,8 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.counties.area": {
-      "description": "The size of the county (measured in square miles)", 
-      "format": "real", 
-      "in": "query", 
-      "name": "area", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.counties.fips": {
-      "description": "The fips code for the county", 
-      "format": "bigint", 
-      "in": "query", 
-      "name": "fips", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.counties.latitude": {
-      "description": "A latitude point interior to the county", 
-      "format": "real", 
-      "in": "query", 
-      "name": "latitude", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.counties.longitude": {
-      "description": "A longitude point interior to the county", 
-      "format": "real", 
-      "in": "query", 
-      "name": "longitude", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.counties.name": {
-      "description": "The county name", 
-      "format": "character varying", 
-      "in": "query", 
-      "name": "name", 
-      "required": false, 
-      "type": "string"
-    }, 
     "rowFilter.covid.dt": {
+      "description": "The date that corresponds to the observed variable", 
       "format": "date", 
       "in": "query", 
       "name": "dt", 
@@ -439,6 +562,7 @@
       "type": "string"
     }, 
     "rowFilter.covid.fips": {
+      "description": "The fips code", 
       "format": "integer", 
       "in": "query", 
       "name": "fips", 
@@ -446,6 +570,7 @@
       "type": "string"
     }, 
     "rowFilter.covid.value": {
+      "description": "The value of the variable", 
       "format": "integer", 
       "in": "query", 
       "name": "value", 
@@ -453,6 +578,7 @@
       "type": "string"
     }, 
     "rowFilter.covid.variable": {
+      "description": "One of the variables described in the table description", 
       "format": "text", 
       "in": "query", 
       "name": "variable", 
@@ -460,6 +586,7 @@
       "type": "string"
     }, 
     "rowFilter.covid.vintage": {
+      "description": "The date/time the data was collected and stored in our database. Only the most recent vintage is returned. See `covid_historical` for data with all", 
       "format": "date", 
       "in": "query", 
       "name": "vintage", 
@@ -506,19 +633,39 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.demographics.fips": {
-      "description": "The fips code", 
-      "format": "bigint", 
+    "rowFilter.covid_us.dt": {
+      "format": "date", 
       "in": "query", 
-      "name": "fips", 
+      "name": "dt", 
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.demographics.meta_date": {
-      "description": "The date for which the data applies", 
-      "format": "date", 
+    "rowFilter.covid_us.location": {
+      "format": "integer", 
       "in": "query", 
-      "name": "meta_date", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_us.value": {
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_us.variable": {
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.demographics.location": {
+      "description": "This value is a numerical representation of a geography. For the United States, this number is the FIPS code. See our documentation page for more information.", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "location", 
       "required": false, 
       "type": "string"
     }, 
@@ -538,6 +685,29 @@
       "required": false, 
       "type": "string"
     }, 
+    "rowFilter.economic_snapshots.location": {
+      "description": "The fips code", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economic_snapshots.value": {
+      "format": "double precision", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.economic_snapshots.variable": {
+      "description": "A description of the variable", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
     "rowFilter.economics.dt": {
       "description": "The date of the observation", 
       "format": "date", 
@@ -546,17 +716,17 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.economics.fips": {
+    "rowFilter.economics.location": {
       "description": "The fips code", 
       "format": "integer", 
       "in": "query", 
-      "name": "fips", 
+      "name": "location", 
       "required": false, 
       "type": "string"
     }, 
     "rowFilter.economics.value": {
       "description": "The value of the variable", 
-      "format": "double precision", 
+      "format": "real", 
       "in": "query", 
       "name": "value", 
       "required": false, 
@@ -564,6 +734,34 @@
     }, 
     "rowFilter.economics.variable": {
       "description": "A description of the variable", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.jhu_covid.dt": {
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.jhu_covid.fips": {
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.jhu_covid.value": {
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.jhu_covid.variable": {
       "format": "text", 
       "in": "query", 
       "name": "variable", 
@@ -578,11 +776,11 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.mobility_devices.fips": {
+    "rowFilter.mobility_devices.location": {
       "description": "The fips code.", 
       "format": "integer", 
       "in": "query", 
-      "name": "fips", 
+      "name": "location", 
       "required": false, 
       "type": "string"
     }, 
@@ -634,7 +832,79 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.states.area": {
+    "rowFilter.nytimes_covid.dt": {
+      "description": "The date of the observation", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.nytimes_covid.fips": {
+      "description": "The fips code corresponding to the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.nytimes_covid.value": {
+      "description": "The value of the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.nytimes_covid.variable": {
+      "description": "Denotes whether observation is total cases or total deaths", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_counties.area": {
+      "description": "The size of the county (measured in square miles)", 
+      "format": "real", 
+      "in": "query", 
+      "name": "area", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_counties.latitude": {
+      "description": "A latitude point interior to the county", 
+      "format": "real", 
+      "in": "query", 
+      "name": "latitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_counties.location": {
+      "description": "The fips code for the county", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_counties.longitude": {
+      "description": "A longitude point interior to the county", 
+      "format": "real", 
+      "in": "query", 
+      "name": "longitude", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_counties.name": {
+      "description": "The county name", 
+      "format": "character varying", 
+      "in": "query", 
+      "name": "name", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_states.area": {
       "description": "The size of the state (measured in square miles)", 
       "format": "real", 
       "in": "query", 
@@ -642,15 +912,7 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.states.fips": {
-      "description": "The fips code for the state", 
-      "format": "bigint", 
-      "in": "query", 
-      "name": "fips", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.states.latitude": {
+    "rowFilter.us_states.latitude": {
       "description": "A latitude point interior to the state", 
       "format": "real", 
       "in": "query", 
@@ -658,7 +920,15 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.states.longitude": {
+    "rowFilter.us_states.location": {
+      "description": "The fips code for the state", 
+      "format": "bigint", 
+      "in": "query", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.us_states.longitude": {
       "description": "A longitude point interior to the state", 
       "format": "real", 
       "in": "query", 
@@ -666,11 +936,43 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.states.name": {
+    "rowFilter.us_states.name": {
       "description": "The state name", 
       "format": "character varying", 
       "in": "query", 
       "name": "name", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.usafacts_covid.dt": {
+      "description": "The date of the observation", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.usafacts_covid.fips": {
+      "description": "The fips code corresponding to the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.usafacts_covid.value": {
+      "description": "The value of the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.usafacts_covid.variable": {
+      "description": "Denotes whether observation is total cases or total deaths", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
       "required": false, 
       "type": "string"
     }, 
@@ -683,75 +985,9 @@
     }
   }, 
   "paths": {
-    "/counties": {
-      "get": {
-        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
-        "operationId": "get_counties", 
-        "parameters": [
-          {
-            "$ref": "#/parameters/rowFilter.counties.fips"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.counties.name"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.counties.area"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.counties.latitude"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.counties.longitude"
-          }, 
-          {
-            "$ref": "#/parameters/select"
-          }, 
-          {
-            "$ref": "#/parameters/order"
-          }, 
-          {
-            "$ref": "#/parameters/range"
-          }, 
-          {
-            "$ref": "#/parameters/rangeUnit"
-          }, 
-          {
-            "$ref": "#/parameters/offset"
-          }, 
-          {
-            "$ref": "#/parameters/limit"
-          }, 
-          {
-            "$ref": "#/parameters/preferCount"
-          }
-        ], 
-        "responses": {
-          "200": {
-            "description": "OK", 
-            "schema": {
-              "items": {
-                "$ref": "#/definitions/counties"
-              }, 
-              "type": "array"
-            }
-          }, 
-          "206": {
-            "description": "Partial Content"
-          }
-        }, 
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ], 
-        "summary": "This table contains basic information about the U.S. counties", 
-        "tags": [
-          "counties"
-        ]
-      }
-    }, 
     "/covid": {
       "get": {
+        "description": "This table only includes the most recent observation for each date, location, and variable. For a full history of all data we have collected see `covid_historical`\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
         "operationId": "get_covid", 
         "parameters": [
           {
@@ -810,6 +1046,7 @@
             "APIKeyHeader": []
           }
         ], 
+        "summary": "This table contains relevant information on COVID-19", 
         "tags": [
           "covid"
         ]
@@ -882,16 +1119,75 @@
         ]
       }
     }, 
+    "/covid_us": {
+      "get": {
+        "operationId": "get_covid_us", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.covid_us.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_us.location"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_us.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_us.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/covid_us"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "tags": [
+          "covid_us"
+        ]
+      }
+    }, 
     "/demographics": {
       "get": {
-        "description": "Currently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nThese variables are collected from the 2018 American Community Survey (5 year) in order to ensure that we have data for each county.\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
+        "description": "For the United States, this data comes from the American Community Survey that is administered by the US Census. Currently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
         "operationId": "get_demographics", 
         "parameters": [
           {
-            "$ref": "#/parameters/rowFilter.demographics.meta_date"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.demographics.fips"
+            "$ref": "#/parameters/rowFilter.demographics.location"
           }, 
           {
             "$ref": "#/parameters/rowFilter.demographics.variable"
@@ -940,22 +1236,83 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "This table contains information on the demographics of a particular region and is based on the American Community Survey.", 
+        "summary": "This table contains information on the demographics of a particular geography", 
         "tags": [
           "demographics"
         ]
       }
     }, 
+    "/economic_snapshots": {
+      "get": {
+        "description": "These variables are not typically collected at a sufficiently high frequency to use them as time-series data but rather we use\nthem to characterize the economic features of different locations. For example, while unemployment claims is observed on a\nweekly basis, data on the industry make-up of a geographic region is only available at a yearly frequency.\n\nThe variables currently included here are:\n\n* Industry specific GDP at the county/state level\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Bureau of Economic Analysis\n", 
+        "operationId": "get_economic_snapshots", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.economic_snapshots.location"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.economic_snapshots.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.economic_snapshots.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/economic_snapshots"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains information on economic characteristics of different geographic areas.", 
+        "tags": [
+          "economic_snapshots"
+        ]
+      }
+    }, 
     "/economics": {
       "get": {
-        "description": "These economic variables include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n* Spending\n\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
+        "description": "These variables tend to be observed at a daily/weekly/monthly/quarterly frequency and we can use them to think\nabout changes in the economy as opposed to the slow moving variables included in the `economic_snapshots` table\n\nThese economic variables currently include:\n\n* Weekly Economic Index produced by Jim Stock\n* State unemployment claims (county forthcoming)\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Department of Labor\n* Weekly Economic Index, Jim Stock (https://www.jimstock.org/)\n* US Census\n", 
         "operationId": "get_economics", 
         "parameters": [
           {
             "$ref": "#/parameters/rowFilter.economics.dt"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.economics.fips"
+            "$ref": "#/parameters/rowFilter.economics.location"
           }, 
           {
             "$ref": "#/parameters/rowFilter.economics.variable"
@@ -1004,9 +1361,71 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "This table contains information on economic outcomes at different geographic levels.", 
+        "summary": "This table contains information on economic outcomes as time series data", 
         "tags": [
           "economics"
+        ]
+      }
+    }, 
+    "/jhu_covid": {
+      "get": {
+        "operationId": "get_jhu_covid", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.jhu_covid.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.jhu_covid.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.jhu_covid.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.jhu_covid.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/jhu_covid"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "tags": [
+          "jhu_covid"
         ]
       }
     }, 
@@ -1019,7 +1438,7 @@
             "$ref": "#/parameters/rowFilter.mobility_devices.dt"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.mobility_devices.fips"
+            "$ref": "#/parameters/rowFilter.mobility_devices.location"
           }, 
           {
             "$ref": "#/parameters/rowFilter.mobility_devices.variable"
@@ -1068,7 +1487,7 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county)", 
+        "summary": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county). This data is currently only available for the US.", 
         "tags": [
           "mobility_devices"
         ]
@@ -1076,7 +1495,7 @@
     }, 
     "/mobility_locations": {
       "get": {
-        "description": "This index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
+        "description": "Among smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.\n\nThis index is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the LEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX_notes.md) and [LEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/LEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices", 
         "operationId": "get_mobility_locations", 
         "parameters": [
           {
@@ -1132,31 +1551,28 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "Among smartphones that pinged in a given state (county) today, what share of those devices pinged in each state (county) at least once during the previous 14 days? The daily state-level (county-level) LEX is a 51-by-51 (ncounties-by-ncounties) matrix in which each cell reports, among devices that pinged today in the column state (county), the share of devices that pinged in the row state (county) at least once during the previous 14 days. It is important to note that a cell phone can ping in more than a single state (county) which means that these shares will not necessarily sum to 1.", 
+        "summary": "The Location Exposure Index (LEX) is a measure of how much exposure there is across different geographies. This data is currently only available for the US.", 
         "tags": [
           "mobility_locations"
         ]
       }
     }, 
-    "/states": {
+    "/nytimes_covid": {
       "get": {
-        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
-        "operationId": "get_states", 
+        "description": "This table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the NYT data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe data only includes total number of cases and total number of COVID related deaths. If you use this data, we recommend that you read the corresponding documentation on their github site as it provides useful insights to when certain variables changed how they were collected etc...\n\nThe NYTimes COVID data can be found online at https://github.com/nytimes/covid-19-data and is released under the following license:\n\nCopyright 2020 by The New York Times Company\n\nIn light of the current public health emergency, The New York Times Company is\nproviding this database under the following free-of-cost, perpetual,\nnon-exclusive license. Anyone may copy, distribute, and display the database, or\nany part thereof, and make derivative works based on it, provided  (a) any such\nuse is for non-commercial purposes only and (b) credit is given to The New York\nTimes in any public display of the database, in any publication derived in part\nor in full from the database, and in any other public use of the data contained\nin or derived from the database.\n\nBy accessing or copying any part of the database, the user accepts the terms of\nthis license. Anyone seeking to use the database for other purposes is required\nto contact The New York Times Company at covid-data@nytimes.com to obtain\npermission.\n\nThe New York Times has made every effort to ensure the accuracy of the\ninformation. However, the database may contain typographic errors or\ninaccuracies and may not be complete or current at any given time. Licensees\nfurther agree to assume all liability for any claims that may arise from or\nrelate in any way to their use of the database and to hold The New York Times\nCompany harmless from any such claims.\n", 
+        "operationId": "get_nytimes_covid", 
         "parameters": [
           {
-            "$ref": "#/parameters/rowFilter.states.fips"
+            "$ref": "#/parameters/rowFilter.nytimes_covid.dt"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.states.name"
+            "$ref": "#/parameters/rowFilter.nytimes_covid.fips"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.states.area"
+            "$ref": "#/parameters/rowFilter.nytimes_covid.variable"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.states.latitude"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.states.longitude"
+            "$ref": "#/parameters/rowFilter.nytimes_covid.value"
           }, 
           {
             "$ref": "#/parameters/select"
@@ -1185,7 +1601,7 @@
             "description": "OK", 
             "schema": {
               "items": {
-                "$ref": "#/definitions/states"
+                "$ref": "#/definitions/nytimes_covid"
               }, 
               "type": "array"
             }
@@ -1199,9 +1615,9 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "This table contains basic information about the U.S. states", 
+        "summary": "This table contains the data from the NY Times COVID data", 
         "tags": [
-          "states"
+          "nytimes_covid"
         ]
       }
     }, 
@@ -1225,6 +1641,204 @@
         "summary": "OpenAPI description (this document)", 
         "tags": [
           "Introspection"
+        ]
+      }
+    }, 
+    "/us_counties": {
+      "get": {
+        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+        "operationId": "get_us_counties", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.us_counties.location"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_counties.name"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_counties.area"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_counties.latitude"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_counties.longitude"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/us_counties"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains basic information about the U.S. counties", 
+        "tags": [
+          "us_counties"
+        ]
+      }
+    }, 
+    "/us_states": {
+      "get": {
+        "description": "Source(s):\n\nUS Census TIGER/Line Shapefiles (https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)\n", 
+        "operationId": "get_us_states", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.us_states.location"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_states.name"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_states.area"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_states.latitude"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.us_states.longitude"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/us_states"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains basic information about the U.S. states", 
+        "tags": [
+          "us_states"
+        ]
+      }
+    }, 
+    "/usafacts_covid": {
+      "get": {
+        "description": "This table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the USAFacts data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe data only includes total number of cases and total number of COVID related deaths. If you use this data, we recommend that you read the corresponding documentation on their webpage as it provides useful insights to how the data were collected and how they should be used etc...\n\nThe USAFacts COVID data can be found online at https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/ and is released under the Creative Commons Share Alike 4.0 license:\n\nTo see the terms of this license refer to https://creativecommons.org/licenses/by-sa/4.0/\n", 
+        "operationId": "get_usafacts_covid", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.usafacts_covid.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.usafacts_covid.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.usafacts_covid.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.usafacts_covid.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/usafacts_covid"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table the USAFacts COVID data", 
+        "tags": [
+          "usafacts_covid"
         ]
       }
     }
