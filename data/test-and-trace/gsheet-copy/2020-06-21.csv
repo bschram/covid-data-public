@@ -1,57 +1,57 @@
 State,Total Grade,Percentage of Tests Are Positive (7-Day Avg),Contact Tracers / Daily Positive Tests (7-Day Avg),# of Contact Tracers,Planned Number of Tracers?,Daily Tests (7-Day Avg),Contact Tracers / 100k Population,Tracer Grade (Tracers/Positive Test),Test Grade,Source for Contact Tracer Count,Source Confidence
-Massachusetts,6,0.02769461078,6.872407291,1562,1562,8206.857143,25.83663045,3,3,News Reports,Medium
-Hawaii,6,0.009769713887,8,80,320,1023.571429,5.650228269,3,3,News Reports,High
-New Jersey,6,0.01678337783,7.504288165,2500,4000,19849.57143,28.14621169,3,3,News Reports,High
-Alaska,6,0.00760724649,9.453608247,131,500,1821.571429,17.90730577,3,3,Direct Contact With State or State Press Release,High
-Michigan,6,0.0152176931,5.157894737,1050,1050,13377.28571,10.51381831,3,3,Direct Contact With State or State Press Release,Medium
-New York,6,0.01058214934,13.87856258,9600,17000,65366.14286,49.34829155,3,3,Direct Contact With State or State Press Release,High
-Montana,6,0.008157894737,9.784946237,130,130,1628.571429,12.16342402,3,3,Direct Contact With State or State Press Release,High
-North Dakota,6,0.02487562189,11.73333333,352,500,1206,46.19046744,3,3,News Reports,High
-Vermont,6,0.003446849579,14.84,53,53,1036.142857,8.493739473,3,3,Direct Contact With State or State Press Release,High
-Northern Mariana,6,0,undefined,2,2,58.14285714,3.846597684,3,3,News Reports,Low
+Massachusetts,6,0.02512185977,7.095392602,1562,1562,8763,25.83663045,3,3,News Reports,Medium
+Hawaii,6,0.01122228231,6.746987952,80,320,1056.571429,5.650228269,3,3,News Reports,High
+New Jersey,6,0.01584694792,7.851054284,2500,4000,20094,28.14621169,3,3,News Reports,High
+Alaska,6,0.005888190539,10.30337079,131,500,2159.285714,17.90730577,3,3,Direct Contact With State or State Press Release,High
+New York,6,0.01018981326,14.47651874,9600,17000,65079,49.34829155,3,3,Direct Contact With State or State Press Release,High
+Montana,6,0.009543640465,8.272727273,130,130,1646.571429,12.16342402,3,3,Direct Contact With State or State Press Release,High
+North Dakota,6,0.02309164872,12.76683938,352,500,1194,46.19046744,3,3,News Reports,High
+Vermont,6,0.003100775194,16.86363636,53,53,1013.571429,8.493739473,3,3,Direct Contact With State or State Press Release,High
+Northern Mariana,6,0,undefined,2,2,33.28571429,3.846597684,3,3,News Reports,Low
 American Samoa,6,0,undefined,9,9,0,17.70747255,3,3,Direct Contact With State or State Press Release,High
-Virgin Islands,6,0.008658008658,38.5,11,12,33,10.51846469,3,3,Direct Contact With State or State Press Release,High
-New Hampshire,5,0.0204098916,3.485477178,120,120,1686.857143,8.82540481,2,3,News Reports,Medium
-Minnesota,5,0.0233681073,3.571428571,800,1400,9585.714286,14.18532273,2,3,News Reports,High
-South Dakota,5,0.05080605765,5.889423077,350,350,1169.714286,39.56326675,3,2,News Reports,High
+Virgin Islands,6,0.009523809524,38.5,11,12,30,10.51846469,3,3,Direct Contact With State or State Press Release,High
+New Hampshire,5,0.02023942813,3.574468085,120,120,1658.714286,8.82540481,2,3,News Reports,Medium
+Minnesota,5,0.0269328562,2.797202797,800,1400,10619,14.18532273,2,3,News Reports,High
+South Dakota,5,0.05295865982,6.25,350,350,1057.428571,39.56326675,3,2,News Reports,High
 Rhode Island,5,0.01690433878,3.58974359,200,200,3295.857143,18.87930554,2,3,News Reports,High
-Connecticut,5,0.01749153635,3.225806452,400,900,7089.142857,11.21929315,2,3,Direct Contact With State or State Press Release,High
-Maryland,4,0.05478403703,3.339011925,1400,1400,7653.428571,20.31192442,2,2,Direct Contact With State or State Press Release,High
-Wisconsin,4,0.02753365947,1.467505241,400,1000,9899.571429,6.869979119,1,3,Direct Contact With State or State Press Release,High
-Idaho,4,0.05435720449,3.968253968,250,500,1159,13.9894184,2,2,News Reports,High
-New Mexico,4,0.02518982765,1.674641148,150,350,3555.857143,7.153659168,1,3,State,High
-Maine,4,0.01868795017,1.09375,30,125,1467.714286,2.231790819,1,3,Direct Contact With State or State Press Release,High
-Kentucky,4,0.05007798759,2.829688535,610,700,4304.714286,13.65364027,2,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
-District of Columbia,4,0.02517317114,1.526845638,65,265,1691.142857,9.21007327,1,3,Direct Contact With State or State Press Release,High
-Colorado,4,0.04169437425,2.93062201,525,800,4296.571429,9.116583917,2,2,Direct Contact With State or State Press Release,High
-Nebraska,3,0.06442921572,4.670909091,734,1000,2439,37.94442537,2,1,Direct Contact With State or State Press Release,High
-California,3,0.04748867146,1.314385695,4400,10000,70492,11.13579461,1,2,Direct Contact With State or State Press Release,High
-Oregon,3,0.04309723024,1.944769874,332,800,3961.142857,7.871519727,1,2,Direct Contact With State or State Press Release,High
-West Virginia,3,0.009192263936,0.5198019802,15,270,3139.285714,0.8369849125,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Illinois,3,0.02688961906,0.969621401,611,3810,23434.42857,4.82172215,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Indiana,3,0.04505519261,1.346153846,500,500,8243.857143,7.426971701,1,2,Direct Contact With State or State Press Release,High
-Delaware,3,0.03437990581,1.598173516,100,300,1820,10.26942873,1,2,Direct Contact With State or State Press Release,High
+Michigan,5,0.01796092527,4.300760679,1050,1050,13593,10.51381831,2,3,Direct Contact With State or State Press Release,Medium
+Connecticut,5,0.01521064956,3.883495146,400,900,6771.571429,11.21929315,2,3,Direct Contact With State or State Press Release,High
+Maryland,4,0.04953103397,3.69671822,1400,1400,7646,20.31192442,2,2,Direct Contact With State or State Press Release,High
+Wisconsin,4,0.02963995014,1.385452746,400,1000,9740.714286,6.869979119,1,3,Direct Contact With State or State Press Release,High
+New Mexico,4,0.02503581418,1.430517711,150,350,4188.285714,7.153659168,1,3,State,High
+Maine,4,0.01612328523,1.160220994,30,125,1603.714286,2.231790819,1,3,Direct Contact With State or State Press Release,High
+Kentucky,4,0.05248936924,3.603375527,610,700,3225.142857,13.65364027,2,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
+Wyoming,4,0.03766423358,2.713178295,50,50,489.2857143,8.63917451,2,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
+District of Columbia,4,0.01843534223,1.654545455,65,265,2131,9.21007327,1,3,Direct Contact With State or State Press Release,High
+Colorado,4,0.03728693182,2.692307692,525,800,5229.714286,9.116583917,2,2,Direct Contact With State or State Press Release,High
+Nebraska,3,0.06168106654,4.766233766,734,1000,2496.714286,37.94442537,2,1,Direct Contact With State or State Press Release,High
+California,3,0.04640219286,1.301445111,4400,10000,72859.85714,11.13579461,1,2,Direct Contact With State or State Press Release,High
+Virginia,3,0.05004831188,2.487409065,1270,1770,10201.57143,14.8790015,1,2,News Reports,High
+Oregon,3,0.0492008887,1.692643846,332,800,3986.571429,7.871519727,1,2,Direct Contact With State or State Press Release,High
+Idaho,3,0.06066994612,3.378378378,250,500,1219.714286,13.9894184,2,1,News Reports,High
+West Virginia,3,0.01087216821,0.4625550661,15,270,2982.714286,0.8369849125,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
+Illinois,3,0.02599873931,0.9782708143,611,3810,24023.14286,4.82172215,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
+Mississippi,3,0.05207410391,1.082753287,200,250,3547.142857,6.720093651,1,2,Direct Contact With State or State Press Release,High
+Indiana,3,0.04116733426,1.389992057,500,500,8737.857143,7.426971701,1,2,Direct Contact With State or State Press Release,High
+Delaware,3,0.03669724771,1.548672566,100,300,1759.571429,10.26942873,1,2,Direct Contact With State or State Press Release,High
 Kansas,3,0.05471157485,1.037549407,150,200,2642.428571,5.148775587,1,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Wyoming,3,0.03191954526,2.397260274,50,50,653.4285714,8.63917451,1,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Ohio,3,0.03582183323,1.333534926,630,2000,13188.28571,5.389636499,1,2,News Reports,High
-Guam,3,0.01346801347,0.4375,1,1,169.7142857,0.6089058571,0,3,News Reports,Low
-Puerto Rico,3,-0.04195569479,-2.531755185,10,10,94.14285714,0.3131170363,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Oklahoma,2,0.06550557044,1.318622174,350,1000,4052,8.845149484,1,1,News Reports,High
-Louisiana,2,0.03160493827,0.4971590909,250,630,15910.71429,5.377738829,0,2,Direct Contact With State or State Press Release,High
-Utah,2,0.09967800644,2.949438202,1200,1200,4081.714286,37.43030944,2,0,Direct Contact With State or State Press Release,High
-Pennsylvania,2,0.0390066917,0.8867173362,350,600,10119.14286,2.73395017,0,2,Direct Contact With State or State Press Release,High
-Virginia,2,0.05788529597,2.481853713,1270,1770,8840.142857,14.8790015,1,1,News Reports,High
-North Carolina,2,0.07366913631,1.222209289,1500,1500,16659.42857,14.30194495,1,1,News Reports,Medium
-Missouri,2,0.03927191426,0.2988861386,69,69,5878.428571,1.124249441,0,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
-Nevada,2,0.05178586773,0.3871681416,100,200,4987.571429,3.246588809,0,2,Direct Contact With State or State Press Release,Low
-Iowa,1,0.06036442922,0.7223942208,200,350,4586.428571,6.339003572,0,1,News Reports,Medium
-Georgia,1,0.07946597233,0.2810793447,250,1000,11192.57143,2.354620325,0,1,Direct Contact With State or State Press Release,High
-Arkansas,1,0.05748369059,0.6468871595,285,550,7664.285714,9.443953285,0,1,Direct Contact With State or State Press Release,High
-Texas,1,0.0996410384,1.138547771,3192,4000,28136.71429,11.00846013,1,0,News Reports,High
-Mississippi,1,0.06399141277,0.9032258065,200,250,3460.285714,6.720093651,0,1,Direct Contact With State or State Press Release,High
-Washington,1,0.111264813,1.972648156,680,2122,3098.142857,8.929869402,1,0,Direct Contact With State or State Press Release,High
-Tennessee,1,0.06839029028,0.9302801063,650,1300,10216.57143,9.517988559,0,1,News Reports,High
-Arizona,0,0.1700543344,0.05083145741,100,500,11568.57143,1.373868499,0,0,Compiled Local Health Department Numbers (No Definitive State Report),Low
-South Carolina,0,0.1045347524,0.5127266068,400,1800,7463,7.768930261,0,0,Direct Contact With State or State Press Release,High
-Alabama,0,0.1177570093,0.1587301587,120,200,6420,2.447388789,0,0,Direct Contact With State or State Press Release,High
-Florida,0,0.09532827001,0.5591947595,1500,1000,28138.85714,6.983976012,0,0,Direct Contact With State or State Press Release,high
+Ohio,3,0.03748888181,1.291739895,630,2000,13009.57143,5.389636499,1,2,News Reports,High
+Guam,3,0.02522154056,0.1891891892,1,1,209.5714286,0.6089058571,0,3,News Reports,Low
+Puerto Rico,3,-0.04195569479,-2.158378611,10,10,110.4285714,0.3131170363,0,3,Compiled Local Health Department Numbers (No Definitive State Report),Low
+Oklahoma,2,0.05528812319,1.247454175,350,1000,5074.714286,8.845149484,1,1,News Reports,High
+Louisiana,2,0.03088626248,0.5641521599,250,630,14347.57143,5.377738829,0,2,Direct Contact With State or State Press Release,High
+Utah,2,0.1025751786,2.721088435,1200,1200,4299.285714,37.43030944,2,0,Direct Contact With State or State Press Release,High
+Pennsylvania,2,0.03858220045,0.8737517832,350,600,10382.28571,2.73395017,0,2,Direct Contact With State or State Press Release,High
+North Carolina,2,0.07282011851,1.205095834,1500,1500,17093,14.30194495,1,1,News Reports,Medium
+Missouri,2,0.04307945497,0.2713483146,69,69,5902.714286,1.124249441,0,2,Compiled Local Health Department Numbers (No Definitive State Report),Low
+Iowa,1,0.05813915487,0.7869589657,200,350,4371.285714,6.339003572,0,1,News Reports,Medium
+Georgia,1,0.07399898632,0.2497146119,250,1000,13529.14286,2.354620325,0,1,Direct Contact With State or State Press Release,High
+Arkansas,1,0.0651067606,0.5549374131,285,550,7888.142857,9.443953285,0,1,Direct Contact With State or State Press Release,High
+Texas,1,0.1069731484,1.028539864,3192,4000,29011.28571,11.00846013,1,0,News Reports,High
+Washington,1,0.1511288015,1.958847737,680,2122,2297,8.929869402,1,0,Direct Contact With State or State Press Release,High
+Tennessee,1,0.06630349563,0.9276248726,650,1300,10568.28571,9.517988559,0,1,News Reports,High
+Nevada,1,0.05824017839,0.3526448363,100,200,4869,3.246588809,0,1,Direct Contact With State or State Press Release,Low
+Arizona,0,0.199523952,0.04563233377,100,500,10983.28571,1.373868499,0,0,Compiled Local Health Department Numbers (No Definitive State Report),Low
+South Carolina,0,0.1072999282,0.4801920768,400,1800,7763.285714,7.768930261,0,0,Direct Contact With State or State Press Release,High
+Alabama,0,0.1069352294,0.1697655618,120,200,6610.142857,2.447388789,0,0,Direct Contact With State or State Press Release,High
+Florida,0,0.1060730696,0.5186465794,1500,1000,27265.57143,6.983976012,0,0,Direct Contact With State or State Press Release,high
