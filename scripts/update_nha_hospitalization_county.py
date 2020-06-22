@@ -27,13 +27,17 @@ class CsvCopy(BaseModel):
         response = requests.get(self.source_url)
         patched_rows = []
 
-        for row in dropwhile(
-            lambda row: row[0].lower() != "date",
-            csv.reader(response.iter_lines(decode_unicode=True)),
+        for i, row in dropwhile(
+            lambda i_row: i_row[1][0].lower() != "date",
+            enumerate(csv.reader(response.iter_lines(decode_unicode=True))),
         ):
             if not row:
-                _logger.warning("Skipping empty row")
+                _logger.warning(f"Skipping empty row {i}")
                 continue
+            if not row[0]:
+                _logger.warning(f"Skipping row {i} without value in column 0")
+                continue
+
             date_match = re.fullmatch(r"(\d+)/(\d+)", row[0])
 
             if date_match:
