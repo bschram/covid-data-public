@@ -187,7 +187,7 @@ class CmdcTransformer(BaseModel):
 
 
 if __name__ == "__main__":
-    common_init.configure_structlog()
+    common_init.configure_logging()
     log = structlog.get_logger()
     transformer = CmdcTransformer.make_with_data_root(
         DATA_ROOT, os.environ.get("CMDC_API_KEY", None)

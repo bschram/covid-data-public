@@ -10,6 +10,8 @@ import tempfile
 
 import pandas as pd
 import argparse
+
+from covidactnow.datapublic.common_init import configure_logging
 from scripts.dataset_updater_base import DatasetUpdaterBase
 
 logger = logging.Logger("data update logger")
@@ -71,6 +73,7 @@ class CovidDatasetAutoUpdater(DatasetUpdaterBase):
 
 
 if __name__ == "__main__":
+    configure_logging()
     update = CovidDatasetAutoUpdater()
     something_specified = False
 

@@ -209,7 +209,7 @@ def remove_duplicate_city_data(data):
 
 
 if __name__ == "__main__":
-    common_init.configure_structlog()
+    common_init.configure_logging()
     log = structlog.get_logger()
     transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT)
     write_df_as_csv(

@@ -272,7 +272,7 @@ class AwsDataLakeTransformer(BaseModel):
 @click.command()
 @click.option("--replace_local_mirror", is_flag=True)
 def main(replace_local_mirror: bool):
-    common_init.configure_structlog()
+    common_init.configure_logging()
 
     copier = AwsDataLakeCopier.make_with_data_root(DATA_ROOT)
     if replace_local_mirror:
