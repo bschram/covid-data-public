@@ -1,0 +1,1739 @@
+TSA ID,TSA Name,date,current_hospitalized
+A,Amarillo,2020-04-08,9
+A,Amarillo,2020-04-09,12
+A,Amarillo,2020-04-10,15
+A,Amarillo,2020-04-11,18
+A,Amarillo,2020-04-12,17
+A,Amarillo,2020-04-13,17
+A,Amarillo,2020-04-14,17
+A,Amarillo,2020-04-15,10
+A,Amarillo,2020-04-16,18
+A,Amarillo,2020-04-17,24
+A,Amarillo,2020-04-18,18
+A,Amarillo,2020-04-19,35
+A,Amarillo,2020-04-20,17
+A,Amarillo,2020-04-21,17
+A,Amarillo,2020-04-22,41
+A,Amarillo,2020-04-23,41
+A,Amarillo,2020-04-24,40
+A,Amarillo,2020-04-25,46
+A,Amarillo,2020-04-26,59
+A,Amarillo,2020-04-27,64
+A,Amarillo,2020-04-28,67
+A,Amarillo,2020-04-29,82
+A,Amarillo,2020-04-30,84
+A,Amarillo,2020-05-01,87
+A,Amarillo,2020-05-02,91
+A,Amarillo,2020-05-03,101
+A,Amarillo,2020-05-04,94
+A,Amarillo,2020-05-05,90
+A,Amarillo,2020-05-06,96
+A,Amarillo,2020-05-07,109
+A,Amarillo,2020-05-08,112
+A,Amarillo,2020-05-09,109
+A,Amarillo,2020-05-10,103
+A,Amarillo,2020-05-11,98
+A,Amarillo,2020-05-12,94
+A,Amarillo,2020-05-13,82
+A,Amarillo,2020-05-14,84
+A,Amarillo,2020-05-15,79
+A,Amarillo,2020-05-16,80
+A,Amarillo,2020-05-17,72
+A,Amarillo,2020-05-18,68
+A,Amarillo,2020-05-19,70
+A,Amarillo,2020-05-20,75
+A,Amarillo,2020-05-21,63
+A,Amarillo,2020-05-22,53
+A,Amarillo,2020-05-23,55
+A,Amarillo,2020-05-24,55
+A,Amarillo,2020-05-25,55
+A,Amarillo,2020-05-26,61
+A,Amarillo,2020-05-27,59
+A,Amarillo,2020-05-28,63
+A,Amarillo,2020-05-29,61
+A,Amarillo,2020-05-30,58
+A,Amarillo,2020-05-31,39
+A,Amarillo,2020-06-01,47
+A,Amarillo,2020-06-02,45
+A,Amarillo,2020-06-03,46
+A,Amarillo,2020-06-04,38
+A,Amarillo,2020-06-05,31
+A,Amarillo,2020-06-06,32
+A,Amarillo,2020-06-07,31
+A,Amarillo,2020-06-08,25
+A,Amarillo,2020-06-09,29
+A,Amarillo,2020-06-10,25
+A,Amarillo,2020-06-11,23
+A,Amarillo,2020-06-12,17
+A,Amarillo,2020-06-13,18
+A,Amarillo,2020-06-14,17
+A,Amarillo,2020-06-15,16
+A,Amarillo,2020-06-16,25
+A,Amarillo,2020-06-17,23
+A,Amarillo,2020-06-18,24
+A,Amarillo,2020-06-19,22
+A,Amarillo,2020-06-20,20
+A,Amarillo,2020-06-21,22
+A,Amarillo,2020-06-22,23
+A,Amarillo,2020-06-23,23
+A,Amarillo,2020-06-24,27
+A,Amarillo,2020-06-25,25
+B,Lubbock,2020-04-08,25
+B,Lubbock,2020-04-09,26
+B,Lubbock,2020-04-10,21
+B,Lubbock,2020-04-11,34
+B,Lubbock,2020-04-12,34
+B,Lubbock,2020-04-13,35
+B,Lubbock,2020-04-14,31
+B,Lubbock,2020-04-15,34
+B,Lubbock,2020-04-16,32
+B,Lubbock,2020-04-17,38
+B,Lubbock,2020-04-18,35
+B,Lubbock,2020-04-19,32
+B,Lubbock,2020-04-20,32
+B,Lubbock,2020-04-21,46
+B,Lubbock,2020-04-22,28
+B,Lubbock,2020-04-23,25
+B,Lubbock,2020-04-24,27
+B,Lubbock,2020-04-25,32
+B,Lubbock,2020-04-26,26
+B,Lubbock,2020-04-27,29
+B,Lubbock,2020-04-28,29
+B,Lubbock,2020-04-29,31
+B,Lubbock,2020-04-30,38
+B,Lubbock,2020-05-01,36
+B,Lubbock,2020-05-02,37
+B,Lubbock,2020-05-03,29
+B,Lubbock,2020-05-04,30
+B,Lubbock,2020-05-05,33
+B,Lubbock,2020-05-06,37
+B,Lubbock,2020-05-07,32
+B,Lubbock,2020-05-08,28
+B,Lubbock,2020-05-09,27
+B,Lubbock,2020-05-10,25
+B,Lubbock,2020-05-11,23
+B,Lubbock,2020-05-12,25
+B,Lubbock,2020-05-13,19
+B,Lubbock,2020-05-14,22
+B,Lubbock,2020-05-15,21
+B,Lubbock,2020-05-16,20
+B,Lubbock,2020-05-17,19
+B,Lubbock,2020-05-18,20
+B,Lubbock,2020-05-19,21
+B,Lubbock,2020-05-20,25
+B,Lubbock,2020-05-21,20
+B,Lubbock,2020-05-22,15
+B,Lubbock,2020-05-23,14
+B,Lubbock,2020-05-24,13
+B,Lubbock,2020-05-25,16
+B,Lubbock,2020-05-26,16
+B,Lubbock,2020-05-27,15
+B,Lubbock,2020-05-28,14
+B,Lubbock,2020-05-29,20
+B,Lubbock,2020-05-30,14
+B,Lubbock,2020-05-31,12
+B,Lubbock,2020-06-01,14
+B,Lubbock,2020-06-02,16
+B,Lubbock,2020-06-03,19
+B,Lubbock,2020-06-04,16
+B,Lubbock,2020-06-05,13
+B,Lubbock,2020-06-06,11
+B,Lubbock,2020-06-07,11
+B,Lubbock,2020-06-08,10
+B,Lubbock,2020-06-09,10
+B,Lubbock,2020-06-10,15
+B,Lubbock,2020-06-11,14
+B,Lubbock,2020-06-12,17
+B,Lubbock,2020-06-13,18
+B,Lubbock,2020-06-14,16
+B,Lubbock,2020-06-15,15
+B,Lubbock,2020-06-16,14
+B,Lubbock,2020-06-17,16
+B,Lubbock,2020-06-18,20
+B,Lubbock,2020-06-19,21
+B,Lubbock,2020-06-20,22
+B,Lubbock,2020-06-21,22
+B,Lubbock,2020-06-22,22
+B,Lubbock,2020-06-23,25
+B,Lubbock,2020-06-24,34
+B,Lubbock,2020-06-25,37
+C,Wichita Falls,2020-04-08,8
+C,Wichita Falls,2020-04-09,8
+C,Wichita Falls,2020-04-10,7
+C,Wichita Falls,2020-04-11,7
+C,Wichita Falls,2020-04-12,5
+C,Wichita Falls,2020-04-13,5
+C,Wichita Falls,2020-04-14,6
+C,Wichita Falls,2020-04-15,4
+C,Wichita Falls,2020-04-16,5
+C,Wichita Falls,2020-04-17,0
+C,Wichita Falls,2020-04-18,0
+C,Wichita Falls,2020-04-19,0
+C,Wichita Falls,2020-04-20,2
+C,Wichita Falls,2020-04-21,4
+C,Wichita Falls,2020-04-22,1
+C,Wichita Falls,2020-04-23,1
+C,Wichita Falls,2020-04-24,1
+C,Wichita Falls,2020-04-25,1
+C,Wichita Falls,2020-04-26,1
+C,Wichita Falls,2020-04-27,0
+C,Wichita Falls,2020-04-28,0
+C,Wichita Falls,2020-04-29,0
+C,Wichita Falls,2020-04-30,0
+C,Wichita Falls,2020-05-01,0
+C,Wichita Falls,2020-05-02,0
+C,Wichita Falls,2020-05-03,0
+C,Wichita Falls,2020-05-04,0
+C,Wichita Falls,2020-05-05,0
+C,Wichita Falls,2020-05-06,0
+C,Wichita Falls,2020-05-07,0
+C,Wichita Falls,2020-05-08,0
+C,Wichita Falls,2020-05-09,2
+C,Wichita Falls,2020-05-10,2
+C,Wichita Falls,2020-05-11,2
+C,Wichita Falls,2020-05-12,0
+C,Wichita Falls,2020-05-13,0
+C,Wichita Falls,2020-05-14,1
+C,Wichita Falls,2020-05-15,1
+C,Wichita Falls,2020-05-16,1
+C,Wichita Falls,2020-05-17,1
+C,Wichita Falls,2020-05-18,1
+C,Wichita Falls,2020-05-19,1
+C,Wichita Falls,2020-05-20,1
+C,Wichita Falls,2020-05-21,1
+C,Wichita Falls,2020-05-22,1
+C,Wichita Falls,2020-05-23,1
+C,Wichita Falls,2020-05-24,1
+C,Wichita Falls,2020-05-25,2
+C,Wichita Falls,2020-05-26,0
+C,Wichita Falls,2020-05-27,0
+C,Wichita Falls,2020-05-28,0
+C,Wichita Falls,2020-05-29,0
+C,Wichita Falls,2020-05-30,0
+C,Wichita Falls,2020-05-31,0
+C,Wichita Falls,2020-06-01,0
+C,Wichita Falls,2020-06-02,0
+C,Wichita Falls,2020-06-03,0
+C,Wichita Falls,2020-06-04,0
+C,Wichita Falls,2020-06-05,0
+C,Wichita Falls,2020-06-06,0
+C,Wichita Falls,2020-06-07,0
+C,Wichita Falls,2020-06-08,0
+C,Wichita Falls,2020-06-09,0
+C,Wichita Falls,2020-06-10,0
+C,Wichita Falls,2020-06-11,0
+C,Wichita Falls,2020-06-12,0
+C,Wichita Falls,2020-06-13,0
+C,Wichita Falls,2020-06-14,0
+C,Wichita Falls,2020-06-15,0
+C,Wichita Falls,2020-06-16,0
+C,Wichita Falls,2020-06-17,0
+C,Wichita Falls,2020-06-18,0
+C,Wichita Falls,2020-06-19,0
+C,Wichita Falls,2020-06-20,2
+C,Wichita Falls,2020-06-21,2
+C,Wichita Falls,2020-06-22,2
+C,Wichita Falls,2020-06-23,3
+C,Wichita Falls,2020-06-24,7
+C,Wichita Falls,2020-06-25,10
+D,Abilene,2020-04-08,9
+D,Abilene,2020-04-09,12
+D,Abilene,2020-04-10,11
+D,Abilene,2020-04-11,8
+D,Abilene,2020-04-12,6
+D,Abilene,2020-04-13,7
+D,Abilene,2020-04-14,2
+D,Abilene,2020-04-15,6
+D,Abilene,2020-04-16,5
+D,Abilene,2020-04-17,8
+D,Abilene,2020-04-18,3
+D,Abilene,2020-04-19,10
+D,Abilene,2020-04-20,6
+D,Abilene,2020-04-21,7
+D,Abilene,2020-04-22,11
+D,Abilene,2020-04-23,9
+D,Abilene,2020-04-24,9
+D,Abilene,2020-04-25,16
+D,Abilene,2020-04-26,6
+D,Abilene,2020-04-27,7
+D,Abilene,2020-04-28,6
+D,Abilene,2020-04-29,4
+D,Abilene,2020-04-30,4
+D,Abilene,2020-05-01,4
+D,Abilene,2020-05-02,4
+D,Abilene,2020-05-03,6
+D,Abilene,2020-05-04,4
+D,Abilene,2020-05-05,5
+D,Abilene,2020-05-06,3
+D,Abilene,2020-05-07,3
+D,Abilene,2020-05-08,2
+D,Abilene,2020-05-09,1
+D,Abilene,2020-05-10,3
+D,Abilene,2020-05-11,5
+D,Abilene,2020-05-12,4
+D,Abilene,2020-05-13,3
+D,Abilene,2020-05-14,4
+D,Abilene,2020-05-15,3
+D,Abilene,2020-05-16,3
+D,Abilene,2020-05-17,3
+D,Abilene,2020-05-18,3
+D,Abilene,2020-05-19,4
+D,Abilene,2020-05-20,4
+D,Abilene,2020-05-21,7
+D,Abilene,2020-05-22,3
+D,Abilene,2020-05-23,3
+D,Abilene,2020-05-24,4
+D,Abilene,2020-05-25,5
+D,Abilene,2020-05-26,4
+D,Abilene,2020-05-27,1
+D,Abilene,2020-05-28,1
+D,Abilene,2020-05-29,2
+D,Abilene,2020-05-30,2
+D,Abilene,2020-05-31,3
+D,Abilene,2020-06-01,2
+D,Abilene,2020-06-02,1
+D,Abilene,2020-06-03,1
+D,Abilene,2020-06-04,1
+D,Abilene,2020-06-05,1
+D,Abilene,2020-06-06,1
+D,Abilene,2020-06-07,0
+D,Abilene,2020-06-08,1
+D,Abilene,2020-06-09,1
+D,Abilene,2020-06-10,1
+D,Abilene,2020-06-11,0
+D,Abilene,2020-06-12,0
+D,Abilene,2020-06-13,0
+D,Abilene,2020-06-14,1
+D,Abilene,2020-06-15,0
+D,Abilene,2020-06-16,1
+D,Abilene,2020-06-17,1
+D,Abilene,2020-06-18,1
+D,Abilene,2020-06-19,2
+D,Abilene,2020-06-20,1
+D,Abilene,2020-06-21,1
+D,Abilene,2020-06-22,2
+D,Abilene,2020-06-23,5
+D,Abilene,2020-06-24,5
+D,Abilene,2020-06-25,6
+E,Dallas/Ft. Worth,2020-04-08,579
+E,Dallas/Ft. Worth,2020-04-09,447
+E,Dallas/Ft. Worth,2020-04-10,514
+E,Dallas/Ft. Worth,2020-04-11,429
+E,Dallas/Ft. Worth,2020-04-12,369
+E,Dallas/Ft. Worth,2020-04-13,365
+E,Dallas/Ft. Worth,2020-04-14,373
+E,Dallas/Ft. Worth,2020-04-15,449
+E,Dallas/Ft. Worth,2020-04-16,470
+E,Dallas/Ft. Worth,2020-04-17,476
+E,Dallas/Ft. Worth,2020-04-18,428
+E,Dallas/Ft. Worth,2020-04-19,435
+E,Dallas/Ft. Worth,2020-04-20,410
+E,Dallas/Ft. Worth,2020-04-21,443
+E,Dallas/Ft. Worth,2020-04-22,477
+E,Dallas/Ft. Worth,2020-04-23,517
+E,Dallas/Ft. Worth,2020-04-24,550
+E,Dallas/Ft. Worth,2020-04-25,521
+E,Dallas/Ft. Worth,2020-04-26,472
+E,Dallas/Ft. Worth,2020-04-27,491
+E,Dallas/Ft. Worth,2020-04-28,583
+E,Dallas/Ft. Worth,2020-04-29,611
+E,Dallas/Ft. Worth,2020-04-30,576
+E,Dallas/Ft. Worth,2020-05-01,636
+E,Dallas/Ft. Worth,2020-05-02,635
+E,Dallas/Ft. Worth,2020-05-03,530
+E,Dallas/Ft. Worth,2020-05-04,513
+E,Dallas/Ft. Worth,2020-05-05,674
+E,Dallas/Ft. Worth,2020-05-06,679
+E,Dallas/Ft. Worth,2020-05-07,669
+E,Dallas/Ft. Worth,2020-05-08,676
+E,Dallas/Ft. Worth,2020-05-09,650
+E,Dallas/Ft. Worth,2020-05-10,569
+E,Dallas/Ft. Worth,2020-05-11,530
+E,Dallas/Ft. Worth,2020-05-12,678
+E,Dallas/Ft. Worth,2020-05-13,627
+E,Dallas/Ft. Worth,2020-05-14,666
+E,Dallas/Ft. Worth,2020-05-15,680
+E,Dallas/Ft. Worth,2020-05-16,685
+E,Dallas/Ft. Worth,2020-05-17,551
+E,Dallas/Ft. Worth,2020-05-18,553
+E,Dallas/Ft. Worth,2020-05-19,646
+E,Dallas/Ft. Worth,2020-05-20,646
+E,Dallas/Ft. Worth,2020-05-21,600
+E,Dallas/Ft. Worth,2020-05-22,570
+E,Dallas/Ft. Worth,2020-05-23,612
+E,Dallas/Ft. Worth,2020-05-24,548
+E,Dallas/Ft. Worth,2020-05-25,521
+E,Dallas/Ft. Worth,2020-05-26,533
+E,Dallas/Ft. Worth,2020-05-27,589
+E,Dallas/Ft. Worth,2020-05-28,613
+E,Dallas/Ft. Worth,2020-05-29,580
+E,Dallas/Ft. Worth,2020-05-30,624
+E,Dallas/Ft. Worth,2020-05-31,595
+E,Dallas/Ft. Worth,2020-06-01,580
+E,Dallas/Ft. Worth,2020-06-02,582
+E,Dallas/Ft. Worth,2020-06-03,575
+E,Dallas/Ft. Worth,2020-06-04,604
+E,Dallas/Ft. Worth,2020-06-05,602
+E,Dallas/Ft. Worth,2020-06-06,605
+E,Dallas/Ft. Worth,2020-06-07,605
+E,Dallas/Ft. Worth,2020-06-08,612
+E,Dallas/Ft. Worth,2020-06-09,660
+E,Dallas/Ft. Worth,2020-06-10,687
+E,Dallas/Ft. Worth,2020-06-11,705
+E,Dallas/Ft. Worth,2020-06-12,712
+E,Dallas/Ft. Worth,2020-06-13,729
+E,Dallas/Ft. Worth,2020-06-14,728
+E,Dallas/Ft. Worth,2020-06-15,701
+E,Dallas/Ft. Worth,2020-06-16,765
+E,Dallas/Ft. Worth,2020-06-17,859
+E,Dallas/Ft. Worth,2020-06-18,899
+E,Dallas/Ft. Worth,2020-06-19,914
+E,Dallas/Ft. Worth,2020-06-20,939
+E,Dallas/Ft. Worth,2020-06-21,952
+E,Dallas/Ft. Worth,2020-06-22,988
+E,Dallas/Ft. Worth,2020-06-23,1074
+E,Dallas/Ft. Worth,2020-06-24,1130
+E,Dallas/Ft. Worth,2020-06-25,1137
+F,Paris,2020-04-08,14
+F,Paris,2020-04-09,12
+F,Paris,2020-04-10,13
+F,Paris,2020-04-11,12
+F,Paris,2020-04-12,14
+F,Paris,2020-04-13,16
+F,Paris,2020-04-14,21
+F,Paris,2020-04-15,18
+F,Paris,2020-04-16,15
+F,Paris,2020-04-17,12
+F,Paris,2020-04-18,12
+F,Paris,2020-04-19,17
+F,Paris,2020-04-20,16
+F,Paris,2020-04-21,19
+F,Paris,2020-04-22,19
+F,Paris,2020-04-23,17
+F,Paris,2020-04-24,19
+F,Paris,2020-04-25,17
+F,Paris,2020-04-26,17
+F,Paris,2020-04-27,19
+F,Paris,2020-04-28,18
+F,Paris,2020-04-29,14
+F,Paris,2020-04-30,16
+F,Paris,2020-05-01,18
+F,Paris,2020-05-02,19
+F,Paris,2020-05-03,17
+F,Paris,2020-05-04,16
+F,Paris,2020-05-05,16
+F,Paris,2020-05-06,13
+F,Paris,2020-05-07,16
+F,Paris,2020-05-08,16
+F,Paris,2020-05-09,12
+F,Paris,2020-05-10,14
+F,Paris,2020-05-11,16
+F,Paris,2020-05-12,16
+F,Paris,2020-05-13,14
+F,Paris,2020-05-14,11
+F,Paris,2020-05-15,13
+F,Paris,2020-05-16,15
+F,Paris,2020-05-17,14
+F,Paris,2020-05-18,14
+F,Paris,2020-05-19,12
+F,Paris,2020-05-20,13
+F,Paris,2020-05-21,17
+F,Paris,2020-05-22,23
+F,Paris,2020-05-23,23
+F,Paris,2020-05-24,20
+F,Paris,2020-05-25,16
+F,Paris,2020-05-26,18
+F,Paris,2020-05-27,22
+F,Paris,2020-05-28,22
+F,Paris,2020-05-29,24
+F,Paris,2020-05-30,20
+F,Paris,2020-05-31,16
+F,Paris,2020-06-01,14
+F,Paris,2020-06-02,15
+F,Paris,2020-06-03,18
+F,Paris,2020-06-04,26
+F,Paris,2020-06-05,20
+F,Paris,2020-06-06,21
+F,Paris,2020-06-07,22
+F,Paris,2020-06-08,21
+F,Paris,2020-06-09,29
+F,Paris,2020-06-10,32
+F,Paris,2020-06-11,25
+F,Paris,2020-06-12,29
+F,Paris,2020-06-13,28
+F,Paris,2020-06-14,30
+F,Paris,2020-06-15,28
+F,Paris,2020-06-16,26
+F,Paris,2020-06-17,29
+F,Paris,2020-06-18,27
+F,Paris,2020-06-19,24
+F,Paris,2020-06-20,27
+F,Paris,2020-06-21,24
+F,Paris,2020-06-22,22
+F,Paris,2020-06-23,25
+F,Paris,2020-06-24,25
+F,Paris,2020-06-25,33
+G,Longview/Tyler,2020-04-08,26
+G,Longview/Tyler,2020-04-09,22
+G,Longview/Tyler,2020-04-10,25
+G,Longview/Tyler,2020-04-11,44
+G,Longview/Tyler,2020-04-12,32
+G,Longview/Tyler,2020-04-13,26
+G,Longview/Tyler,2020-04-14,33
+G,Longview/Tyler,2020-04-15,32
+G,Longview/Tyler,2020-04-16,36
+G,Longview/Tyler,2020-04-17,43
+G,Longview/Tyler,2020-04-18,36
+G,Longview/Tyler,2020-04-19,42
+G,Longview/Tyler,2020-04-20,45
+G,Longview/Tyler,2020-04-21,47
+G,Longview/Tyler,2020-04-22,60
+G,Longview/Tyler,2020-04-23,43
+G,Longview/Tyler,2020-04-24,48
+G,Longview/Tyler,2020-04-25,47
+G,Longview/Tyler,2020-04-26,54
+G,Longview/Tyler,2020-04-27,53
+G,Longview/Tyler,2020-04-28,54
+G,Longview/Tyler,2020-04-29,53
+G,Longview/Tyler,2020-04-30,53
+G,Longview/Tyler,2020-05-01,63
+G,Longview/Tyler,2020-05-02,68
+G,Longview/Tyler,2020-05-03,96
+G,Longview/Tyler,2020-05-04,67
+G,Longview/Tyler,2020-05-05,54
+G,Longview/Tyler,2020-05-06,57
+G,Longview/Tyler,2020-05-07,53
+G,Longview/Tyler,2020-05-08,50
+G,Longview/Tyler,2020-05-09,55
+G,Longview/Tyler,2020-05-10,49
+G,Longview/Tyler,2020-05-11,46
+G,Longview/Tyler,2020-05-12,43
+G,Longview/Tyler,2020-05-13,39
+G,Longview/Tyler,2020-05-14,40
+G,Longview/Tyler,2020-05-15,45
+G,Longview/Tyler,2020-05-16,40
+G,Longview/Tyler,2020-05-17,37
+G,Longview/Tyler,2020-05-18,41
+G,Longview/Tyler,2020-05-19,40
+G,Longview/Tyler,2020-05-20,41
+G,Longview/Tyler,2020-05-21,38
+G,Longview/Tyler,2020-05-22,36
+G,Longview/Tyler,2020-05-23,42
+G,Longview/Tyler,2020-05-24,39
+G,Longview/Tyler,2020-05-25,40
+G,Longview/Tyler,2020-05-26,39
+G,Longview/Tyler,2020-05-27,43
+G,Longview/Tyler,2020-05-28,43
+G,Longview/Tyler,2020-05-29,44
+G,Longview/Tyler,2020-05-30,44
+G,Longview/Tyler,2020-05-31,46
+G,Longview/Tyler,2020-06-01,49
+G,Longview/Tyler,2020-06-02,53
+G,Longview/Tyler,2020-06-03,52
+G,Longview/Tyler,2020-06-04,44
+G,Longview/Tyler,2020-06-05,48
+G,Longview/Tyler,2020-06-06,43
+G,Longview/Tyler,2020-06-07,49
+G,Longview/Tyler,2020-06-08,54
+G,Longview/Tyler,2020-06-09,51
+G,Longview/Tyler,2020-06-10,50
+G,Longview/Tyler,2020-06-11,47
+G,Longview/Tyler,2020-06-12,50
+G,Longview/Tyler,2020-06-13,54
+G,Longview/Tyler,2020-06-14,53
+G,Longview/Tyler,2020-06-15,55
+G,Longview/Tyler,2020-06-16,60
+G,Longview/Tyler,2020-06-17,57
+G,Longview/Tyler,2020-06-18,47
+G,Longview/Tyler,2020-06-19,52
+G,Longview/Tyler,2020-06-20,51
+G,Longview/Tyler,2020-06-21,51
+G,Longview/Tyler,2020-06-22,54
+G,Longview/Tyler,2020-06-23,56
+G,Longview/Tyler,2020-06-24,62
+G,Longview/Tyler,2020-06-25,62
+H,Lufkin,2020-04-08,13
+H,Lufkin,2020-04-09,25
+H,Lufkin,2020-04-10,21
+H,Lufkin,2020-04-11,17
+H,Lufkin,2020-04-12,15
+H,Lufkin,2020-04-13,18
+H,Lufkin,2020-04-14,23
+H,Lufkin,2020-04-15,15
+H,Lufkin,2020-04-16,28
+H,Lufkin,2020-04-17,24
+H,Lufkin,2020-04-18,37
+H,Lufkin,2020-04-19,27
+H,Lufkin,2020-04-20,24
+H,Lufkin,2020-04-21,24
+H,Lufkin,2020-04-22,25
+H,Lufkin,2020-04-23,23
+H,Lufkin,2020-04-24,23
+H,Lufkin,2020-04-25,20
+H,Lufkin,2020-04-26,21
+H,Lufkin,2020-04-27,22
+H,Lufkin,2020-04-28,18
+H,Lufkin,2020-04-29,19
+H,Lufkin,2020-04-30,18
+H,Lufkin,2020-05-01,16
+H,Lufkin,2020-05-02,20
+H,Lufkin,2020-05-03,16
+H,Lufkin,2020-05-04,17
+H,Lufkin,2020-05-05,18
+H,Lufkin,2020-05-06,14
+H,Lufkin,2020-05-07,11
+H,Lufkin,2020-05-08,13
+H,Lufkin,2020-05-09,12
+H,Lufkin,2020-05-10,18
+H,Lufkin,2020-05-11,13
+H,Lufkin,2020-05-12,13
+H,Lufkin,2020-05-13,13
+H,Lufkin,2020-05-14,11
+H,Lufkin,2020-05-15,13
+H,Lufkin,2020-05-16,14
+H,Lufkin,2020-05-17,18
+H,Lufkin,2020-05-18,11
+H,Lufkin,2020-05-19,10
+H,Lufkin,2020-05-20,11
+H,Lufkin,2020-05-21,13
+H,Lufkin,2020-05-22,9
+H,Lufkin,2020-05-23,0
+H,Lufkin,2020-05-24,9
+H,Lufkin,2020-05-25,8
+H,Lufkin,2020-05-26,11
+H,Lufkin,2020-05-27,13
+H,Lufkin,2020-05-28,9
+H,Lufkin,2020-05-29,16
+H,Lufkin,2020-05-30,13
+H,Lufkin,2020-05-31,13
+H,Lufkin,2020-06-01,16
+H,Lufkin,2020-06-02,16
+H,Lufkin,2020-06-03,15
+H,Lufkin,2020-06-04,14
+H,Lufkin,2020-06-05,14
+H,Lufkin,2020-06-06,14
+H,Lufkin,2020-06-07,15
+H,Lufkin,2020-06-08,17
+H,Lufkin,2020-06-09,13
+H,Lufkin,2020-06-10,17
+H,Lufkin,2020-06-11,14
+H,Lufkin,2020-06-12,19
+H,Lufkin,2020-06-13,25
+H,Lufkin,2020-06-14,26
+H,Lufkin,2020-06-15,28
+H,Lufkin,2020-06-16,26
+H,Lufkin,2020-06-17,25
+H,Lufkin,2020-06-18,23
+H,Lufkin,2020-06-19,23
+H,Lufkin,2020-06-20,19
+H,Lufkin,2020-06-21,22
+H,Lufkin,2020-06-22,24
+H,Lufkin,2020-06-23,32
+H,Lufkin,2020-06-24,32
+H,Lufkin,2020-06-25,35
+I,El Paso,2020-04-08,12
+I,El Paso,2020-04-09,24
+I,El Paso,2020-04-10,31
+I,El Paso,2020-04-11,23
+I,El Paso,2020-04-12,14
+I,El Paso,2020-04-13,23
+I,El Paso,2020-04-14,12
+I,El Paso,2020-04-15,30
+I,El Paso,2020-04-16,24
+I,El Paso,2020-04-17,28
+I,El Paso,2020-04-18,33
+I,El Paso,2020-04-19,24
+I,El Paso,2020-04-20,29
+I,El Paso,2020-04-21,49
+I,El Paso,2020-04-22,49
+I,El Paso,2020-04-23,52
+I,El Paso,2020-04-24,56
+I,El Paso,2020-04-25,52
+I,El Paso,2020-04-26,60
+I,El Paso,2020-04-27,67
+I,El Paso,2020-04-28,65
+I,El Paso,2020-04-29,58
+I,El Paso,2020-04-30,68
+I,El Paso,2020-05-01,77
+I,El Paso,2020-05-02,74
+I,El Paso,2020-05-03,69
+I,El Paso,2020-05-04,64
+I,El Paso,2020-05-05,73
+I,El Paso,2020-05-06,72
+I,El Paso,2020-05-07,74
+I,El Paso,2020-05-08,81
+I,El Paso,2020-05-09,99
+I,El Paso,2020-05-10,103
+I,El Paso,2020-05-11,98
+I,El Paso,2020-05-12,98
+I,El Paso,2020-05-13,93
+I,El Paso,2020-05-14,90
+I,El Paso,2020-05-15,91
+I,El Paso,2020-05-16,105
+I,El Paso,2020-05-17,98
+I,El Paso,2020-05-18,108
+I,El Paso,2020-05-19,111
+I,El Paso,2020-05-20,126
+I,El Paso,2020-05-21,118
+I,El Paso,2020-05-22,116
+I,El Paso,2020-05-23,124
+I,El Paso,2020-05-24,128
+I,El Paso,2020-05-25,125
+I,El Paso,2020-05-26,126
+I,El Paso,2020-05-27,127
+I,El Paso,2020-05-28,123
+I,El Paso,2020-05-29,120
+I,El Paso,2020-05-30,115
+I,El Paso,2020-05-31,112
+I,El Paso,2020-06-01,109
+I,El Paso,2020-06-02,112
+I,El Paso,2020-06-03,112
+I,El Paso,2020-06-04,109
+I,El Paso,2020-06-05,104
+I,El Paso,2020-06-06,110
+I,El Paso,2020-06-07,110
+I,El Paso,2020-06-08,115
+I,El Paso,2020-06-09,119
+I,El Paso,2020-06-10,111
+I,El Paso,2020-06-11,99
+I,El Paso,2020-06-12,97
+I,El Paso,2020-06-13,93
+I,El Paso,2020-06-14,94
+I,El Paso,2020-06-15,94
+I,El Paso,2020-06-16,97
+I,El Paso,2020-06-17,105
+I,El Paso,2020-06-18,112
+I,El Paso,2020-06-19,107
+I,El Paso,2020-06-20,108
+I,El Paso,2020-06-21,110
+I,El Paso,2020-06-22,110
+I,El Paso,2020-06-23,116
+I,El Paso,2020-06-24,133
+I,El Paso,2020-06-25,130
+J,Midland/Odessa,2020-04-08,9
+J,Midland/Odessa,2020-04-09,11
+J,Midland/Odessa,2020-04-10,9
+J,Midland/Odessa,2020-04-11,17
+J,Midland/Odessa,2020-04-12,10
+J,Midland/Odessa,2020-04-13,11
+J,Midland/Odessa,2020-04-14,17
+J,Midland/Odessa,2020-04-15,7
+J,Midland/Odessa,2020-04-16,10
+J,Midland/Odessa,2020-04-17,15
+J,Midland/Odessa,2020-04-18,12
+J,Midland/Odessa,2020-04-19,10
+J,Midland/Odessa,2020-04-20,10
+J,Midland/Odessa,2020-04-21,8
+J,Midland/Odessa,2020-04-22,11
+J,Midland/Odessa,2020-04-23,10
+J,Midland/Odessa,2020-04-24,8
+J,Midland/Odessa,2020-04-25,7
+J,Midland/Odessa,2020-04-26,6
+J,Midland/Odessa,2020-04-27,8
+J,Midland/Odessa,2020-04-28,8
+J,Midland/Odessa,2020-04-29,6
+J,Midland/Odessa,2020-04-30,7
+J,Midland/Odessa,2020-05-01,7
+J,Midland/Odessa,2020-05-02,6
+J,Midland/Odessa,2020-05-03,8
+J,Midland/Odessa,2020-05-04,8
+J,Midland/Odessa,2020-05-05,15
+J,Midland/Odessa,2020-05-06,27
+J,Midland/Odessa,2020-05-07,28
+J,Midland/Odessa,2020-05-08,29
+J,Midland/Odessa,2020-05-09,32
+J,Midland/Odessa,2020-05-10,30
+J,Midland/Odessa,2020-05-11,31
+J,Midland/Odessa,2020-05-12,29
+J,Midland/Odessa,2020-05-13,32
+J,Midland/Odessa,2020-05-14,30
+J,Midland/Odessa,2020-05-15,30
+J,Midland/Odessa,2020-05-16,27
+J,Midland/Odessa,2020-05-17,22
+J,Midland/Odessa,2020-05-18,18
+J,Midland/Odessa,2020-05-19,18
+J,Midland/Odessa,2020-05-20,12
+J,Midland/Odessa,2020-05-21,9
+J,Midland/Odessa,2020-05-22,9
+J,Midland/Odessa,2020-05-23,10
+J,Midland/Odessa,2020-05-24,11
+J,Midland/Odessa,2020-05-25,15
+J,Midland/Odessa,2020-05-26,16
+J,Midland/Odessa,2020-05-27,16
+J,Midland/Odessa,2020-05-28,17
+J,Midland/Odessa,2020-05-29,19
+J,Midland/Odessa,2020-05-30,16
+J,Midland/Odessa,2020-05-31,17
+J,Midland/Odessa,2020-06-01,18
+J,Midland/Odessa,2020-06-02,19
+J,Midland/Odessa,2020-06-03,18
+J,Midland/Odessa,2020-06-04,18
+J,Midland/Odessa,2020-06-05,19
+J,Midland/Odessa,2020-06-06,20
+J,Midland/Odessa,2020-06-07,22
+J,Midland/Odessa,2020-06-08,23
+J,Midland/Odessa,2020-06-09,23
+J,Midland/Odessa,2020-06-10,23
+J,Midland/Odessa,2020-06-11,19
+J,Midland/Odessa,2020-06-12,20
+J,Midland/Odessa,2020-06-13,21
+J,Midland/Odessa,2020-06-14,21
+J,Midland/Odessa,2020-06-15,23
+J,Midland/Odessa,2020-06-16,25
+J,Midland/Odessa,2020-06-17,25
+J,Midland/Odessa,2020-06-18,23
+J,Midland/Odessa,2020-06-19,25
+J,Midland/Odessa,2020-06-20,27
+J,Midland/Odessa,2020-06-21,32
+J,Midland/Odessa,2020-06-22,35
+J,Midland/Odessa,2020-06-23,43
+J,Midland/Odessa,2020-06-24,39
+J,Midland/Odessa,2020-06-25,47
+K,San Angelo,2020-04-08,0
+K,San Angelo,2020-04-09,0
+K,San Angelo,2020-04-10,1
+K,San Angelo,2020-04-11,1
+K,San Angelo,2020-04-12,0
+K,San Angelo,2020-04-13,0
+K,San Angelo,2020-04-14,0
+K,San Angelo,2020-04-15,0
+K,San Angelo,2020-04-16,0
+K,San Angelo,2020-04-17,0
+K,San Angelo,2020-04-18,0
+K,San Angelo,2020-04-19,0
+K,San Angelo,2020-04-20,0
+K,San Angelo,2020-04-21,0
+K,San Angelo,2020-04-22,0
+K,San Angelo,2020-04-23,0
+K,San Angelo,2020-04-24,0
+K,San Angelo,2020-04-25,0
+K,San Angelo,2020-04-26,4
+K,San Angelo,2020-04-27,2
+K,San Angelo,2020-04-28,0
+K,San Angelo,2020-04-29,0
+K,San Angelo,2020-04-30,0
+K,San Angelo,2020-05-01,0
+K,San Angelo,2020-05-02,0
+K,San Angelo,2020-05-03,0
+K,San Angelo,2020-05-04,0
+K,San Angelo,2020-05-05,0
+K,San Angelo,2020-05-06,0
+K,San Angelo,2020-05-07,0
+K,San Angelo,2020-05-08,0
+K,San Angelo,2020-05-09,1
+K,San Angelo,2020-05-10,2
+K,San Angelo,2020-05-11,2
+K,San Angelo,2020-05-12,1
+K,San Angelo,2020-05-13,0
+K,San Angelo,2020-05-14,0
+K,San Angelo,2020-05-15,0
+K,San Angelo,2020-05-16,0
+K,San Angelo,2020-05-17,0
+K,San Angelo,2020-05-18,0
+K,San Angelo,2020-05-19,0
+K,San Angelo,2020-05-20,3
+K,San Angelo,2020-05-21,0
+K,San Angelo,2020-05-22,0
+K,San Angelo,2020-05-23,0
+K,San Angelo,2020-05-24,0
+K,San Angelo,2020-05-25,0
+K,San Angelo,2020-05-26,0
+K,San Angelo,2020-05-27,0
+K,San Angelo,2020-05-28,1
+K,San Angelo,2020-05-29,1
+K,San Angelo,2020-05-30,1
+K,San Angelo,2020-05-31,1
+K,San Angelo,2020-06-01,0
+K,San Angelo,2020-06-02,0
+K,San Angelo,2020-06-03,0
+K,San Angelo,2020-06-04,2
+K,San Angelo,2020-06-05,2
+K,San Angelo,2020-06-06,2
+K,San Angelo,2020-06-07,2
+K,San Angelo,2020-06-08,2
+K,San Angelo,2020-06-09,2
+K,San Angelo,2020-06-10,0
+K,San Angelo,2020-06-11,0
+K,San Angelo,2020-06-12,1
+K,San Angelo,2020-06-13,1
+K,San Angelo,2020-06-14,2
+K,San Angelo,2020-06-15,2
+K,San Angelo,2020-06-16,2
+K,San Angelo,2020-06-17,2
+K,San Angelo,2020-06-18,2
+K,San Angelo,2020-06-19,3
+K,San Angelo,2020-06-20,3
+K,San Angelo,2020-06-21,5
+K,San Angelo,2020-06-22,6
+K,San Angelo,2020-06-23,7
+K,San Angelo,2020-06-24,8
+K,San Angelo,2020-06-25,12
+L,Belton/Killeen,2020-04-08,11
+L,Belton/Killeen,2020-04-09,6
+L,Belton/Killeen,2020-04-10,13
+L,Belton/Killeen,2020-04-11,12
+L,Belton/Killeen,2020-04-12,11
+L,Belton/Killeen,2020-04-13,12
+L,Belton/Killeen,2020-04-14,13
+L,Belton/Killeen,2020-04-15,16
+L,Belton/Killeen,2020-04-16,16
+L,Belton/Killeen,2020-04-17,15
+L,Belton/Killeen,2020-04-18,15
+L,Belton/Killeen,2020-04-19,12
+L,Belton/Killeen,2020-04-20,11
+L,Belton/Killeen,2020-04-21,15
+L,Belton/Killeen,2020-04-22,13
+L,Belton/Killeen,2020-04-23,15
+L,Belton/Killeen,2020-04-24,16
+L,Belton/Killeen,2020-04-25,12
+L,Belton/Killeen,2020-04-26,16
+L,Belton/Killeen,2020-04-27,16
+L,Belton/Killeen,2020-04-28,14
+L,Belton/Killeen,2020-04-29,16
+L,Belton/Killeen,2020-04-30,15
+L,Belton/Killeen,2020-05-01,12
+L,Belton/Killeen,2020-05-02,17
+L,Belton/Killeen,2020-05-03,13
+L,Belton/Killeen,2020-05-04,12
+L,Belton/Killeen,2020-05-05,17
+L,Belton/Killeen,2020-05-06,12
+L,Belton/Killeen,2020-05-07,11
+L,Belton/Killeen,2020-05-08,12
+L,Belton/Killeen,2020-05-09,9
+L,Belton/Killeen,2020-05-10,9
+L,Belton/Killeen,2020-05-11,9
+L,Belton/Killeen,2020-05-12,12
+L,Belton/Killeen,2020-05-13,14
+L,Belton/Killeen,2020-05-14,9
+L,Belton/Killeen,2020-05-15,15
+L,Belton/Killeen,2020-05-16,11
+L,Belton/Killeen,2020-05-17,11
+L,Belton/Killeen,2020-05-18,14
+L,Belton/Killeen,2020-05-19,19
+L,Belton/Killeen,2020-05-20,21
+L,Belton/Killeen,2020-05-21,10
+L,Belton/Killeen,2020-05-22,19
+L,Belton/Killeen,2020-05-23,13
+L,Belton/Killeen,2020-05-24,12
+L,Belton/Killeen,2020-05-25,10
+L,Belton/Killeen,2020-05-26,2
+L,Belton/Killeen,2020-05-27,4
+L,Belton/Killeen,2020-05-28,6
+L,Belton/Killeen,2020-05-29,6
+L,Belton/Killeen,2020-05-30,9
+L,Belton/Killeen,2020-05-31,17
+L,Belton/Killeen,2020-06-01,21
+L,Belton/Killeen,2020-06-02,21
+L,Belton/Killeen,2020-06-03,25
+L,Belton/Killeen,2020-06-04,24
+L,Belton/Killeen,2020-06-05,25
+L,Belton/Killeen,2020-06-06,22
+L,Belton/Killeen,2020-06-07,24
+L,Belton/Killeen,2020-06-08,22
+L,Belton/Killeen,2020-06-09,20
+L,Belton/Killeen,2020-06-10,18
+L,Belton/Killeen,2020-06-11,19
+L,Belton/Killeen,2020-06-12,16
+L,Belton/Killeen,2020-06-13,17
+L,Belton/Killeen,2020-06-14,16
+L,Belton/Killeen,2020-06-15,16
+L,Belton/Killeen,2020-06-16,14
+L,Belton/Killeen,2020-06-17,15
+L,Belton/Killeen,2020-06-18,20
+L,Belton/Killeen,2020-06-19,18
+L,Belton/Killeen,2020-06-20,18
+L,Belton/Killeen,2020-06-21,20
+L,Belton/Killeen,2020-06-22,24
+L,Belton/Killeen,2020-06-23,31
+L,Belton/Killeen,2020-06-24,33
+L,Belton/Killeen,2020-06-25,24
+M,Waco,2020-04-08,2
+M,Waco,2020-04-09,9
+M,Waco,2020-04-10,8
+M,Waco,2020-04-11,2
+M,Waco,2020-04-12,9
+M,Waco,2020-04-13,2
+M,Waco,2020-04-14,5
+M,Waco,2020-04-15,5
+M,Waco,2020-04-16,6
+M,Waco,2020-04-17,4
+M,Waco,2020-04-18,4
+M,Waco,2020-04-19,1
+M,Waco,2020-04-20,1
+M,Waco,2020-04-21,3
+M,Waco,2020-04-22,2
+M,Waco,2020-04-23,3
+M,Waco,2020-04-24,3
+M,Waco,2020-04-25,3
+M,Waco,2020-04-26,3
+M,Waco,2020-04-27,2
+M,Waco,2020-04-28,2
+M,Waco,2020-04-29,1
+M,Waco,2020-04-30,1
+M,Waco,2020-05-01,2
+M,Waco,2020-05-02,3
+M,Waco,2020-05-03,3
+M,Waco,2020-05-04,2
+M,Waco,2020-05-05,2
+M,Waco,2020-05-06,1
+M,Waco,2020-05-07,1
+M,Waco,2020-05-08,1
+M,Waco,2020-05-09,1
+M,Waco,2020-05-10,1
+M,Waco,2020-05-11,1
+M,Waco,2020-05-12,1
+M,Waco,2020-05-13,1
+M,Waco,2020-05-14,0
+M,Waco,2020-05-15,2
+M,Waco,2020-05-16,2
+M,Waco,2020-05-17,1
+M,Waco,2020-05-18,2
+M,Waco,2020-05-19,3
+M,Waco,2020-05-20,1
+M,Waco,2020-05-21,0
+M,Waco,2020-05-22,0
+M,Waco,2020-05-23,1
+M,Waco,2020-05-24,1
+M,Waco,2020-05-25,1
+M,Waco,2020-05-26,1
+M,Waco,2020-05-27,0
+M,Waco,2020-05-28,0
+M,Waco,2020-05-29,0
+M,Waco,2020-05-30,0
+M,Waco,2020-05-31,2
+M,Waco,2020-06-01,2
+M,Waco,2020-06-02,2
+M,Waco,2020-06-03,2
+M,Waco,2020-06-04,2
+M,Waco,2020-06-05,2
+M,Waco,2020-06-06,2
+M,Waco,2020-06-07,2
+M,Waco,2020-06-08,2
+M,Waco,2020-06-09,2
+M,Waco,2020-06-10,1
+M,Waco,2020-06-11,2
+M,Waco,2020-06-12,5
+M,Waco,2020-06-13,5
+M,Waco,2020-06-14,5
+M,Waco,2020-06-15,5
+M,Waco,2020-06-16,5
+M,Waco,2020-06-17,7
+M,Waco,2020-06-18,7
+M,Waco,2020-06-19,6
+M,Waco,2020-06-20,6
+M,Waco,2020-06-21,8
+M,Waco,2020-06-22,7
+M,Waco,2020-06-23,12
+M,Waco,2020-06-24,14
+M,Waco,2020-06-25,14
+N,Bryan/College Station,2020-04-08,17
+N,Bryan/College Station,2020-04-09,14
+N,Bryan/College Station,2020-04-10,13
+N,Bryan/College Station,2020-04-11,19
+N,Bryan/College Station,2020-04-12,24
+N,Bryan/College Station,2020-04-13,31
+N,Bryan/College Station,2020-04-14,13
+N,Bryan/College Station,2020-04-15,13
+N,Bryan/College Station,2020-04-16,16
+N,Bryan/College Station,2020-04-17,21
+N,Bryan/College Station,2020-04-18,13
+N,Bryan/College Station,2020-04-19,17
+N,Bryan/College Station,2020-04-20,9
+N,Bryan/College Station,2020-04-21,12
+N,Bryan/College Station,2020-04-22,12
+N,Bryan/College Station,2020-04-23,13
+N,Bryan/College Station,2020-04-24,12
+N,Bryan/College Station,2020-04-25,14
+N,Bryan/College Station,2020-04-26,11
+N,Bryan/College Station,2020-04-27,12
+N,Bryan/College Station,2020-04-28,18
+N,Bryan/College Station,2020-04-29,21
+N,Bryan/College Station,2020-04-30,23
+N,Bryan/College Station,2020-05-01,11
+N,Bryan/College Station,2020-05-02,16
+N,Bryan/College Station,2020-05-03,16
+N,Bryan/College Station,2020-05-04,9
+N,Bryan/College Station,2020-05-05,11
+N,Bryan/College Station,2020-05-06,11
+N,Bryan/College Station,2020-05-07,12
+N,Bryan/College Station,2020-05-08,17
+N,Bryan/College Station,2020-05-09,13
+N,Bryan/College Station,2020-05-10,12
+N,Bryan/College Station,2020-05-11,16
+N,Bryan/College Station,2020-05-12,15
+N,Bryan/College Station,2020-05-13,15
+N,Bryan/College Station,2020-05-14,16
+N,Bryan/College Station,2020-05-15,15
+N,Bryan/College Station,2020-05-16,15
+N,Bryan/College Station,2020-05-17,15
+N,Bryan/College Station,2020-05-18,13
+N,Bryan/College Station,2020-05-19,16
+N,Bryan/College Station,2020-05-20,12
+N,Bryan/College Station,2020-05-21,13
+N,Bryan/College Station,2020-05-22,9
+N,Bryan/College Station,2020-05-23,11
+N,Bryan/College Station,2020-05-24,11
+N,Bryan/College Station,2020-05-25,12
+N,Bryan/College Station,2020-05-26,11
+N,Bryan/College Station,2020-05-27,6
+N,Bryan/College Station,2020-05-28,15
+N,Bryan/College Station,2020-05-29,17
+N,Bryan/College Station,2020-05-30,18
+N,Bryan/College Station,2020-05-31,18
+N,Bryan/College Station,2020-06-01,23
+N,Bryan/College Station,2020-06-02,25
+N,Bryan/College Station,2020-06-03,25
+N,Bryan/College Station,2020-06-04,26
+N,Bryan/College Station,2020-06-05,22
+N,Bryan/College Station,2020-06-06,20
+N,Bryan/College Station,2020-06-07,22
+N,Bryan/College Station,2020-06-08,24
+N,Bryan/College Station,2020-06-09,26
+N,Bryan/College Station,2020-06-10,24
+N,Bryan/College Station,2020-06-11,22
+N,Bryan/College Station,2020-06-12,31
+N,Bryan/College Station,2020-06-13,26
+N,Bryan/College Station,2020-06-14,28
+N,Bryan/College Station,2020-06-15,29
+N,Bryan/College Station,2020-06-16,27
+N,Bryan/College Station,2020-06-17,37
+N,Bryan/College Station,2020-06-18,41
+N,Bryan/College Station,2020-06-19,42
+N,Bryan/College Station,2020-06-20,45
+N,Bryan/College Station,2020-06-21,44
+N,Bryan/College Station,2020-06-22,44
+N,Bryan/College Station,2020-06-23,51
+N,Bryan/College Station,2020-06-24,46
+N,Bryan/College Station,2020-06-25,47
+O,Austin,2020-04-08,45
+O,Austin,2020-04-09,37
+O,Austin,2020-04-10,28
+O,Austin,2020-04-11,22
+O,Austin,2020-04-12,22
+O,Austin,2020-04-13,26
+O,Austin,2020-04-14,28
+O,Austin,2020-04-15,30
+O,Austin,2020-04-16,22
+O,Austin,2020-04-17,36
+O,Austin,2020-04-18,29
+O,Austin,2020-04-19,25
+O,Austin,2020-04-20,27
+O,Austin,2020-04-21,23
+O,Austin,2020-04-22,62
+O,Austin,2020-04-23,83
+O,Austin,2020-04-24,76
+O,Austin,2020-04-25,59
+O,Austin,2020-04-26,47
+O,Austin,2020-04-27,46
+O,Austin,2020-04-28,51
+O,Austin,2020-04-29,81
+O,Austin,2020-04-30,88
+O,Austin,2020-05-01,68
+O,Austin,2020-05-02,47
+O,Austin,2020-05-03,59
+O,Austin,2020-05-04,47
+O,Austin,2020-05-05,68
+O,Austin,2020-05-06,93
+O,Austin,2020-05-07,84
+O,Austin,2020-05-08,82
+O,Austin,2020-05-09,56
+O,Austin,2020-05-10,50
+O,Austin,2020-05-11,49
+O,Austin,2020-05-12,72
+O,Austin,2020-05-13,98
+O,Austin,2020-05-14,72
+O,Austin,2020-05-15,99
+O,Austin,2020-05-16,76
+O,Austin,2020-05-17,7
+O,Austin,2020-05-18,25
+O,Austin,2020-05-19,54
+O,Austin,2020-05-20,82
+O,Austin,2020-05-21,56
+O,Austin,2020-05-22,30
+O,Austin,2020-05-23,103
+O,Austin,2020-05-24,43
+O,Austin,2020-05-25,20
+O,Austin,2020-05-26,35
+O,Austin,2020-05-27,46
+O,Austin,2020-05-28,66
+O,Austin,2020-05-29,93
+O,Austin,2020-05-30,92
+O,Austin,2020-05-31,87
+O,Austin,2020-06-01,89
+O,Austin,2020-06-02,89
+O,Austin,2020-06-03,98
+O,Austin,2020-06-04,88
+O,Austin,2020-06-05,79
+O,Austin,2020-06-06,89
+O,Austin,2020-06-07,100
+O,Austin,2020-06-08,87
+O,Austin,2020-06-09,90
+O,Austin,2020-06-10,93
+O,Austin,2020-06-11,89
+O,Austin,2020-06-12,120
+O,Austin,2020-06-13,121
+O,Austin,2020-06-14,123
+O,Austin,2020-06-15,141
+O,Austin,2020-06-16,137
+O,Austin,2020-06-17,148
+O,Austin,2020-06-18,164
+O,Austin,2020-06-19,179
+O,Austin,2020-06-20,181
+O,Austin,2020-06-21,196
+O,Austin,2020-06-22,205
+O,Austin,2020-06-23,245
+O,Austin,2020-06-24,274
+O,Austin,2020-06-25,288
+P,San Antonio,2020-04-08,69
+P,San Antonio,2020-04-09,62
+P,San Antonio,2020-04-10,62
+P,San Antonio,2020-04-11,62
+P,San Antonio,2020-04-12,57
+P,San Antonio,2020-04-13,57
+P,San Antonio,2020-04-14,64
+P,San Antonio,2020-04-15,65
+P,San Antonio,2020-04-16,30
+P,San Antonio,2020-04-17,47
+P,San Antonio,2020-04-18,52
+P,San Antonio,2020-04-19,46
+P,San Antonio,2020-04-20,38
+P,San Antonio,2020-04-21,45
+P,San Antonio,2020-04-22,109
+P,San Antonio,2020-04-23,80
+P,San Antonio,2020-04-24,63
+P,San Antonio,2020-04-25,53
+P,San Antonio,2020-04-26,60
+P,San Antonio,2020-04-27,59
+P,San Antonio,2020-04-28,59
+P,San Antonio,2020-04-29,58
+P,San Antonio,2020-04-30,53
+P,San Antonio,2020-05-01,54
+P,San Antonio,2020-05-02,57
+P,San Antonio,2020-05-03,61
+P,San Antonio,2020-05-04,56
+P,San Antonio,2020-05-05,67
+P,San Antonio,2020-05-06,69
+P,San Antonio,2020-05-07,56
+P,San Antonio,2020-05-08,68
+P,San Antonio,2020-05-09,71
+P,San Antonio,2020-05-10,59
+P,San Antonio,2020-05-11,53
+P,San Antonio,2020-05-12,72
+P,San Antonio,2020-05-13,71
+P,San Antonio,2020-05-14,61
+P,San Antonio,2020-05-15,65
+P,San Antonio,2020-05-16,76
+P,San Antonio,2020-05-17,82
+P,San Antonio,2020-05-18,80
+P,San Antonio,2020-05-19,84
+P,San Antonio,2020-05-20,93
+P,San Antonio,2020-05-21,95
+P,San Antonio,2020-05-22,90
+P,San Antonio,2020-05-23,96
+P,San Antonio,2020-05-24,93
+P,San Antonio,2020-05-25,87
+P,San Antonio,2020-05-26,90
+P,San Antonio,2020-05-27,108
+P,San Antonio,2020-05-28,106
+P,San Antonio,2020-05-29,107
+P,San Antonio,2020-05-30,98
+P,San Antonio,2020-05-31,90
+P,San Antonio,2020-06-01,105
+P,San Antonio,2020-06-02,87
+P,San Antonio,2020-06-03,101
+P,San Antonio,2020-06-04,74
+P,San Antonio,2020-06-05,111
+P,San Antonio,2020-06-06,98
+P,San Antonio,2020-06-07,94
+P,San Antonio,2020-06-08,99
+P,San Antonio,2020-06-09,119
+P,San Antonio,2020-06-10,128
+P,San Antonio,2020-06-11,133
+P,San Antonio,2020-06-12,116
+P,San Antonio,2020-06-13,144
+P,San Antonio,2020-06-14,163
+P,San Antonio,2020-06-15,165
+P,San Antonio,2020-06-16,185
+P,San Antonio,2020-06-17,233
+P,San Antonio,2020-06-18,227
+P,San Antonio,2020-06-19,279
+P,San Antonio,2020-06-20,334
+P,San Antonio,2020-06-21,357
+P,San Antonio,2020-06-22,473
+P,San Antonio,2020-06-23,501
+P,San Antonio,2020-06-24,549
+P,San Antonio,2020-06-25,606
+Q,Houston,2020-04-08,495
+Q,Houston,2020-04-09,570
+Q,Houston,2020-04-10,582
+Q,Houston,2020-04-11,610
+Q,Houston,2020-04-12,516
+Q,Houston,2020-04-13,319
+Q,Houston,2020-04-14,527
+Q,Houston,2020-04-15,584
+Q,Houston,2020-04-16,511
+Q,Houston,2020-04-17,500
+Q,Houston,2020-04-18,363
+Q,Houston,2020-04-19,535
+Q,Houston,2020-04-20,516
+Q,Houston,2020-04-21,516
+Q,Houston,2020-04-22,505
+Q,Houston,2020-04-23,501
+Q,Houston,2020-04-24,501
+Q,Houston,2020-04-25,465
+Q,Houston,2020-04-26,464
+Q,Houston,2020-04-27,468
+Q,Houston,2020-04-28,485
+Q,Houston,2020-04-29,436
+Q,Houston,2020-04-30,442
+Q,Houston,2020-05-01,475
+Q,Houston,2020-05-02,434
+Q,Houston,2020-05-03,329
+Q,Houston,2020-05-04,418
+Q,Houston,2020-05-05,544
+Q,Houston,2020-05-06,436
+Q,Houston,2020-05-07,453
+Q,Houston,2020-05-08,430
+Q,Houston,2020-05-09,446
+Q,Houston,2020-05-10,446
+Q,Houston,2020-05-11,402
+Q,Houston,2020-05-12,436
+Q,Houston,2020-05-13,435
+Q,Houston,2020-05-14,411
+Q,Houston,2020-05-15,401
+Q,Houston,2020-05-16,414
+Q,Houston,2020-05-17,380
+Q,Houston,2020-05-18,397
+Q,Houston,2020-05-19,433
+Q,Houston,2020-05-20,443
+Q,Houston,2020-05-21,444
+Q,Houston,2020-05-22,406
+Q,Houston,2020-05-23,387
+Q,Houston,2020-05-24,407
+Q,Houston,2020-05-25,392
+Q,Houston,2020-05-26,401
+Q,Houston,2020-05-27,414
+Q,Houston,2020-05-28,435
+Q,Houston,2020-05-29,407
+Q,Houston,2020-05-30,460
+Q,Houston,2020-05-31,454
+Q,Houston,2020-06-01,482
+Q,Houston,2020-06-02,506
+Q,Houston,2020-06-03,495
+Q,Houston,2020-06-04,526
+Q,Houston,2020-06-05,555
+Q,Houston,2020-06-06,522
+Q,Houston,2020-06-07,565
+Q,Houston,2020-06-08,614
+Q,Houston,2020-06-09,622
+Q,Houston,2020-06-10,690
+Q,Houston,2020-06-11,642
+Q,Houston,2020-06-12,663
+Q,Houston,2020-06-13,681
+Q,Houston,2020-06-14,696
+Q,Houston,2020-06-15,730
+Q,Houston,2020-06-16,795
+Q,Houston,2020-06-17,839
+Q,Houston,2020-06-18,940
+Q,Houston,2020-06-19,1031
+Q,Houston,2020-06-20,1040
+Q,Houston,2020-06-21,1062
+Q,Houston,2020-06-22,1185
+Q,Houston,2020-06-23,1293
+Q,Houston,2020-06-24,1343
+Q,Houston,2020-06-25,1496
+R,Galveston,2020-04-08,55
+R,Galveston,2020-04-09,60
+R,Galveston,2020-04-10,67
+R,Galveston,2020-04-11,73
+R,Galveston,2020-04-12,76
+R,Galveston,2020-04-13,84
+R,Galveston,2020-04-14,97
+R,Galveston,2020-04-15,96
+R,Galveston,2020-04-16,101
+R,Galveston,2020-04-17,104
+R,Galveston,2020-04-18,111
+R,Galveston,2020-04-19,94
+R,Galveston,2020-04-20,110
+R,Galveston,2020-04-21,110
+R,Galveston,2020-04-22,125
+R,Galveston,2020-04-23,128
+R,Galveston,2020-04-24,128
+R,Galveston,2020-04-25,142
+R,Galveston,2020-04-26,127
+R,Galveston,2020-04-27,115
+R,Galveston,2020-04-28,124
+R,Galveston,2020-04-29,132
+R,Galveston,2020-04-30,124
+R,Galveston,2020-05-01,129
+R,Galveston,2020-05-02,101
+R,Galveston,2020-05-03,88
+R,Galveston,2020-05-04,92
+R,Galveston,2020-05-05,118
+R,Galveston,2020-05-06,114
+R,Galveston,2020-05-07,57
+R,Galveston,2020-05-08,53
+R,Galveston,2020-05-09,58
+R,Galveston,2020-05-10,52
+R,Galveston,2020-05-11,52
+R,Galveston,2020-05-12,40
+R,Galveston,2020-05-13,47
+R,Galveston,2020-05-14,46
+R,Galveston,2020-05-15,55
+R,Galveston,2020-05-16,121
+R,Galveston,2020-05-17,112
+R,Galveston,2020-05-18,111
+R,Galveston,2020-05-19,123
+R,Galveston,2020-05-20,117
+R,Galveston,2020-05-21,117
+R,Galveston,2020-05-22,117
+R,Galveston,2020-05-23,122
+R,Galveston,2020-05-24,116
+R,Galveston,2020-05-25,119
+R,Galveston,2020-05-26,101
+R,Galveston,2020-05-27,114
+R,Galveston,2020-05-28,89
+R,Galveston,2020-05-29,115
+R,Galveston,2020-05-30,106
+R,Galveston,2020-05-31,91
+R,Galveston,2020-06-01,111
+R,Galveston,2020-06-02,108
+R,Galveston,2020-06-03,115
+R,Galveston,2020-06-04,96
+R,Galveston,2020-06-05,119
+R,Galveston,2020-06-06,122
+R,Galveston,2020-06-07,126
+R,Galveston,2020-06-08,123
+R,Galveston,2020-06-09,147
+R,Galveston,2020-06-10,142
+R,Galveston,2020-06-11,60
+R,Galveston,2020-06-12,131
+R,Galveston,2020-06-13,137
+R,Galveston,2020-06-14,136
+R,Galveston,2020-06-15,154
+R,Galveston,2020-06-16,157
+R,Galveston,2020-06-17,164
+R,Galveston,2020-06-18,152
+R,Galveston,2020-06-19,159
+R,Galveston,2020-06-20,144
+R,Galveston,2020-06-21,193
+R,Galveston,2020-06-22,166
+R,Galveston,2020-06-23,194
+R,Galveston,2020-06-24,223
+R,Galveston,2020-06-25,230
+S,Victoria,2020-04-08,14
+S,Victoria,2020-04-09,14
+S,Victoria,2020-04-10,14
+S,Victoria,2020-04-11,14
+S,Victoria,2020-04-12,16
+S,Victoria,2020-04-13,21
+S,Victoria,2020-04-14,22
+S,Victoria,2020-04-15,21
+S,Victoria,2020-04-16,19
+S,Victoria,2020-04-17,17
+S,Victoria,2020-04-18,19
+S,Victoria,2020-04-19,19
+S,Victoria,2020-04-20,21
+S,Victoria,2020-04-21,22
+S,Victoria,2020-04-22,50
+S,Victoria,2020-04-23,30
+S,Victoria,2020-04-24,26
+S,Victoria,2020-04-25,23
+S,Victoria,2020-04-26,22
+S,Victoria,2020-04-27,26
+S,Victoria,2020-04-28,25
+S,Victoria,2020-04-29,24
+S,Victoria,2020-04-30,25
+S,Victoria,2020-05-01,29
+S,Victoria,2020-05-02,24
+S,Victoria,2020-05-03,24
+S,Victoria,2020-05-04,22
+S,Victoria,2020-05-05,22
+S,Victoria,2020-05-06,21
+S,Victoria,2020-05-07,21
+S,Victoria,2020-05-08,20
+S,Victoria,2020-05-09,18
+S,Victoria,2020-05-10,17
+S,Victoria,2020-05-11,18
+S,Victoria,2020-05-12,17
+S,Victoria,2020-05-13,17
+S,Victoria,2020-05-14,12
+S,Victoria,2020-05-15,12
+S,Victoria,2020-05-16,15
+S,Victoria,2020-05-17,14
+S,Victoria,2020-05-18,15
+S,Victoria,2020-05-19,12
+S,Victoria,2020-05-20,10
+S,Victoria,2020-05-21,11
+S,Victoria,2020-05-22,15
+S,Victoria,2020-05-23,15
+S,Victoria,2020-05-24,13
+S,Victoria,2020-05-25,13
+S,Victoria,2020-05-26,13
+S,Victoria,2020-05-27,14
+S,Victoria,2020-05-28,12
+S,Victoria,2020-05-29,10
+S,Victoria,2020-05-30,10
+S,Victoria,2020-05-31,18
+S,Victoria,2020-06-01,17
+S,Victoria,2020-06-02,19
+S,Victoria,2020-06-03,19
+S,Victoria,2020-06-04,22
+S,Victoria,2020-06-05,23
+S,Victoria,2020-06-06,14
+S,Victoria,2020-06-07,13
+S,Victoria,2020-06-08,12
+S,Victoria,2020-06-09,11
+S,Victoria,2020-06-10,10
+S,Victoria,2020-06-11,9
+S,Victoria,2020-06-12,7
+S,Victoria,2020-06-13,7
+S,Victoria,2020-06-14,8
+S,Victoria,2020-06-15,11
+S,Victoria,2020-06-16,11
+S,Victoria,2020-06-17,12
+S,Victoria,2020-06-18,9
+S,Victoria,2020-06-19,11
+S,Victoria,2020-06-20,15
+S,Victoria,2020-06-21,15
+S,Victoria,2020-06-22,20
+S,Victoria,2020-06-23,18
+S,Victoria,2020-06-24,30
+S,Victoria,2020-06-25,31
+T,Laredo,2020-04-08,27
+T,Laredo,2020-04-09,26
+T,Laredo,2020-04-10,28
+T,Laredo,2020-04-11,29
+T,Laredo,2020-04-12,25
+T,Laredo,2020-04-13,24
+T,Laredo,2020-04-14,28
+T,Laredo,2020-04-15,26
+T,Laredo,2020-04-16,27
+T,Laredo,2020-04-17,31
+T,Laredo,2020-04-18,31
+T,Laredo,2020-04-19,25
+T,Laredo,2020-04-20,27
+T,Laredo,2020-04-21,0
+T,Laredo,2020-04-22,23
+T,Laredo,2020-04-23,20
+T,Laredo,2020-04-24,28
+T,Laredo,2020-04-25,25
+T,Laredo,2020-04-26,24
+T,Laredo,2020-04-27,23
+T,Laredo,2020-04-28,20
+T,Laredo,2020-04-29,23
+T,Laredo,2020-04-30,18
+T,Laredo,2020-05-01,20
+T,Laredo,2020-05-02,21
+T,Laredo,2020-05-03,23
+T,Laredo,2020-05-04,23
+T,Laredo,2020-05-05,20
+T,Laredo,2020-05-06,18
+T,Laredo,2020-05-07,19
+T,Laredo,2020-05-08,18
+T,Laredo,2020-05-09,18
+T,Laredo,2020-05-10,18
+T,Laredo,2020-05-11,17
+T,Laredo,2020-05-12,14
+T,Laredo,2020-05-13,13
+T,Laredo,2020-05-14,14
+T,Laredo,2020-05-15,15
+T,Laredo,2020-05-16,16
+T,Laredo,2020-05-17,15
+T,Laredo,2020-05-18,14
+T,Laredo,2020-05-19,13
+T,Laredo,2020-05-20,13
+T,Laredo,2020-05-21,14
+T,Laredo,2020-05-22,14
+T,Laredo,2020-05-23,14
+T,Laredo,2020-05-24,13
+T,Laredo,2020-05-25,14
+T,Laredo,2020-05-26,14
+T,Laredo,2020-05-27,14
+T,Laredo,2020-05-28,15
+T,Laredo,2020-05-29,16
+T,Laredo,2020-05-30,15
+T,Laredo,2020-05-31,14
+T,Laredo,2020-06-01,14
+T,Laredo,2020-06-02,12
+T,Laredo,2020-06-03,10
+T,Laredo,2020-06-04,12
+T,Laredo,2020-06-05,11
+T,Laredo,2020-06-06,12
+T,Laredo,2020-06-07,10
+T,Laredo,2020-06-08,9
+T,Laredo,2020-06-09,9
+T,Laredo,2020-06-10,12
+T,Laredo,2020-06-11,12
+T,Laredo,2020-06-12,12
+T,Laredo,2020-06-13,12
+T,Laredo,2020-06-14,11
+T,Laredo,2020-06-15,11
+T,Laredo,2020-06-16,10
+T,Laredo,2020-06-17,14
+T,Laredo,2020-06-18,14
+T,Laredo,2020-06-19,15
+T,Laredo,2020-06-20,16
+T,Laredo,2020-06-21,18
+T,Laredo,2020-06-22,15
+T,Laredo,2020-06-23,20
+T,Laredo,2020-06-24,24
+T,Laredo,2020-06-25,33
+U,Corpus Christi,2020-04-08,13
+U,Corpus Christi,2020-04-09,11
+U,Corpus Christi,2020-04-10,8
+U,Corpus Christi,2020-04-11,16
+U,Corpus Christi,2020-04-12,9
+U,Corpus Christi,2020-04-13,12
+U,Corpus Christi,2020-04-14,9
+U,Corpus Christi,2020-04-15,12
+U,Corpus Christi,2020-04-16,7
+U,Corpus Christi,2020-04-17,11
+U,Corpus Christi,2020-04-18,13
+U,Corpus Christi,2020-04-19,8
+U,Corpus Christi,2020-04-20,9
+U,Corpus Christi,2020-04-21,9
+U,Corpus Christi,2020-04-22,6
+U,Corpus Christi,2020-04-23,8
+U,Corpus Christi,2020-04-24,6
+U,Corpus Christi,2020-04-25,9
+U,Corpus Christi,2020-04-26,9
+U,Corpus Christi,2020-04-27,4
+U,Corpus Christi,2020-04-28,4
+U,Corpus Christi,2020-04-29,4
+U,Corpus Christi,2020-04-30,4
+U,Corpus Christi,2020-05-01,4
+U,Corpus Christi,2020-05-02,16
+U,Corpus Christi,2020-05-03,16
+U,Corpus Christi,2020-05-04,4
+U,Corpus Christi,2020-05-05,4
+U,Corpus Christi,2020-05-06,4
+U,Corpus Christi,2020-05-07,6
+U,Corpus Christi,2020-05-08,5
+U,Corpus Christi,2020-05-09,8
+U,Corpus Christi,2020-05-10,9
+U,Corpus Christi,2020-05-11,9
+U,Corpus Christi,2020-05-12,9
+U,Corpus Christi,2020-05-13,8
+U,Corpus Christi,2020-05-14,16
+U,Corpus Christi,2020-05-15,22
+U,Corpus Christi,2020-05-16,17
+U,Corpus Christi,2020-05-17,7
+U,Corpus Christi,2020-05-18,7
+U,Corpus Christi,2020-05-19,6
+U,Corpus Christi,2020-05-20,12
+U,Corpus Christi,2020-05-21,5
+U,Corpus Christi,2020-05-22,13
+U,Corpus Christi,2020-05-23,8
+U,Corpus Christi,2020-05-24,9
+U,Corpus Christi,2020-05-25,9
+U,Corpus Christi,2020-05-26,9
+U,Corpus Christi,2020-05-27,8
+U,Corpus Christi,2020-05-28,9
+U,Corpus Christi,2020-05-29,8
+U,Corpus Christi,2020-05-30,6
+U,Corpus Christi,2020-05-31,6
+U,Corpus Christi,2020-06-01,6
+U,Corpus Christi,2020-06-02,8
+U,Corpus Christi,2020-06-03,10
+U,Corpus Christi,2020-06-04,7
+U,Corpus Christi,2020-06-05,8
+U,Corpus Christi,2020-06-06,11
+U,Corpus Christi,2020-06-07,8
+U,Corpus Christi,2020-06-08,7
+U,Corpus Christi,2020-06-09,8
+U,Corpus Christi,2020-06-10,7
+U,Corpus Christi,2020-06-11,7
+U,Corpus Christi,2020-06-12,12
+U,Corpus Christi,2020-06-13,11
+U,Corpus Christi,2020-06-14,14
+U,Corpus Christi,2020-06-15,15
+U,Corpus Christi,2020-06-16,14
+U,Corpus Christi,2020-06-17,18
+U,Corpus Christi,2020-06-18,20
+U,Corpus Christi,2020-06-19,24
+U,Corpus Christi,2020-06-20,26
+U,Corpus Christi,2020-06-21,26
+U,Corpus Christi,2020-06-22,31
+U,Corpus Christi,2020-06-23,38
+U,Corpus Christi,2020-06-24,39
+U,Corpus Christi,2020-06-25,38
+V,Lower Rio Grande Valley,2020-04-08,39
+V,Lower Rio Grande Valley,2020-04-09,31
+V,Lower Rio Grande Valley,2020-04-10,41
+V,Lower Rio Grande Valley,2020-04-11,45
+V,Lower Rio Grande Valley,2020-04-12,57
+V,Lower Rio Grande Valley,2020-04-13,65
+V,Lower Rio Grande Valley,2020-04-14,68
+V,Lower Rio Grande Valley,2020-04-15,65
+V,Lower Rio Grande Valley,2020-04-16,61
+V,Lower Rio Grande Valley,2020-04-17,68
+V,Lower Rio Grande Valley,2020-04-18,57
+V,Lower Rio Grande Valley,2020-04-19,57
+V,Lower Rio Grande Valley,2020-04-20,51
+V,Lower Rio Grande Valley,2020-04-21,0
+V,Lower Rio Grande Valley,2020-04-22,49
+V,Lower Rio Grande Valley,2020-04-23,30
+V,Lower Rio Grande Valley,2020-04-24,34
+V,Lower Rio Grande Valley,2020-04-25,33
+V,Lower Rio Grande Valley,2020-04-26,33
+V,Lower Rio Grande Valley,2020-04-27,30
+V,Lower Rio Grande Valley,2020-04-28,32
+V,Lower Rio Grande Valley,2020-04-29,28
+V,Lower Rio Grande Valley,2020-04-30,29
+V,Lower Rio Grande Valley,2020-05-01,30
+V,Lower Rio Grande Valley,2020-05-02,35
+V,Lower Rio Grande Valley,2020-05-03,36
+V,Lower Rio Grande Valley,2020-05-04,35
+V,Lower Rio Grande Valley,2020-05-05,37
+V,Lower Rio Grande Valley,2020-05-06,35
+V,Lower Rio Grande Valley,2020-05-07,35
+V,Lower Rio Grande Valley,2020-05-08,21
+V,Lower Rio Grande Valley,2020-05-09,37
+V,Lower Rio Grande Valley,2020-05-10,35
+V,Lower Rio Grande Valley,2020-05-11,35
+V,Lower Rio Grande Valley,2020-05-12,36
+V,Lower Rio Grande Valley,2020-05-13,35
+V,Lower Rio Grande Valley,2020-05-14,32
+V,Lower Rio Grande Valley,2020-05-15,39
+V,Lower Rio Grande Valley,2020-05-16,38
+V,Lower Rio Grande Valley,2020-05-17,33
+V,Lower Rio Grande Valley,2020-05-18,36
+V,Lower Rio Grande Valley,2020-05-19,36
+V,Lower Rio Grande Valley,2020-05-20,30
+V,Lower Rio Grande Valley,2020-05-21,29
+V,Lower Rio Grande Valley,2020-05-22,30
+V,Lower Rio Grande Valley,2020-05-23,34
+V,Lower Rio Grande Valley,2020-05-24,26
+V,Lower Rio Grande Valley,2020-05-25,31
+V,Lower Rio Grande Valley,2020-05-26,33
+V,Lower Rio Grande Valley,2020-05-27,32
+V,Lower Rio Grande Valley,2020-05-28,33
+V,Lower Rio Grande Valley,2020-05-29,35
+V,Lower Rio Grande Valley,2020-05-30,31
+V,Lower Rio Grande Valley,2020-05-31,33
+V,Lower Rio Grande Valley,2020-06-01,37
+V,Lower Rio Grande Valley,2020-06-02,37
+V,Lower Rio Grande Valley,2020-06-03,43
+V,Lower Rio Grande Valley,2020-06-04,47
+V,Lower Rio Grande Valley,2020-06-05,46
+V,Lower Rio Grande Valley,2020-06-06,51
+V,Lower Rio Grande Valley,2020-06-07,47
+V,Lower Rio Grande Valley,2020-06-08,56
+V,Lower Rio Grande Valley,2020-06-09,65
+V,Lower Rio Grande Valley,2020-06-10,67
+V,Lower Rio Grande Valley,2020-06-11,67
+V,Lower Rio Grande Valley,2020-06-12,91
+V,Lower Rio Grande Valley,2020-06-13,94
+V,Lower Rio Grande Valley,2020-06-14,99
+V,Lower Rio Grande Valley,2020-06-15,87
+V,Lower Rio Grande Valley,2020-06-16,122
+V,Lower Rio Grande Valley,2020-06-17,164
+V,Lower Rio Grande Valley,2020-06-18,175
+V,Lower Rio Grande Valley,2020-06-19,191
+V,Lower Rio Grande Valley,2020-06-20,203
+V,Lower Rio Grande Valley,2020-06-21,227
+V,Lower Rio Grande Valley,2020-06-22,253
+V,Lower Rio Grande Valley,2020-06-23,280
+V,Lower Rio Grande Valley,2020-06-24,312
+V,Lower Rio Grande Valley,2020-06-25,398

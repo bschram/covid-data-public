@@ -1,6 +1,7 @@
 """
 Data schema shared between code in covid-data-public and covid-data-model repos.
 """
+from typing import Optional
 from enum import Enum
 
 
@@ -86,3 +87,12 @@ COMMON_LEGACY_REGION_FIELDS = [
 
 
 COMMON_FIELDS_ORDER_MAP = {common: i for i, common in enumerate(CommonFields)}
+
+
+class FieldNameAndCommonField(str):
+    """Represents the original field/column name and CommonField it maps to or None if dropped."""
+
+    def __new__(cls, field_name: str, common_field: Optional[CommonFields]):
+        o = super().__new__(cls, field_name)
+        o.common_field = common_field
+        return o

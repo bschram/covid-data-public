@@ -1,0 +1,22 @@
+(1) Area A - Armstrong, Briscoe, Carson, Childress, Collingsworth, Dallam, Deaf Smith, Donley, Gray, Hall, Hansford, Hartley, Hemphill, Hutchinson, Lipscomb, Moore, Ochiltree, Oldham, Parmer, Potter, Randall, Roberts, Sherman, Swisher, Wheeler;
+(2) Area B - Bailey, Borden, Castro, Cochran, Cottle, Crosby, Dawson, Dickens, Floyd, Gaines, Garza, Hale, Hockley, Kent, King, Lamb, Lubbock, Lynn, Motley, Scurry, Terry, Yoakum;
+(3) Area C - Archer, Baylor, Clay, Foard, Hardeman, Jack, Montague, Wichita, Wilbarger, Young;
+(4) Area D - Brown, Callahan, Coleman, Comanche, Eastland, Fisher, Haskell, Jones, Knox, Mitchell, Nolan, Shackelford, Stephens, Stonewall, Taylor, Throckmorton;
+(5) Area E - Collin, Cooke, Dallas, Denton, Ellis, Erath, Fannin, Grayson, Hood, Hunt, Johnson, Kaufman, Navarro, Palo Pinto, Parker, Rockwall, Somervell, Tarrant, Wise;
+(6) Area F - Bowie, Cass, Delta, Hopkins, Lamar, Morris, Red River, Titus;
+(7) Area G - Anderson, Camp, Cherokee, Franklin, Freestone, Gregg, Harrison, Henderson, Houston, Marion, Panola, Raines, Rusk, Shelby, Smith, Trinity, Upshur, Van Zandt, Wood;
+(8) Area H - Angelina, Nacogdoches, Polk, Sabine, San Augustine, San Jacinto, Tyler;
+(9) Area I - Culberson, El Paso, Hudspeth;
+(10) Area J - Andrews, Brewster, Crane, Ector, Glasscock, Howard, Jeff Davis, Loving, Martin, Midland, Pecos, Presidio, Reeves, Terrell, Upton, Ward, Winkler;
+(11) Area K - Coke, Concho, Crockett, Irion, Kimble, Mason, McCulloch, Menard, Reagan, Runnels, Schleicher, Sterling, Sutton, Tom Green;
+(12) Area L - Bell, Coryell, Falls, Hamilton, Lampasas, Milam, Mills;
+(13) Area M - Bosque, Hill, Limestone, McLennan;
+(14) Area N - Brazos, Burleson, Grimes, Leon, Madison, Robertson, Washington;
+(15) Area O - Bastrop, Blanco, Burnet, Caldwell, Fayette, Hays, Lee, Llano, San Saba, Travis, Williamson;
+(16) Area P - Atascosa, Bandera, Bexar, Comal, Dimmit, Edwards, Frio, Gillespie, Gonzales, Guadalupe, Karnes, Kendall, Kerr, Kinney, La Salle, Maverick, Medina, Real, Uvalde, Val Verde, Wilson, Zavala;
+(17) Area Q - Austin, Colorado, Fort Bend, Harris, Matagorda, Montgomery, Walker, Waller, Wharton;
+(18) Area R - Brazoria, Chambers, Galveston, Hardin, Jasper, Jefferson, Liberty, Newton, Orange;
+(19) Area S - Calhoun, Dewitt, Goliad, Jackson, Lavaca, Victoria;
+(20) Area T - Jim Hogg, Webb, Zapata;
+(21) Area U - Aransas, Bee, Brooks, Duval, Jim Wells, Kenedy, Kleberg, Live Oak, McMullen, Nueces, Refugio, San Patricio;
+(22) Area V - Cameron, Hidalgo, Starr, Willacy.
