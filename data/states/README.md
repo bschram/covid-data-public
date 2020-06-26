@@ -1,6 +1,7 @@
 # Sourced from states
 
-This directory is a place to store copies of data sourced from various state governments.
+This directory is a place to store copies of data sourced from various state governments and
+groups.
 
 In an effort to get more accurate information than is available in various aggregated sources
 CovidActNow is gathering some data from sources that only cover a single state of the USA.
@@ -11,3 +12,4 @@ Google Spreadsheet which is then copied to a CSV in this repo.
 Sources include:
 
 * The State of Kentucky
+* The Nevada Hospital Association

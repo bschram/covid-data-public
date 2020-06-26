@@ -21,6 +21,8 @@ def to_dict(keys: List[str], df: pd.DataFrame):
     Use this to extract the values from a DataFrame for easier comparisons in assert statements.
     """
     try:
+        if df.empty:
+            return {}
         if any(df.index.names):
             df = df.reset_index()
         df = df.set_index(keys)
