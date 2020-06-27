@@ -2,10 +2,10 @@ name: Update source data
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'
-  # Hook to trigger a manual run. 
+    - cron: '0 1,16 * * *'
+  # Hook to trigger a manual run.
   # See: https://goobar.io/2019/12/07/manually-trigger-a-github-actions-workflow/
-  # A sample request looks like: 
+  # A sample request looks like:
   # curl https://api.github.com/repos/covid-projections/covid-data-public/dispatches -H "Authorization: token $AUTH_TOKEN" -H "Accept: application/vnd.github.everest-preview+json" -X POST -d '{"event_type": "update-source-data"}'
   repository_dispatch:
     types: update-source-data
