@@ -1,1827 +1,1933 @@
 TSA ID,TSA Name,date,current_hospitalized
-A,Amarillo,2020-04-08,9
-A,Amarillo,2020-04-09,12
-A,Amarillo,2020-04-10,15
-A,Amarillo,2020-04-11,18
-A,Amarillo,2020-04-12,17
-A,Amarillo,2020-04-13,17
-A,Amarillo,2020-04-14,17
-A,Amarillo,2020-04-15,10
-A,Amarillo,2020-04-16,18
-A,Amarillo,2020-04-17,24
-A,Amarillo,2020-04-18,18
-A,Amarillo,2020-04-19,35
-A,Amarillo,2020-04-20,17
-A,Amarillo,2020-04-21,17
-A,Amarillo,2020-04-22,41
-A,Amarillo,2020-04-23,41
-A,Amarillo,2020-04-24,40
-A,Amarillo,2020-04-25,46
-A,Amarillo,2020-04-26,59
-A,Amarillo,2020-04-27,64
-A,Amarillo,2020-04-28,67
-A,Amarillo,2020-04-29,82
-A,Amarillo,2020-04-30,84
-A,Amarillo,2020-05-01,87
-A,Amarillo,2020-05-02,91
-A,Amarillo,2020-05-03,101
-A,Amarillo,2020-05-04,94
-A,Amarillo,2020-05-05,90
-A,Amarillo,2020-05-06,96
-A,Amarillo,2020-05-07,109
-A,Amarillo,2020-05-08,112
-A,Amarillo,2020-05-09,109
-A,Amarillo,2020-05-10,103
-A,Amarillo,2020-05-11,98
-A,Amarillo,2020-05-12,94
-A,Amarillo,2020-05-13,82
-A,Amarillo,2020-05-14,84
-A,Amarillo,2020-05-15,79
-A,Amarillo,2020-05-16,80
-A,Amarillo,2020-05-17,72
-A,Amarillo,2020-05-18,68
-A,Amarillo,2020-05-19,70
-A,Amarillo,2020-05-20,75
-A,Amarillo,2020-05-21,63
-A,Amarillo,2020-05-22,53
-A,Amarillo,2020-05-23,55
-A,Amarillo,2020-05-24,55
-A,Amarillo,2020-05-25,55
-A,Amarillo,2020-05-26,61
-A,Amarillo,2020-05-27,59
-A,Amarillo,2020-05-28,63
-A,Amarillo,2020-05-29,61
-A,Amarillo,2020-05-30,58
-A,Amarillo,2020-05-31,39
-A,Amarillo,2020-06-01,47
-A,Amarillo,2020-06-02,45
-A,Amarillo,2020-06-03,46
-A,Amarillo,2020-06-04,38
-A,Amarillo,2020-06-05,31
-A,Amarillo,2020-06-06,32
-A,Amarillo,2020-06-07,31
-A,Amarillo,2020-06-08,25
-A,Amarillo,2020-06-09,29
-A,Amarillo,2020-06-10,25
-A,Amarillo,2020-06-11,23
-A,Amarillo,2020-06-12,17
-A,Amarillo,2020-06-13,18
-A,Amarillo,2020-06-14,17
-A,Amarillo,2020-06-15,16
-A,Amarillo,2020-06-16,25
-A,Amarillo,2020-06-17,23
-A,Amarillo,2020-06-18,24
-A,Amarillo,2020-06-19,22
-A,Amarillo,2020-06-20,20
-A,Amarillo,2020-06-21,22
-A,Amarillo,2020-06-22,23
-A,Amarillo,2020-06-23,23
-A,Amarillo,2020-06-24,27
-A,Amarillo,2020-06-25,25
-A,Amarillo,2020-06-26,22
-A,Amarillo,2020-06-27,21
-A,Amarillo,2020-06-28,20
-A,Amarillo,2020-06-29,22
-B,Lubbock,2020-04-08,25
-B,Lubbock,2020-04-09,26
-B,Lubbock,2020-04-10,21
-B,Lubbock,2020-04-11,34
-B,Lubbock,2020-04-12,34
-B,Lubbock,2020-04-13,35
-B,Lubbock,2020-04-14,31
-B,Lubbock,2020-04-15,34
-B,Lubbock,2020-04-16,32
-B,Lubbock,2020-04-17,38
-B,Lubbock,2020-04-18,35
-B,Lubbock,2020-04-19,32
-B,Lubbock,2020-04-20,32
-B,Lubbock,2020-04-21,46
-B,Lubbock,2020-04-22,28
-B,Lubbock,2020-04-23,25
-B,Lubbock,2020-04-24,27
-B,Lubbock,2020-04-25,32
-B,Lubbock,2020-04-26,26
-B,Lubbock,2020-04-27,29
-B,Lubbock,2020-04-28,29
-B,Lubbock,2020-04-29,31
-B,Lubbock,2020-04-30,38
-B,Lubbock,2020-05-01,36
-B,Lubbock,2020-05-02,37
-B,Lubbock,2020-05-03,29
-B,Lubbock,2020-05-04,30
-B,Lubbock,2020-05-05,33
-B,Lubbock,2020-05-06,37
-B,Lubbock,2020-05-07,32
-B,Lubbock,2020-05-08,28
-B,Lubbock,2020-05-09,27
-B,Lubbock,2020-05-10,25
-B,Lubbock,2020-05-11,23
-B,Lubbock,2020-05-12,25
-B,Lubbock,2020-05-13,19
-B,Lubbock,2020-05-14,22
-B,Lubbock,2020-05-15,21
-B,Lubbock,2020-05-16,20
-B,Lubbock,2020-05-17,19
-B,Lubbock,2020-05-18,20
-B,Lubbock,2020-05-19,21
-B,Lubbock,2020-05-20,25
-B,Lubbock,2020-05-21,20
-B,Lubbock,2020-05-22,15
-B,Lubbock,2020-05-23,14
-B,Lubbock,2020-05-24,13
-B,Lubbock,2020-05-25,16
-B,Lubbock,2020-05-26,16
-B,Lubbock,2020-05-27,15
-B,Lubbock,2020-05-28,14
-B,Lubbock,2020-05-29,20
-B,Lubbock,2020-05-30,14
-B,Lubbock,2020-05-31,12
-B,Lubbock,2020-06-01,14
-B,Lubbock,2020-06-02,16
-B,Lubbock,2020-06-03,19
-B,Lubbock,2020-06-04,16
-B,Lubbock,2020-06-05,13
-B,Lubbock,2020-06-06,11
-B,Lubbock,2020-06-07,11
-B,Lubbock,2020-06-08,10
-B,Lubbock,2020-06-09,10
-B,Lubbock,2020-06-10,15
-B,Lubbock,2020-06-11,14
-B,Lubbock,2020-06-12,17
-B,Lubbock,2020-06-13,18
-B,Lubbock,2020-06-14,16
-B,Lubbock,2020-06-15,15
-B,Lubbock,2020-06-16,14
-B,Lubbock,2020-06-17,16
-B,Lubbock,2020-06-18,20
-B,Lubbock,2020-06-19,21
-B,Lubbock,2020-06-20,22
-B,Lubbock,2020-06-21,22
-B,Lubbock,2020-06-22,22
-B,Lubbock,2020-06-23,25
-B,Lubbock,2020-06-24,34
-B,Lubbock,2020-06-25,37
-B,Lubbock,2020-06-26,43
-B,Lubbock,2020-06-27,42
-B,Lubbock,2020-06-28,51
-B,Lubbock,2020-06-29,49
-C,Wichita Falls,2020-04-08,8
-C,Wichita Falls,2020-04-09,8
-C,Wichita Falls,2020-04-10,7
-C,Wichita Falls,2020-04-11,7
-C,Wichita Falls,2020-04-12,5
-C,Wichita Falls,2020-04-13,5
-C,Wichita Falls,2020-04-14,6
-C,Wichita Falls,2020-04-15,4
-C,Wichita Falls,2020-04-16,5
-C,Wichita Falls,2020-04-17,0
-C,Wichita Falls,2020-04-18,0
-C,Wichita Falls,2020-04-19,0
-C,Wichita Falls,2020-04-20,2
-C,Wichita Falls,2020-04-21,4
-C,Wichita Falls,2020-04-22,1
-C,Wichita Falls,2020-04-23,1
-C,Wichita Falls,2020-04-24,1
-C,Wichita Falls,2020-04-25,1
-C,Wichita Falls,2020-04-26,1
-C,Wichita Falls,2020-04-27,0
-C,Wichita Falls,2020-04-28,0
-C,Wichita Falls,2020-04-29,0
-C,Wichita Falls,2020-04-30,0
-C,Wichita Falls,2020-05-01,0
-C,Wichita Falls,2020-05-02,0
-C,Wichita Falls,2020-05-03,0
-C,Wichita Falls,2020-05-04,0
-C,Wichita Falls,2020-05-05,0
-C,Wichita Falls,2020-05-06,0
-C,Wichita Falls,2020-05-07,0
-C,Wichita Falls,2020-05-08,0
-C,Wichita Falls,2020-05-09,2
-C,Wichita Falls,2020-05-10,2
-C,Wichita Falls,2020-05-11,2
-C,Wichita Falls,2020-05-12,0
-C,Wichita Falls,2020-05-13,0
-C,Wichita Falls,2020-05-14,1
-C,Wichita Falls,2020-05-15,1
-C,Wichita Falls,2020-05-16,1
-C,Wichita Falls,2020-05-17,1
-C,Wichita Falls,2020-05-18,1
-C,Wichita Falls,2020-05-19,1
-C,Wichita Falls,2020-05-20,1
-C,Wichita Falls,2020-05-21,1
-C,Wichita Falls,2020-05-22,1
-C,Wichita Falls,2020-05-23,1
-C,Wichita Falls,2020-05-24,1
-C,Wichita Falls,2020-05-25,2
-C,Wichita Falls,2020-05-26,0
-C,Wichita Falls,2020-05-27,0
-C,Wichita Falls,2020-05-28,0
-C,Wichita Falls,2020-05-29,0
-C,Wichita Falls,2020-05-30,0
-C,Wichita Falls,2020-05-31,0
-C,Wichita Falls,2020-06-01,0
-C,Wichita Falls,2020-06-02,0
-C,Wichita Falls,2020-06-03,0
-C,Wichita Falls,2020-06-04,0
-C,Wichita Falls,2020-06-05,0
-C,Wichita Falls,2020-06-06,0
-C,Wichita Falls,2020-06-07,0
-C,Wichita Falls,2020-06-08,0
-C,Wichita Falls,2020-06-09,0
-C,Wichita Falls,2020-06-10,0
-C,Wichita Falls,2020-06-11,0
-C,Wichita Falls,2020-06-12,0
-C,Wichita Falls,2020-06-13,0
-C,Wichita Falls,2020-06-14,0
-C,Wichita Falls,2020-06-15,0
-C,Wichita Falls,2020-06-16,0
-C,Wichita Falls,2020-06-17,0
-C,Wichita Falls,2020-06-18,0
-C,Wichita Falls,2020-06-19,0
-C,Wichita Falls,2020-06-20,2
-C,Wichita Falls,2020-06-21,2
-C,Wichita Falls,2020-06-22,2
-C,Wichita Falls,2020-06-23,3
-C,Wichita Falls,2020-06-24,7
-C,Wichita Falls,2020-06-25,10
-C,Wichita Falls,2020-06-26,8
-C,Wichita Falls,2020-06-27,8
-C,Wichita Falls,2020-06-28,9
-C,Wichita Falls,2020-06-29,12
-D,Abilene,2020-04-08,9
-D,Abilene,2020-04-09,12
-D,Abilene,2020-04-10,11
-D,Abilene,2020-04-11,8
-D,Abilene,2020-04-12,6
-D,Abilene,2020-04-13,7
-D,Abilene,2020-04-14,2
-D,Abilene,2020-04-15,6
-D,Abilene,2020-04-16,5
-D,Abilene,2020-04-17,8
-D,Abilene,2020-04-18,3
-D,Abilene,2020-04-19,10
-D,Abilene,2020-04-20,6
-D,Abilene,2020-04-21,7
-D,Abilene,2020-04-22,11
-D,Abilene,2020-04-23,9
-D,Abilene,2020-04-24,9
-D,Abilene,2020-04-25,16
-D,Abilene,2020-04-26,6
-D,Abilene,2020-04-27,7
-D,Abilene,2020-04-28,6
-D,Abilene,2020-04-29,4
-D,Abilene,2020-04-30,4
-D,Abilene,2020-05-01,4
-D,Abilene,2020-05-02,4
-D,Abilene,2020-05-03,6
-D,Abilene,2020-05-04,4
-D,Abilene,2020-05-05,5
-D,Abilene,2020-05-06,3
-D,Abilene,2020-05-07,3
-D,Abilene,2020-05-08,2
-D,Abilene,2020-05-09,1
-D,Abilene,2020-05-10,3
-D,Abilene,2020-05-11,5
-D,Abilene,2020-05-12,4
-D,Abilene,2020-05-13,3
-D,Abilene,2020-05-14,4
-D,Abilene,2020-05-15,3
-D,Abilene,2020-05-16,3
-D,Abilene,2020-05-17,3
-D,Abilene,2020-05-18,3
-D,Abilene,2020-05-19,4
-D,Abilene,2020-05-20,4
-D,Abilene,2020-05-21,7
-D,Abilene,2020-05-22,3
-D,Abilene,2020-05-23,3
-D,Abilene,2020-05-24,4
-D,Abilene,2020-05-25,5
-D,Abilene,2020-05-26,4
-D,Abilene,2020-05-27,1
-D,Abilene,2020-05-28,1
-D,Abilene,2020-05-29,2
-D,Abilene,2020-05-30,2
-D,Abilene,2020-05-31,3
-D,Abilene,2020-06-01,2
-D,Abilene,2020-06-02,1
-D,Abilene,2020-06-03,1
-D,Abilene,2020-06-04,1
-D,Abilene,2020-06-05,1
-D,Abilene,2020-06-06,1
-D,Abilene,2020-06-07,0
-D,Abilene,2020-06-08,1
-D,Abilene,2020-06-09,1
-D,Abilene,2020-06-10,1
-D,Abilene,2020-06-11,0
-D,Abilene,2020-06-12,0
-D,Abilene,2020-06-13,0
-D,Abilene,2020-06-14,1
-D,Abilene,2020-06-15,0
-D,Abilene,2020-06-16,1
-D,Abilene,2020-06-17,1
-D,Abilene,2020-06-18,1
-D,Abilene,2020-06-19,2
-D,Abilene,2020-06-20,1
-D,Abilene,2020-06-21,1
-D,Abilene,2020-06-22,2
-D,Abilene,2020-06-23,5
-D,Abilene,2020-06-24,5
-D,Abilene,2020-06-25,6
-D,Abilene,2020-06-26,8
-D,Abilene,2020-06-27,7
-D,Abilene,2020-06-28,9
-D,Abilene,2020-06-29,9
-E,Dallas/Ft. Worth,2020-04-08,579
-E,Dallas/Ft. Worth,2020-04-09,447
-E,Dallas/Ft. Worth,2020-04-10,514
-E,Dallas/Ft. Worth,2020-04-11,429
-E,Dallas/Ft. Worth,2020-04-12,369
-E,Dallas/Ft. Worth,2020-04-13,365
-E,Dallas/Ft. Worth,2020-04-14,373
-E,Dallas/Ft. Worth,2020-04-15,449
-E,Dallas/Ft. Worth,2020-04-16,470
-E,Dallas/Ft. Worth,2020-04-17,476
-E,Dallas/Ft. Worth,2020-04-18,428
-E,Dallas/Ft. Worth,2020-04-19,435
-E,Dallas/Ft. Worth,2020-04-20,410
-E,Dallas/Ft. Worth,2020-04-21,443
-E,Dallas/Ft. Worth,2020-04-22,477
-E,Dallas/Ft. Worth,2020-04-23,517
-E,Dallas/Ft. Worth,2020-04-24,550
-E,Dallas/Ft. Worth,2020-04-25,521
-E,Dallas/Ft. Worth,2020-04-26,472
-E,Dallas/Ft. Worth,2020-04-27,491
-E,Dallas/Ft. Worth,2020-04-28,583
-E,Dallas/Ft. Worth,2020-04-29,611
-E,Dallas/Ft. Worth,2020-04-30,576
-E,Dallas/Ft. Worth,2020-05-01,636
-E,Dallas/Ft. Worth,2020-05-02,635
-E,Dallas/Ft. Worth,2020-05-03,530
-E,Dallas/Ft. Worth,2020-05-04,513
-E,Dallas/Ft. Worth,2020-05-05,674
-E,Dallas/Ft. Worth,2020-05-06,679
-E,Dallas/Ft. Worth,2020-05-07,669
-E,Dallas/Ft. Worth,2020-05-08,676
-E,Dallas/Ft. Worth,2020-05-09,650
-E,Dallas/Ft. Worth,2020-05-10,569
-E,Dallas/Ft. Worth,2020-05-11,530
-E,Dallas/Ft. Worth,2020-05-12,678
-E,Dallas/Ft. Worth,2020-05-13,627
-E,Dallas/Ft. Worth,2020-05-14,666
-E,Dallas/Ft. Worth,2020-05-15,680
-E,Dallas/Ft. Worth,2020-05-16,685
-E,Dallas/Ft. Worth,2020-05-17,551
-E,Dallas/Ft. Worth,2020-05-18,553
-E,Dallas/Ft. Worth,2020-05-19,646
-E,Dallas/Ft. Worth,2020-05-20,646
-E,Dallas/Ft. Worth,2020-05-21,600
-E,Dallas/Ft. Worth,2020-05-22,570
-E,Dallas/Ft. Worth,2020-05-23,612
-E,Dallas/Ft. Worth,2020-05-24,548
-E,Dallas/Ft. Worth,2020-05-25,521
-E,Dallas/Ft. Worth,2020-05-26,533
-E,Dallas/Ft. Worth,2020-05-27,589
-E,Dallas/Ft. Worth,2020-05-28,613
-E,Dallas/Ft. Worth,2020-05-29,580
-E,Dallas/Ft. Worth,2020-05-30,624
-E,Dallas/Ft. Worth,2020-05-31,595
-E,Dallas/Ft. Worth,2020-06-01,580
-E,Dallas/Ft. Worth,2020-06-02,582
-E,Dallas/Ft. Worth,2020-06-03,575
-E,Dallas/Ft. Worth,2020-06-04,604
-E,Dallas/Ft. Worth,2020-06-05,602
-E,Dallas/Ft. Worth,2020-06-06,605
-E,Dallas/Ft. Worth,2020-06-07,605
-E,Dallas/Ft. Worth,2020-06-08,612
-E,Dallas/Ft. Worth,2020-06-09,660
-E,Dallas/Ft. Worth,2020-06-10,687
-E,Dallas/Ft. Worth,2020-06-11,705
-E,Dallas/Ft. Worth,2020-06-12,712
-E,Dallas/Ft. Worth,2020-06-13,729
-E,Dallas/Ft. Worth,2020-06-14,728
-E,Dallas/Ft. Worth,2020-06-15,701
-E,Dallas/Ft. Worth,2020-06-16,765
-E,Dallas/Ft. Worth,2020-06-17,859
-E,Dallas/Ft. Worth,2020-06-18,899
-E,Dallas/Ft. Worth,2020-06-19,914
-E,Dallas/Ft. Worth,2020-06-20,939
-E,Dallas/Ft. Worth,2020-06-21,952
-E,Dallas/Ft. Worth,2020-06-22,988
-E,Dallas/Ft. Worth,2020-06-23,1074
-E,Dallas/Ft. Worth,2020-06-24,1130
-E,Dallas/Ft. Worth,2020-06-25,1137
-E,Dallas/Ft. Worth,2020-06-26,1180
-E,Dallas/Ft. Worth,2020-06-27,1248
-E,Dallas/Ft. Worth,2020-06-28,1261
-E,Dallas/Ft. Worth,2020-06-29,1288
-F,Paris,2020-04-08,14
-F,Paris,2020-04-09,12
-F,Paris,2020-04-10,13
-F,Paris,2020-04-11,12
-F,Paris,2020-04-12,14
-F,Paris,2020-04-13,16
-F,Paris,2020-04-14,21
-F,Paris,2020-04-15,18
-F,Paris,2020-04-16,15
-F,Paris,2020-04-17,12
-F,Paris,2020-04-18,12
-F,Paris,2020-04-19,17
-F,Paris,2020-04-20,16
-F,Paris,2020-04-21,19
-F,Paris,2020-04-22,19
-F,Paris,2020-04-23,17
-F,Paris,2020-04-24,19
-F,Paris,2020-04-25,17
-F,Paris,2020-04-26,17
-F,Paris,2020-04-27,19
-F,Paris,2020-04-28,18
-F,Paris,2020-04-29,14
-F,Paris,2020-04-30,16
-F,Paris,2020-05-01,18
-F,Paris,2020-05-02,19
-F,Paris,2020-05-03,17
-F,Paris,2020-05-04,16
-F,Paris,2020-05-05,16
-F,Paris,2020-05-06,13
-F,Paris,2020-05-07,16
-F,Paris,2020-05-08,16
-F,Paris,2020-05-09,12
-F,Paris,2020-05-10,14
-F,Paris,2020-05-11,16
-F,Paris,2020-05-12,16
-F,Paris,2020-05-13,14
-F,Paris,2020-05-14,11
-F,Paris,2020-05-15,13
-F,Paris,2020-05-16,15
-F,Paris,2020-05-17,14
-F,Paris,2020-05-18,14
-F,Paris,2020-05-19,12
-F,Paris,2020-05-20,13
-F,Paris,2020-05-21,17
-F,Paris,2020-05-22,23
-F,Paris,2020-05-23,23
-F,Paris,2020-05-24,20
-F,Paris,2020-05-25,16
-F,Paris,2020-05-26,18
-F,Paris,2020-05-27,22
-F,Paris,2020-05-28,22
-F,Paris,2020-05-29,24
-F,Paris,2020-05-30,20
-F,Paris,2020-05-31,16
-F,Paris,2020-06-01,14
-F,Paris,2020-06-02,15
-F,Paris,2020-06-03,18
-F,Paris,2020-06-04,26
-F,Paris,2020-06-05,20
-F,Paris,2020-06-06,21
-F,Paris,2020-06-07,22
-F,Paris,2020-06-08,21
-F,Paris,2020-06-09,29
-F,Paris,2020-06-10,32
-F,Paris,2020-06-11,25
-F,Paris,2020-06-12,29
-F,Paris,2020-06-13,28
-F,Paris,2020-06-14,30
-F,Paris,2020-06-15,28
-F,Paris,2020-06-16,26
-F,Paris,2020-06-17,29
-F,Paris,2020-06-18,27
-F,Paris,2020-06-19,24
-F,Paris,2020-06-20,27
-F,Paris,2020-06-21,24
-F,Paris,2020-06-22,22
-F,Paris,2020-06-23,25
-F,Paris,2020-06-24,25
-F,Paris,2020-06-25,33
-F,Paris,2020-06-26,32
-F,Paris,2020-06-27,35
-F,Paris,2020-06-28,34
-F,Paris,2020-06-29,35
-G,Longview/Tyler,2020-04-08,26
-G,Longview/Tyler,2020-04-09,22
-G,Longview/Tyler,2020-04-10,25
-G,Longview/Tyler,2020-04-11,44
-G,Longview/Tyler,2020-04-12,32
-G,Longview/Tyler,2020-04-13,26
-G,Longview/Tyler,2020-04-14,33
-G,Longview/Tyler,2020-04-15,32
-G,Longview/Tyler,2020-04-16,36
-G,Longview/Tyler,2020-04-17,43
-G,Longview/Tyler,2020-04-18,36
-G,Longview/Tyler,2020-04-19,42
-G,Longview/Tyler,2020-04-20,45
-G,Longview/Tyler,2020-04-21,47
-G,Longview/Tyler,2020-04-22,60
-G,Longview/Tyler,2020-04-23,43
-G,Longview/Tyler,2020-04-24,48
-G,Longview/Tyler,2020-04-25,47
-G,Longview/Tyler,2020-04-26,54
-G,Longview/Tyler,2020-04-27,53
-G,Longview/Tyler,2020-04-28,54
-G,Longview/Tyler,2020-04-29,53
-G,Longview/Tyler,2020-04-30,53
-G,Longview/Tyler,2020-05-01,63
-G,Longview/Tyler,2020-05-02,68
-G,Longview/Tyler,2020-05-03,96
-G,Longview/Tyler,2020-05-04,67
-G,Longview/Tyler,2020-05-05,54
-G,Longview/Tyler,2020-05-06,57
-G,Longview/Tyler,2020-05-07,53
-G,Longview/Tyler,2020-05-08,50
-G,Longview/Tyler,2020-05-09,55
-G,Longview/Tyler,2020-05-10,49
-G,Longview/Tyler,2020-05-11,46
-G,Longview/Tyler,2020-05-12,43
-G,Longview/Tyler,2020-05-13,39
-G,Longview/Tyler,2020-05-14,40
-G,Longview/Tyler,2020-05-15,45
-G,Longview/Tyler,2020-05-16,40
-G,Longview/Tyler,2020-05-17,37
-G,Longview/Tyler,2020-05-18,41
-G,Longview/Tyler,2020-05-19,40
-G,Longview/Tyler,2020-05-20,41
-G,Longview/Tyler,2020-05-21,38
-G,Longview/Tyler,2020-05-22,36
-G,Longview/Tyler,2020-05-23,42
-G,Longview/Tyler,2020-05-24,39
-G,Longview/Tyler,2020-05-25,40
-G,Longview/Tyler,2020-05-26,39
-G,Longview/Tyler,2020-05-27,43
-G,Longview/Tyler,2020-05-28,43
-G,Longview/Tyler,2020-05-29,44
-G,Longview/Tyler,2020-05-30,44
-G,Longview/Tyler,2020-05-31,46
-G,Longview/Tyler,2020-06-01,49
-G,Longview/Tyler,2020-06-02,53
-G,Longview/Tyler,2020-06-03,52
-G,Longview/Tyler,2020-06-04,44
-G,Longview/Tyler,2020-06-05,48
-G,Longview/Tyler,2020-06-06,43
-G,Longview/Tyler,2020-06-07,49
-G,Longview/Tyler,2020-06-08,54
-G,Longview/Tyler,2020-06-09,51
-G,Longview/Tyler,2020-06-10,50
-G,Longview/Tyler,2020-06-11,47
-G,Longview/Tyler,2020-06-12,50
-G,Longview/Tyler,2020-06-13,54
-G,Longview/Tyler,2020-06-14,53
-G,Longview/Tyler,2020-06-15,55
-G,Longview/Tyler,2020-06-16,60
-G,Longview/Tyler,2020-06-17,57
-G,Longview/Tyler,2020-06-18,47
-G,Longview/Tyler,2020-06-19,52
-G,Longview/Tyler,2020-06-20,51
-G,Longview/Tyler,2020-06-21,51
-G,Longview/Tyler,2020-06-22,54
-G,Longview/Tyler,2020-06-23,56
-G,Longview/Tyler,2020-06-24,62
-G,Longview/Tyler,2020-06-25,62
-G,Longview/Tyler,2020-06-26,73
-G,Longview/Tyler,2020-06-27,75
-G,Longview/Tyler,2020-06-28,72
-G,Longview/Tyler,2020-06-29,85
-H,Lufkin,2020-04-08,13
-H,Lufkin,2020-04-09,25
-H,Lufkin,2020-04-10,21
-H,Lufkin,2020-04-11,17
-H,Lufkin,2020-04-12,15
-H,Lufkin,2020-04-13,18
-H,Lufkin,2020-04-14,23
-H,Lufkin,2020-04-15,15
-H,Lufkin,2020-04-16,28
-H,Lufkin,2020-04-17,24
-H,Lufkin,2020-04-18,37
-H,Lufkin,2020-04-19,27
-H,Lufkin,2020-04-20,24
-H,Lufkin,2020-04-21,24
-H,Lufkin,2020-04-22,25
-H,Lufkin,2020-04-23,23
-H,Lufkin,2020-04-24,23
-H,Lufkin,2020-04-25,20
-H,Lufkin,2020-04-26,21
-H,Lufkin,2020-04-27,22
-H,Lufkin,2020-04-28,18
-H,Lufkin,2020-04-29,19
-H,Lufkin,2020-04-30,18
-H,Lufkin,2020-05-01,16
-H,Lufkin,2020-05-02,20
-H,Lufkin,2020-05-03,16
-H,Lufkin,2020-05-04,17
-H,Lufkin,2020-05-05,18
-H,Lufkin,2020-05-06,14
-H,Lufkin,2020-05-07,11
-H,Lufkin,2020-05-08,13
-H,Lufkin,2020-05-09,12
-H,Lufkin,2020-05-10,18
-H,Lufkin,2020-05-11,13
-H,Lufkin,2020-05-12,13
-H,Lufkin,2020-05-13,13
-H,Lufkin,2020-05-14,11
-H,Lufkin,2020-05-15,13
-H,Lufkin,2020-05-16,14
-H,Lufkin,2020-05-17,18
-H,Lufkin,2020-05-18,11
-H,Lufkin,2020-05-19,10
-H,Lufkin,2020-05-20,11
-H,Lufkin,2020-05-21,13
-H,Lufkin,2020-05-22,9
-H,Lufkin,2020-05-23,0
-H,Lufkin,2020-05-24,9
-H,Lufkin,2020-05-25,8
-H,Lufkin,2020-05-26,11
-H,Lufkin,2020-05-27,13
-H,Lufkin,2020-05-28,9
-H,Lufkin,2020-05-29,16
-H,Lufkin,2020-05-30,13
-H,Lufkin,2020-05-31,13
-H,Lufkin,2020-06-01,16
-H,Lufkin,2020-06-02,16
-H,Lufkin,2020-06-03,15
-H,Lufkin,2020-06-04,14
-H,Lufkin,2020-06-05,14
-H,Lufkin,2020-06-06,14
-H,Lufkin,2020-06-07,15
-H,Lufkin,2020-06-08,17
-H,Lufkin,2020-06-09,13
-H,Lufkin,2020-06-10,17
-H,Lufkin,2020-06-11,14
-H,Lufkin,2020-06-12,19
-H,Lufkin,2020-06-13,25
-H,Lufkin,2020-06-14,26
-H,Lufkin,2020-06-15,28
-H,Lufkin,2020-06-16,26
-H,Lufkin,2020-06-17,25
-H,Lufkin,2020-06-18,23
-H,Lufkin,2020-06-19,23
-H,Lufkin,2020-06-20,19
-H,Lufkin,2020-06-21,22
-H,Lufkin,2020-06-22,24
-H,Lufkin,2020-06-23,32
-H,Lufkin,2020-06-24,32
-H,Lufkin,2020-06-25,35
-H,Lufkin,2020-06-26,34
-H,Lufkin,2020-06-27,32
-H,Lufkin,2020-06-28,30
-H,Lufkin,2020-06-29,31
-I,El Paso,2020-04-08,12
-I,El Paso,2020-04-09,24
-I,El Paso,2020-04-10,31
-I,El Paso,2020-04-11,23
-I,El Paso,2020-04-12,14
-I,El Paso,2020-04-13,23
-I,El Paso,2020-04-14,12
-I,El Paso,2020-04-15,30
-I,El Paso,2020-04-16,24
-I,El Paso,2020-04-17,28
-I,El Paso,2020-04-18,33
-I,El Paso,2020-04-19,24
-I,El Paso,2020-04-20,29
-I,El Paso,2020-04-21,49
-I,El Paso,2020-04-22,49
-I,El Paso,2020-04-23,52
-I,El Paso,2020-04-24,56
-I,El Paso,2020-04-25,52
-I,El Paso,2020-04-26,60
-I,El Paso,2020-04-27,67
-I,El Paso,2020-04-28,65
-I,El Paso,2020-04-29,58
-I,El Paso,2020-04-30,68
-I,El Paso,2020-05-01,77
-I,El Paso,2020-05-02,74
-I,El Paso,2020-05-03,69
-I,El Paso,2020-05-04,64
-I,El Paso,2020-05-05,73
-I,El Paso,2020-05-06,72
-I,El Paso,2020-05-07,74
-I,El Paso,2020-05-08,81
-I,El Paso,2020-05-09,99
-I,El Paso,2020-05-10,103
-I,El Paso,2020-05-11,98
-I,El Paso,2020-05-12,98
-I,El Paso,2020-05-13,93
-I,El Paso,2020-05-14,90
-I,El Paso,2020-05-15,91
-I,El Paso,2020-05-16,105
-I,El Paso,2020-05-17,98
-I,El Paso,2020-05-18,108
-I,El Paso,2020-05-19,111
-I,El Paso,2020-05-20,126
-I,El Paso,2020-05-21,118
-I,El Paso,2020-05-22,116
-I,El Paso,2020-05-23,124
-I,El Paso,2020-05-24,128
-I,El Paso,2020-05-25,125
-I,El Paso,2020-05-26,126
-I,El Paso,2020-05-27,127
-I,El Paso,2020-05-28,123
-I,El Paso,2020-05-29,120
-I,El Paso,2020-05-30,115
-I,El Paso,2020-05-31,112
-I,El Paso,2020-06-01,109
-I,El Paso,2020-06-02,112
-I,El Paso,2020-06-03,112
-I,El Paso,2020-06-04,109
-I,El Paso,2020-06-05,104
-I,El Paso,2020-06-06,110
-I,El Paso,2020-06-07,110
-I,El Paso,2020-06-08,115
-I,El Paso,2020-06-09,119
-I,El Paso,2020-06-10,111
-I,El Paso,2020-06-11,99
-I,El Paso,2020-06-12,97
-I,El Paso,2020-06-13,93
-I,El Paso,2020-06-14,94
-I,El Paso,2020-06-15,94
-I,El Paso,2020-06-16,97
-I,El Paso,2020-06-17,105
-I,El Paso,2020-06-18,112
-I,El Paso,2020-06-19,107
-I,El Paso,2020-06-20,108
-I,El Paso,2020-06-21,110
-I,El Paso,2020-06-22,110
-I,El Paso,2020-06-23,116
-I,El Paso,2020-06-24,133
-I,El Paso,2020-06-25,130
-I,El Paso,2020-06-26,139
-I,El Paso,2020-06-27,136
-I,El Paso,2020-06-28,147
-I,El Paso,2020-06-29,149
-J,Midland/Odessa,2020-04-08,9
-J,Midland/Odessa,2020-04-09,11
-J,Midland/Odessa,2020-04-10,9
-J,Midland/Odessa,2020-04-11,17
-J,Midland/Odessa,2020-04-12,10
-J,Midland/Odessa,2020-04-13,11
-J,Midland/Odessa,2020-04-14,17
-J,Midland/Odessa,2020-04-15,7
-J,Midland/Odessa,2020-04-16,10
-J,Midland/Odessa,2020-04-17,15
-J,Midland/Odessa,2020-04-18,12
-J,Midland/Odessa,2020-04-19,10
-J,Midland/Odessa,2020-04-20,10
-J,Midland/Odessa,2020-04-21,8
-J,Midland/Odessa,2020-04-22,11
-J,Midland/Odessa,2020-04-23,10
-J,Midland/Odessa,2020-04-24,8
-J,Midland/Odessa,2020-04-25,7
-J,Midland/Odessa,2020-04-26,6
-J,Midland/Odessa,2020-04-27,8
-J,Midland/Odessa,2020-04-28,8
-J,Midland/Odessa,2020-04-29,6
-J,Midland/Odessa,2020-04-30,7
-J,Midland/Odessa,2020-05-01,7
-J,Midland/Odessa,2020-05-02,6
-J,Midland/Odessa,2020-05-03,8
-J,Midland/Odessa,2020-05-04,8
-J,Midland/Odessa,2020-05-05,15
-J,Midland/Odessa,2020-05-06,27
-J,Midland/Odessa,2020-05-07,28
-J,Midland/Odessa,2020-05-08,29
-J,Midland/Odessa,2020-05-09,32
-J,Midland/Odessa,2020-05-10,30
-J,Midland/Odessa,2020-05-11,31
-J,Midland/Odessa,2020-05-12,29
-J,Midland/Odessa,2020-05-13,32
-J,Midland/Odessa,2020-05-14,30
-J,Midland/Odessa,2020-05-15,30
-J,Midland/Odessa,2020-05-16,27
-J,Midland/Odessa,2020-05-17,22
-J,Midland/Odessa,2020-05-18,18
-J,Midland/Odessa,2020-05-19,18
-J,Midland/Odessa,2020-05-20,12
-J,Midland/Odessa,2020-05-21,9
-J,Midland/Odessa,2020-05-22,9
-J,Midland/Odessa,2020-05-23,10
-J,Midland/Odessa,2020-05-24,11
-J,Midland/Odessa,2020-05-25,15
-J,Midland/Odessa,2020-05-26,16
-J,Midland/Odessa,2020-05-27,16
-J,Midland/Odessa,2020-05-28,17
-J,Midland/Odessa,2020-05-29,19
-J,Midland/Odessa,2020-05-30,16
-J,Midland/Odessa,2020-05-31,17
-J,Midland/Odessa,2020-06-01,18
-J,Midland/Odessa,2020-06-02,19
-J,Midland/Odessa,2020-06-03,18
-J,Midland/Odessa,2020-06-04,18
-J,Midland/Odessa,2020-06-05,19
-J,Midland/Odessa,2020-06-06,20
-J,Midland/Odessa,2020-06-07,22
-J,Midland/Odessa,2020-06-08,23
-J,Midland/Odessa,2020-06-09,23
-J,Midland/Odessa,2020-06-10,23
-J,Midland/Odessa,2020-06-11,19
-J,Midland/Odessa,2020-06-12,20
-J,Midland/Odessa,2020-06-13,21
-J,Midland/Odessa,2020-06-14,21
-J,Midland/Odessa,2020-06-15,23
-J,Midland/Odessa,2020-06-16,25
-J,Midland/Odessa,2020-06-17,25
-J,Midland/Odessa,2020-06-18,23
-J,Midland/Odessa,2020-06-19,25
-J,Midland/Odessa,2020-06-20,27
-J,Midland/Odessa,2020-06-21,32
-J,Midland/Odessa,2020-06-22,35
-J,Midland/Odessa,2020-06-23,43
-J,Midland/Odessa,2020-06-24,39
-J,Midland/Odessa,2020-06-25,47
-J,Midland/Odessa,2020-06-26,46
-J,Midland/Odessa,2020-06-27,56
-J,Midland/Odessa,2020-06-28,58
-J,Midland/Odessa,2020-06-29,54
-K,San Angelo,2020-04-08,0
-K,San Angelo,2020-04-09,0
-K,San Angelo,2020-04-10,1
-K,San Angelo,2020-04-11,1
-K,San Angelo,2020-04-12,0
-K,San Angelo,2020-04-13,0
-K,San Angelo,2020-04-14,0
-K,San Angelo,2020-04-15,0
-K,San Angelo,2020-04-16,0
-K,San Angelo,2020-04-17,0
-K,San Angelo,2020-04-18,0
-K,San Angelo,2020-04-19,0
-K,San Angelo,2020-04-20,0
-K,San Angelo,2020-04-21,0
-K,San Angelo,2020-04-22,0
-K,San Angelo,2020-04-23,0
-K,San Angelo,2020-04-24,0
-K,San Angelo,2020-04-25,0
-K,San Angelo,2020-04-26,4
-K,San Angelo,2020-04-27,2
-K,San Angelo,2020-04-28,0
-K,San Angelo,2020-04-29,0
-K,San Angelo,2020-04-30,0
-K,San Angelo,2020-05-01,0
-K,San Angelo,2020-05-02,0
-K,San Angelo,2020-05-03,0
-K,San Angelo,2020-05-04,0
-K,San Angelo,2020-05-05,0
-K,San Angelo,2020-05-06,0
-K,San Angelo,2020-05-07,0
-K,San Angelo,2020-05-08,0
-K,San Angelo,2020-05-09,1
-K,San Angelo,2020-05-10,2
-K,San Angelo,2020-05-11,2
-K,San Angelo,2020-05-12,1
-K,San Angelo,2020-05-13,0
-K,San Angelo,2020-05-14,0
-K,San Angelo,2020-05-15,0
-K,San Angelo,2020-05-16,0
-K,San Angelo,2020-05-17,0
-K,San Angelo,2020-05-18,0
-K,San Angelo,2020-05-19,0
-K,San Angelo,2020-05-20,3
-K,San Angelo,2020-05-21,0
-K,San Angelo,2020-05-22,0
-K,San Angelo,2020-05-23,0
-K,San Angelo,2020-05-24,0
-K,San Angelo,2020-05-25,0
-K,San Angelo,2020-05-26,0
-K,San Angelo,2020-05-27,0
-K,San Angelo,2020-05-28,1
-K,San Angelo,2020-05-29,1
-K,San Angelo,2020-05-30,1
-K,San Angelo,2020-05-31,1
-K,San Angelo,2020-06-01,0
-K,San Angelo,2020-06-02,0
-K,San Angelo,2020-06-03,0
-K,San Angelo,2020-06-04,2
-K,San Angelo,2020-06-05,2
-K,San Angelo,2020-06-06,2
-K,San Angelo,2020-06-07,2
-K,San Angelo,2020-06-08,2
-K,San Angelo,2020-06-09,2
-K,San Angelo,2020-06-10,0
-K,San Angelo,2020-06-11,0
-K,San Angelo,2020-06-12,1
-K,San Angelo,2020-06-13,1
-K,San Angelo,2020-06-14,2
-K,San Angelo,2020-06-15,2
-K,San Angelo,2020-06-16,2
-K,San Angelo,2020-06-17,2
-K,San Angelo,2020-06-18,2
-K,San Angelo,2020-06-19,3
-K,San Angelo,2020-06-20,3
-K,San Angelo,2020-06-21,5
-K,San Angelo,2020-06-22,6
-K,San Angelo,2020-06-23,7
-K,San Angelo,2020-06-24,8
-K,San Angelo,2020-06-25,12
-K,San Angelo,2020-06-26,12
-K,San Angelo,2020-06-27,15
-K,San Angelo,2020-06-28,15
-K,San Angelo,2020-06-29,15
-L,Belton/Killeen,2020-04-08,11
-L,Belton/Killeen,2020-04-09,6
-L,Belton/Killeen,2020-04-10,13
-L,Belton/Killeen,2020-04-11,12
-L,Belton/Killeen,2020-04-12,11
-L,Belton/Killeen,2020-04-13,12
-L,Belton/Killeen,2020-04-14,13
-L,Belton/Killeen,2020-04-15,16
-L,Belton/Killeen,2020-04-16,16
-L,Belton/Killeen,2020-04-17,15
-L,Belton/Killeen,2020-04-18,15
-L,Belton/Killeen,2020-04-19,12
-L,Belton/Killeen,2020-04-20,11
-L,Belton/Killeen,2020-04-21,15
-L,Belton/Killeen,2020-04-22,13
-L,Belton/Killeen,2020-04-23,15
-L,Belton/Killeen,2020-04-24,16
-L,Belton/Killeen,2020-04-25,12
-L,Belton/Killeen,2020-04-26,16
-L,Belton/Killeen,2020-04-27,16
-L,Belton/Killeen,2020-04-28,14
-L,Belton/Killeen,2020-04-29,16
-L,Belton/Killeen,2020-04-30,15
-L,Belton/Killeen,2020-05-01,12
-L,Belton/Killeen,2020-05-02,17
-L,Belton/Killeen,2020-05-03,13
-L,Belton/Killeen,2020-05-04,12
-L,Belton/Killeen,2020-05-05,17
-L,Belton/Killeen,2020-05-06,12
-L,Belton/Killeen,2020-05-07,11
-L,Belton/Killeen,2020-05-08,12
-L,Belton/Killeen,2020-05-09,9
-L,Belton/Killeen,2020-05-10,9
-L,Belton/Killeen,2020-05-11,9
-L,Belton/Killeen,2020-05-12,12
-L,Belton/Killeen,2020-05-13,14
-L,Belton/Killeen,2020-05-14,9
-L,Belton/Killeen,2020-05-15,15
-L,Belton/Killeen,2020-05-16,11
-L,Belton/Killeen,2020-05-17,11
-L,Belton/Killeen,2020-05-18,14
-L,Belton/Killeen,2020-05-19,19
-L,Belton/Killeen,2020-05-20,21
-L,Belton/Killeen,2020-05-21,10
-L,Belton/Killeen,2020-05-22,19
-L,Belton/Killeen,2020-05-23,13
-L,Belton/Killeen,2020-05-24,12
-L,Belton/Killeen,2020-05-25,10
-L,Belton/Killeen,2020-05-26,2
-L,Belton/Killeen,2020-05-27,4
-L,Belton/Killeen,2020-05-28,6
-L,Belton/Killeen,2020-05-29,6
-L,Belton/Killeen,2020-05-30,9
-L,Belton/Killeen,2020-05-31,17
-L,Belton/Killeen,2020-06-01,21
-L,Belton/Killeen,2020-06-02,21
-L,Belton/Killeen,2020-06-03,25
-L,Belton/Killeen,2020-06-04,24
-L,Belton/Killeen,2020-06-05,25
-L,Belton/Killeen,2020-06-06,22
-L,Belton/Killeen,2020-06-07,24
-L,Belton/Killeen,2020-06-08,22
-L,Belton/Killeen,2020-06-09,20
-L,Belton/Killeen,2020-06-10,18
-L,Belton/Killeen,2020-06-11,19
-L,Belton/Killeen,2020-06-12,16
-L,Belton/Killeen,2020-06-13,17
-L,Belton/Killeen,2020-06-14,16
-L,Belton/Killeen,2020-06-15,16
-L,Belton/Killeen,2020-06-16,14
-L,Belton/Killeen,2020-06-17,15
-L,Belton/Killeen,2020-06-18,20
-L,Belton/Killeen,2020-06-19,18
-L,Belton/Killeen,2020-06-20,18
-L,Belton/Killeen,2020-06-21,20
-L,Belton/Killeen,2020-06-22,24
-L,Belton/Killeen,2020-06-23,31
-L,Belton/Killeen,2020-06-24,33
-L,Belton/Killeen,2020-06-25,24
-L,Belton/Killeen,2020-06-26,30
-L,Belton/Killeen,2020-06-27,40
-L,Belton/Killeen,2020-06-28,34
-L,Belton/Killeen,2020-06-29,34
-M,Waco,2020-04-08,2
-M,Waco,2020-04-09,9
-M,Waco,2020-04-10,8
-M,Waco,2020-04-11,2
-M,Waco,2020-04-12,9
-M,Waco,2020-04-13,2
-M,Waco,2020-04-14,5
-M,Waco,2020-04-15,5
-M,Waco,2020-04-16,6
-M,Waco,2020-04-17,4
-M,Waco,2020-04-18,4
-M,Waco,2020-04-19,1
-M,Waco,2020-04-20,1
-M,Waco,2020-04-21,3
-M,Waco,2020-04-22,2
-M,Waco,2020-04-23,3
-M,Waco,2020-04-24,3
-M,Waco,2020-04-25,3
-M,Waco,2020-04-26,3
-M,Waco,2020-04-27,2
-M,Waco,2020-04-28,2
-M,Waco,2020-04-29,1
-M,Waco,2020-04-30,1
-M,Waco,2020-05-01,2
-M,Waco,2020-05-02,3
-M,Waco,2020-05-03,3
-M,Waco,2020-05-04,2
-M,Waco,2020-05-05,2
-M,Waco,2020-05-06,1
-M,Waco,2020-05-07,1
-M,Waco,2020-05-08,1
-M,Waco,2020-05-09,1
-M,Waco,2020-05-10,1
-M,Waco,2020-05-11,1
-M,Waco,2020-05-12,1
-M,Waco,2020-05-13,1
-M,Waco,2020-05-14,0
-M,Waco,2020-05-15,2
-M,Waco,2020-05-16,2
-M,Waco,2020-05-17,1
-M,Waco,2020-05-18,2
-M,Waco,2020-05-19,3
-M,Waco,2020-05-20,1
-M,Waco,2020-05-21,0
-M,Waco,2020-05-22,0
-M,Waco,2020-05-23,1
-M,Waco,2020-05-24,1
-M,Waco,2020-05-25,1
-M,Waco,2020-05-26,1
-M,Waco,2020-05-27,0
-M,Waco,2020-05-28,0
-M,Waco,2020-05-29,0
-M,Waco,2020-05-30,0
-M,Waco,2020-05-31,2
-M,Waco,2020-06-01,2
-M,Waco,2020-06-02,2
-M,Waco,2020-06-03,2
-M,Waco,2020-06-04,2
-M,Waco,2020-06-05,2
-M,Waco,2020-06-06,2
-M,Waco,2020-06-07,2
-M,Waco,2020-06-08,2
-M,Waco,2020-06-09,2
-M,Waco,2020-06-10,1
-M,Waco,2020-06-11,2
-M,Waco,2020-06-12,5
-M,Waco,2020-06-13,5
-M,Waco,2020-06-14,5
-M,Waco,2020-06-15,5
-M,Waco,2020-06-16,5
-M,Waco,2020-06-17,7
-M,Waco,2020-06-18,7
-M,Waco,2020-06-19,6
-M,Waco,2020-06-20,6
-M,Waco,2020-06-21,8
-M,Waco,2020-06-22,7
-M,Waco,2020-06-23,12
-M,Waco,2020-06-24,14
-M,Waco,2020-06-25,14
-M,Waco,2020-06-26,15
-M,Waco,2020-06-27,14
-M,Waco,2020-06-28,17
-M,Waco,2020-06-29,24
-N,Bryan/College Station,2020-04-08,17
-N,Bryan/College Station,2020-04-09,14
-N,Bryan/College Station,2020-04-10,13
-N,Bryan/College Station,2020-04-11,19
-N,Bryan/College Station,2020-04-12,24
-N,Bryan/College Station,2020-04-13,31
-N,Bryan/College Station,2020-04-14,13
-N,Bryan/College Station,2020-04-15,13
-N,Bryan/College Station,2020-04-16,16
-N,Bryan/College Station,2020-04-17,21
-N,Bryan/College Station,2020-04-18,13
-N,Bryan/College Station,2020-04-19,17
-N,Bryan/College Station,2020-04-20,9
-N,Bryan/College Station,2020-04-21,12
-N,Bryan/College Station,2020-04-22,12
-N,Bryan/College Station,2020-04-23,13
-N,Bryan/College Station,2020-04-24,12
-N,Bryan/College Station,2020-04-25,14
-N,Bryan/College Station,2020-04-26,11
-N,Bryan/College Station,2020-04-27,12
-N,Bryan/College Station,2020-04-28,18
-N,Bryan/College Station,2020-04-29,21
-N,Bryan/College Station,2020-04-30,23
-N,Bryan/College Station,2020-05-01,11
-N,Bryan/College Station,2020-05-02,16
-N,Bryan/College Station,2020-05-03,16
-N,Bryan/College Station,2020-05-04,9
-N,Bryan/College Station,2020-05-05,11
-N,Bryan/College Station,2020-05-06,11
-N,Bryan/College Station,2020-05-07,12
-N,Bryan/College Station,2020-05-08,17
-N,Bryan/College Station,2020-05-09,13
-N,Bryan/College Station,2020-05-10,12
-N,Bryan/College Station,2020-05-11,16
-N,Bryan/College Station,2020-05-12,15
-N,Bryan/College Station,2020-05-13,15
-N,Bryan/College Station,2020-05-14,16
-N,Bryan/College Station,2020-05-15,15
-N,Bryan/College Station,2020-05-16,15
-N,Bryan/College Station,2020-05-17,15
-N,Bryan/College Station,2020-05-18,13
-N,Bryan/College Station,2020-05-19,16
-N,Bryan/College Station,2020-05-20,12
-N,Bryan/College Station,2020-05-21,13
-N,Bryan/College Station,2020-05-22,9
-N,Bryan/College Station,2020-05-23,11
-N,Bryan/College Station,2020-05-24,11
-N,Bryan/College Station,2020-05-25,12
-N,Bryan/College Station,2020-05-26,11
-N,Bryan/College Station,2020-05-27,6
-N,Bryan/College Station,2020-05-28,15
-N,Bryan/College Station,2020-05-29,17
-N,Bryan/College Station,2020-05-30,18
-N,Bryan/College Station,2020-05-31,18
-N,Bryan/College Station,2020-06-01,23
-N,Bryan/College Station,2020-06-02,25
-N,Bryan/College Station,2020-06-03,25
-N,Bryan/College Station,2020-06-04,26
-N,Bryan/College Station,2020-06-05,22
-N,Bryan/College Station,2020-06-06,20
-N,Bryan/College Station,2020-06-07,22
-N,Bryan/College Station,2020-06-08,24
-N,Bryan/College Station,2020-06-09,26
-N,Bryan/College Station,2020-06-10,24
-N,Bryan/College Station,2020-06-11,22
-N,Bryan/College Station,2020-06-12,31
-N,Bryan/College Station,2020-06-13,26
-N,Bryan/College Station,2020-06-14,28
-N,Bryan/College Station,2020-06-15,29
-N,Bryan/College Station,2020-06-16,27
-N,Bryan/College Station,2020-06-17,37
-N,Bryan/College Station,2020-06-18,41
-N,Bryan/College Station,2020-06-19,42
-N,Bryan/College Station,2020-06-20,45
-N,Bryan/College Station,2020-06-21,44
-N,Bryan/College Station,2020-06-22,44
-N,Bryan/College Station,2020-06-23,51
-N,Bryan/College Station,2020-06-24,46
-N,Bryan/College Station,2020-06-25,47
-N,Bryan/College Station,2020-06-26,50
-N,Bryan/College Station,2020-06-27,50
-N,Bryan/College Station,2020-06-28,50
-N,Bryan/College Station,2020-06-29,50
-O,Austin,2020-04-08,45
-O,Austin,2020-04-09,37
-O,Austin,2020-04-10,28
-O,Austin,2020-04-11,22
-O,Austin,2020-04-12,22
-O,Austin,2020-04-13,26
-O,Austin,2020-04-14,28
-O,Austin,2020-04-15,30
-O,Austin,2020-04-16,22
-O,Austin,2020-04-17,36
-O,Austin,2020-04-18,29
-O,Austin,2020-04-19,25
-O,Austin,2020-04-20,27
-O,Austin,2020-04-21,23
-O,Austin,2020-04-22,62
-O,Austin,2020-04-23,83
-O,Austin,2020-04-24,76
-O,Austin,2020-04-25,59
-O,Austin,2020-04-26,47
-O,Austin,2020-04-27,46
-O,Austin,2020-04-28,51
-O,Austin,2020-04-29,81
-O,Austin,2020-04-30,88
-O,Austin,2020-05-01,68
-O,Austin,2020-05-02,47
-O,Austin,2020-05-03,59
-O,Austin,2020-05-04,47
-O,Austin,2020-05-05,68
-O,Austin,2020-05-06,93
-O,Austin,2020-05-07,84
-O,Austin,2020-05-08,82
-O,Austin,2020-05-09,56
-O,Austin,2020-05-10,50
-O,Austin,2020-05-11,49
-O,Austin,2020-05-12,72
-O,Austin,2020-05-13,98
-O,Austin,2020-05-14,72
-O,Austin,2020-05-15,99
-O,Austin,2020-05-16,76
-O,Austin,2020-05-17,7
-O,Austin,2020-05-18,25
-O,Austin,2020-05-19,54
-O,Austin,2020-05-20,82
-O,Austin,2020-05-21,56
-O,Austin,2020-05-22,30
-O,Austin,2020-05-23,103
-O,Austin,2020-05-24,43
-O,Austin,2020-05-25,20
-O,Austin,2020-05-26,35
-O,Austin,2020-05-27,46
-O,Austin,2020-05-28,66
-O,Austin,2020-05-29,93
-O,Austin,2020-05-30,92
-O,Austin,2020-05-31,87
-O,Austin,2020-06-01,89
-O,Austin,2020-06-02,89
-O,Austin,2020-06-03,98
-O,Austin,2020-06-04,88
-O,Austin,2020-06-05,79
-O,Austin,2020-06-06,89
-O,Austin,2020-06-07,100
-O,Austin,2020-06-08,87
-O,Austin,2020-06-09,90
-O,Austin,2020-06-10,93
-O,Austin,2020-06-11,89
-O,Austin,2020-06-12,120
-O,Austin,2020-06-13,121
-O,Austin,2020-06-14,123
-O,Austin,2020-06-15,141
-O,Austin,2020-06-16,137
-O,Austin,2020-06-17,148
-O,Austin,2020-06-18,164
-O,Austin,2020-06-19,179
-O,Austin,2020-06-20,181
-O,Austin,2020-06-21,196
-O,Austin,2020-06-22,205
-O,Austin,2020-06-23,245
-O,Austin,2020-06-24,274
-O,Austin,2020-06-25,288
-O,Austin,2020-06-26,296
-O,Austin,2020-06-27,337
-O,Austin,2020-06-28,343
-O,Austin,2020-06-29,373
-P,San Antonio,2020-04-08,69
-P,San Antonio,2020-04-09,62
-P,San Antonio,2020-04-10,62
-P,San Antonio,2020-04-11,62
-P,San Antonio,2020-04-12,57
-P,San Antonio,2020-04-13,57
-P,San Antonio,2020-04-14,64
-P,San Antonio,2020-04-15,65
-P,San Antonio,2020-04-16,30
-P,San Antonio,2020-04-17,47
-P,San Antonio,2020-04-18,52
-P,San Antonio,2020-04-19,46
-P,San Antonio,2020-04-20,38
-P,San Antonio,2020-04-21,45
-P,San Antonio,2020-04-22,109
-P,San Antonio,2020-04-23,80
-P,San Antonio,2020-04-24,63
-P,San Antonio,2020-04-25,53
-P,San Antonio,2020-04-26,60
-P,San Antonio,2020-04-27,59
-P,San Antonio,2020-04-28,59
-P,San Antonio,2020-04-29,58
-P,San Antonio,2020-04-30,53
-P,San Antonio,2020-05-01,54
-P,San Antonio,2020-05-02,57
-P,San Antonio,2020-05-03,61
-P,San Antonio,2020-05-04,56
-P,San Antonio,2020-05-05,67
-P,San Antonio,2020-05-06,69
-P,San Antonio,2020-05-07,56
-P,San Antonio,2020-05-08,68
-P,San Antonio,2020-05-09,71
-P,San Antonio,2020-05-10,59
-P,San Antonio,2020-05-11,53
-P,San Antonio,2020-05-12,72
-P,San Antonio,2020-05-13,71
-P,San Antonio,2020-05-14,61
-P,San Antonio,2020-05-15,65
-P,San Antonio,2020-05-16,76
-P,San Antonio,2020-05-17,82
-P,San Antonio,2020-05-18,80
-P,San Antonio,2020-05-19,84
-P,San Antonio,2020-05-20,93
-P,San Antonio,2020-05-21,95
-P,San Antonio,2020-05-22,90
-P,San Antonio,2020-05-23,96
-P,San Antonio,2020-05-24,93
-P,San Antonio,2020-05-25,87
-P,San Antonio,2020-05-26,90
-P,San Antonio,2020-05-27,108
-P,San Antonio,2020-05-28,106
-P,San Antonio,2020-05-29,107
-P,San Antonio,2020-05-30,98
-P,San Antonio,2020-05-31,90
-P,San Antonio,2020-06-01,105
-P,San Antonio,2020-06-02,87
-P,San Antonio,2020-06-03,101
-P,San Antonio,2020-06-04,74
-P,San Antonio,2020-06-05,111
-P,San Antonio,2020-06-06,98
-P,San Antonio,2020-06-07,94
-P,San Antonio,2020-06-08,99
-P,San Antonio,2020-06-09,119
-P,San Antonio,2020-06-10,128
-P,San Antonio,2020-06-11,133
-P,San Antonio,2020-06-12,116
-P,San Antonio,2020-06-13,144
-P,San Antonio,2020-06-14,163
-P,San Antonio,2020-06-15,165
-P,San Antonio,2020-06-16,185
-P,San Antonio,2020-06-17,233
-P,San Antonio,2020-06-18,227
-P,San Antonio,2020-06-19,279
-P,San Antonio,2020-06-20,334
-P,San Antonio,2020-06-21,357
-P,San Antonio,2020-06-22,473
-P,San Antonio,2020-06-23,501
-P,San Antonio,2020-06-24,549
-P,San Antonio,2020-06-25,606
-P,San Antonio,2020-06-26,675
-P,San Antonio,2020-06-27,814
-P,San Antonio,2020-06-28,778
-P,San Antonio,2020-06-29,935
-Q,Houston,2020-04-08,495
-Q,Houston,2020-04-09,570
-Q,Houston,2020-04-10,582
-Q,Houston,2020-04-11,610
-Q,Houston,2020-04-12,516
-Q,Houston,2020-04-13,319
-Q,Houston,2020-04-14,527
-Q,Houston,2020-04-15,584
-Q,Houston,2020-04-16,511
-Q,Houston,2020-04-17,500
-Q,Houston,2020-04-18,363
-Q,Houston,2020-04-19,535
-Q,Houston,2020-04-20,516
-Q,Houston,2020-04-21,516
-Q,Houston,2020-04-22,505
-Q,Houston,2020-04-23,501
-Q,Houston,2020-04-24,501
-Q,Houston,2020-04-25,465
-Q,Houston,2020-04-26,464
-Q,Houston,2020-04-27,468
-Q,Houston,2020-04-28,485
-Q,Houston,2020-04-29,436
-Q,Houston,2020-04-30,442
-Q,Houston,2020-05-01,475
-Q,Houston,2020-05-02,434
-Q,Houston,2020-05-03,329
-Q,Houston,2020-05-04,418
-Q,Houston,2020-05-05,544
-Q,Houston,2020-05-06,436
-Q,Houston,2020-05-07,453
-Q,Houston,2020-05-08,430
-Q,Houston,2020-05-09,446
-Q,Houston,2020-05-10,446
-Q,Houston,2020-05-11,402
-Q,Houston,2020-05-12,436
-Q,Houston,2020-05-13,435
-Q,Houston,2020-05-14,411
-Q,Houston,2020-05-15,401
-Q,Houston,2020-05-16,414
-Q,Houston,2020-05-17,380
-Q,Houston,2020-05-18,397
-Q,Houston,2020-05-19,433
-Q,Houston,2020-05-20,443
-Q,Houston,2020-05-21,444
-Q,Houston,2020-05-22,406
-Q,Houston,2020-05-23,387
-Q,Houston,2020-05-24,407
-Q,Houston,2020-05-25,392
-Q,Houston,2020-05-26,401
-Q,Houston,2020-05-27,414
-Q,Houston,2020-05-28,435
-Q,Houston,2020-05-29,407
-Q,Houston,2020-05-30,460
-Q,Houston,2020-05-31,454
-Q,Houston,2020-06-01,482
-Q,Houston,2020-06-02,506
-Q,Houston,2020-06-03,495
-Q,Houston,2020-06-04,526
-Q,Houston,2020-06-05,555
-Q,Houston,2020-06-06,522
-Q,Houston,2020-06-07,565
-Q,Houston,2020-06-08,614
-Q,Houston,2020-06-09,622
-Q,Houston,2020-06-10,690
-Q,Houston,2020-06-11,642
-Q,Houston,2020-06-12,663
-Q,Houston,2020-06-13,681
-Q,Houston,2020-06-14,696
-Q,Houston,2020-06-15,730
-Q,Houston,2020-06-16,795
-Q,Houston,2020-06-17,839
-Q,Houston,2020-06-18,940
-Q,Houston,2020-06-19,1031
-Q,Houston,2020-06-20,1040
-Q,Houston,2020-06-21,1062
-Q,Houston,2020-06-22,1185
-Q,Houston,2020-06-23,1293
-Q,Houston,2020-06-24,1343
-Q,Houston,2020-06-25,1496
-Q,Houston,2020-06-26,1606
-Q,Houston,2020-06-27,1691
-Q,Houston,2020-06-28,1642
-Q,Houston,2020-06-29,1767
-R,Galveston,2020-04-08,55
-R,Galveston,2020-04-09,60
-R,Galveston,2020-04-10,67
-R,Galveston,2020-04-11,73
-R,Galveston,2020-04-12,76
-R,Galveston,2020-04-13,84
-R,Galveston,2020-04-14,97
-R,Galveston,2020-04-15,96
-R,Galveston,2020-04-16,101
-R,Galveston,2020-04-17,104
-R,Galveston,2020-04-18,111
-R,Galveston,2020-04-19,94
-R,Galveston,2020-04-20,110
-R,Galveston,2020-04-21,110
-R,Galveston,2020-04-22,125
-R,Galveston,2020-04-23,128
-R,Galveston,2020-04-24,128
-R,Galveston,2020-04-25,142
-R,Galveston,2020-04-26,127
-R,Galveston,2020-04-27,115
-R,Galveston,2020-04-28,124
-R,Galveston,2020-04-29,132
-R,Galveston,2020-04-30,124
-R,Galveston,2020-05-01,129
-R,Galveston,2020-05-02,101
-R,Galveston,2020-05-03,88
-R,Galveston,2020-05-04,92
-R,Galveston,2020-05-05,118
-R,Galveston,2020-05-06,114
-R,Galveston,2020-05-07,57
-R,Galveston,2020-05-08,53
-R,Galveston,2020-05-09,58
-R,Galveston,2020-05-10,52
-R,Galveston,2020-05-11,52
-R,Galveston,2020-05-12,40
-R,Galveston,2020-05-13,47
-R,Galveston,2020-05-14,46
-R,Galveston,2020-05-15,55
-R,Galveston,2020-05-16,121
-R,Galveston,2020-05-17,112
-R,Galveston,2020-05-18,111
-R,Galveston,2020-05-19,123
-R,Galveston,2020-05-20,117
-R,Galveston,2020-05-21,117
-R,Galveston,2020-05-22,117
-R,Galveston,2020-05-23,122
-R,Galveston,2020-05-24,116
-R,Galveston,2020-05-25,119
-R,Galveston,2020-05-26,101
-R,Galveston,2020-05-27,114
-R,Galveston,2020-05-28,89
-R,Galveston,2020-05-29,115
-R,Galveston,2020-05-30,106
-R,Galveston,2020-05-31,91
-R,Galveston,2020-06-01,111
-R,Galveston,2020-06-02,108
-R,Galveston,2020-06-03,115
-R,Galveston,2020-06-04,96
-R,Galveston,2020-06-05,119
-R,Galveston,2020-06-06,122
-R,Galveston,2020-06-07,126
-R,Galveston,2020-06-08,123
-R,Galveston,2020-06-09,147
-R,Galveston,2020-06-10,142
-R,Galveston,2020-06-11,60
-R,Galveston,2020-06-12,131
-R,Galveston,2020-06-13,137
-R,Galveston,2020-06-14,136
-R,Galveston,2020-06-15,154
-R,Galveston,2020-06-16,157
-R,Galveston,2020-06-17,164
-R,Galveston,2020-06-18,152
-R,Galveston,2020-06-19,159
-R,Galveston,2020-06-20,144
-R,Galveston,2020-06-21,193
-R,Galveston,2020-06-22,166
-R,Galveston,2020-06-23,194
-R,Galveston,2020-06-24,223
-R,Galveston,2020-06-25,230
-R,Galveston,2020-06-26,271
-R,Galveston,2020-06-27,297
-R,Galveston,2020-06-28,268
-R,Galveston,2020-06-29,298
-S,Victoria,2020-04-08,14
-S,Victoria,2020-04-09,14
-S,Victoria,2020-04-10,14
-S,Victoria,2020-04-11,14
-S,Victoria,2020-04-12,16
-S,Victoria,2020-04-13,21
-S,Victoria,2020-04-14,22
-S,Victoria,2020-04-15,21
-S,Victoria,2020-04-16,19
-S,Victoria,2020-04-17,17
-S,Victoria,2020-04-18,19
-S,Victoria,2020-04-19,19
-S,Victoria,2020-04-20,21
-S,Victoria,2020-04-21,22
-S,Victoria,2020-04-22,50
-S,Victoria,2020-04-23,30
-S,Victoria,2020-04-24,26
-S,Victoria,2020-04-25,23
-S,Victoria,2020-04-26,22
-S,Victoria,2020-04-27,26
-S,Victoria,2020-04-28,25
-S,Victoria,2020-04-29,24
-S,Victoria,2020-04-30,25
-S,Victoria,2020-05-01,29
-S,Victoria,2020-05-02,24
-S,Victoria,2020-05-03,24
-S,Victoria,2020-05-04,22
-S,Victoria,2020-05-05,22
-S,Victoria,2020-05-06,21
-S,Victoria,2020-05-07,21
-S,Victoria,2020-05-08,20
-S,Victoria,2020-05-09,18
-S,Victoria,2020-05-10,17
-S,Victoria,2020-05-11,18
-S,Victoria,2020-05-12,17
-S,Victoria,2020-05-13,17
-S,Victoria,2020-05-14,12
-S,Victoria,2020-05-15,12
-S,Victoria,2020-05-16,15
-S,Victoria,2020-05-17,14
-S,Victoria,2020-05-18,15
-S,Victoria,2020-05-19,12
-S,Victoria,2020-05-20,10
-S,Victoria,2020-05-21,11
-S,Victoria,2020-05-22,15
-S,Victoria,2020-05-23,15
-S,Victoria,2020-05-24,13
-S,Victoria,2020-05-25,13
-S,Victoria,2020-05-26,13
-S,Victoria,2020-05-27,14
-S,Victoria,2020-05-28,12
-S,Victoria,2020-05-29,10
-S,Victoria,2020-05-30,10
-S,Victoria,2020-05-31,18
-S,Victoria,2020-06-01,17
-S,Victoria,2020-06-02,19
-S,Victoria,2020-06-03,19
-S,Victoria,2020-06-04,22
-S,Victoria,2020-06-05,23
-S,Victoria,2020-06-06,14
-S,Victoria,2020-06-07,13
-S,Victoria,2020-06-08,12
-S,Victoria,2020-06-09,11
-S,Victoria,2020-06-10,10
-S,Victoria,2020-06-11,9
-S,Victoria,2020-06-12,7
-S,Victoria,2020-06-13,7
-S,Victoria,2020-06-14,8
-S,Victoria,2020-06-15,11
-S,Victoria,2020-06-16,11
-S,Victoria,2020-06-17,12
-S,Victoria,2020-06-18,9
-S,Victoria,2020-06-19,11
-S,Victoria,2020-06-20,15
-S,Victoria,2020-06-21,15
-S,Victoria,2020-06-22,20
-S,Victoria,2020-06-23,18
-S,Victoria,2020-06-24,30
-S,Victoria,2020-06-25,31
-S,Victoria,2020-06-26,30
-S,Victoria,2020-06-27,16
-S,Victoria,2020-06-28,40
-S,Victoria,2020-06-29,45
-T,Laredo,2020-04-08,27
-T,Laredo,2020-04-09,26
-T,Laredo,2020-04-10,28
-T,Laredo,2020-04-11,29
-T,Laredo,2020-04-12,25
-T,Laredo,2020-04-13,24
-T,Laredo,2020-04-14,28
-T,Laredo,2020-04-15,26
-T,Laredo,2020-04-16,27
-T,Laredo,2020-04-17,31
-T,Laredo,2020-04-18,31
-T,Laredo,2020-04-19,25
-T,Laredo,2020-04-20,27
-T,Laredo,2020-04-21,0
-T,Laredo,2020-04-22,23
-T,Laredo,2020-04-23,20
-T,Laredo,2020-04-24,28
-T,Laredo,2020-04-25,25
-T,Laredo,2020-04-26,24
-T,Laredo,2020-04-27,23
-T,Laredo,2020-04-28,20
-T,Laredo,2020-04-29,23
-T,Laredo,2020-04-30,18
-T,Laredo,2020-05-01,20
-T,Laredo,2020-05-02,21
-T,Laredo,2020-05-03,23
-T,Laredo,2020-05-04,23
-T,Laredo,2020-05-05,20
-T,Laredo,2020-05-06,18
-T,Laredo,2020-05-07,19
-T,Laredo,2020-05-08,18
-T,Laredo,2020-05-09,18
-T,Laredo,2020-05-10,18
-T,Laredo,2020-05-11,17
-T,Laredo,2020-05-12,14
-T,Laredo,2020-05-13,13
-T,Laredo,2020-05-14,14
-T,Laredo,2020-05-15,15
-T,Laredo,2020-05-16,16
-T,Laredo,2020-05-17,15
-T,Laredo,2020-05-18,14
-T,Laredo,2020-05-19,13
-T,Laredo,2020-05-20,13
-T,Laredo,2020-05-21,14
-T,Laredo,2020-05-22,14
-T,Laredo,2020-05-23,14
-T,Laredo,2020-05-24,13
-T,Laredo,2020-05-25,14
-T,Laredo,2020-05-26,14
-T,Laredo,2020-05-27,14
-T,Laredo,2020-05-28,15
-T,Laredo,2020-05-29,16
-T,Laredo,2020-05-30,15
-T,Laredo,2020-05-31,14
-T,Laredo,2020-06-01,14
-T,Laredo,2020-06-02,12
-T,Laredo,2020-06-03,10
-T,Laredo,2020-06-04,12
-T,Laredo,2020-06-05,11
-T,Laredo,2020-06-06,12
-T,Laredo,2020-06-07,10
-T,Laredo,2020-06-08,9
-T,Laredo,2020-06-09,9
-T,Laredo,2020-06-10,12
-T,Laredo,2020-06-11,12
-T,Laredo,2020-06-12,12
-T,Laredo,2020-06-13,12
-T,Laredo,2020-06-14,11
-T,Laredo,2020-06-15,11
-T,Laredo,2020-06-16,10
-T,Laredo,2020-06-17,14
-T,Laredo,2020-06-18,14
-T,Laredo,2020-06-19,15
-T,Laredo,2020-06-20,16
-T,Laredo,2020-06-21,18
-T,Laredo,2020-06-22,15
-T,Laredo,2020-06-23,20
-T,Laredo,2020-06-24,24
-T,Laredo,2020-06-25,33
-T,Laredo,2020-06-26,42
-T,Laredo,2020-06-27,44
-T,Laredo,2020-06-28,50
-T,Laredo,2020-06-29,54
-U,Corpus Christi,2020-04-08,13
-U,Corpus Christi,2020-04-09,11
-U,Corpus Christi,2020-04-10,8
-U,Corpus Christi,2020-04-11,16
-U,Corpus Christi,2020-04-12,9
-U,Corpus Christi,2020-04-13,12
-U,Corpus Christi,2020-04-14,9
-U,Corpus Christi,2020-04-15,12
-U,Corpus Christi,2020-04-16,7
-U,Corpus Christi,2020-04-17,11
-U,Corpus Christi,2020-04-18,13
-U,Corpus Christi,2020-04-19,8
-U,Corpus Christi,2020-04-20,9
-U,Corpus Christi,2020-04-21,9
-U,Corpus Christi,2020-04-22,6
-U,Corpus Christi,2020-04-23,8
-U,Corpus Christi,2020-04-24,6
-U,Corpus Christi,2020-04-25,9
-U,Corpus Christi,2020-04-26,9
-U,Corpus Christi,2020-04-27,4
-U,Corpus Christi,2020-04-28,4
-U,Corpus Christi,2020-04-29,4
-U,Corpus Christi,2020-04-30,4
-U,Corpus Christi,2020-05-01,4
-U,Corpus Christi,2020-05-02,16
-U,Corpus Christi,2020-05-03,16
-U,Corpus Christi,2020-05-04,4
-U,Corpus Christi,2020-05-05,4
-U,Corpus Christi,2020-05-06,4
-U,Corpus Christi,2020-05-07,6
-U,Corpus Christi,2020-05-08,5
-U,Corpus Christi,2020-05-09,8
-U,Corpus Christi,2020-05-10,9
-U,Corpus Christi,2020-05-11,9
-U,Corpus Christi,2020-05-12,9
-U,Corpus Christi,2020-05-13,8
-U,Corpus Christi,2020-05-14,16
-U,Corpus Christi,2020-05-15,22
-U,Corpus Christi,2020-05-16,17
-U,Corpus Christi,2020-05-17,7
-U,Corpus Christi,2020-05-18,7
-U,Corpus Christi,2020-05-19,6
-U,Corpus Christi,2020-05-20,12
-U,Corpus Christi,2020-05-21,5
-U,Corpus Christi,2020-05-22,13
-U,Corpus Christi,2020-05-23,8
-U,Corpus Christi,2020-05-24,9
-U,Corpus Christi,2020-05-25,9
-U,Corpus Christi,2020-05-26,9
-U,Corpus Christi,2020-05-27,8
-U,Corpus Christi,2020-05-28,9
-U,Corpus Christi,2020-05-29,8
-U,Corpus Christi,2020-05-30,6
-U,Corpus Christi,2020-05-31,6
-U,Corpus Christi,2020-06-01,6
-U,Corpus Christi,2020-06-02,8
-U,Corpus Christi,2020-06-03,10
-U,Corpus Christi,2020-06-04,7
-U,Corpus Christi,2020-06-05,8
-U,Corpus Christi,2020-06-06,11
-U,Corpus Christi,2020-06-07,8
-U,Corpus Christi,2020-06-08,7
-U,Corpus Christi,2020-06-09,8
-U,Corpus Christi,2020-06-10,7
-U,Corpus Christi,2020-06-11,7
-U,Corpus Christi,2020-06-12,12
-U,Corpus Christi,2020-06-13,11
-U,Corpus Christi,2020-06-14,14
-U,Corpus Christi,2020-06-15,15
-U,Corpus Christi,2020-06-16,14
-U,Corpus Christi,2020-06-17,18
-U,Corpus Christi,2020-06-18,20
-U,Corpus Christi,2020-06-19,24
-U,Corpus Christi,2020-06-20,26
-U,Corpus Christi,2020-06-21,26
-U,Corpus Christi,2020-06-22,31
-U,Corpus Christi,2020-06-23,38
-U,Corpus Christi,2020-06-24,39
-U,Corpus Christi,2020-06-25,38
-U,Corpus Christi,2020-06-26,85
-U,Corpus Christi,2020-06-27,94
-U,Corpus Christi,2020-06-28,107
-U,Corpus Christi,2020-06-29,109
-V,Lower Rio Grande Valley,2020-04-08,39
-V,Lower Rio Grande Valley,2020-04-09,31
-V,Lower Rio Grande Valley,2020-04-10,41
-V,Lower Rio Grande Valley,2020-04-11,45
-V,Lower Rio Grande Valley,2020-04-12,57
-V,Lower Rio Grande Valley,2020-04-13,65
-V,Lower Rio Grande Valley,2020-04-14,68
-V,Lower Rio Grande Valley,2020-04-15,65
-V,Lower Rio Grande Valley,2020-04-16,61
-V,Lower Rio Grande Valley,2020-04-17,68
-V,Lower Rio Grande Valley,2020-04-18,57
-V,Lower Rio Grande Valley,2020-04-19,57
-V,Lower Rio Grande Valley,2020-04-20,51
-V,Lower Rio Grande Valley,2020-04-21,0
-V,Lower Rio Grande Valley,2020-04-22,49
-V,Lower Rio Grande Valley,2020-04-23,30
-V,Lower Rio Grande Valley,2020-04-24,34
-V,Lower Rio Grande Valley,2020-04-25,33
-V,Lower Rio Grande Valley,2020-04-26,33
-V,Lower Rio Grande Valley,2020-04-27,30
-V,Lower Rio Grande Valley,2020-04-28,32
-V,Lower Rio Grande Valley,2020-04-29,28
-V,Lower Rio Grande Valley,2020-04-30,29
-V,Lower Rio Grande Valley,2020-05-01,30
-V,Lower Rio Grande Valley,2020-05-02,35
-V,Lower Rio Grande Valley,2020-05-03,36
-V,Lower Rio Grande Valley,2020-05-04,35
-V,Lower Rio Grande Valley,2020-05-05,37
-V,Lower Rio Grande Valley,2020-05-06,35
-V,Lower Rio Grande Valley,2020-05-07,35
-V,Lower Rio Grande Valley,2020-05-08,21
-V,Lower Rio Grande Valley,2020-05-09,37
-V,Lower Rio Grande Valley,2020-05-10,35
-V,Lower Rio Grande Valley,2020-05-11,35
-V,Lower Rio Grande Valley,2020-05-12,36
-V,Lower Rio Grande Valley,2020-05-13,35
-V,Lower Rio Grande Valley,2020-05-14,32
-V,Lower Rio Grande Valley,2020-05-15,39
-V,Lower Rio Grande Valley,2020-05-16,38
-V,Lower Rio Grande Valley,2020-05-17,33
-V,Lower Rio Grande Valley,2020-05-18,36
-V,Lower Rio Grande Valley,2020-05-19,36
-V,Lower Rio Grande Valley,2020-05-20,30
-V,Lower Rio Grande Valley,2020-05-21,29
-V,Lower Rio Grande Valley,2020-05-22,30
-V,Lower Rio Grande Valley,2020-05-23,34
-V,Lower Rio Grande Valley,2020-05-24,26
-V,Lower Rio Grande Valley,2020-05-25,31
-V,Lower Rio Grande Valley,2020-05-26,33
-V,Lower Rio Grande Valley,2020-05-27,32
-V,Lower Rio Grande Valley,2020-05-28,33
-V,Lower Rio Grande Valley,2020-05-29,35
-V,Lower Rio Grande Valley,2020-05-30,31
-V,Lower Rio Grande Valley,2020-05-31,33
-V,Lower Rio Grande Valley,2020-06-01,37
-V,Lower Rio Grande Valley,2020-06-02,37
-V,Lower Rio Grande Valley,2020-06-03,43
-V,Lower Rio Grande Valley,2020-06-04,47
-V,Lower Rio Grande Valley,2020-06-05,46
-V,Lower Rio Grande Valley,2020-06-06,51
-V,Lower Rio Grande Valley,2020-06-07,47
-V,Lower Rio Grande Valley,2020-06-08,56
-V,Lower Rio Grande Valley,2020-06-09,65
-V,Lower Rio Grande Valley,2020-06-10,67
-V,Lower Rio Grande Valley,2020-06-11,67
-V,Lower Rio Grande Valley,2020-06-12,91
-V,Lower Rio Grande Valley,2020-06-13,94
-V,Lower Rio Grande Valley,2020-06-14,99
-V,Lower Rio Grande Valley,2020-06-15,87
-V,Lower Rio Grande Valley,2020-06-16,122
-V,Lower Rio Grande Valley,2020-06-17,164
-V,Lower Rio Grande Valley,2020-06-18,175
-V,Lower Rio Grande Valley,2020-06-19,191
-V,Lower Rio Grande Valley,2020-06-20,203
-V,Lower Rio Grande Valley,2020-06-21,227
-V,Lower Rio Grande Valley,2020-06-22,253
-V,Lower Rio Grande Valley,2020-06-23,280
-V,Lower Rio Grande Valley,2020-06-24,312
-V,Lower Rio Grande Valley,2020-06-25,398
-V,Lower Rio Grande Valley,2020-06-26,405
-V,Lower Rio Grande Valley,2020-06-27,451
-V,Lower Rio Grande Valley,2020-06-28,462
-V,Lower Rio Grande Valley,2020-06-29,475
+A,Amarillo,Hospitalizations 4/8,9
+A,Amarillo,Hospitalizations 4/9,12
+A,Amarillo,Hospitalizations 4/10,15
+A,Amarillo,Hospitalizations 4/11,18
+A,Amarillo,Hospitalizations 4/12,17
+A,Amarillo,Hospitalizations 4/13,17
+A,Amarillo,Hospitalizations 4/14,17
+A,Amarillo,Hospitalizations 4/15,10
+A,Amarillo,Hospitalizations 4/16,18
+A,Amarillo,Hospitalizations 4/17,24
+A,Amarillo,Hospitalizations 4/18,18
+A,Amarillo,Hospitalizations 4/19,35
+A,Amarillo,Hospitalizations 4/20,17
+A,Amarillo,Hospitalizations 4/21,17
+A,Amarillo,Hospitalizations 4/22,41
+A,Amarillo,Hospitalizations 4/23,41
+A,Amarillo,Hospitalizations 4/24,40
+A,Amarillo,Hospitalizations 4/25,46
+A,Amarillo,Hospitalizations 4/26,59
+A,Amarillo,Hospitalizations 4/27,64
+A,Amarillo,Hospitalizations 4/28,67
+A,Amarillo,Hospitalizations 4/29,82
+A,Amarillo,Hospitalizations 4/30,84
+A,Amarillo,Hospitalizations 5/1,87
+A,Amarillo,Hospitalizations 5/2,91
+A,Amarillo,Hospitalizations 5/3,101
+A,Amarillo,Hospitalizations 5/4,94
+A,Amarillo,Hospitalizations 5/5,90
+A,Amarillo,Hospitalizations 5/6,96
+A,Amarillo,Hospitalizations 5/7,109
+A,Amarillo,Hospitalizations 5/8,112
+A,Amarillo,Hospitalizations 5/9,109
+A,Amarillo,Hospitalizations 5/10,103
+A,Amarillo,Hospitalizations 5/11,98
+A,Amarillo,Hospitalizations 5/12,94
+A,Amarillo,Hospitalizations 5/13,82
+A,Amarillo,Hospitalizations 5/14,84
+A,Amarillo,Hospitalizations 5/15,79
+A,Amarillo,Hospitalizations 5/16,80
+A,Amarillo,Hospitalizations 5/17,72
+A,Amarillo,Hospitalizations 5/18,68
+A,Amarillo,Hospitalizations 5/19,70
+A,Amarillo,Hospitalizations 5/20,75
+A,Amarillo,Hospitalizations 5/21,63
+A,Amarillo,Hospitalizations 5/22,53
+A,Amarillo,Hospitalizations 5/23,55
+A,Amarillo,Hospitalizations 5/24,55
+A,Amarillo,Hospitalizations 5/25,55
+A,Amarillo,Hospitalizations 5/26,61
+A,Amarillo,Hospitalizations 5/27,59
+A,Amarillo,Hospitalizations 5/28,63
+A,Amarillo,Hospitalizations 5/29,61
+A,Amarillo,Hospitalizations 5/30,58
+A,Amarillo,Hospitalizations 5/31,39
+A,Amarillo,Hospitalizations 6/1,47
+A,Amarillo,Hospitalizations 6/2,45
+A,Amarillo,Hospitalizations 6/3,46
+A,Amarillo,Hospitalizations 6/4,38
+A,Amarillo,Hospitalizations 6/5,31
+A,Amarillo,Hospitalizations 6/6,32
+A,Amarillo,Hospitalizations 6/7,31
+A,Amarillo,Hospitalizations 6/8,25
+A,Amarillo,Hospitalizations 6/9,29
+A,Amarillo,Hospitalizations 6/10,25
+A,Amarillo,Hospitalizations 6/11,23
+A,Amarillo,Hospitalizations 6/12,17
+A,Amarillo,Hospitalizations 6/13,18
+A,Amarillo,Hospitalizations 6/14,17
+A,Amarillo,Hospitalizations 6/15,16
+A,Amarillo,Hospitalizations 6/16,25
+A,Amarillo,Hospitalizations 6/17,23
+A,Amarillo,Hospitalizations 6/18,24
+A,Amarillo,Hospitalizations 6/19,22
+A,Amarillo,Hospitalizations 6/20,20
+A,Amarillo,Hospitalizations 6/21,22
+A,Amarillo,Hospitalizations 6/22,23
+A,Amarillo,Hospitalizations 6/23,23
+A,Amarillo,Hospitalizations 6/24,27
+A,Amarillo,Hospitalizations 6/25,25
+A,Amarillo,Hospitalizations 6/26,22
+A,Amarillo,Hospitalizations 6/27,21
+A,Amarillo,Hospitalizations 6/28,20
+A,Amarillo,Hospitalizations 6/29,22
+A,Amarillo,Hospitalizations 06/30,25
+B,Lubbock,Hospitalizations 4/8,25
+B,Lubbock,Hospitalizations 4/9,26
+B,Lubbock,Hospitalizations 4/10,21
+B,Lubbock,Hospitalizations 4/11,34
+B,Lubbock,Hospitalizations 4/12,34
+B,Lubbock,Hospitalizations 4/13,35
+B,Lubbock,Hospitalizations 4/14,31
+B,Lubbock,Hospitalizations 4/15,34
+B,Lubbock,Hospitalizations 4/16,32
+B,Lubbock,Hospitalizations 4/17,38
+B,Lubbock,Hospitalizations 4/18,35
+B,Lubbock,Hospitalizations 4/19,32
+B,Lubbock,Hospitalizations 4/20,32
+B,Lubbock,Hospitalizations 4/21,46
+B,Lubbock,Hospitalizations 4/22,28
+B,Lubbock,Hospitalizations 4/23,25
+B,Lubbock,Hospitalizations 4/24,27
+B,Lubbock,Hospitalizations 4/25,32
+B,Lubbock,Hospitalizations 4/26,26
+B,Lubbock,Hospitalizations 4/27,29
+B,Lubbock,Hospitalizations 4/28,29
+B,Lubbock,Hospitalizations 4/29,31
+B,Lubbock,Hospitalizations 4/30,38
+B,Lubbock,Hospitalizations 5/1,36
+B,Lubbock,Hospitalizations 5/2,37
+B,Lubbock,Hospitalizations 5/3,29
+B,Lubbock,Hospitalizations 5/4,30
+B,Lubbock,Hospitalizations 5/5,33
+B,Lubbock,Hospitalizations 5/6,37
+B,Lubbock,Hospitalizations 5/7,32
+B,Lubbock,Hospitalizations 5/8,28
+B,Lubbock,Hospitalizations 5/9,27
+B,Lubbock,Hospitalizations 5/10,25
+B,Lubbock,Hospitalizations 5/11,23
+B,Lubbock,Hospitalizations 5/12,25
+B,Lubbock,Hospitalizations 5/13,19
+B,Lubbock,Hospitalizations 5/14,22
+B,Lubbock,Hospitalizations 5/15,21
+B,Lubbock,Hospitalizations 5/16,20
+B,Lubbock,Hospitalizations 5/17,19
+B,Lubbock,Hospitalizations 5/18,20
+B,Lubbock,Hospitalizations 5/19,21
+B,Lubbock,Hospitalizations 5/20,25
+B,Lubbock,Hospitalizations 5/21,20
+B,Lubbock,Hospitalizations 5/22,15
+B,Lubbock,Hospitalizations 5/23,14
+B,Lubbock,Hospitalizations 5/24,13
+B,Lubbock,Hospitalizations 5/25,16
+B,Lubbock,Hospitalizations 5/26,16
+B,Lubbock,Hospitalizations 5/27,15
+B,Lubbock,Hospitalizations 5/28,14
+B,Lubbock,Hospitalizations 5/29,20
+B,Lubbock,Hospitalizations 5/30,14
+B,Lubbock,Hospitalizations 5/31,12
+B,Lubbock,Hospitalizations 6/1,14
+B,Lubbock,Hospitalizations 6/2,16
+B,Lubbock,Hospitalizations 6/3,19
+B,Lubbock,Hospitalizations 6/4,16
+B,Lubbock,Hospitalizations 6/5,13
+B,Lubbock,Hospitalizations 6/6,11
+B,Lubbock,Hospitalizations 6/7,11
+B,Lubbock,Hospitalizations 6/8,10
+B,Lubbock,Hospitalizations 6/9,10
+B,Lubbock,Hospitalizations 6/10,15
+B,Lubbock,Hospitalizations 6/11,14
+B,Lubbock,Hospitalizations 6/12,17
+B,Lubbock,Hospitalizations 6/13,18
+B,Lubbock,Hospitalizations 6/14,16
+B,Lubbock,Hospitalizations 6/15,15
+B,Lubbock,Hospitalizations 6/16,14
+B,Lubbock,Hospitalizations 6/17,16
+B,Lubbock,Hospitalizations 6/18,20
+B,Lubbock,Hospitalizations 6/19,21
+B,Lubbock,Hospitalizations 6/20,22
+B,Lubbock,Hospitalizations 6/21,22
+B,Lubbock,Hospitalizations 6/22,22
+B,Lubbock,Hospitalizations 6/23,25
+B,Lubbock,Hospitalizations 6/24,34
+B,Lubbock,Hospitalizations 6/25,37
+B,Lubbock,Hospitalizations 6/26,43
+B,Lubbock,Hospitalizations 6/27,42
+B,Lubbock,Hospitalizations 6/28,51
+B,Lubbock,Hospitalizations 6/29,49
+B,Lubbock,Hospitalizations 06/30,58
+C,Wichita Falls,Hospitalizations 4/8,8
+C,Wichita Falls,Hospitalizations 4/9,8
+C,Wichita Falls,Hospitalizations 4/10,7
+C,Wichita Falls,Hospitalizations 4/11,7
+C,Wichita Falls,Hospitalizations 4/12,5
+C,Wichita Falls,Hospitalizations 4/13,5
+C,Wichita Falls,Hospitalizations 4/14,6
+C,Wichita Falls,Hospitalizations 4/15,4
+C,Wichita Falls,Hospitalizations 4/16,5
+C,Wichita Falls,Hospitalizations 4/17,0
+C,Wichita Falls,Hospitalizations 4/18,0
+C,Wichita Falls,Hospitalizations 4/19,0
+C,Wichita Falls,Hospitalizations 4/20,2
+C,Wichita Falls,Hospitalizations 4/21,4
+C,Wichita Falls,Hospitalizations 4/22,1
+C,Wichita Falls,Hospitalizations 4/23,1
+C,Wichita Falls,Hospitalizations 4/24,1
+C,Wichita Falls,Hospitalizations 4/25,1
+C,Wichita Falls,Hospitalizations 4/26,1
+C,Wichita Falls,Hospitalizations 4/27,0
+C,Wichita Falls,Hospitalizations 4/28,0
+C,Wichita Falls,Hospitalizations 4/29,0
+C,Wichita Falls,Hospitalizations 4/30,0
+C,Wichita Falls,Hospitalizations 5/1,0
+C,Wichita Falls,Hospitalizations 5/2,0
+C,Wichita Falls,Hospitalizations 5/3,0
+C,Wichita Falls,Hospitalizations 5/4,0
+C,Wichita Falls,Hospitalizations 5/5,0
+C,Wichita Falls,Hospitalizations 5/6,0
+C,Wichita Falls,Hospitalizations 5/7,0
+C,Wichita Falls,Hospitalizations 5/8,0
+C,Wichita Falls,Hospitalizations 5/9,2
+C,Wichita Falls,Hospitalizations 5/10,2
+C,Wichita Falls,Hospitalizations 5/11,2
+C,Wichita Falls,Hospitalizations 5/12,0
+C,Wichita Falls,Hospitalizations 5/13,0
+C,Wichita Falls,Hospitalizations 5/14,1
+C,Wichita Falls,Hospitalizations 5/15,1
+C,Wichita Falls,Hospitalizations 5/16,1
+C,Wichita Falls,Hospitalizations 5/17,1
+C,Wichita Falls,Hospitalizations 5/18,1
+C,Wichita Falls,Hospitalizations 5/19,1
+C,Wichita Falls,Hospitalizations 5/20,1
+C,Wichita Falls,Hospitalizations 5/21,1
+C,Wichita Falls,Hospitalizations 5/22,1
+C,Wichita Falls,Hospitalizations 5/23,1
+C,Wichita Falls,Hospitalizations 5/24,1
+C,Wichita Falls,Hospitalizations 5/25,2
+C,Wichita Falls,Hospitalizations 5/26,0
+C,Wichita Falls,Hospitalizations 5/27,0
+C,Wichita Falls,Hospitalizations 5/28,0
+C,Wichita Falls,Hospitalizations 5/29,0
+C,Wichita Falls,Hospitalizations 5/30,0
+C,Wichita Falls,Hospitalizations 5/31,0
+C,Wichita Falls,Hospitalizations 6/1,0
+C,Wichita Falls,Hospitalizations 6/2,0
+C,Wichita Falls,Hospitalizations 6/3,0
+C,Wichita Falls,Hospitalizations 6/4,0
+C,Wichita Falls,Hospitalizations 6/5,0
+C,Wichita Falls,Hospitalizations 6/6,0
+C,Wichita Falls,Hospitalizations 6/7,0
+C,Wichita Falls,Hospitalizations 6/8,0
+C,Wichita Falls,Hospitalizations 6/9,0
+C,Wichita Falls,Hospitalizations 6/10,0
+C,Wichita Falls,Hospitalizations 6/11,0
+C,Wichita Falls,Hospitalizations 6/12,0
+C,Wichita Falls,Hospitalizations 6/13,0
+C,Wichita Falls,Hospitalizations 6/14,0
+C,Wichita Falls,Hospitalizations 6/15,0
+C,Wichita Falls,Hospitalizations 6/16,0
+C,Wichita Falls,Hospitalizations 6/17,0
+C,Wichita Falls,Hospitalizations 6/18,0
+C,Wichita Falls,Hospitalizations 6/19,0
+C,Wichita Falls,Hospitalizations 6/20,2
+C,Wichita Falls,Hospitalizations 6/21,2
+C,Wichita Falls,Hospitalizations 6/22,2
+C,Wichita Falls,Hospitalizations 6/23,3
+C,Wichita Falls,Hospitalizations 6/24,7
+C,Wichita Falls,Hospitalizations 6/25,10
+C,Wichita Falls,Hospitalizations 6/26,8
+C,Wichita Falls,Hospitalizations 6/27,8
+C,Wichita Falls,Hospitalizations 6/28,9
+C,Wichita Falls,Hospitalizations 6/29,12
+C,Wichita Falls,Hospitalizations 06/30,11
+D,Abilene,Hospitalizations 4/8,9
+D,Abilene,Hospitalizations 4/9,12
+D,Abilene,Hospitalizations 4/10,11
+D,Abilene,Hospitalizations 4/11,8
+D,Abilene,Hospitalizations 4/12,6
+D,Abilene,Hospitalizations 4/13,7
+D,Abilene,Hospitalizations 4/14,2
+D,Abilene,Hospitalizations 4/15,6
+D,Abilene,Hospitalizations 4/16,5
+D,Abilene,Hospitalizations 4/17,8
+D,Abilene,Hospitalizations 4/18,3
+D,Abilene,Hospitalizations 4/19,10
+D,Abilene,Hospitalizations 4/20,6
+D,Abilene,Hospitalizations 4/21,7
+D,Abilene,Hospitalizations 4/22,11
+D,Abilene,Hospitalizations 4/23,9
+D,Abilene,Hospitalizations 4/24,9
+D,Abilene,Hospitalizations 4/25,16
+D,Abilene,Hospitalizations 4/26,6
+D,Abilene,Hospitalizations 4/27,7
+D,Abilene,Hospitalizations 4/28,6
+D,Abilene,Hospitalizations 4/29,4
+D,Abilene,Hospitalizations 4/30,4
+D,Abilene,Hospitalizations 5/1,4
+D,Abilene,Hospitalizations 5/2,4
+D,Abilene,Hospitalizations 5/3,6
+D,Abilene,Hospitalizations 5/4,4
+D,Abilene,Hospitalizations 5/5,5
+D,Abilene,Hospitalizations 5/6,3
+D,Abilene,Hospitalizations 5/7,3
+D,Abilene,Hospitalizations 5/8,2
+D,Abilene,Hospitalizations 5/9,1
+D,Abilene,Hospitalizations 5/10,3
+D,Abilene,Hospitalizations 5/11,5
+D,Abilene,Hospitalizations 5/12,4
+D,Abilene,Hospitalizations 5/13,3
+D,Abilene,Hospitalizations 5/14,4
+D,Abilene,Hospitalizations 5/15,3
+D,Abilene,Hospitalizations 5/16,3
+D,Abilene,Hospitalizations 5/17,3
+D,Abilene,Hospitalizations 5/18,3
+D,Abilene,Hospitalizations 5/19,4
+D,Abilene,Hospitalizations 5/20,4
+D,Abilene,Hospitalizations 5/21,7
+D,Abilene,Hospitalizations 5/22,3
+D,Abilene,Hospitalizations 5/23,3
+D,Abilene,Hospitalizations 5/24,4
+D,Abilene,Hospitalizations 5/25,5
+D,Abilene,Hospitalizations 5/26,4
+D,Abilene,Hospitalizations 5/27,1
+D,Abilene,Hospitalizations 5/28,1
+D,Abilene,Hospitalizations 5/29,2
+D,Abilene,Hospitalizations 5/30,2
+D,Abilene,Hospitalizations 5/31,3
+D,Abilene,Hospitalizations 6/1,2
+D,Abilene,Hospitalizations 6/2,1
+D,Abilene,Hospitalizations 6/3,1
+D,Abilene,Hospitalizations 6/4,1
+D,Abilene,Hospitalizations 6/5,1
+D,Abilene,Hospitalizations 6/6,1
+D,Abilene,Hospitalizations 6/7,0
+D,Abilene,Hospitalizations 6/8,1
+D,Abilene,Hospitalizations 6/9,1
+D,Abilene,Hospitalizations 6/10,1
+D,Abilene,Hospitalizations 6/11,0
+D,Abilene,Hospitalizations 6/12,0
+D,Abilene,Hospitalizations 6/13,0
+D,Abilene,Hospitalizations 6/14,1
+D,Abilene,Hospitalizations 6/15,0
+D,Abilene,Hospitalizations 6/16,1
+D,Abilene,Hospitalizations 6/17,1
+D,Abilene,Hospitalizations 6/18,1
+D,Abilene,Hospitalizations 6/19,2
+D,Abilene,Hospitalizations 6/20,1
+D,Abilene,Hospitalizations 6/21,1
+D,Abilene,Hospitalizations 6/22,2
+D,Abilene,Hospitalizations 6/23,5
+D,Abilene,Hospitalizations 6/24,5
+D,Abilene,Hospitalizations 6/25,6
+D,Abilene,Hospitalizations 6/26,8
+D,Abilene,Hospitalizations 6/27,7
+D,Abilene,Hospitalizations 6/28,9
+D,Abilene,Hospitalizations 6/29,9
+D,Abilene,Hospitalizations 06/30,10
+E,Dallas/Ft. Worth,Hospitalizations 4/8,579
+E,Dallas/Ft. Worth,Hospitalizations 4/9,447
+E,Dallas/Ft. Worth,Hospitalizations 4/10,514
+E,Dallas/Ft. Worth,Hospitalizations 4/11,429
+E,Dallas/Ft. Worth,Hospitalizations 4/12,369
+E,Dallas/Ft. Worth,Hospitalizations 4/13,365
+E,Dallas/Ft. Worth,Hospitalizations 4/14,373
+E,Dallas/Ft. Worth,Hospitalizations 4/15,449
+E,Dallas/Ft. Worth,Hospitalizations 4/16,470
+E,Dallas/Ft. Worth,Hospitalizations 4/17,476
+E,Dallas/Ft. Worth,Hospitalizations 4/18,428
+E,Dallas/Ft. Worth,Hospitalizations 4/19,435
+E,Dallas/Ft. Worth,Hospitalizations 4/20,410
+E,Dallas/Ft. Worth,Hospitalizations 4/21,443
+E,Dallas/Ft. Worth,Hospitalizations 4/22,477
+E,Dallas/Ft. Worth,Hospitalizations 4/23,517
+E,Dallas/Ft. Worth,Hospitalizations 4/24,550
+E,Dallas/Ft. Worth,Hospitalizations 4/25,521
+E,Dallas/Ft. Worth,Hospitalizations 4/26,472
+E,Dallas/Ft. Worth,Hospitalizations 4/27,491
+E,Dallas/Ft. Worth,Hospitalizations 4/28,583
+E,Dallas/Ft. Worth,Hospitalizations 4/29,611
+E,Dallas/Ft. Worth,Hospitalizations 4/30,576
+E,Dallas/Ft. Worth,Hospitalizations 5/1,636
+E,Dallas/Ft. Worth,Hospitalizations 5/2,635
+E,Dallas/Ft. Worth,Hospitalizations 5/3,530
+E,Dallas/Ft. Worth,Hospitalizations 5/4,513
+E,Dallas/Ft. Worth,Hospitalizations 5/5,674
+E,Dallas/Ft. Worth,Hospitalizations 5/6,679
+E,Dallas/Ft. Worth,Hospitalizations 5/7,669
+E,Dallas/Ft. Worth,Hospitalizations 5/8,676
+E,Dallas/Ft. Worth,Hospitalizations 5/9,650
+E,Dallas/Ft. Worth,Hospitalizations 5/10,569
+E,Dallas/Ft. Worth,Hospitalizations 5/11,530
+E,Dallas/Ft. Worth,Hospitalizations 5/12,678
+E,Dallas/Ft. Worth,Hospitalizations 5/13,627
+E,Dallas/Ft. Worth,Hospitalizations 5/14,666
+E,Dallas/Ft. Worth,Hospitalizations 5/15,680
+E,Dallas/Ft. Worth,Hospitalizations 5/16,685
+E,Dallas/Ft. Worth,Hospitalizations 5/17,551
+E,Dallas/Ft. Worth,Hospitalizations 5/18,553
+E,Dallas/Ft. Worth,Hospitalizations 5/19,646
+E,Dallas/Ft. Worth,Hospitalizations 5/20,646
+E,Dallas/Ft. Worth,Hospitalizations 5/21,600
+E,Dallas/Ft. Worth,Hospitalizations 5/22,570
+E,Dallas/Ft. Worth,Hospitalizations 5/23,612
+E,Dallas/Ft. Worth,Hospitalizations 5/24,548
+E,Dallas/Ft. Worth,Hospitalizations 5/25,521
+E,Dallas/Ft. Worth,Hospitalizations 5/26,533
+E,Dallas/Ft. Worth,Hospitalizations 5/27,589
+E,Dallas/Ft. Worth,Hospitalizations 5/28,613
+E,Dallas/Ft. Worth,Hospitalizations 5/29,580
+E,Dallas/Ft. Worth,Hospitalizations 5/30,624
+E,Dallas/Ft. Worth,Hospitalizations 5/31,595
+E,Dallas/Ft. Worth,Hospitalizations 6/1,580
+E,Dallas/Ft. Worth,Hospitalizations 6/2,582
+E,Dallas/Ft. Worth,Hospitalizations 6/3,575
+E,Dallas/Ft. Worth,Hospitalizations 6/4,604
+E,Dallas/Ft. Worth,Hospitalizations 6/5,602
+E,Dallas/Ft. Worth,Hospitalizations 6/6,605
+E,Dallas/Ft. Worth,Hospitalizations 6/7,605
+E,Dallas/Ft. Worth,Hospitalizations 6/8,612
+E,Dallas/Ft. Worth,Hospitalizations 6/9,660
+E,Dallas/Ft. Worth,Hospitalizations 6/10,687
+E,Dallas/Ft. Worth,Hospitalizations 6/11,705
+E,Dallas/Ft. Worth,Hospitalizations 6/12,712
+E,Dallas/Ft. Worth,Hospitalizations 6/13,729
+E,Dallas/Ft. Worth,Hospitalizations 6/14,728
+E,Dallas/Ft. Worth,Hospitalizations 6/15,701
+E,Dallas/Ft. Worth,Hospitalizations 6/16,765
+E,Dallas/Ft. Worth,Hospitalizations 6/17,859
+E,Dallas/Ft. Worth,Hospitalizations 6/18,899
+E,Dallas/Ft. Worth,Hospitalizations 6/19,914
+E,Dallas/Ft. Worth,Hospitalizations 6/20,939
+E,Dallas/Ft. Worth,Hospitalizations 6/21,952
+E,Dallas/Ft. Worth,Hospitalizations 6/22,988
+E,Dallas/Ft. Worth,Hospitalizations 6/23,1074
+E,Dallas/Ft. Worth,Hospitalizations 6/24,1130
+E,Dallas/Ft. Worth,Hospitalizations 6/25,1137
+E,Dallas/Ft. Worth,Hospitalizations 6/26,1180
+E,Dallas/Ft. Worth,Hospitalizations 6/27,1248
+E,Dallas/Ft. Worth,Hospitalizations 6/28,1261
+E,Dallas/Ft. Worth,Hospitalizations 6/29,1288
+E,Dallas/Ft. Worth,Hospitalizations 06/30,1375
+F,Paris,Hospitalizations 4/8,14
+F,Paris,Hospitalizations 4/9,12
+F,Paris,Hospitalizations 4/10,13
+F,Paris,Hospitalizations 4/11,12
+F,Paris,Hospitalizations 4/12,14
+F,Paris,Hospitalizations 4/13,16
+F,Paris,Hospitalizations 4/14,21
+F,Paris,Hospitalizations 4/15,18
+F,Paris,Hospitalizations 4/16,15
+F,Paris,Hospitalizations 4/17,12
+F,Paris,Hospitalizations 4/18,12
+F,Paris,Hospitalizations 4/19,17
+F,Paris,Hospitalizations 4/20,16
+F,Paris,Hospitalizations 4/21,19
+F,Paris,Hospitalizations 4/22,19
+F,Paris,Hospitalizations 4/23,17
+F,Paris,Hospitalizations 4/24,19
+F,Paris,Hospitalizations 4/25,17
+F,Paris,Hospitalizations 4/26,17
+F,Paris,Hospitalizations 4/27,19
+F,Paris,Hospitalizations 4/28,18
+F,Paris,Hospitalizations 4/29,14
+F,Paris,Hospitalizations 4/30,16
+F,Paris,Hospitalizations 5/1,18
+F,Paris,Hospitalizations 5/2,19
+F,Paris,Hospitalizations 5/3,17
+F,Paris,Hospitalizations 5/4,16
+F,Paris,Hospitalizations 5/5,16
+F,Paris,Hospitalizations 5/6,13
+F,Paris,Hospitalizations 5/7,16
+F,Paris,Hospitalizations 5/8,16
+F,Paris,Hospitalizations 5/9,12
+F,Paris,Hospitalizations 5/10,14
+F,Paris,Hospitalizations 5/11,16
+F,Paris,Hospitalizations 5/12,16
+F,Paris,Hospitalizations 5/13,14
+F,Paris,Hospitalizations 5/14,11
+F,Paris,Hospitalizations 5/15,13
+F,Paris,Hospitalizations 5/16,15
+F,Paris,Hospitalizations 5/17,14
+F,Paris,Hospitalizations 5/18,14
+F,Paris,Hospitalizations 5/19,12
+F,Paris,Hospitalizations 5/20,13
+F,Paris,Hospitalizations 5/21,17
+F,Paris,Hospitalizations 5/22,23
+F,Paris,Hospitalizations 5/23,23
+F,Paris,Hospitalizations 5/24,20
+F,Paris,Hospitalizations 5/25,16
+F,Paris,Hospitalizations 5/26,18
+F,Paris,Hospitalizations 5/27,22
+F,Paris,Hospitalizations 5/28,22
+F,Paris,Hospitalizations 5/29,24
+F,Paris,Hospitalizations 5/30,20
+F,Paris,Hospitalizations 5/31,16
+F,Paris,Hospitalizations 6/1,14
+F,Paris,Hospitalizations 6/2,15
+F,Paris,Hospitalizations 6/3,18
+F,Paris,Hospitalizations 6/4,26
+F,Paris,Hospitalizations 6/5,20
+F,Paris,Hospitalizations 6/6,21
+F,Paris,Hospitalizations 6/7,22
+F,Paris,Hospitalizations 6/8,21
+F,Paris,Hospitalizations 6/9,29
+F,Paris,Hospitalizations 6/10,32
+F,Paris,Hospitalizations 6/11,25
+F,Paris,Hospitalizations 6/12,29
+F,Paris,Hospitalizations 6/13,28
+F,Paris,Hospitalizations 6/14,30
+F,Paris,Hospitalizations 6/15,28
+F,Paris,Hospitalizations 6/16,26
+F,Paris,Hospitalizations 6/17,29
+F,Paris,Hospitalizations 6/18,27
+F,Paris,Hospitalizations 6/19,24
+F,Paris,Hospitalizations 6/20,27
+F,Paris,Hospitalizations 6/21,24
+F,Paris,Hospitalizations 6/22,22
+F,Paris,Hospitalizations 6/23,25
+F,Paris,Hospitalizations 6/24,25
+F,Paris,Hospitalizations 6/25,33
+F,Paris,Hospitalizations 6/26,32
+F,Paris,Hospitalizations 6/27,35
+F,Paris,Hospitalizations 6/28,34
+F,Paris,Hospitalizations 6/29,35
+F,Paris,Hospitalizations 06/30,37
+G,Longview/Tyler,Hospitalizations 4/8,26
+G,Longview/Tyler,Hospitalizations 4/9,22
+G,Longview/Tyler,Hospitalizations 4/10,25
+G,Longview/Tyler,Hospitalizations 4/11,44
+G,Longview/Tyler,Hospitalizations 4/12,32
+G,Longview/Tyler,Hospitalizations 4/13,26
+G,Longview/Tyler,Hospitalizations 4/14,33
+G,Longview/Tyler,Hospitalizations 4/15,32
+G,Longview/Tyler,Hospitalizations 4/16,36
+G,Longview/Tyler,Hospitalizations 4/17,43
+G,Longview/Tyler,Hospitalizations 4/18,36
+G,Longview/Tyler,Hospitalizations 4/19,42
+G,Longview/Tyler,Hospitalizations 4/20,45
+G,Longview/Tyler,Hospitalizations 4/21,47
+G,Longview/Tyler,Hospitalizations 4/22,60
+G,Longview/Tyler,Hospitalizations 4/23,43
+G,Longview/Tyler,Hospitalizations 4/24,48
+G,Longview/Tyler,Hospitalizations 4/25,47
+G,Longview/Tyler,Hospitalizations 4/26,54
+G,Longview/Tyler,Hospitalizations 4/27,53
+G,Longview/Tyler,Hospitalizations 4/28,54
+G,Longview/Tyler,Hospitalizations 4/29,53
+G,Longview/Tyler,Hospitalizations 4/30,53
+G,Longview/Tyler,Hospitalizations 5/1,63
+G,Longview/Tyler,Hospitalizations 5/2,68
+G,Longview/Tyler,Hospitalizations 5/3,96
+G,Longview/Tyler,Hospitalizations 5/4,67
+G,Longview/Tyler,Hospitalizations 5/5,54
+G,Longview/Tyler,Hospitalizations 5/6,57
+G,Longview/Tyler,Hospitalizations 5/7,53
+G,Longview/Tyler,Hospitalizations 5/8,50
+G,Longview/Tyler,Hospitalizations 5/9,55
+G,Longview/Tyler,Hospitalizations 5/10,49
+G,Longview/Tyler,Hospitalizations 5/11,46
+G,Longview/Tyler,Hospitalizations 5/12,43
+G,Longview/Tyler,Hospitalizations 5/13,39
+G,Longview/Tyler,Hospitalizations 5/14,40
+G,Longview/Tyler,Hospitalizations 5/15,45
+G,Longview/Tyler,Hospitalizations 5/16,40
+G,Longview/Tyler,Hospitalizations 5/17,37
+G,Longview/Tyler,Hospitalizations 5/18,41
+G,Longview/Tyler,Hospitalizations 5/19,40
+G,Longview/Tyler,Hospitalizations 5/20,41
+G,Longview/Tyler,Hospitalizations 5/21,38
+G,Longview/Tyler,Hospitalizations 5/22,36
+G,Longview/Tyler,Hospitalizations 5/23,42
+G,Longview/Tyler,Hospitalizations 5/24,39
+G,Longview/Tyler,Hospitalizations 5/25,40
+G,Longview/Tyler,Hospitalizations 5/26,39
+G,Longview/Tyler,Hospitalizations 5/27,43
+G,Longview/Tyler,Hospitalizations 5/28,43
+G,Longview/Tyler,Hospitalizations 5/29,44
+G,Longview/Tyler,Hospitalizations 5/30,44
+G,Longview/Tyler,Hospitalizations 5/31,46
+G,Longview/Tyler,Hospitalizations 6/1,49
+G,Longview/Tyler,Hospitalizations 6/2,53
+G,Longview/Tyler,Hospitalizations 6/3,52
+G,Longview/Tyler,Hospitalizations 6/4,44
+G,Longview/Tyler,Hospitalizations 6/5,48
+G,Longview/Tyler,Hospitalizations 6/6,43
+G,Longview/Tyler,Hospitalizations 6/7,49
+G,Longview/Tyler,Hospitalizations 6/8,54
+G,Longview/Tyler,Hospitalizations 6/9,51
+G,Longview/Tyler,Hospitalizations 6/10,50
+G,Longview/Tyler,Hospitalizations 6/11,47
+G,Longview/Tyler,Hospitalizations 6/12,50
+G,Longview/Tyler,Hospitalizations 6/13,54
+G,Longview/Tyler,Hospitalizations 6/14,53
+G,Longview/Tyler,Hospitalizations 6/15,55
+G,Longview/Tyler,Hospitalizations 6/16,60
+G,Longview/Tyler,Hospitalizations 6/17,57
+G,Longview/Tyler,Hospitalizations 6/18,47
+G,Longview/Tyler,Hospitalizations 6/19,52
+G,Longview/Tyler,Hospitalizations 6/20,51
+G,Longview/Tyler,Hospitalizations 6/21,51
+G,Longview/Tyler,Hospitalizations 6/22,54
+G,Longview/Tyler,Hospitalizations 6/23,56
+G,Longview/Tyler,Hospitalizations 6/24,62
+G,Longview/Tyler,Hospitalizations 6/25,62
+G,Longview/Tyler,Hospitalizations 6/26,73
+G,Longview/Tyler,Hospitalizations 6/27,75
+G,Longview/Tyler,Hospitalizations 6/28,72
+G,Longview/Tyler,Hospitalizations 6/29,85
+G,Longview/Tyler,Hospitalizations 06/30,85
+H,Lufkin,Hospitalizations 4/8,13
+H,Lufkin,Hospitalizations 4/9,25
+H,Lufkin,Hospitalizations 4/10,21
+H,Lufkin,Hospitalizations 4/11,17
+H,Lufkin,Hospitalizations 4/12,15
+H,Lufkin,Hospitalizations 4/13,18
+H,Lufkin,Hospitalizations 4/14,23
+H,Lufkin,Hospitalizations 4/15,15
+H,Lufkin,Hospitalizations 4/16,28
+H,Lufkin,Hospitalizations 4/17,24
+H,Lufkin,Hospitalizations 4/18,37
+H,Lufkin,Hospitalizations 4/19,27
+H,Lufkin,Hospitalizations 4/20,24
+H,Lufkin,Hospitalizations 4/21,24
+H,Lufkin,Hospitalizations 4/22,25
+H,Lufkin,Hospitalizations 4/23,23
+H,Lufkin,Hospitalizations 4/24,23
+H,Lufkin,Hospitalizations 4/25,20
+H,Lufkin,Hospitalizations 4/26,21
+H,Lufkin,Hospitalizations 4/27,22
+H,Lufkin,Hospitalizations 4/28,18
+H,Lufkin,Hospitalizations 4/29,19
+H,Lufkin,Hospitalizations 4/30,18
+H,Lufkin,Hospitalizations 5/1,16
+H,Lufkin,Hospitalizations 5/2,20
+H,Lufkin,Hospitalizations 5/3,16
+H,Lufkin,Hospitalizations 5/4,17
+H,Lufkin,Hospitalizations 5/5,18
+H,Lufkin,Hospitalizations 5/6,14
+H,Lufkin,Hospitalizations 5/7,11
+H,Lufkin,Hospitalizations 5/8,13
+H,Lufkin,Hospitalizations 5/9,12
+H,Lufkin,Hospitalizations 5/10,18
+H,Lufkin,Hospitalizations 5/11,13
+H,Lufkin,Hospitalizations 5/12,13
+H,Lufkin,Hospitalizations 5/13,13
+H,Lufkin,Hospitalizations 5/14,11
+H,Lufkin,Hospitalizations 5/15,13
+H,Lufkin,Hospitalizations 5/16,14
+H,Lufkin,Hospitalizations 5/17,18
+H,Lufkin,Hospitalizations 5/18,11
+H,Lufkin,Hospitalizations 5/19,10
+H,Lufkin,Hospitalizations 5/20,11
+H,Lufkin,Hospitalizations 5/21,13
+H,Lufkin,Hospitalizations 5/22,9
+H,Lufkin,Hospitalizations 5/23,0
+H,Lufkin,Hospitalizations 5/24,9
+H,Lufkin,Hospitalizations 5/25,8
+H,Lufkin,Hospitalizations 5/26,11
+H,Lufkin,Hospitalizations 5/27,13
+H,Lufkin,Hospitalizations 5/28,9
+H,Lufkin,Hospitalizations 5/29,16
+H,Lufkin,Hospitalizations 5/30,13
+H,Lufkin,Hospitalizations 5/31,13
+H,Lufkin,Hospitalizations 6/1,16
+H,Lufkin,Hospitalizations 6/2,16
+H,Lufkin,Hospitalizations 6/3,15
+H,Lufkin,Hospitalizations 6/4,14
+H,Lufkin,Hospitalizations 6/5,14
+H,Lufkin,Hospitalizations 6/6,14
+H,Lufkin,Hospitalizations 6/7,15
+H,Lufkin,Hospitalizations 6/8,17
+H,Lufkin,Hospitalizations 6/9,13
+H,Lufkin,Hospitalizations 6/10,17
+H,Lufkin,Hospitalizations 6/11,14
+H,Lufkin,Hospitalizations 6/12,19
+H,Lufkin,Hospitalizations 6/13,25
+H,Lufkin,Hospitalizations 6/14,26
+H,Lufkin,Hospitalizations 6/15,28
+H,Lufkin,Hospitalizations 6/16,26
+H,Lufkin,Hospitalizations 6/17,25
+H,Lufkin,Hospitalizations 6/18,23
+H,Lufkin,Hospitalizations 6/19,23
+H,Lufkin,Hospitalizations 6/20,19
+H,Lufkin,Hospitalizations 6/21,22
+H,Lufkin,Hospitalizations 6/22,24
+H,Lufkin,Hospitalizations 6/23,32
+H,Lufkin,Hospitalizations 6/24,32
+H,Lufkin,Hospitalizations 6/25,35
+H,Lufkin,Hospitalizations 6/26,34
+H,Lufkin,Hospitalizations 6/27,32
+H,Lufkin,Hospitalizations 6/28,30
+H,Lufkin,Hospitalizations 6/29,31
+H,Lufkin,Hospitalizations 06/30,30
+I,El Paso,Hospitalizations 4/8,12
+I,El Paso,Hospitalizations 4/9,24
+I,El Paso,Hospitalizations 4/10,31
+I,El Paso,Hospitalizations 4/11,23
+I,El Paso,Hospitalizations 4/12,14
+I,El Paso,Hospitalizations 4/13,23
+I,El Paso,Hospitalizations 4/14,12
+I,El Paso,Hospitalizations 4/15,30
+I,El Paso,Hospitalizations 4/16,24
+I,El Paso,Hospitalizations 4/17,28
+I,El Paso,Hospitalizations 4/18,33
+I,El Paso,Hospitalizations 4/19,24
+I,El Paso,Hospitalizations 4/20,29
+I,El Paso,Hospitalizations 4/21,49
+I,El Paso,Hospitalizations 4/22,49
+I,El Paso,Hospitalizations 4/23,52
+I,El Paso,Hospitalizations 4/24,56
+I,El Paso,Hospitalizations 4/25,52
+I,El Paso,Hospitalizations 4/26,60
+I,El Paso,Hospitalizations 4/27,67
+I,El Paso,Hospitalizations 4/28,65
+I,El Paso,Hospitalizations 4/29,58
+I,El Paso,Hospitalizations 4/30,68
+I,El Paso,Hospitalizations 5/1,77
+I,El Paso,Hospitalizations 5/2,74
+I,El Paso,Hospitalizations 5/3,69
+I,El Paso,Hospitalizations 5/4,64
+I,El Paso,Hospitalizations 5/5,73
+I,El Paso,Hospitalizations 5/6,72
+I,El Paso,Hospitalizations 5/7,74
+I,El Paso,Hospitalizations 5/8,81
+I,El Paso,Hospitalizations 5/9,99
+I,El Paso,Hospitalizations 5/10,103
+I,El Paso,Hospitalizations 5/11,98
+I,El Paso,Hospitalizations 5/12,98
+I,El Paso,Hospitalizations 5/13,93
+I,El Paso,Hospitalizations 5/14,90
+I,El Paso,Hospitalizations 5/15,91
+I,El Paso,Hospitalizations 5/16,105
+I,El Paso,Hospitalizations 5/17,98
+I,El Paso,Hospitalizations 5/18,108
+I,El Paso,Hospitalizations 5/19,111
+I,El Paso,Hospitalizations 5/20,126
+I,El Paso,Hospitalizations 5/21,118
+I,El Paso,Hospitalizations 5/22,116
+I,El Paso,Hospitalizations 5/23,124
+I,El Paso,Hospitalizations 5/24,128
+I,El Paso,Hospitalizations 5/25,125
+I,El Paso,Hospitalizations 5/26,126
+I,El Paso,Hospitalizations 5/27,127
+I,El Paso,Hospitalizations 5/28,123
+I,El Paso,Hospitalizations 5/29,120
+I,El Paso,Hospitalizations 5/30,115
+I,El Paso,Hospitalizations 5/31,112
+I,El Paso,Hospitalizations 6/1,109
+I,El Paso,Hospitalizations 6/2,112
+I,El Paso,Hospitalizations 6/3,112
+I,El Paso,Hospitalizations 6/4,109
+I,El Paso,Hospitalizations 6/5,104
+I,El Paso,Hospitalizations 6/6,110
+I,El Paso,Hospitalizations 6/7,110
+I,El Paso,Hospitalizations 6/8,115
+I,El Paso,Hospitalizations 6/9,119
+I,El Paso,Hospitalizations 6/10,111
+I,El Paso,Hospitalizations 6/11,99
+I,El Paso,Hospitalizations 6/12,97
+I,El Paso,Hospitalizations 6/13,93
+I,El Paso,Hospitalizations 6/14,94
+I,El Paso,Hospitalizations 6/15,94
+I,El Paso,Hospitalizations 6/16,97
+I,El Paso,Hospitalizations 6/17,105
+I,El Paso,Hospitalizations 6/18,112
+I,El Paso,Hospitalizations 6/19,107
+I,El Paso,Hospitalizations 6/20,108
+I,El Paso,Hospitalizations 6/21,110
+I,El Paso,Hospitalizations 6/22,110
+I,El Paso,Hospitalizations 6/23,116
+I,El Paso,Hospitalizations 6/24,133
+I,El Paso,Hospitalizations 6/25,130
+I,El Paso,Hospitalizations 6/26,139
+I,El Paso,Hospitalizations 6/27,136
+I,El Paso,Hospitalizations 6/28,147
+I,El Paso,Hospitalizations 6/29,149
+I,El Paso,Hospitalizations 06/30,160
+J,Midland/Odessa,Hospitalizations 4/8,9
+J,Midland/Odessa,Hospitalizations 4/9,11
+J,Midland/Odessa,Hospitalizations 4/10,9
+J,Midland/Odessa,Hospitalizations 4/11,17
+J,Midland/Odessa,Hospitalizations 4/12,10
+J,Midland/Odessa,Hospitalizations 4/13,11
+J,Midland/Odessa,Hospitalizations 4/14,17
+J,Midland/Odessa,Hospitalizations 4/15,7
+J,Midland/Odessa,Hospitalizations 4/16,10
+J,Midland/Odessa,Hospitalizations 4/17,15
+J,Midland/Odessa,Hospitalizations 4/18,12
+J,Midland/Odessa,Hospitalizations 4/19,10
+J,Midland/Odessa,Hospitalizations 4/20,10
+J,Midland/Odessa,Hospitalizations 4/21,8
+J,Midland/Odessa,Hospitalizations 4/22,11
+J,Midland/Odessa,Hospitalizations 4/23,10
+J,Midland/Odessa,Hospitalizations 4/24,8
+J,Midland/Odessa,Hospitalizations 4/25,7
+J,Midland/Odessa,Hospitalizations 4/26,6
+J,Midland/Odessa,Hospitalizations 4/27,8
+J,Midland/Odessa,Hospitalizations 4/28,8
+J,Midland/Odessa,Hospitalizations 4/29,6
+J,Midland/Odessa,Hospitalizations 4/30,7
+J,Midland/Odessa,Hospitalizations 5/1,7
+J,Midland/Odessa,Hospitalizations 5/2,6
+J,Midland/Odessa,Hospitalizations 5/3,8
+J,Midland/Odessa,Hospitalizations 5/4,8
+J,Midland/Odessa,Hospitalizations 5/5,15
+J,Midland/Odessa,Hospitalizations 5/6,27
+J,Midland/Odessa,Hospitalizations 5/7,28
+J,Midland/Odessa,Hospitalizations 5/8,29
+J,Midland/Odessa,Hospitalizations 5/9,32
+J,Midland/Odessa,Hospitalizations 5/10,30
+J,Midland/Odessa,Hospitalizations 5/11,31
+J,Midland/Odessa,Hospitalizations 5/12,29
+J,Midland/Odessa,Hospitalizations 5/13,32
+J,Midland/Odessa,Hospitalizations 5/14,30
+J,Midland/Odessa,Hospitalizations 5/15,30
+J,Midland/Odessa,Hospitalizations 5/16,27
+J,Midland/Odessa,Hospitalizations 5/17,22
+J,Midland/Odessa,Hospitalizations 5/18,18
+J,Midland/Odessa,Hospitalizations 5/19,18
+J,Midland/Odessa,Hospitalizations 5/20,12
+J,Midland/Odessa,Hospitalizations 5/21,9
+J,Midland/Odessa,Hospitalizations 5/22,9
+J,Midland/Odessa,Hospitalizations 5/23,10
+J,Midland/Odessa,Hospitalizations 5/24,11
+J,Midland/Odessa,Hospitalizations 5/25,15
+J,Midland/Odessa,Hospitalizations 5/26,16
+J,Midland/Odessa,Hospitalizations 5/27,16
+J,Midland/Odessa,Hospitalizations 5/28,17
+J,Midland/Odessa,Hospitalizations 5/29,19
+J,Midland/Odessa,Hospitalizations 5/30,16
+J,Midland/Odessa,Hospitalizations 5/31,17
+J,Midland/Odessa,Hospitalizations 6/1,18
+J,Midland/Odessa,Hospitalizations 6/2,19
+J,Midland/Odessa,Hospitalizations 6/3,18
+J,Midland/Odessa,Hospitalizations 6/4,18
+J,Midland/Odessa,Hospitalizations 6/5,19
+J,Midland/Odessa,Hospitalizations 6/6,20
+J,Midland/Odessa,Hospitalizations 6/7,22
+J,Midland/Odessa,Hospitalizations 6/8,23
+J,Midland/Odessa,Hospitalizations 6/9,23
+J,Midland/Odessa,Hospitalizations 6/10,23
+J,Midland/Odessa,Hospitalizations 6/11,19
+J,Midland/Odessa,Hospitalizations 6/12,20
+J,Midland/Odessa,Hospitalizations 6/13,21
+J,Midland/Odessa,Hospitalizations 6/14,21
+J,Midland/Odessa,Hospitalizations 6/15,23
+J,Midland/Odessa,Hospitalizations 6/16,25
+J,Midland/Odessa,Hospitalizations 6/17,25
+J,Midland/Odessa,Hospitalizations 6/18,23
+J,Midland/Odessa,Hospitalizations 6/19,25
+J,Midland/Odessa,Hospitalizations 6/20,27
+J,Midland/Odessa,Hospitalizations 6/21,32
+J,Midland/Odessa,Hospitalizations 6/22,35
+J,Midland/Odessa,Hospitalizations 6/23,43
+J,Midland/Odessa,Hospitalizations 6/24,39
+J,Midland/Odessa,Hospitalizations 6/25,47
+J,Midland/Odessa,Hospitalizations 6/26,46
+J,Midland/Odessa,Hospitalizations 6/27,56
+J,Midland/Odessa,Hospitalizations 6/28,58
+J,Midland/Odessa,Hospitalizations 6/29,54
+J,Midland/Odessa,Hospitalizations 06/30,58
+K,San Angelo,Hospitalizations 4/8,0
+K,San Angelo,Hospitalizations 4/9,0
+K,San Angelo,Hospitalizations 4/10,1
+K,San Angelo,Hospitalizations 4/11,1
+K,San Angelo,Hospitalizations 4/12,0
+K,San Angelo,Hospitalizations 4/13,0
+K,San Angelo,Hospitalizations 4/14,0
+K,San Angelo,Hospitalizations 4/15,0
+K,San Angelo,Hospitalizations 4/16,0
+K,San Angelo,Hospitalizations 4/17,0
+K,San Angelo,Hospitalizations 4/18,0
+K,San Angelo,Hospitalizations 4/19,0
+K,San Angelo,Hospitalizations 4/20,0
+K,San Angelo,Hospitalizations 4/21,0
+K,San Angelo,Hospitalizations 4/22,0
+K,San Angelo,Hospitalizations 4/23,0
+K,San Angelo,Hospitalizations 4/24,0
+K,San Angelo,Hospitalizations 4/25,0
+K,San Angelo,Hospitalizations 4/26,4
+K,San Angelo,Hospitalizations 4/27,2
+K,San Angelo,Hospitalizations 4/28,0
+K,San Angelo,Hospitalizations 4/29,0
+K,San Angelo,Hospitalizations 4/30,0
+K,San Angelo,Hospitalizations 5/1,0
+K,San Angelo,Hospitalizations 5/2,0
+K,San Angelo,Hospitalizations 5/3,0
+K,San Angelo,Hospitalizations 5/4,0
+K,San Angelo,Hospitalizations 5/5,0
+K,San Angelo,Hospitalizations 5/6,0
+K,San Angelo,Hospitalizations 5/7,0
+K,San Angelo,Hospitalizations 5/8,0
+K,San Angelo,Hospitalizations 5/9,1
+K,San Angelo,Hospitalizations 5/10,2
+K,San Angelo,Hospitalizations 5/11,2
+K,San Angelo,Hospitalizations 5/12,1
+K,San Angelo,Hospitalizations 5/13,0
+K,San Angelo,Hospitalizations 5/14,0
+K,San Angelo,Hospitalizations 5/15,0
+K,San Angelo,Hospitalizations 5/16,0
+K,San Angelo,Hospitalizations 5/17,0
+K,San Angelo,Hospitalizations 5/18,0
+K,San Angelo,Hospitalizations 5/19,0
+K,San Angelo,Hospitalizations 5/20,3
+K,San Angelo,Hospitalizations 5/21,0
+K,San Angelo,Hospitalizations 5/22,0
+K,San Angelo,Hospitalizations 5/23,0
+K,San Angelo,Hospitalizations 5/24,0
+K,San Angelo,Hospitalizations 5/25,0
+K,San Angelo,Hospitalizations 5/26,0
+K,San Angelo,Hospitalizations 5/27,0
+K,San Angelo,Hospitalizations 5/28,1
+K,San Angelo,Hospitalizations 5/29,1
+K,San Angelo,Hospitalizations 5/30,1
+K,San Angelo,Hospitalizations 5/31,1
+K,San Angelo,Hospitalizations 6/1,0
+K,San Angelo,Hospitalizations 6/2,0
+K,San Angelo,Hospitalizations 6/3,0
+K,San Angelo,Hospitalizations 6/4,2
+K,San Angelo,Hospitalizations 6/5,2
+K,San Angelo,Hospitalizations 6/6,2
+K,San Angelo,Hospitalizations 6/7,2
+K,San Angelo,Hospitalizations 6/8,2
+K,San Angelo,Hospitalizations 6/9,2
+K,San Angelo,Hospitalizations 6/10,0
+K,San Angelo,Hospitalizations 6/11,0
+K,San Angelo,Hospitalizations 6/12,1
+K,San Angelo,Hospitalizations 6/13,1
+K,San Angelo,Hospitalizations 6/14,2
+K,San Angelo,Hospitalizations 6/15,2
+K,San Angelo,Hospitalizations 6/16,2
+K,San Angelo,Hospitalizations 6/17,2
+K,San Angelo,Hospitalizations 6/18,2
+K,San Angelo,Hospitalizations 6/19,3
+K,San Angelo,Hospitalizations 6/20,3
+K,San Angelo,Hospitalizations 6/21,5
+K,San Angelo,Hospitalizations 6/22,6
+K,San Angelo,Hospitalizations 6/23,7
+K,San Angelo,Hospitalizations 6/24,8
+K,San Angelo,Hospitalizations 6/25,12
+K,San Angelo,Hospitalizations 6/26,12
+K,San Angelo,Hospitalizations 6/27,15
+K,San Angelo,Hospitalizations 6/28,15
+K,San Angelo,Hospitalizations 6/29,15
+K,San Angelo,Hospitalizations 06/30,15
+L,Belton/Killeen,Hospitalizations 4/8,11
+L,Belton/Killeen,Hospitalizations 4/9,6
+L,Belton/Killeen,Hospitalizations 4/10,13
+L,Belton/Killeen,Hospitalizations 4/11,12
+L,Belton/Killeen,Hospitalizations 4/12,11
+L,Belton/Killeen,Hospitalizations 4/13,12
+L,Belton/Killeen,Hospitalizations 4/14,13
+L,Belton/Killeen,Hospitalizations 4/15,16
+L,Belton/Killeen,Hospitalizations 4/16,16
+L,Belton/Killeen,Hospitalizations 4/17,15
+L,Belton/Killeen,Hospitalizations 4/18,15
+L,Belton/Killeen,Hospitalizations 4/19,12
+L,Belton/Killeen,Hospitalizations 4/20,11
+L,Belton/Killeen,Hospitalizations 4/21,15
+L,Belton/Killeen,Hospitalizations 4/22,13
+L,Belton/Killeen,Hospitalizations 4/23,15
+L,Belton/Killeen,Hospitalizations 4/24,16
+L,Belton/Killeen,Hospitalizations 4/25,12
+L,Belton/Killeen,Hospitalizations 4/26,16
+L,Belton/Killeen,Hospitalizations 4/27,16
+L,Belton/Killeen,Hospitalizations 4/28,14
+L,Belton/Killeen,Hospitalizations 4/29,16
+L,Belton/Killeen,Hospitalizations 4/30,15
+L,Belton/Killeen,Hospitalizations 5/1,12
+L,Belton/Killeen,Hospitalizations 5/2,17
+L,Belton/Killeen,Hospitalizations 5/3,13
+L,Belton/Killeen,Hospitalizations 5/4,12
+L,Belton/Killeen,Hospitalizations 5/5,17
+L,Belton/Killeen,Hospitalizations 5/6,12
+L,Belton/Killeen,Hospitalizations 5/7,11
+L,Belton/Killeen,Hospitalizations 5/8,12
+L,Belton/Killeen,Hospitalizations 5/9,9
+L,Belton/Killeen,Hospitalizations 5/10,9
+L,Belton/Killeen,Hospitalizations 5/11,9
+L,Belton/Killeen,Hospitalizations 5/12,12
+L,Belton/Killeen,Hospitalizations 5/13,14
+L,Belton/Killeen,Hospitalizations 5/14,9
+L,Belton/Killeen,Hospitalizations 5/15,15
+L,Belton/Killeen,Hospitalizations 5/16,11
+L,Belton/Killeen,Hospitalizations 5/17,11
+L,Belton/Killeen,Hospitalizations 5/18,14
+L,Belton/Killeen,Hospitalizations 5/19,19
+L,Belton/Killeen,Hospitalizations 5/20,21
+L,Belton/Killeen,Hospitalizations 5/21,10
+L,Belton/Killeen,Hospitalizations 5/22,19
+L,Belton/Killeen,Hospitalizations 5/23,13
+L,Belton/Killeen,Hospitalizations 5/24,12
+L,Belton/Killeen,Hospitalizations 5/25,10
+L,Belton/Killeen,Hospitalizations 5/26,2
+L,Belton/Killeen,Hospitalizations 5/27,4
+L,Belton/Killeen,Hospitalizations 5/28,6
+L,Belton/Killeen,Hospitalizations 5/29,6
+L,Belton/Killeen,Hospitalizations 5/30,9
+L,Belton/Killeen,Hospitalizations 5/31,17
+L,Belton/Killeen,Hospitalizations 6/1,21
+L,Belton/Killeen,Hospitalizations 6/2,21
+L,Belton/Killeen,Hospitalizations 6/3,25
+L,Belton/Killeen,Hospitalizations 6/4,24
+L,Belton/Killeen,Hospitalizations 6/5,25
+L,Belton/Killeen,Hospitalizations 6/6,22
+L,Belton/Killeen,Hospitalizations 6/7,24
+L,Belton/Killeen,Hospitalizations 6/8,22
+L,Belton/Killeen,Hospitalizations 6/9,20
+L,Belton/Killeen,Hospitalizations 6/10,18
+L,Belton/Killeen,Hospitalizations 6/11,19
+L,Belton/Killeen,Hospitalizations 6/12,16
+L,Belton/Killeen,Hospitalizations 6/13,17
+L,Belton/Killeen,Hospitalizations 6/14,16
+L,Belton/Killeen,Hospitalizations 6/15,16
+L,Belton/Killeen,Hospitalizations 6/16,14
+L,Belton/Killeen,Hospitalizations 6/17,15
+L,Belton/Killeen,Hospitalizations 6/18,20
+L,Belton/Killeen,Hospitalizations 6/19,18
+L,Belton/Killeen,Hospitalizations 6/20,18
+L,Belton/Killeen,Hospitalizations 6/21,20
+L,Belton/Killeen,Hospitalizations 6/22,24
+L,Belton/Killeen,Hospitalizations 6/23,31
+L,Belton/Killeen,Hospitalizations 6/24,33
+L,Belton/Killeen,Hospitalizations 6/25,24
+L,Belton/Killeen,Hospitalizations 6/26,30
+L,Belton/Killeen,Hospitalizations 6/27,40
+L,Belton/Killeen,Hospitalizations 6/28,34
+L,Belton/Killeen,Hospitalizations 6/29,34
+L,Belton/Killeen,Hospitalizations 06/30,31
+M,Waco,Hospitalizations 4/8,2
+M,Waco,Hospitalizations 4/9,9
+M,Waco,Hospitalizations 4/10,8
+M,Waco,Hospitalizations 4/11,2
+M,Waco,Hospitalizations 4/12,9
+M,Waco,Hospitalizations 4/13,2
+M,Waco,Hospitalizations 4/14,5
+M,Waco,Hospitalizations 4/15,5
+M,Waco,Hospitalizations 4/16,6
+M,Waco,Hospitalizations 4/17,4
+M,Waco,Hospitalizations 4/18,4
+M,Waco,Hospitalizations 4/19,1
+M,Waco,Hospitalizations 4/20,1
+M,Waco,Hospitalizations 4/21,3
+M,Waco,Hospitalizations 4/22,2
+M,Waco,Hospitalizations 4/23,3
+M,Waco,Hospitalizations 4/24,3
+M,Waco,Hospitalizations 4/25,3
+M,Waco,Hospitalizations 4/26,3
+M,Waco,Hospitalizations 4/27,2
+M,Waco,Hospitalizations 4/28,2
+M,Waco,Hospitalizations 4/29,1
+M,Waco,Hospitalizations 4/30,1
+M,Waco,Hospitalizations 5/1,2
+M,Waco,Hospitalizations 5/2,3
+M,Waco,Hospitalizations 5/3,3
+M,Waco,Hospitalizations 5/4,2
+M,Waco,Hospitalizations 5/5,2
+M,Waco,Hospitalizations 5/6,1
+M,Waco,Hospitalizations 5/7,1
+M,Waco,Hospitalizations 5/8,1
+M,Waco,Hospitalizations 5/9,1
+M,Waco,Hospitalizations 5/10,1
+M,Waco,Hospitalizations 5/11,1
+M,Waco,Hospitalizations 5/12,1
+M,Waco,Hospitalizations 5/13,1
+M,Waco,Hospitalizations 5/14,0
+M,Waco,Hospitalizations 5/15,2
+M,Waco,Hospitalizations 5/16,2
+M,Waco,Hospitalizations 5/17,1
+M,Waco,Hospitalizations 5/18,2
+M,Waco,Hospitalizations 5/19,3
+M,Waco,Hospitalizations 5/20,1
+M,Waco,Hospitalizations 5/21,0
+M,Waco,Hospitalizations 5/22,0
+M,Waco,Hospitalizations 5/23,1
+M,Waco,Hospitalizations 5/24,1
+M,Waco,Hospitalizations 5/25,1
+M,Waco,Hospitalizations 5/26,1
+M,Waco,Hospitalizations 5/27,0
+M,Waco,Hospitalizations 5/28,0
+M,Waco,Hospitalizations 5/29,0
+M,Waco,Hospitalizations 5/30,0
+M,Waco,Hospitalizations 5/31,2
+M,Waco,Hospitalizations 6/1,2
+M,Waco,Hospitalizations 6/2,2
+M,Waco,Hospitalizations 6/3,2
+M,Waco,Hospitalizations 6/4,2
+M,Waco,Hospitalizations 6/5,2
+M,Waco,Hospitalizations 6/6,2
+M,Waco,Hospitalizations 6/7,2
+M,Waco,Hospitalizations 6/8,2
+M,Waco,Hospitalizations 6/9,2
+M,Waco,Hospitalizations 6/10,1
+M,Waco,Hospitalizations 6/11,2
+M,Waco,Hospitalizations 6/12,5
+M,Waco,Hospitalizations 6/13,5
+M,Waco,Hospitalizations 6/14,5
+M,Waco,Hospitalizations 6/15,5
+M,Waco,Hospitalizations 6/16,5
+M,Waco,Hospitalizations 6/17,7
+M,Waco,Hospitalizations 6/18,7
+M,Waco,Hospitalizations 6/19,6
+M,Waco,Hospitalizations 6/20,6
+M,Waco,Hospitalizations 6/21,8
+M,Waco,Hospitalizations 6/22,7
+M,Waco,Hospitalizations 6/23,12
+M,Waco,Hospitalizations 6/24,14
+M,Waco,Hospitalizations 6/25,14
+M,Waco,Hospitalizations 6/26,15
+M,Waco,Hospitalizations 6/27,14
+M,Waco,Hospitalizations 6/28,17
+M,Waco,Hospitalizations 6/29,24
+M,Waco,Hospitalizations 06/30,29
+N,Bryan/College Station,Hospitalizations 4/8,17
+N,Bryan/College Station,Hospitalizations 4/9,14
+N,Bryan/College Station,Hospitalizations 4/10,13
+N,Bryan/College Station,Hospitalizations 4/11,19
+N,Bryan/College Station,Hospitalizations 4/12,24
+N,Bryan/College Station,Hospitalizations 4/13,31
+N,Bryan/College Station,Hospitalizations 4/14,13
+N,Bryan/College Station,Hospitalizations 4/15,13
+N,Bryan/College Station,Hospitalizations 4/16,16
+N,Bryan/College Station,Hospitalizations 4/17,21
+N,Bryan/College Station,Hospitalizations 4/18,13
+N,Bryan/College Station,Hospitalizations 4/19,17
+N,Bryan/College Station,Hospitalizations 4/20,9
+N,Bryan/College Station,Hospitalizations 4/21,12
+N,Bryan/College Station,Hospitalizations 4/22,12
+N,Bryan/College Station,Hospitalizations 4/23,13
+N,Bryan/College Station,Hospitalizations 4/24,12
+N,Bryan/College Station,Hospitalizations 4/25,14
+N,Bryan/College Station,Hospitalizations 4/26,11
+N,Bryan/College Station,Hospitalizations 4/27,12
+N,Bryan/College Station,Hospitalizations 4/28,18
+N,Bryan/College Station,Hospitalizations 4/29,21
+N,Bryan/College Station,Hospitalizations 4/30,23
+N,Bryan/College Station,Hospitalizations 5/1,11
+N,Bryan/College Station,Hospitalizations 5/2,16
+N,Bryan/College Station,Hospitalizations 5/3,16
+N,Bryan/College Station,Hospitalizations 5/4,9
+N,Bryan/College Station,Hospitalizations 5/5,11
+N,Bryan/College Station,Hospitalizations 5/6,11
+N,Bryan/College Station,Hospitalizations 5/7,12
+N,Bryan/College Station,Hospitalizations 5/8,17
+N,Bryan/College Station,Hospitalizations 5/9,13
+N,Bryan/College Station,Hospitalizations 5/10,12
+N,Bryan/College Station,Hospitalizations 5/11,16
+N,Bryan/College Station,Hospitalizations 5/12,15
+N,Bryan/College Station,Hospitalizations 5/13,15
+N,Bryan/College Station,Hospitalizations 5/14,16
+N,Bryan/College Station,Hospitalizations 5/15,15
+N,Bryan/College Station,Hospitalizations 5/16,15
+N,Bryan/College Station,Hospitalizations 5/17,15
+N,Bryan/College Station,Hospitalizations 5/18,13
+N,Bryan/College Station,Hospitalizations 5/19,16
+N,Bryan/College Station,Hospitalizations 5/20,12
+N,Bryan/College Station,Hospitalizations 5/21,13
+N,Bryan/College Station,Hospitalizations 5/22,9
+N,Bryan/College Station,Hospitalizations 5/23,11
+N,Bryan/College Station,Hospitalizations 5/24,11
+N,Bryan/College Station,Hospitalizations 5/25,12
+N,Bryan/College Station,Hospitalizations 5/26,11
+N,Bryan/College Station,Hospitalizations 5/27,6
+N,Bryan/College Station,Hospitalizations 5/28,15
+N,Bryan/College Station,Hospitalizations 5/29,17
+N,Bryan/College Station,Hospitalizations 5/30,18
+N,Bryan/College Station,Hospitalizations 5/31,18
+N,Bryan/College Station,Hospitalizations 6/1,23
+N,Bryan/College Station,Hospitalizations 6/2,25
+N,Bryan/College Station,Hospitalizations 6/3,25
+N,Bryan/College Station,Hospitalizations 6/4,26
+N,Bryan/College Station,Hospitalizations 6/5,22
+N,Bryan/College Station,Hospitalizations 6/6,20
+N,Bryan/College Station,Hospitalizations 6/7,22
+N,Bryan/College Station,Hospitalizations 6/8,24
+N,Bryan/College Station,Hospitalizations 6/9,26
+N,Bryan/College Station,Hospitalizations 6/10,24
+N,Bryan/College Station,Hospitalizations 6/11,22
+N,Bryan/College Station,Hospitalizations 6/12,31
+N,Bryan/College Station,Hospitalizations 6/13,26
+N,Bryan/College Station,Hospitalizations 6/14,28
+N,Bryan/College Station,Hospitalizations 6/15,29
+N,Bryan/College Station,Hospitalizations 6/16,27
+N,Bryan/College Station,Hospitalizations 6/17,37
+N,Bryan/College Station,Hospitalizations 6/18,41
+N,Bryan/College Station,Hospitalizations 6/19,42
+N,Bryan/College Station,Hospitalizations 6/20,45
+N,Bryan/College Station,Hospitalizations 6/21,44
+N,Bryan/College Station,Hospitalizations 6/22,44
+N,Bryan/College Station,Hospitalizations 6/23,51
+N,Bryan/College Station,Hospitalizations 6/24,46
+N,Bryan/College Station,Hospitalizations 6/25,47
+N,Bryan/College Station,Hospitalizations 6/26,50
+N,Bryan/College Station,Hospitalizations 6/27,50
+N,Bryan/College Station,Hospitalizations 6/28,50
+N,Bryan/College Station,Hospitalizations 6/29,50
+N,Bryan/College Station,Hospitalizations 06/30,56
+O,Austin,Hospitalizations 4/8,45
+O,Austin,Hospitalizations 4/9,37
+O,Austin,Hospitalizations 4/10,28
+O,Austin,Hospitalizations 4/11,22
+O,Austin,Hospitalizations 4/12,22
+O,Austin,Hospitalizations 4/13,26
+O,Austin,Hospitalizations 4/14,28
+O,Austin,Hospitalizations 4/15,30
+O,Austin,Hospitalizations 4/16,22
+O,Austin,Hospitalizations 4/17,36
+O,Austin,Hospitalizations 4/18,29
+O,Austin,Hospitalizations 4/19,25
+O,Austin,Hospitalizations 4/20,27
+O,Austin,Hospitalizations 4/21,23
+O,Austin,Hospitalizations 4/22,62
+O,Austin,Hospitalizations 4/23,83
+O,Austin,Hospitalizations 4/24,76
+O,Austin,Hospitalizations 4/25,59
+O,Austin,Hospitalizations 4/26,47
+O,Austin,Hospitalizations 4/27,46
+O,Austin,Hospitalizations 4/28,51
+O,Austin,Hospitalizations 4/29,81
+O,Austin,Hospitalizations 4/30,88
+O,Austin,Hospitalizations 5/1,68
+O,Austin,Hospitalizations 5/2,47
+O,Austin,Hospitalizations 5/3,59
+O,Austin,Hospitalizations 5/4,47
+O,Austin,Hospitalizations 5/5,68
+O,Austin,Hospitalizations 5/6,93
+O,Austin,Hospitalizations 5/7,84
+O,Austin,Hospitalizations 5/8,82
+O,Austin,Hospitalizations 5/9,56
+O,Austin,Hospitalizations 5/10,50
+O,Austin,Hospitalizations 5/11,49
+O,Austin,Hospitalizations 5/12,72
+O,Austin,Hospitalizations 5/13,98
+O,Austin,Hospitalizations 5/14,72
+O,Austin,Hospitalizations 5/15,99
+O,Austin,Hospitalizations 5/16,76
+O,Austin,Hospitalizations 5/17,7
+O,Austin,Hospitalizations 5/18,25
+O,Austin,Hospitalizations 5/19,54
+O,Austin,Hospitalizations 5/20,82
+O,Austin,Hospitalizations 5/21,56
+O,Austin,Hospitalizations 5/22,30
+O,Austin,Hospitalizations 5/23,103
+O,Austin,Hospitalizations 5/24,43
+O,Austin,Hospitalizations 5/25,20
+O,Austin,Hospitalizations 5/26,35
+O,Austin,Hospitalizations 5/27,46
+O,Austin,Hospitalizations 5/28,66
+O,Austin,Hospitalizations 5/29,93
+O,Austin,Hospitalizations 5/30,92
+O,Austin,Hospitalizations 5/31,87
+O,Austin,Hospitalizations 6/1,89
+O,Austin,Hospitalizations 6/2,89
+O,Austin,Hospitalizations 6/3,98
+O,Austin,Hospitalizations 6/4,88
+O,Austin,Hospitalizations 6/5,79
+O,Austin,Hospitalizations 6/6,89
+O,Austin,Hospitalizations 6/7,100
+O,Austin,Hospitalizations 6/8,87
+O,Austin,Hospitalizations 6/9,90
+O,Austin,Hospitalizations 6/10,93
+O,Austin,Hospitalizations 6/11,89
+O,Austin,Hospitalizations 6/12,120
+O,Austin,Hospitalizations 6/13,121
+O,Austin,Hospitalizations 6/14,123
+O,Austin,Hospitalizations 6/15,141
+O,Austin,Hospitalizations 6/16,137
+O,Austin,Hospitalizations 6/17,148
+O,Austin,Hospitalizations 6/18,164
+O,Austin,Hospitalizations 6/19,179
+O,Austin,Hospitalizations 6/20,181
+O,Austin,Hospitalizations 6/21,196
+O,Austin,Hospitalizations 6/22,205
+O,Austin,Hospitalizations 6/23,245
+O,Austin,Hospitalizations 6/24,274
+O,Austin,Hospitalizations 6/25,288
+O,Austin,Hospitalizations 6/26,296
+O,Austin,Hospitalizations 6/27,337
+O,Austin,Hospitalizations 6/28,343
+O,Austin,Hospitalizations 6/29,373
+O,Austin,Hospitalizations 06/30,388
+P,San Antonio,Hospitalizations 4/8,69
+P,San Antonio,Hospitalizations 4/9,62
+P,San Antonio,Hospitalizations 4/10,62
+P,San Antonio,Hospitalizations 4/11,62
+P,San Antonio,Hospitalizations 4/12,57
+P,San Antonio,Hospitalizations 4/13,57
+P,San Antonio,Hospitalizations 4/14,64
+P,San Antonio,Hospitalizations 4/15,65
+P,San Antonio,Hospitalizations 4/16,30
+P,San Antonio,Hospitalizations 4/17,47
+P,San Antonio,Hospitalizations 4/18,52
+P,San Antonio,Hospitalizations 4/19,46
+P,San Antonio,Hospitalizations 4/20,38
+P,San Antonio,Hospitalizations 4/21,45
+P,San Antonio,Hospitalizations 4/22,109
+P,San Antonio,Hospitalizations 4/23,80
+P,San Antonio,Hospitalizations 4/24,63
+P,San Antonio,Hospitalizations 4/25,53
+P,San Antonio,Hospitalizations 4/26,60
+P,San Antonio,Hospitalizations 4/27,59
+P,San Antonio,Hospitalizations 4/28,59
+P,San Antonio,Hospitalizations 4/29,58
+P,San Antonio,Hospitalizations 4/30,53
+P,San Antonio,Hospitalizations 5/1,54
+P,San Antonio,Hospitalizations 5/2,57
+P,San Antonio,Hospitalizations 5/3,61
+P,San Antonio,Hospitalizations 5/4,56
+P,San Antonio,Hospitalizations 5/5,67
+P,San Antonio,Hospitalizations 5/6,69
+P,San Antonio,Hospitalizations 5/7,56
+P,San Antonio,Hospitalizations 5/8,68
+P,San Antonio,Hospitalizations 5/9,71
+P,San Antonio,Hospitalizations 5/10,59
+P,San Antonio,Hospitalizations 5/11,53
+P,San Antonio,Hospitalizations 5/12,72
+P,San Antonio,Hospitalizations 5/13,71
+P,San Antonio,Hospitalizations 5/14,61
+P,San Antonio,Hospitalizations 5/15,65
+P,San Antonio,Hospitalizations 5/16,76
+P,San Antonio,Hospitalizations 5/17,82
+P,San Antonio,Hospitalizations 5/18,80
+P,San Antonio,Hospitalizations 5/19,84
+P,San Antonio,Hospitalizations 5/20,93
+P,San Antonio,Hospitalizations 5/21,95
+P,San Antonio,Hospitalizations 5/22,90
+P,San Antonio,Hospitalizations 5/23,96
+P,San Antonio,Hospitalizations 5/24,93
+P,San Antonio,Hospitalizations 5/25,87
+P,San Antonio,Hospitalizations 5/26,90
+P,San Antonio,Hospitalizations 5/27,108
+P,San Antonio,Hospitalizations 5/28,106
+P,San Antonio,Hospitalizations 5/29,107
+P,San Antonio,Hospitalizations 5/30,98
+P,San Antonio,Hospitalizations 5/31,90
+P,San Antonio,Hospitalizations 6/1,105
+P,San Antonio,Hospitalizations 6/2,87
+P,San Antonio,Hospitalizations 6/3,101
+P,San Antonio,Hospitalizations 6/4,74
+P,San Antonio,Hospitalizations 6/5,111
+P,San Antonio,Hospitalizations 6/6,98
+P,San Antonio,Hospitalizations 6/7,94
+P,San Antonio,Hospitalizations 6/8,99
+P,San Antonio,Hospitalizations 6/9,119
+P,San Antonio,Hospitalizations 6/10,128
+P,San Antonio,Hospitalizations 6/11,133
+P,San Antonio,Hospitalizations 6/12,116
+P,San Antonio,Hospitalizations 6/13,144
+P,San Antonio,Hospitalizations 6/14,163
+P,San Antonio,Hospitalizations 6/15,165
+P,San Antonio,Hospitalizations 6/16,185
+P,San Antonio,Hospitalizations 6/17,233
+P,San Antonio,Hospitalizations 6/18,227
+P,San Antonio,Hospitalizations 6/19,279
+P,San Antonio,Hospitalizations 6/20,334
+P,San Antonio,Hospitalizations 6/21,357
+P,San Antonio,Hospitalizations 6/22,473
+P,San Antonio,Hospitalizations 6/23,501
+P,San Antonio,Hospitalizations 6/24,549
+P,San Antonio,Hospitalizations 6/25,606
+P,San Antonio,Hospitalizations 6/26,675
+P,San Antonio,Hospitalizations 6/27,814
+P,San Antonio,Hospitalizations 6/28,778
+P,San Antonio,Hospitalizations 6/29,935
+P,San Antonio,Hospitalizations 06/30,1010
+Q,Houston,Hospitalizations 4/8,495
+Q,Houston,Hospitalizations 4/9,570
+Q,Houston,Hospitalizations 4/10,582
+Q,Houston,Hospitalizations 4/11,610
+Q,Houston,Hospitalizations 4/12,516
+Q,Houston,Hospitalizations 4/13,319
+Q,Houston,Hospitalizations 4/14,527
+Q,Houston,Hospitalizations 4/15,584
+Q,Houston,Hospitalizations 4/16,511
+Q,Houston,Hospitalizations 4/17,500
+Q,Houston,Hospitalizations 4/18,363
+Q,Houston,Hospitalizations 4/19,535
+Q,Houston,Hospitalizations 4/20,516
+Q,Houston,Hospitalizations 4/21,516
+Q,Houston,Hospitalizations 4/22,505
+Q,Houston,Hospitalizations 4/23,501
+Q,Houston,Hospitalizations 4/24,501
+Q,Houston,Hospitalizations 4/25,465
+Q,Houston,Hospitalizations 4/26,464
+Q,Houston,Hospitalizations 4/27,468
+Q,Houston,Hospitalizations 4/28,485
+Q,Houston,Hospitalizations 4/29,436
+Q,Houston,Hospitalizations 4/30,442
+Q,Houston,Hospitalizations 5/1,475
+Q,Houston,Hospitalizations 5/2,434
+Q,Houston,Hospitalizations 5/3,329
+Q,Houston,Hospitalizations 5/4,418
+Q,Houston,Hospitalizations 5/5,544
+Q,Houston,Hospitalizations 5/6,436
+Q,Houston,Hospitalizations 5/7,453
+Q,Houston,Hospitalizations 5/8,430
+Q,Houston,Hospitalizations 5/9,446
+Q,Houston,Hospitalizations 5/10,446
+Q,Houston,Hospitalizations 5/11,402
+Q,Houston,Hospitalizations 5/12,436
+Q,Houston,Hospitalizations 5/13,435
+Q,Houston,Hospitalizations 5/14,411
+Q,Houston,Hospitalizations 5/15,401
+Q,Houston,Hospitalizations 5/16,414
+Q,Houston,Hospitalizations 5/17,380
+Q,Houston,Hospitalizations 5/18,397
+Q,Houston,Hospitalizations 5/19,433
+Q,Houston,Hospitalizations 5/20,443
+Q,Houston,Hospitalizations 5/21,444
+Q,Houston,Hospitalizations 5/22,406
+Q,Houston,Hospitalizations 5/23,387
+Q,Houston,Hospitalizations 5/24,407
+Q,Houston,Hospitalizations 5/25,392
+Q,Houston,Hospitalizations 5/26,401
+Q,Houston,Hospitalizations 5/27,414
+Q,Houston,Hospitalizations 5/28,435
+Q,Houston,Hospitalizations 5/29,407
+Q,Houston,Hospitalizations 5/30,460
+Q,Houston,Hospitalizations 5/31,454
+Q,Houston,Hospitalizations 6/1,482
+Q,Houston,Hospitalizations 6/2,506
+Q,Houston,Hospitalizations 6/3,495
+Q,Houston,Hospitalizations 6/4,526
+Q,Houston,Hospitalizations 6/5,555
+Q,Houston,Hospitalizations 6/6,522
+Q,Houston,Hospitalizations 6/7,565
+Q,Houston,Hospitalizations 6/8,614
+Q,Houston,Hospitalizations 6/9,622
+Q,Houston,Hospitalizations 6/10,690
+Q,Houston,Hospitalizations 6/11,642
+Q,Houston,Hospitalizations 6/12,663
+Q,Houston,Hospitalizations 6/13,681
+Q,Houston,Hospitalizations 6/14,696
+Q,Houston,Hospitalizations 6/15,730
+Q,Houston,Hospitalizations 6/16,795
+Q,Houston,Hospitalizations 6/17,839
+Q,Houston,Hospitalizations 6/18,940
+Q,Houston,Hospitalizations 6/19,1031
+Q,Houston,Hospitalizations 6/20,1040
+Q,Houston,Hospitalizations 6/21,1062
+Q,Houston,Hospitalizations 6/22,1185
+Q,Houston,Hospitalizations 6/23,1293
+Q,Houston,Hospitalizations 6/24,1343
+Q,Houston,Hospitalizations 6/25,1496
+Q,Houston,Hospitalizations 6/26,1606
+Q,Houston,Hospitalizations 6/27,1691
+Q,Houston,Hospitalizations 6/28,1642
+Q,Houston,Hospitalizations 6/29,1767
+Q,Houston,Hospitalizations 06/30,2059
+R,Galveston,Hospitalizations 4/8,55
+R,Galveston,Hospitalizations 4/9,60
+R,Galveston,Hospitalizations 4/10,67
+R,Galveston,Hospitalizations 4/11,73
+R,Galveston,Hospitalizations 4/12,76
+R,Galveston,Hospitalizations 4/13,84
+R,Galveston,Hospitalizations 4/14,97
+R,Galveston,Hospitalizations 4/15,96
+R,Galveston,Hospitalizations 4/16,101
+R,Galveston,Hospitalizations 4/17,104
+R,Galveston,Hospitalizations 4/18,111
+R,Galveston,Hospitalizations 4/19,94
+R,Galveston,Hospitalizations 4/20,110
+R,Galveston,Hospitalizations 4/21,110
+R,Galveston,Hospitalizations 4/22,125
+R,Galveston,Hospitalizations 4/23,128
+R,Galveston,Hospitalizations 4/24,128
+R,Galveston,Hospitalizations 4/25,142
+R,Galveston,Hospitalizations 4/26,127
+R,Galveston,Hospitalizations 4/27,115
+R,Galveston,Hospitalizations 4/28,124
+R,Galveston,Hospitalizations 4/29,132
+R,Galveston,Hospitalizations 4/30,124
+R,Galveston,Hospitalizations 5/1,129
+R,Galveston,Hospitalizations 5/2,101
+R,Galveston,Hospitalizations 5/3,88
+R,Galveston,Hospitalizations 5/4,92
+R,Galveston,Hospitalizations 5/5,118
+R,Galveston,Hospitalizations 5/6,114
+R,Galveston,Hospitalizations 5/7,57
+R,Galveston,Hospitalizations 5/8,53
+R,Galveston,Hospitalizations 5/9,58
+R,Galveston,Hospitalizations 5/10,52
+R,Galveston,Hospitalizations 5/11,52
+R,Galveston,Hospitalizations 5/12,40
+R,Galveston,Hospitalizations 5/13,47
+R,Galveston,Hospitalizations 5/14,46
+R,Galveston,Hospitalizations 5/15,55
+R,Galveston,Hospitalizations 5/16,121
+R,Galveston,Hospitalizations 5/17,112
+R,Galveston,Hospitalizations 5/18,111
+R,Galveston,Hospitalizations 5/19,123
+R,Galveston,Hospitalizations 5/20,117
+R,Galveston,Hospitalizations 5/21,117
+R,Galveston,Hospitalizations 5/22,117
+R,Galveston,Hospitalizations 5/23,122
+R,Galveston,Hospitalizations 5/24,116
+R,Galveston,Hospitalizations 5/25,119
+R,Galveston,Hospitalizations 5/26,101
+R,Galveston,Hospitalizations 5/27,114
+R,Galveston,Hospitalizations 5/28,89
+R,Galveston,Hospitalizations 5/29,115
+R,Galveston,Hospitalizations 5/30,106
+R,Galveston,Hospitalizations 5/31,91
+R,Galveston,Hospitalizations 6/1,111
+R,Galveston,Hospitalizations 6/2,108
+R,Galveston,Hospitalizations 6/3,115
+R,Galveston,Hospitalizations 6/4,96
+R,Galveston,Hospitalizations 6/5,119
+R,Galveston,Hospitalizations 6/6,122
+R,Galveston,Hospitalizations 6/7,126
+R,Galveston,Hospitalizations 6/8,123
+R,Galveston,Hospitalizations 6/9,147
+R,Galveston,Hospitalizations 6/10,142
+R,Galveston,Hospitalizations 6/11,60
+R,Galveston,Hospitalizations 6/12,131
+R,Galveston,Hospitalizations 6/13,137
+R,Galveston,Hospitalizations 6/14,136
+R,Galveston,Hospitalizations 6/15,154
+R,Galveston,Hospitalizations 6/16,157
+R,Galveston,Hospitalizations 6/17,164
+R,Galveston,Hospitalizations 6/18,152
+R,Galveston,Hospitalizations 6/19,159
+R,Galveston,Hospitalizations 6/20,144
+R,Galveston,Hospitalizations 6/21,193
+R,Galveston,Hospitalizations 6/22,166
+R,Galveston,Hospitalizations 6/23,194
+R,Galveston,Hospitalizations 6/24,223
+R,Galveston,Hospitalizations 6/25,230
+R,Galveston,Hospitalizations 6/26,271
+R,Galveston,Hospitalizations 6/27,297
+R,Galveston,Hospitalizations 6/28,268
+R,Galveston,Hospitalizations 6/29,298
+R,Galveston,Hospitalizations 06/30,303
+S,Victoria,Hospitalizations 4/8,14
+S,Victoria,Hospitalizations 4/9,14
+S,Victoria,Hospitalizations 4/10,14
+S,Victoria,Hospitalizations 4/11,14
+S,Victoria,Hospitalizations 4/12,16
+S,Victoria,Hospitalizations 4/13,21
+S,Victoria,Hospitalizations 4/14,22
+S,Victoria,Hospitalizations 4/15,21
+S,Victoria,Hospitalizations 4/16,19
+S,Victoria,Hospitalizations 4/17,17
+S,Victoria,Hospitalizations 4/18,19
+S,Victoria,Hospitalizations 4/19,19
+S,Victoria,Hospitalizations 4/20,21
+S,Victoria,Hospitalizations 4/21,22
+S,Victoria,Hospitalizations 4/22,50
+S,Victoria,Hospitalizations 4/23,30
+S,Victoria,Hospitalizations 4/24,26
+S,Victoria,Hospitalizations 4/25,23
+S,Victoria,Hospitalizations 4/26,22
+S,Victoria,Hospitalizations 4/27,26
+S,Victoria,Hospitalizations 4/28,25
+S,Victoria,Hospitalizations 4/29,24
+S,Victoria,Hospitalizations 4/30,25
+S,Victoria,Hospitalizations 5/1,29
+S,Victoria,Hospitalizations 5/2,24
+S,Victoria,Hospitalizations 5/3,24
+S,Victoria,Hospitalizations 5/4,22
+S,Victoria,Hospitalizations 5/5,22
+S,Victoria,Hospitalizations 5/6,21
+S,Victoria,Hospitalizations 5/7,21
+S,Victoria,Hospitalizations 5/8,20
+S,Victoria,Hospitalizations 5/9,18
+S,Victoria,Hospitalizations 5/10,17
+S,Victoria,Hospitalizations 5/11,18
+S,Victoria,Hospitalizations 5/12,17
+S,Victoria,Hospitalizations 5/13,17
+S,Victoria,Hospitalizations 5/14,12
+S,Victoria,Hospitalizations 5/15,12
+S,Victoria,Hospitalizations 5/16,15
+S,Victoria,Hospitalizations 5/17,14
+S,Victoria,Hospitalizations 5/18,15
+S,Victoria,Hospitalizations 5/19,12
+S,Victoria,Hospitalizations 5/20,10
+S,Victoria,Hospitalizations 5/21,11
+S,Victoria,Hospitalizations 5/22,15
+S,Victoria,Hospitalizations 5/23,15
+S,Victoria,Hospitalizations 5/24,13
+S,Victoria,Hospitalizations 5/25,13
+S,Victoria,Hospitalizations 5/26,13
+S,Victoria,Hospitalizations 5/27,14
+S,Victoria,Hospitalizations 5/28,12
+S,Victoria,Hospitalizations 5/29,10
+S,Victoria,Hospitalizations 5/30,10
+S,Victoria,Hospitalizations 5/31,18
+S,Victoria,Hospitalizations 6/1,17
+S,Victoria,Hospitalizations 6/2,19
+S,Victoria,Hospitalizations 6/3,19
+S,Victoria,Hospitalizations 6/4,22
+S,Victoria,Hospitalizations 6/5,23
+S,Victoria,Hospitalizations 6/6,14
+S,Victoria,Hospitalizations 6/7,13
+S,Victoria,Hospitalizations 6/8,12
+S,Victoria,Hospitalizations 6/9,11
+S,Victoria,Hospitalizations 6/10,10
+S,Victoria,Hospitalizations 6/11,9
+S,Victoria,Hospitalizations 6/12,7
+S,Victoria,Hospitalizations 6/13,7
+S,Victoria,Hospitalizations 6/14,8
+S,Victoria,Hospitalizations 6/15,11
+S,Victoria,Hospitalizations 6/16,11
+S,Victoria,Hospitalizations 6/17,12
+S,Victoria,Hospitalizations 6/18,9
+S,Victoria,Hospitalizations 6/19,11
+S,Victoria,Hospitalizations 6/20,15
+S,Victoria,Hospitalizations 6/21,15
+S,Victoria,Hospitalizations 6/22,20
+S,Victoria,Hospitalizations 6/23,18
+S,Victoria,Hospitalizations 6/24,30
+S,Victoria,Hospitalizations 6/25,31
+S,Victoria,Hospitalizations 6/26,30
+S,Victoria,Hospitalizations 6/27,16
+S,Victoria,Hospitalizations 6/28,40
+S,Victoria,Hospitalizations 6/29,45
+S,Victoria,Hospitalizations 06/30,50
+T,Laredo,Hospitalizations 4/8,27
+T,Laredo,Hospitalizations 4/9,26
+T,Laredo,Hospitalizations 4/10,28
+T,Laredo,Hospitalizations 4/11,29
+T,Laredo,Hospitalizations 4/12,25
+T,Laredo,Hospitalizations 4/13,24
+T,Laredo,Hospitalizations 4/14,28
+T,Laredo,Hospitalizations 4/15,26
+T,Laredo,Hospitalizations 4/16,27
+T,Laredo,Hospitalizations 4/17,31
+T,Laredo,Hospitalizations 4/18,31
+T,Laredo,Hospitalizations 4/19,25
+T,Laredo,Hospitalizations 4/20,27
+T,Laredo,Hospitalizations 4/21,0
+T,Laredo,Hospitalizations 4/22,23
+T,Laredo,Hospitalizations 4/23,20
+T,Laredo,Hospitalizations 4/24,28
+T,Laredo,Hospitalizations 4/25,25
+T,Laredo,Hospitalizations 4/26,24
+T,Laredo,Hospitalizations 4/27,23
+T,Laredo,Hospitalizations 4/28,20
+T,Laredo,Hospitalizations 4/29,23
+T,Laredo,Hospitalizations 4/30,18
+T,Laredo,Hospitalizations 5/1,20
+T,Laredo,Hospitalizations 5/2,21
+T,Laredo,Hospitalizations 5/3,23
+T,Laredo,Hospitalizations 5/4,23
+T,Laredo,Hospitalizations 5/5,20
+T,Laredo,Hospitalizations 5/6,18
+T,Laredo,Hospitalizations 5/7,19
+T,Laredo,Hospitalizations 5/8,18
+T,Laredo,Hospitalizations 5/9,18
+T,Laredo,Hospitalizations 5/10,18
+T,Laredo,Hospitalizations 5/11,17
+T,Laredo,Hospitalizations 5/12,14
+T,Laredo,Hospitalizations 5/13,13
+T,Laredo,Hospitalizations 5/14,14
+T,Laredo,Hospitalizations 5/15,15
+T,Laredo,Hospitalizations 5/16,16
+T,Laredo,Hospitalizations 5/17,15
+T,Laredo,Hospitalizations 5/18,14
+T,Laredo,Hospitalizations 5/19,13
+T,Laredo,Hospitalizations 5/20,13
+T,Laredo,Hospitalizations 5/21,14
+T,Laredo,Hospitalizations 5/22,14
+T,Laredo,Hospitalizations 5/23,14
+T,Laredo,Hospitalizations 5/24,13
+T,Laredo,Hospitalizations 5/25,14
+T,Laredo,Hospitalizations 5/26,14
+T,Laredo,Hospitalizations 5/27,14
+T,Laredo,Hospitalizations 5/28,15
+T,Laredo,Hospitalizations 5/29,16
+T,Laredo,Hospitalizations 5/30,15
+T,Laredo,Hospitalizations 5/31,14
+T,Laredo,Hospitalizations 6/1,14
+T,Laredo,Hospitalizations 6/2,12
+T,Laredo,Hospitalizations 6/3,10
+T,Laredo,Hospitalizations 6/4,12
+T,Laredo,Hospitalizations 6/5,11
+T,Laredo,Hospitalizations 6/6,12
+T,Laredo,Hospitalizations 6/7,10
+T,Laredo,Hospitalizations 6/8,9
+T,Laredo,Hospitalizations 6/9,9
+T,Laredo,Hospitalizations 6/10,12
+T,Laredo,Hospitalizations 6/11,12
+T,Laredo,Hospitalizations 6/12,12
+T,Laredo,Hospitalizations 6/13,12
+T,Laredo,Hospitalizations 6/14,11
+T,Laredo,Hospitalizations 6/15,11
+T,Laredo,Hospitalizations 6/16,10
+T,Laredo,Hospitalizations 6/17,14
+T,Laredo,Hospitalizations 6/18,14
+T,Laredo,Hospitalizations 6/19,15
+T,Laredo,Hospitalizations 6/20,16
+T,Laredo,Hospitalizations 6/21,18
+T,Laredo,Hospitalizations 6/22,15
+T,Laredo,Hospitalizations 6/23,20
+T,Laredo,Hospitalizations 6/24,24
+T,Laredo,Hospitalizations 6/25,33
+T,Laredo,Hospitalizations 6/26,42
+T,Laredo,Hospitalizations 6/27,44
+T,Laredo,Hospitalizations 6/28,50
+T,Laredo,Hospitalizations 6/29,54
+T,Laredo,Hospitalizations 06/30,71
+U,Corpus Christi,Hospitalizations 4/8,13
+U,Corpus Christi,Hospitalizations 4/9,11
+U,Corpus Christi,Hospitalizations 4/10,8
+U,Corpus Christi,Hospitalizations 4/11,16
+U,Corpus Christi,Hospitalizations 4/12,9
+U,Corpus Christi,Hospitalizations 4/13,12
+U,Corpus Christi,Hospitalizations 4/14,9
+U,Corpus Christi,Hospitalizations 4/15,12
+U,Corpus Christi,Hospitalizations 4/16,7
+U,Corpus Christi,Hospitalizations 4/17,11
+U,Corpus Christi,Hospitalizations 4/18,13
+U,Corpus Christi,Hospitalizations 4/19,8
+U,Corpus Christi,Hospitalizations 4/20,9
+U,Corpus Christi,Hospitalizations 4/21,9
+U,Corpus Christi,Hospitalizations 4/22,6
+U,Corpus Christi,Hospitalizations 4/23,8
+U,Corpus Christi,Hospitalizations 4/24,6
+U,Corpus Christi,Hospitalizations 4/25,9
+U,Corpus Christi,Hospitalizations 4/26,9
+U,Corpus Christi,Hospitalizations 4/27,4
+U,Corpus Christi,Hospitalizations 4/28,4
+U,Corpus Christi,Hospitalizations 4/29,4
+U,Corpus Christi,Hospitalizations 4/30,4
+U,Corpus Christi,Hospitalizations 5/1,4
+U,Corpus Christi,Hospitalizations 5/2,16
+U,Corpus Christi,Hospitalizations 5/3,16
+U,Corpus Christi,Hospitalizations 5/4,4
+U,Corpus Christi,Hospitalizations 5/5,4
+U,Corpus Christi,Hospitalizations 5/6,4
+U,Corpus Christi,Hospitalizations 5/7,6
+U,Corpus Christi,Hospitalizations 5/8,5
+U,Corpus Christi,Hospitalizations 5/9,8
+U,Corpus Christi,Hospitalizations 5/10,9
+U,Corpus Christi,Hospitalizations 5/11,9
+U,Corpus Christi,Hospitalizations 5/12,9
+U,Corpus Christi,Hospitalizations 5/13,8
+U,Corpus Christi,Hospitalizations 5/14,16
+U,Corpus Christi,Hospitalizations 5/15,22
+U,Corpus Christi,Hospitalizations 5/16,17
+U,Corpus Christi,Hospitalizations 5/17,7
+U,Corpus Christi,Hospitalizations 5/18,7
+U,Corpus Christi,Hospitalizations 5/19,6
+U,Corpus Christi,Hospitalizations 5/20,12
+U,Corpus Christi,Hospitalizations 5/21,5
+U,Corpus Christi,Hospitalizations 5/22,13
+U,Corpus Christi,Hospitalizations 5/23,8
+U,Corpus Christi,Hospitalizations 5/24,9
+U,Corpus Christi,Hospitalizations 5/25,9
+U,Corpus Christi,Hospitalizations 5/26,9
+U,Corpus Christi,Hospitalizations 5/27,8
+U,Corpus Christi,Hospitalizations 5/28,9
+U,Corpus Christi,Hospitalizations 5/29,8
+U,Corpus Christi,Hospitalizations 5/30,6
+U,Corpus Christi,Hospitalizations 5/31,6
+U,Corpus Christi,Hospitalizations 6/1,6
+U,Corpus Christi,Hospitalizations 6/2,8
+U,Corpus Christi,Hospitalizations 6/3,10
+U,Corpus Christi,Hospitalizations 6/4,7
+U,Corpus Christi,Hospitalizations 6/5,8
+U,Corpus Christi,Hospitalizations 6/6,11
+U,Corpus Christi,Hospitalizations 6/7,8
+U,Corpus Christi,Hospitalizations 6/8,7
+U,Corpus Christi,Hospitalizations 6/9,8
+U,Corpus Christi,Hospitalizations 6/10,7
+U,Corpus Christi,Hospitalizations 6/11,7
+U,Corpus Christi,Hospitalizations 6/12,12
+U,Corpus Christi,Hospitalizations 6/13,11
+U,Corpus Christi,Hospitalizations 6/14,14
+U,Corpus Christi,Hospitalizations 6/15,15
+U,Corpus Christi,Hospitalizations 6/16,14
+U,Corpus Christi,Hospitalizations 6/17,18
+U,Corpus Christi,Hospitalizations 6/18,20
+U,Corpus Christi,Hospitalizations 6/19,24
+U,Corpus Christi,Hospitalizations 6/20,26
+U,Corpus Christi,Hospitalizations 6/21,26
+U,Corpus Christi,Hospitalizations 6/22,31
+U,Corpus Christi,Hospitalizations 6/23,38
+U,Corpus Christi,Hospitalizations 6/24,39
+U,Corpus Christi,Hospitalizations 6/25,38
+U,Corpus Christi,Hospitalizations 6/26,85
+U,Corpus Christi,Hospitalizations 6/27,94
+U,Corpus Christi,Hospitalizations 6/28,107
+U,Corpus Christi,Hospitalizations 6/29,109
+U,Corpus Christi,Hospitalizations 06/30,127
+V,Lower Rio Grande Valley,Hospitalizations 4/8,39
+V,Lower Rio Grande Valley,Hospitalizations 4/9,31
+V,Lower Rio Grande Valley,Hospitalizations 4/10,41
+V,Lower Rio Grande Valley,Hospitalizations 4/11,45
+V,Lower Rio Grande Valley,Hospitalizations 4/12,57
+V,Lower Rio Grande Valley,Hospitalizations 4/13,65
+V,Lower Rio Grande Valley,Hospitalizations 4/14,68
+V,Lower Rio Grande Valley,Hospitalizations 4/15,65
+V,Lower Rio Grande Valley,Hospitalizations 4/16,61
+V,Lower Rio Grande Valley,Hospitalizations 4/17,68
+V,Lower Rio Grande Valley,Hospitalizations 4/18,57
+V,Lower Rio Grande Valley,Hospitalizations 4/19,57
+V,Lower Rio Grande Valley,Hospitalizations 4/20,51
+V,Lower Rio Grande Valley,Hospitalizations 4/21,0
+V,Lower Rio Grande Valley,Hospitalizations 4/22,49
+V,Lower Rio Grande Valley,Hospitalizations 4/23,30
+V,Lower Rio Grande Valley,Hospitalizations 4/24,34
+V,Lower Rio Grande Valley,Hospitalizations 4/25,33
+V,Lower Rio Grande Valley,Hospitalizations 4/26,33
+V,Lower Rio Grande Valley,Hospitalizations 4/27,30
+V,Lower Rio Grande Valley,Hospitalizations 4/28,32
+V,Lower Rio Grande Valley,Hospitalizations 4/29,28
+V,Lower Rio Grande Valley,Hospitalizations 4/30,29
+V,Lower Rio Grande Valley,Hospitalizations 5/1,30
+V,Lower Rio Grande Valley,Hospitalizations 5/2,35
+V,Lower Rio Grande Valley,Hospitalizations 5/3,36
+V,Lower Rio Grande Valley,Hospitalizations 5/4,35
+V,Lower Rio Grande Valley,Hospitalizations 5/5,37
+V,Lower Rio Grande Valley,Hospitalizations 5/6,35
+V,Lower Rio Grande Valley,Hospitalizations 5/7,35
+V,Lower Rio Grande Valley,Hospitalizations 5/8,21
+V,Lower Rio Grande Valley,Hospitalizations 5/9,37
+V,Lower Rio Grande Valley,Hospitalizations 5/10,35
+V,Lower Rio Grande Valley,Hospitalizations 5/11,35
+V,Lower Rio Grande Valley,Hospitalizations 5/12,36
+V,Lower Rio Grande Valley,Hospitalizations 5/13,35
+V,Lower Rio Grande Valley,Hospitalizations 5/14,32
+V,Lower Rio Grande Valley,Hospitalizations 5/15,39
+V,Lower Rio Grande Valley,Hospitalizations 5/16,38
+V,Lower Rio Grande Valley,Hospitalizations 5/17,33
+V,Lower Rio Grande Valley,Hospitalizations 5/18,36
+V,Lower Rio Grande Valley,Hospitalizations 5/19,36
+V,Lower Rio Grande Valley,Hospitalizations 5/20,30
+V,Lower Rio Grande Valley,Hospitalizations 5/21,29
+V,Lower Rio Grande Valley,Hospitalizations 5/22,30
+V,Lower Rio Grande Valley,Hospitalizations 5/23,34
+V,Lower Rio Grande Valley,Hospitalizations 5/24,26
+V,Lower Rio Grande Valley,Hospitalizations 5/25,31
+V,Lower Rio Grande Valley,Hospitalizations 5/26,33
+V,Lower Rio Grande Valley,Hospitalizations 5/27,32
+V,Lower Rio Grande Valley,Hospitalizations 5/28,33
+V,Lower Rio Grande Valley,Hospitalizations 5/29,35
+V,Lower Rio Grande Valley,Hospitalizations 5/30,31
+V,Lower Rio Grande Valley,Hospitalizations 5/31,33
+V,Lower Rio Grande Valley,Hospitalizations 6/1,37
+V,Lower Rio Grande Valley,Hospitalizations 6/2,37
+V,Lower Rio Grande Valley,Hospitalizations 6/3,43
+V,Lower Rio Grande Valley,Hospitalizations 6/4,47
+V,Lower Rio Grande Valley,Hospitalizations 6/5,46
+V,Lower Rio Grande Valley,Hospitalizations 6/6,51
+V,Lower Rio Grande Valley,Hospitalizations 6/7,47
+V,Lower Rio Grande Valley,Hospitalizations 6/8,56
+V,Lower Rio Grande Valley,Hospitalizations 6/9,65
+V,Lower Rio Grande Valley,Hospitalizations 6/10,67
+V,Lower Rio Grande Valley,Hospitalizations 6/11,67
+V,Lower Rio Grande Valley,Hospitalizations 6/12,91
+V,Lower Rio Grande Valley,Hospitalizations 6/13,94
+V,Lower Rio Grande Valley,Hospitalizations 6/14,99
+V,Lower Rio Grande Valley,Hospitalizations 6/15,87
+V,Lower Rio Grande Valley,Hospitalizations 6/16,122
+V,Lower Rio Grande Valley,Hospitalizations 6/17,164
+V,Lower Rio Grande Valley,Hospitalizations 6/18,175
+V,Lower Rio Grande Valley,Hospitalizations 6/19,191
+V,Lower Rio Grande Valley,Hospitalizations 6/20,203
+V,Lower Rio Grande Valley,Hospitalizations 6/21,227
+V,Lower Rio Grande Valley,Hospitalizations 6/22,253
+V,Lower Rio Grande Valley,Hospitalizations 6/23,280
+V,Lower Rio Grande Valley,Hospitalizations 6/24,312
+V,Lower Rio Grande Valley,Hospitalizations 6/25,398
+V,Lower Rio Grande Valley,Hospitalizations 6/26,405
+V,Lower Rio Grande Valley,Hospitalizations 6/27,451
+V,Lower Rio Grande Valley,Hospitalizations 6/28,462
+V,Lower Rio Grande Valley,Hospitalizations 6/29,475
+V,Lower Rio Grande Valley,Hospitalizations 06/30,545
+Total,Statewide Total,Hospitalizations 4/8,1491
+Total,Statewide Total,Hospitalizations 4/9,1439
+Total,Statewide Total,Hospitalizations 4/10,1532
+Total,Statewide Total,Hospitalizations 4/11,1514
+Total,Statewide Total,Hospitalizations 4/12,1338
+Total,Statewide Total,Hospitalizations 4/13,1176
+Total,Statewide Total,Hospitalizations 4/14,1409
+Total,Statewide Total,Hospitalizations 4/15,1538
+Total,Statewide Total,Hospitalizations 4/16,1459
+Total,Statewide Total,Hospitalizations 4/17,1522
+Total,Statewide Total,Hospitalizations 4/18,1321
+Total,Statewide Total,Hospitalizations 4/19,1471
+Total,Statewide Total,Hospitalizations 4/20,1411
+Total,Statewide Total,Hospitalizations 4/21,1419
+Total,Statewide Total,Hospitalizations 4/22,1678
+Total,Statewide Total,Hospitalizations 4/23,1649
+Total,Statewide Total,Hospitalizations 4/24,1674
+Total,Statewide Total,Hospitalizations 4/25,1597
+Total,Statewide Total,Hospitalizations 4/26,1542
+Total,Statewide Total,Hospitalizations 4/27,1563
+Total,Statewide Total,Hospitalizations 4/28,1682
+Total,Statewide Total,Hospitalizations 4/29,1702
+Total,Statewide Total,Hospitalizations 4/30,1686
+Total,Statewide Total,Hospitalizations 5/1,1778
+Total,Statewide Total,Hospitalizations 5/2,1725
+Total,Statewide Total,Hospitalizations 5/3,1540
+Total,Statewide Total,Hospitalizations 5/4,1533
+Total,Statewide Total,Hospitalizations 5/5,1888
+Total,Statewide Total,Hospitalizations 5/6,1812
+Total,Statewide Total,Hospitalizations 5/7,1750
+Total,Statewide Total,Hospitalizations 5/8,1734
+Total,Statewide Total,Hospitalizations 5/9,1735
+Total,Statewide Total,Hospitalizations 5/10,1626
+Total,Statewide Total,Hospitalizations 5/11,1525
+Total,Statewide Total,Hospitalizations 5/12,1725
+Total,Statewide Total,Hospitalizations 5/13,1676
+Total,Statewide Total,Hospitalizations 5/14,1648
+Total,Statewide Total,Hospitalizations 5/15,1716
+Total,Statewide Total,Hospitalizations 5/16,1791
+Total,Statewide Total,Hospitalizations 5/17,1512
+Total,Statewide Total,Hospitalizations 5/18,1551
+Total,Statewide Total,Hospitalizations 5/19,1732
+Total,Statewide Total,Hospitalizations 5/20,1791
+Total,Statewide Total,Hospitalizations 5/21,1680
+Total,Statewide Total,Hospitalizations 5/22,1578
+Total,Statewide Total,Hospitalizations 5/23,1688
+Total,Statewide Total,Hospitalizations 5/24,1572
+Total,Statewide Total,Hospitalizations 5/25,1511
+Total,Statewide Total,Hospitalizations 5/26,1534
+Total,Statewide Total,Hospitalizations 5/27,1645
+Total,Statewide Total,Hospitalizations 5/28,1692
+Total,Statewide Total,Hospitalizations 5/29,1701
+Total,Statewide Total,Hospitalizations 5/30,1752
+Total,Statewide Total,Hospitalizations 5/31,1684
+Total,Statewide Total,Hospitalizations 6/1,1756
+Total,Statewide Total,Hospitalizations 6/2,1773
+Total,Statewide Total,Hospitalizations 6/3,1799
+Total,Statewide Total,Hospitalizations 6/4,1796
+Total,Statewide Total,Hospitalizations 6/5,1855
+Total,Statewide Total,Hospitalizations 6/6,1822
+Total,Statewide Total,Hospitalizations 6/7,1878
+Total,Statewide Total,Hospitalizations 6/8,1935
+Total,Statewide Total,Hospitalizations 6/9,2056
+Total,Statewide Total,Hospitalizations 6/10,2153
+Total,Statewide Total,Hospitalizations 6/11,2008
+Total,Statewide Total,Hospitalizations 6/12,2166
+Total,Statewide Total,Hospitalizations 6/13,2242
+Total,Statewide Total,Hospitalizations 6/14,2287
+Total,Statewide Total,Hospitalizations 6/15,2326
+Total,Statewide Total,Hospitalizations 6/16,2518
+Total,Statewide Total,Hospitalizations 6/17,2793
+Total,Statewide Total,Hospitalizations 6/18,2947
+Total,Statewide Total,Hospitalizations 6/19,3148
+Total,Statewide Total,Hospitalizations 6/20,3247
+Total,Statewide Total,Hospitalizations 6/21,3409
+Total,Statewide Total,Hospitalizations 6/22,3711
+Total,Statewide Total,Hospitalizations 6/23,4092
+Total,Statewide Total,Hospitalizations 6/24,4389
+Total,Statewide Total,Hospitalizations 6/25,4739
+Total,Statewide Total,Hospitalizations 6/26,5102
+Total,Statewide Total,Hospitalizations 6/27,5523
+Total,Statewide Total,Hospitalizations 6/28,5497
+Total,Statewide Total,Hospitalizations 6/29,5913
+Total,Statewide Total,Hospitalizations 06/30,6533
