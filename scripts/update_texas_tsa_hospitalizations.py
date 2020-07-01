@@ -1,6 +1,7 @@
 import enum
 import pathlib
 import pandas as pd
+import dateutil.parser
 import pydantic
 import structlog
 from covidactnow.datapublic import common_fields
@@ -39,6 +40,7 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
 
     def update(self):
         data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2)
+
         index = [Fields.TSA_REGION_ID, Fields.TSA_NAME]
 
         data = (
@@ -46,6 +48,10 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
             .stack()
             .reset_index()
             .rename({"level_2": Fields.DATE, 0: Fields.CURRENT_HOSPITALIZED}, axis=1)
+        )
+        data[Fields.DATE] = data[Fields.DATE].str.lstrip("Hospitalizations ")
+        data[Fields.DATE] = data[Fields.DATE].apply(
+            lambda x: dateutil.parser.parse(x).date().isoformat()
         )
         # Drop all state level values
         data = data.loc[data[Fields.TSA_REGION_ID].notnull(), :]
