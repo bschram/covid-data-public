@@ -51,6 +51,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32001,2020-06-24,Churchill County,,,,,,,,,,
 32001,2020-06-25,Churchill County,15,25,0,0,0,0,1,4,4,0
 32001,2020-06-28,Churchill County,0,0,0,0,0,0,0,0,0,0
+32001,2020-06-29,Churchill County,14,25,0,0,0,0,0,2,4,0
+32001,2020-06-30,Churchill County,9,25,0,0,1,0,0,4,4,0
 32003,2020-04-05,Clark County,3048,4784,0,166,12,55,476,593,694,383
 32003,2020-04-06,Clark County,3288,5094,0,188,31,148,486,621,751,426
 32003,2020-04-07,Clark County,3619,5520,0,213,43,161,509,650,795,454
@@ -103,6 +105,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32003,2020-06-24,Clark County,,,,,,,,,,
 32003,2020-06-25,Clark County,4088,5294,254,80,127,52,490,585,706,263
 32003,2020-06-28,Clark County,4475,5927,343,111,180,62,550,672,802,308
+32003,2020-06-29,Clark County,4246,5522,343,108,171,59,534,631,735,280
+32003,2020-06-30,Clark County,4143,5402,374,105,147,65,501,602,741,302
 32005,2020-04-05,Douglas County,6,23,0,1,0,0,1,4,4,0
 32005,2020-04-06,Douglas County,6,23,0,0,0,0,0,0,6,0
 32005,2020-04-07,Douglas County,8,23,0,1,0,0,1,1,6,0
@@ -155,6 +159,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32005,2020-06-24,Douglas County,,,,,,,,,,
 32005,2020-06-25,Douglas County,15,23,2,0,1,0,0,4,4,0
 32005,2020-06-28,Douglas County,12,23,3,0,0,0,0,4,4,0
+32005,2020-06-29,Douglas County,11,23,3,0,2,0,0,4,4,0
+32005,2020-06-30,Douglas County,11,23,4,0,2,0,1,4,4,1
 32007,2020-04-05,Elko County,0,0,0,0,0,0,0,0,0,0
 32007,2020-04-06,Elko County,75,75,0,0,0,0,0,7,6,0
 32007,2020-04-07,Elko County,4,75,0,0,0,0,0,7,6,0
@@ -207,6 +213,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32007,2020-06-24,Elko County,,,,,,,,,,
 32007,2020-06-25,Elko County,6,75,1,0,0,0,1,7,6,0
 32007,2020-06-28,Elko County,8,24,0,0,0,0,3,7,6,0
+32007,2020-06-29,Elko County,8,75,0,0,0,0,1,7,6,0
+32007,2020-06-30,Elko County,4,75,0,0,0,0,1,4,6,0
 32009,2020-04-05,Esmeralda County,0,0,0,0,0,0,0,0,0,0
 32009,2020-04-06,Esmeralda County,0,0,0,0,0,0,0,0,0,0
 32009,2020-04-07,Esmeralda County,0,0,0,0,0,0,0,0,0,0
@@ -259,6 +267,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32009,2020-06-24,Esmeralda County,,,,,,,,,,
 32009,2020-06-25,Esmeralda County,0,0,0,0,0,0,0,0,0,0
 32009,2020-06-28,Esmeralda County,0,0,0,0,0,0,0,0,0,0
+32009,2020-06-29,Esmeralda County,0,0,0,0,0,0,0,0,0,0
+32009,2020-06-30,Esmeralda County,0,0,0,0,0,0,0,0,0,0
 32011,2020-04-05,Eureka County,0,0,0,0,0,0,0,0,0,0
 32011,2020-04-06,Eureka County,0,0,0,0,0,0,0,0,0,0
 32011,2020-04-07,Eureka County,0,0,0,0,0,0,0,0,0,0
@@ -311,6 +321,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32011,2020-06-24,Eureka County,,,,,,,,,,
 32011,2020-06-25,Eureka County,0,0,0,0,0,0,0,0,0,0
 32011,2020-06-28,Eureka County,0,0,0,0,0,0,0,0,0,0
+32011,2020-06-29,Eureka County,0,0,0,0,0,0,0,0,0,0
+32011,2020-06-30,Eureka County,0,0,0,0,0,0,0,0,0,0
 32013,2020-04-05,Humboldt County,16,25,0,1,3,0,1,3,3,0
 32013,2020-04-06,Humboldt County,11,26,0,1,3,0,1,3,3,0
 32013,2020-04-07,Humboldt County,11,25,0,1,3,1,2,3,3,1
@@ -363,6 +375,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32013,2020-06-24,Humboldt County,,,,,,,,,,
 32013,2020-06-25,Humboldt County,11,25,0,0,0,0,0,3,7,0
 32013,2020-06-28,Humboldt County,12,25,0,0,0,0,0,3,7,0
+32013,2020-06-29,Humboldt County,18,25,0,0,0,0,2,3,7,0
+32013,2020-06-30,Humboldt County,20,25,0,0,0,0,3,3,7,0
 32015,2020-04-05,Lander County,1,5,0,0,0,0,0,0,0,0
 32015,2020-04-06,Lander County,1,5,0,0,0,0,0,0,0,0
 32015,2020-04-07,Lander County,1,5,0,0,0,0,0,0,0,0
@@ -415,6 +429,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32015,2020-06-24,Lander County,,,,,,,,,,
 32015,2020-06-25,Lander County,1,5,0,0,0,0,0,0,0,0
 32015,2020-06-28,Lander County,1,5,0,0,0,0,0,0,0,0
+32015,2020-06-29,Lander County,0,5,0,0,0,0,0,0,0,0
+32015,2020-06-30,Lander County,0,5,0,0,0,0,0,0,0,0
 32017,2020-04-05,Lincoln County,4,4,0,0,0,0,0,0,3,0
 32017,2020-04-06,Lincoln County,2,4,0,0,0,0,0,0,3,0
 32017,2020-04-07,Lincoln County,3,4,0,0,0,0,0,0,3,0
@@ -467,6 +483,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32017,2020-06-24,Lincoln County,,,,,,,,,,
 32017,2020-06-25,Lincoln County,1,4,0,0,0,0,0,0,3,0
 32017,2020-06-28,Lincoln County,0,4,0,0,0,0,0,0,3,0
+32017,2020-06-29,Lincoln County,0,4,0,0,0,0,0,0,3,0
+32017,2020-06-30,Lincoln County,0,4,0,0,0,0,0,0,3,0
 32019,2020-04-05,Lyon County,0,14,0,0,0,0,0,0,0,0
 32019,2020-04-06,Lyon County,0,14,0,0,0,0,0,0,0,0
 32019,2020-04-07,Lyon County,0,14,0,0,0,0,0,0,0,0
@@ -519,6 +537,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32019,2020-06-24,Lyon County,,,,,,,,,,
 32019,2020-06-25,Lyon County,1,14,0,0,1,0,0,0,0,0
 32019,2020-06-28,Lyon County,2,14,0,0,1,0,0,0,0,0
+32019,2020-06-29,Lyon County,1,14,0,0,1,0,0,0,0,0
+32019,2020-06-30,Lyon County,1,14,0,0,0,0,0,0,0,0
 32021,2020-04-05,Mineral County,9,11,0,0,1,0,0,0,1,0
 32021,2020-04-06,Mineral County,9,11,0,0,1,0,0,0,1,0
 32021,2020-04-07,Mineral County,9,11,0,0,1,0,0,0,1,0
@@ -571,6 +591,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32021,2020-06-24,Mineral County,,,,,,,,,,
 32021,2020-06-25,Mineral County,10,11,0,0,0,0,0,0,1,0
 32021,2020-06-28,Mineral County,8,11,0,0,0,0,0,0,1,0
+32021,2020-06-29,Mineral County,9,11,0,0,0,0,0,0,1,0
+32021,2020-06-30,Mineral County,9,11,0,0,0,0,0,0,1,0
 32023,2020-04-05,Nye County,19,25,0,0,0,0,0,0,6,0
 32023,2020-04-06,Nye County,13,25,0,0,0,0,0,0,6,0
 32023,2020-04-07,Nye County,13,25,0,0,0,0,0,0,6,0
@@ -623,6 +645,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32023,2020-06-24,Nye County,,,,,,,,,,
 32023,2020-06-25,Nye County,23,25,1,0,1,0,0,0,6,0
 32023,2020-06-28,Nye County,8,25,0,0,3,0,0,0,6,0
+32023,2020-06-29,Nye County,8,25,0,0,3,0,0,0,6,0
+32023,2020-06-30,Nye County,14,25,0,0,4,0,0,0,6,0
 32027,2020-04-05,Pershing County,0,0,0,0,0,0,0,0,0,0
 32027,2020-04-06,Pershing County,0,13,0,0,0,0,0,0,0,0
 32027,2020-04-07,Pershing County,0,13,0,0,0,0,0,0,0,0
@@ -675,6 +699,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32027,2020-06-24,Pershing County,,,,,,,,,,
 32027,2020-06-25,Pershing County,1,13,0,0,0,0,0,0,0,0
 32027,2020-06-28,Pershing County,1,13,0,0,0,0,0,0,0,0
+32027,2020-06-29,Pershing County,1,13,0,0,0,0,0,0,0,0
+32027,2020-06-30,Pershing County,0,13,0,0,0,0,0,0,0,0
 32029,2020-04-05,Storey County,0,0,0,0,0,0,0,0,0,0
 32029,2020-04-06,Storey County,0,0,0,0,0,0,0,0,0,0
 32029,2020-04-07,Storey County,0,0,0,0,0,0,0,0,0,0
@@ -727,6 +753,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32029,2020-06-24,Storey County,,,,,,,,,,
 32029,2020-06-25,Storey County,0,0,0,0,0,0,0,0,0,0
 32029,2020-06-28,Storey County,0,0,0,0,0,0,0,0,0,0
+32029,2020-06-29,Storey County,0,0,0,0,0,0,0,0,0,0
+32029,2020-06-30,Storey County,0,0,0,0,0,0,0,0,0,0
 32031,2020-04-05,Washoe County,828,1240,0,22,35,17,78,140,207,43
 32031,2020-04-06,Washoe County,892,1325,0,26,35,19,82,156,202,48
 32031,2020-04-07,Washoe County,709,1060,0,16,41,12,57,128,169,51
@@ -779,6 +807,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32031,2020-06-24,Washoe County,,,,,,,,,,
 32031,2020-06-25,Washoe County,1093,1300,50,24,29,6,120,219,190,32
 32031,2020-06-28,Washoe County,981,1300,63,22,18,7,93,219,198,39
+32031,2020-06-29,Washoe County,1068,1360,69,25,22,7,106,219,198,40
+32031,2020-06-30,Washoe County,1091,1360,80,27,19,9,111,219,192,40
 32033,2020-04-05,White Pine County,7,25,0,0,7,0,0,2,5,0
 32033,2020-04-06,White Pine County,7,25,0,0,2,0,0,2,5,0
 32033,2020-04-07,White Pine County,9,25,0,1,2,0,1,2,5,0
@@ -831,6 +861,8 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32033,2020-06-24,White Pine County,,,,,,,,,,
 32033,2020-06-25,White Pine County,7,25,0,0,1,0,0,2,5,0
 32033,2020-06-28,White Pine County,1,25,0,0,0,0,0,2,5,0
+32033,2020-06-29,White Pine County,2,25,0,0,0,0,0,2,5,0
+32033,2020-06-30,White Pine County,4,25,0,0,0,0,0,2,5,0
 32510,2020-04-05,Carson City,100,164,0,0,0,0,8,24,22,8
 32510,2020-04-06,Carson City,84,240,0,3,0,0,15,23,22,7
 32510,2020-04-07,Carson City,82,188,0,3,3,1,9,24,22,7
@@ -883,3 +915,5 @@ fips,date,county,acute_occupied,acute_staffed,covid_confirmed,covid_icu,covid_su
 32510,2020-06-24,Carson City,,,,,,,,,,
 32510,2020-06-25,Carson City,120,188,1,0,1,0,17,24,22,8
 32510,2020-06-28,Carson City,107,188,4,0,0,0,17,24,22,6
+32510,2020-06-29,Carson City,98,188,2,0,0,0,17,24,22,5
+32510,2020-06-30,Carson City,114,188,2,0,1,1,17,24,22,4
