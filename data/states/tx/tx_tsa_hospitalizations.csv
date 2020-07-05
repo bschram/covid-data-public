@@ -86,6 +86,7 @@ A,Amarillo,2020-06-30,25
 A,Amarillo,2020-07-01,25
 A,Amarillo,2020-07-02,27
 A,Amarillo,2020-07-03,23
+A,Amarillo,2020-07-04,23
 B,Lubbock,2020-04-08,25
 B,Lubbock,2020-04-09,26
 B,Lubbock,2020-04-10,21
@@ -173,6 +174,7 @@ B,Lubbock,2020-06-30,58
 B,Lubbock,2020-07-01,72
 B,Lubbock,2020-07-02,74
 B,Lubbock,2020-07-03,98
+B,Lubbock,2020-07-04,88
 C,Wichita Falls,2020-04-08,8
 C,Wichita Falls,2020-04-09,8
 C,Wichita Falls,2020-04-10,7
@@ -260,6 +262,7 @@ C,Wichita Falls,2020-06-30,11
 C,Wichita Falls,2020-07-01,11
 C,Wichita Falls,2020-07-02,10
 C,Wichita Falls,2020-07-03,10
+C,Wichita Falls,2020-07-04,10
 D,Abilene,2020-04-08,9
 D,Abilene,2020-04-09,12
 D,Abilene,2020-04-10,11
@@ -347,6 +350,7 @@ D,Abilene,2020-06-30,10
 D,Abilene,2020-07-01,10
 D,Abilene,2020-07-02,10
 D,Abilene,2020-07-03,13
+D,Abilene,2020-07-04,18
 E,Dallas/Ft. Worth,2020-04-08,579
 E,Dallas/Ft. Worth,2020-04-09,447
 E,Dallas/Ft. Worth,2020-04-10,514
@@ -434,6 +438,7 @@ E,Dallas/Ft. Worth,2020-06-30,1375
 E,Dallas/Ft. Worth,2020-07-01,1411
 E,Dallas/Ft. Worth,2020-07-02,1499
 E,Dallas/Ft. Worth,2020-07-03,1534
+E,Dallas/Ft. Worth,2020-07-04,1531
 F,Paris,2020-04-08,14
 F,Paris,2020-04-09,12
 F,Paris,2020-04-10,13
@@ -521,6 +526,7 @@ F,Paris,2020-06-30,37
 F,Paris,2020-07-01,38
 F,Paris,2020-07-02,38
 F,Paris,2020-07-03,43
+F,Paris,2020-07-04,46
 G,Longview/Tyler,2020-04-08,26
 G,Longview/Tyler,2020-04-09,22
 G,Longview/Tyler,2020-04-10,25
@@ -608,6 +614,7 @@ G,Longview/Tyler,2020-06-30,85
 G,Longview/Tyler,2020-07-01,79
 G,Longview/Tyler,2020-07-02,91
 G,Longview/Tyler,2020-07-03,96
+G,Longview/Tyler,2020-07-04,113
 H,Lufkin,2020-04-08,13
 H,Lufkin,2020-04-09,25
 H,Lufkin,2020-04-10,21
@@ -695,6 +702,7 @@ H,Lufkin,2020-06-30,30
 H,Lufkin,2020-07-01,35
 H,Lufkin,2020-07-02,38
 H,Lufkin,2020-07-03,38
+H,Lufkin,2020-07-04,40
 I,El Paso,2020-04-08,12
 I,El Paso,2020-04-09,24
 I,El Paso,2020-04-10,31
@@ -782,6 +790,7 @@ I,El Paso,2020-06-30,160
 I,El Paso,2020-07-01,177
 I,El Paso,2020-07-02,180
 I,El Paso,2020-07-03,193
+I,El Paso,2020-07-04,200
 J,Midland/Odessa,2020-04-08,9
 J,Midland/Odessa,2020-04-09,11
 J,Midland/Odessa,2020-04-10,9
@@ -869,6 +878,7 @@ J,Midland/Odessa,2020-06-30,58
 J,Midland/Odessa,2020-07-01,59
 J,Midland/Odessa,2020-07-02,60
 J,Midland/Odessa,2020-07-03,72
+J,Midland/Odessa,2020-07-04,81
 K,San Angelo,2020-04-08,0
 K,San Angelo,2020-04-09,0
 K,San Angelo,2020-04-10,1
@@ -956,6 +966,7 @@ K,San Angelo,2020-06-30,15
 K,San Angelo,2020-07-01,15
 K,San Angelo,2020-07-02,33
 K,San Angelo,2020-07-03,26
+K,San Angelo,2020-07-04,28
 L,Belton/Killeen,2020-04-08,11
 L,Belton/Killeen,2020-04-09,6
 L,Belton/Killeen,2020-04-10,13
@@ -1043,6 +1054,7 @@ L,Belton/Killeen,2020-06-30,31
 L,Belton/Killeen,2020-07-01,40
 L,Belton/Killeen,2020-07-02,47
 L,Belton/Killeen,2020-07-03,51
+L,Belton/Killeen,2020-07-04,55
 M,Waco,2020-04-08,2
 M,Waco,2020-04-09,9
 M,Waco,2020-04-10,8
@@ -1130,6 +1142,7 @@ M,Waco,2020-06-30,29
 M,Waco,2020-07-01,31
 M,Waco,2020-07-02,32
 M,Waco,2020-07-03,29
+M,Waco,2020-07-04,29
 N,Bryan/College Station,2020-04-08,17
 N,Bryan/College Station,2020-04-09,14
 N,Bryan/College Station,2020-04-10,13
@@ -1217,6 +1230,7 @@ N,Bryan/College Station,2020-06-30,56
 N,Bryan/College Station,2020-07-01,54
 N,Bryan/College Station,2020-07-02,57
 N,Bryan/College Station,2020-07-03,67
+N,Bryan/College Station,2020-07-04,64
 O,Austin,2020-04-08,45
 O,Austin,2020-04-09,37
 O,Austin,2020-04-10,28
@@ -1304,6 +1318,7 @@ O,Austin,2020-06-30,388
 O,Austin,2020-07-01,404
 O,Austin,2020-07-02,426
 O,Austin,2020-07-03,459
+O,Austin,2020-07-04,461
 P,San Antonio,2020-04-08,69
 P,San Antonio,2020-04-09,62
 P,San Antonio,2020-04-10,62
@@ -1391,6 +1406,7 @@ P,San Antonio,2020-06-30,1010
 P,San Antonio,2020-07-01,1091
 P,San Antonio,2020-07-02,1170
 P,San Antonio,2020-07-03,1196
+P,San Antonio,2020-07-04,1208
 Q,Houston,2020-04-08,495
 Q,Houston,2020-04-09,570
 Q,Houston,2020-04-10,582
@@ -1478,6 +1494,7 @@ Q,Houston,2020-06-30,2059
 Q,Houston,2020-07-01,2139
 Q,Houston,2020-07-02,2250
 Q,Houston,2020-07-03,2257
+Q,Houston,2020-07-04,2369
 R,Galveston,2020-04-08,55
 R,Galveston,2020-04-09,60
 R,Galveston,2020-04-10,67
@@ -1565,6 +1582,7 @@ R,Galveston,2020-06-30,303
 R,Galveston,2020-07-01,318
 R,Galveston,2020-07-02,315
 R,Galveston,2020-07-03,308
+R,Galveston,2020-07-04,300
 S,Victoria,2020-04-08,14
 S,Victoria,2020-04-09,14
 S,Victoria,2020-04-10,14
@@ -1652,6 +1670,7 @@ S,Victoria,2020-06-30,50
 S,Victoria,2020-07-01,62
 S,Victoria,2020-07-02,68
 S,Victoria,2020-07-03,78
+S,Victoria,2020-07-04,94
 T,Laredo,2020-04-08,27
 T,Laredo,2020-04-09,26
 T,Laredo,2020-04-10,28
@@ -1739,6 +1758,7 @@ T,Laredo,2020-06-30,71
 T,Laredo,2020-07-01,82
 T,Laredo,2020-07-02,91
 T,Laredo,2020-07-03,100
+T,Laredo,2020-07-04,95
 U,Corpus Christi,2020-04-08,13
 U,Corpus Christi,2020-04-09,11
 U,Corpus Christi,2020-04-10,8
@@ -1826,6 +1846,7 @@ U,Corpus Christi,2020-06-30,127
 U,Corpus Christi,2020-07-01,163
 U,Corpus Christi,2020-07-02,173
 U,Corpus Christi,2020-07-03,208
+U,Corpus Christi,2020-07-04,217
 V,Lower Rio Grande Valley,2020-04-08,39
 V,Lower Rio Grande Valley,2020-04-09,31
 V,Lower Rio Grande Valley,2020-04-10,41
@@ -1913,6 +1934,7 @@ V,Lower Rio Grande Valley,2020-06-30,545
 V,Lower Rio Grande Valley,2020-07-01,588
 V,Lower Rio Grande Valley,2020-07-02,693
 V,Lower Rio Grande Valley,2020-07-03,753
+V,Lower Rio Grande Valley,2020-07-04,820
 Total,Statewide Total,2020-04-08,1491
 Total,Statewide Total,2020-04-09,1439
 Total,Statewide Total,2020-04-10,1532
@@ -2000,3 +2022,4 @@ Total,Statewide Total,2020-06-30,6533
 Total,Statewide Total,2020-07-01,6904
 Total,Statewide Total,2020-07-02,7382
 Total,Statewide Total,2020-07-03,7652
+Total,Statewide Total,2020-07-04,7890
