@@ -17,7 +17,7 @@ TSA_HOSPITALIZATIONS_URL = (
 class Fields(common_fields.GetByValueMixin, common_fields.FieldNameAndCommonField, enum.Enum):
 
     TSA_REGION_ID = "TSA ID", None
-    TSA_NAME = "TSA Name", None
+    TSA_AREA = "TSA AREA", None
     DATE = "date", CommonFields.DATE
     CURRENT_HOSPITALIZED = CommonFields.CURRENT_HOSPITALIZED, CommonFields.CURRENT_HOSPITALIZED
 
@@ -40,8 +40,7 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
 
     def update(self):
         data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2)
-
-        index = [Fields.TSA_REGION_ID, Fields.TSA_NAME]
+        index = [Fields.TSA_REGION_ID, Fields.TSA_AREA]
 
         data = (
             data.set_index(index)
