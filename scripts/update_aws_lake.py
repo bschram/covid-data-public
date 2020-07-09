@@ -153,6 +153,9 @@ class AwsDataLakeCopier(BaseModel):
             "Finished download to local mirror directory", mirror_dir=self.local_mirror_dir
         )
 
+    def cleanup_local_mirror(self):
+        shutil.rmtree(self.local_mirror_dir)
+
     def get_sources(self) -> Iterable[Tuple[str, Iterable[pathlib.Path]]]:
         """Iterate through local mirror source names with the paths of JSON files"""
         for dir in [x for x in self.local_mirror_dir.iterdir() if x.is_dir()]:
@@ -270,8 +273,9 @@ class AwsDataLakeTransformer(BaseModel):
 
 
 @click.command()
-@click.option("--replace_local_mirror", is_flag=True)
-def main(replace_local_mirror: bool):
+@click.option("--replace-local-mirror", is_flag=True)
+@click.option("--cleanup-local-mirror", is_flag=True)
+def main(replace_local_mirror: bool, cleanup_local_mirror: bool):
     common_init.configure_logging()
 
     copier = AwsDataLakeCopier.make_with_data_root(DATA_ROOT)
@@ -286,6 +290,9 @@ def main(replace_local_mirror: bool):
             DATA_ROOT / "aws-lake" / f"timeseries-{source_name}.csv",
             log,
         )
+
+    if cleanup_local_mirror:
+        copier.cleanup_local_mirror()
 
 
 if __name__ == "__main__":
