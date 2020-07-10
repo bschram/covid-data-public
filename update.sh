@@ -13,6 +13,7 @@ python scripts/update_texas_tsa_hospitalizations.py
 python scripts/update_texas_fips_hospitalizations.py
 # Needs to run after scripts/update.py call to update_cds_data returns.
 python scripts/update_covid_data_scraper.py
-python scripts/update_aws_lake.py --replace-local-mirror --cleanup-local-mirror
 
 python scripts/update_cmdc.py
+# AWS Lake seems to be hanging the build right now.
+# python scripts/update_aws_lake.py --replace-local-mirror --cleanup-local-mirror
