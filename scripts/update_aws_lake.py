@@ -12,7 +12,7 @@ import click
 import pandas as pd
 
 import structlog
-from pydantic import BaseModel, DirectoryPath
+from pydantic import BaseModel
 from structlog._config import BoundLoggerLazyProxy
 from structlog.threadlocal import tmp_bind
 
@@ -92,7 +92,7 @@ def _get_delphi_covidcast_metadata(bucket_name: str = DELPHI_BUCKET_NAME) -> pd.
 
 
 class AwsDataLakeCopier(BaseModel):
-    local_mirror_dir: DirectoryPath
+    local_mirror_dir: pathlib.Path
 
     # An unsigned s3 client
     s3: Any
@@ -127,7 +127,7 @@ class AwsDataLakeCopier(BaseModel):
         return s3_keys
 
     def _cache_data_locally(
-        self, s3_keys: List[str], source_dir: DirectoryPath, bucket_name=DELPHI_BUCKET_NAME
+        self, s3_keys: List[str], source_dir: pathlib.Path, bucket_name=DELPHI_BUCKET_NAME
     ) -> None:
         """Download json files from s3"""
         source_dir.mkdir(parents=True)
@@ -142,8 +142,11 @@ class AwsDataLakeCopier(BaseModel):
     def replace_local_mirror(self):
         keys = self._get_latest_delphi_files()
         files_by_source = _group_covidcast_files_by_source(keys)
-        self.log.info("Removing existing local mirror directory", mirror_dir=self.local_mirror_dir)
-        shutil.rmtree(self.local_mirror_dir)
+        if self.local_mirror_dir.exists():
+            self.log.info(
+                "Removing existing local mirror directory", mirror_dir=self.local_mirror_dir
+            )
+            shutil.rmtree(self.local_mirror_dir)
 
         for data_source, keys in files_by_source.items():
             if not data_source.startswith("jhu"):
