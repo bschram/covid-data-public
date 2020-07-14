@@ -2,7 +2,7 @@ name: Update source data
 
 on:
   schedule:
-    - cron: '0 1,16 * * *'
+    - cron: '0 1,12 * * *'
   # Hook to trigger a manual run.
   # See: https://goobar.io/2019/12/07/manually-trigger-a-github-actions-workflow/
   # A sample request looks like:
@@ -61,4 +61,3 @@ jobs:
       uses: Ilshidur/action-slack@fb92a78
       with:
         args: 'update-source-data finished with status {{STATUS}}'
-        
