@@ -45,6 +45,12 @@ jobs:
         CMDC_API_KEY: ${{ secrets.CMDC_API_KEY }}
     - name: Create Update Commit
       run: ./push_update.sh
+    - name: Trigger Covid Data Model Dataset Update
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.CAN_ROBOT_PERSONAL_ACCESS_TOKEN }}
+        repository: covid-projections/covid-data-model
+        event-type: update-dataset-snapshot
     - name: Slack notification
       if: always() # Pick up events even if the job fails or is canceled.
       env:
