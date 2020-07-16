@@ -34,7 +34,7 @@ class CovidDatasetAutoUpdater(DatasetUpdaterBase):
     _JHU_DATA_DIR = os.path.join(_DATA_DIR, "cases-jhu")
     _JHU_DAILY_REPORTS_DIR = os.path.join(_JHU_DATA_DIR, "csse_covid_19_daily_reports")
 
-    _CDS_TIMESERIES = r"https://coronadatascraper.com/timeseries.csv"
+    _CDS_TIMESERIES = r"https://coronadatascraper.com/timeseries.csv.zip"
     _CDS_DATA_DIR = os.path.join(_DATA_DIR, "cases-cds")
 
     def _get_jhu_repo_url(self, git_sha: str) -> str:
