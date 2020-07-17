@@ -182,6 +182,17 @@ class CmdcTransformer(BaseModel):
 
         df = sort_common_field_columns(df)
 
+        bad_rows = (
+            df[CommonFields.FIPS].isnull()
+            | df[CommonFields.DATE].isnull()
+            | df[CommonFields.STATE].isnull()
+        )
+        if bad_rows.any():
+            self.log.warning(
+                "Dropping rows with null in important columns", bad_rows=str(df.loc[bad_rows])
+            )
+            df = df.loc[~bad_rows]
+
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
         return df
 

@@ -64,3 +64,19 @@ def test_update_cmdc_bad_fips():
     log_entry = one(logs)
     assert log_entry["event"] == "Some counties did not match by fips"
     assert log_entry["bad_fips"] == ["31337"]
+
+
+def test_update_cmdc_drop_empty_state():
+    with structlog.testing.capture_logs() as logs, requests_mock.Mocker() as m:
+        m.get(
+            "https://api.covid.valorum.ai/swagger.json",
+            text=open("test/data/api.covid.valorum.ai_swagger.json").read(),
+        )
+        covid_json = open("test/data/api.covid.valorum.ai_covid_us").read().replace("6075", "0")
+        m.get("https://api.covid.valorum.ai/covid_us", text=covid_json)
+        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None)
+        df = transformer.transform()
+    assert not df.empty
+    log_entry = one(logs)
+    assert log_entry["event"] == "Dropping rows with null in important columns"
+    assert "4 rows" in log_entry["bad_rows"]
