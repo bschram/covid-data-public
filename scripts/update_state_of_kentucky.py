@@ -1,3 +1,13 @@
+"""
+DISABLED 2020-07-21
+This script returned an error once and the data hasn't been updated in months. There
+is no sense risking another error of fixing the problem when it isn't producing useful
+data.
+
+See https://covidactnow.slack.com/archives/C011Z21ST8V/p1595333904000500
+"""
+
+
 import csv
 import logging
 import pathlib

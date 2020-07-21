@@ -73,7 +73,7 @@ class TestAndTraceSyncer(BaseModel):
         result = pd.DataFrame.from_records(
             self.yield_dict_per_state_date(),
             columns=["fips", "state", "date", "contact_tracers_count"],
-        )
+        ).sort_values(["fips", "date"])
         result.to_csv(self.state_timeseries_path, index=False)
 
 
