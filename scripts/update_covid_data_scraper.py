@@ -3,7 +3,7 @@ from typing import Union, Optional, Mapping, MutableMapping
 import pandas as pd
 import numpy
 import structlog
-from covidactnow.datapublic import common_init
+from covidactnow.datapublic import common_init, common_df
 from pydantic import BaseModel
 import pathlib
 from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace, only_common_columns
@@ -30,22 +30,22 @@ class FieldNameAndCommonField(str):
 
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     NAME = "name", None
-    CITY = "city", CommonFields.CASES
+    CITY = "city", None
     COUNTY = "county", CommonFields.COUNTY
+    AGGREGATE_LEVEL = "aggregate_level", CommonFields.AGGREGATE_LEVEL
     STATE = "state", CommonFields.STATE
     COUNTRY = "country", CommonFields.COUNTRY
+    DATE = "date", CommonFields.DATE
     POPULATION = "population", CommonFields.POPULATION
     LATITUDE = "lat", None
     LONGITUDE = "long", None
     URL = "url", None
-    CASES = "cases", CommonFields.POSITIVE_TESTS
+    CASES = "cases", CommonFields.CASES
     DEATHS = "deaths", CommonFields.DEATHS
     RECOVERED = "recovered", None
     ACTIVE = "active", None
     TESTED = "tested", None
     GROWTH_FACTOR = "growthFactor", None
-    DATE = "date", CommonFields.DATE
-    AGGREGATE_LEVEL = "aggregate_level", None
     NEGATIVE_TESTS = "negative_tests", CommonFields.NEGATIVE_TESTS
     HOSPITALIZED = "hospitalized", CommonFields.CUMULATIVE_HOSPITALIZED
     ICU = "icu", CommonFields.CUMULATIVE_ICU
@@ -212,8 +212,6 @@ if __name__ == "__main__":
     common_init.configure_logging()
     log = structlog.get_logger()
     transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT)
-    write_df_as_csv(
-        only_common_columns(transformer.transform(), log),
-        DATA_ROOT / "cases-cds" / "timeseries-common.csv",
-        log,
+    common_df.write_csv(
+        transformer.transform(), DATA_ROOT / "cases-cds" / "timeseries-common.csv", log,
     )
