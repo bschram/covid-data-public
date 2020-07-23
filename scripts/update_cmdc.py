@@ -193,6 +193,11 @@ class CmdcTransformer(BaseModel):
             )
             df = df.loc[~bad_rows]
 
+        fl_or_pr = df[CommonFields.FIPS].str.match(r"^(12|72)")
+        if fl_or_pr.any():
+            self.log.warning("Dropping rows with FL or PR fips", dropped_rows=str(df.loc[fl_or_pr]))
+            df = df.loc[~fl_or_pr]
+
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
         return df
 
