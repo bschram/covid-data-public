@@ -74,6 +74,9 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     LONGITUDE = "longitude"
 
 
+# CommonFields used as keys/index columns in timeseries DataFrames.
+# I'd like this to be immutable (for example a tuple) but pandas sometimes treats tuples and lists
+# differently and many covid-data-model tests fail when it is a tuple.
 COMMON_FIELDS_TIMESERIES_KEYS = [CommonFields.FIPS, CommonFields.DATE]
 
 

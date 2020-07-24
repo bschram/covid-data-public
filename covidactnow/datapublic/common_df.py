@@ -3,7 +3,7 @@ Shared code that handles `pandas.DataFrames` objects.
 """
 
 import pathlib
-from typing import TextIO, Union
+from typing import TextIO, Union, List
 
 import pandas as pd
 import numpy as np
@@ -16,13 +16,15 @@ from covidactnow.datapublic.common_fields import (
 )
 
 
-def fix_df_index(df: pd.DataFrame, log: stdlib.BoundLogger) -> pd.DataFrame:
-    """Return a `DataFrame` with the CAN CommonFields index or the unmodified input if already set."""
-    if df.index.names != COMMON_FIELDS_TIMESERIES_KEYS:
+def index_and_sort(
+    df: pd.DataFrame, index_names: List[str], log: stdlib.BoundLogger
+) -> pd.DataFrame:
+    """Return a `DataFrame` with index set to `index_names` if not already set, and rows and columns sorted."""
+    if df.index.names != index_names:
         log.warning("Fixing DataFrame index", current_index=df.index.names)
         if df.index.names != [None]:
             df = df.reset_index(inplace=False)
-        df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, inplace=False)
+        df = df.set_index(index_names, inplace=False)
     df = df.sort_index()
 
     if "index" in df.columns:
@@ -45,9 +47,14 @@ def only_common_columns(df: pd.DataFrame, log: stdlib.BoundLogger) -> pd.DataFra
     return df
 
 
-def write_csv(df: pd.DataFrame, path: pathlib.Path, log: stdlib.BoundLogger) -> None:
-    """Write `df` to `path` as a CSV with index set by `fix_df_index`."""
-    df = fix_df_index(df, log)
+def write_csv(
+    df: pd.DataFrame,
+    path: pathlib.Path,
+    log: stdlib.BoundLogger,
+    index_names: List[str] = COMMON_FIELDS_TIMESERIES_KEYS,
+) -> None:
+    """Write `df` to `path` as a CSV with index set by `index_and_sort`."""
+    df = index_and_sort(df, index_names, log)
     log.info("Writing DataFrame", current_index=df.index.names)
     # A column with floats and pd.NA (which is different from np.nan) is given type 'object' and does
     # not get formatted by to_csv float_format. Changing the pd.NA to np.nan seems to let convert_dtypes
