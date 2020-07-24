@@ -36,6 +36,13 @@ class CovidTrackingDataUpdater(object):
         response = requests.get(self.HISTORICAL_STATE_DATA_URL)
         data = response.json()
         df = pd.DataFrame(data)
+
+        # Removing CT state testing data from three days where numbers were incomplete or negative.
+        is_ct = df.state == "CT"
+        # TODO(chris): Covid tracking dates are in a weird format, standardize date format.
+        dates_to_remove = ["20200717", "20200718", "20200719"]
+        df.loc[is_ct & df.date.isin(dates_to_remove), ["negative", "positive"]] = None
+
         df.to_csv(self.output_path, index=False)
 
         version_path = self.version_path
