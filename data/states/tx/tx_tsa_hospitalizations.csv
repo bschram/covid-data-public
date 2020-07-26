@@ -103,6 +103,7 @@ A,Amarillo,2020-07-21,69.0
 A,Amarillo,2020-07-22,75.0
 A,Amarillo,2020-07-23,65.0
 A,Amarillo,2020-07-24,82.0
+A,Amarillo,2020-07-25,75.0
 B,Lubbock,2020-04-12,34.0
 B,Lubbock,2020-04-13,35.0
 B,Lubbock,2020-04-14,31.0
@@ -207,6 +208,7 @@ B,Lubbock,2020-07-21,128.0
 B,Lubbock,2020-07-22,133.0
 B,Lubbock,2020-07-23,142.0
 B,Lubbock,2020-07-24,203.0
+B,Lubbock,2020-07-25,190.0
 C,Wichita Falls,2020-04-12,5.0
 C,Wichita Falls,2020-04-13,5.0
 C,Wichita Falls,2020-04-14,6.0
@@ -311,6 +313,7 @@ C,Wichita Falls,2020-07-21,41.0
 C,Wichita Falls,2020-07-22,38.0
 C,Wichita Falls,2020-07-23,52.0
 C,Wichita Falls,2020-07-24,46.0
+C,Wichita Falls,2020-07-25,44.0
 D,Abilene,2020-04-12,6.0
 D,Abilene,2020-04-13,7.0
 D,Abilene,2020-04-14,2.0
@@ -415,6 +418,7 @@ D,Abilene,2020-07-21,31.0
 D,Abilene,2020-07-22,29.0
 D,Abilene,2020-07-23,60.0
 D,Abilene,2020-07-24,63.0
+D,Abilene,2020-07-25,61.0
 E,Dallas/Ft. Worth,2020-04-12,369.0
 E,Dallas/Ft. Worth,2020-04-13,365.0
 E,Dallas/Ft. Worth,2020-04-14,373.0
@@ -519,6 +523,7 @@ E,Dallas/Ft. Worth,2020-07-21,1907.0
 E,Dallas/Ft. Worth,2020-07-22,1965.0
 E,Dallas/Ft. Worth,2020-07-23,1810.0
 E,Dallas/Ft. Worth,2020-07-24,1925.0
+E,Dallas/Ft. Worth,2020-07-25,1716.0
 F,Paris,2020-04-12,14.0
 F,Paris,2020-04-13,16.0
 F,Paris,2020-04-14,21.0
@@ -623,6 +628,7 @@ F,Paris,2020-07-21,75.0
 F,Paris,2020-07-22,82.0
 F,Paris,2020-07-23,82.0
 F,Paris,2020-07-24,122.0
+F,Paris,2020-07-25,132.0
 G,Longview/Tyler,2020-04-12,32.0
 G,Longview/Tyler,2020-04-13,26.0
 G,Longview/Tyler,2020-04-14,33.0
@@ -727,6 +733,7 @@ G,Longview/Tyler,2020-07-21,245.0
 G,Longview/Tyler,2020-07-22,259.0
 G,Longview/Tyler,2020-07-23,271.0
 G,Longview/Tyler,2020-07-24,244.0
+G,Longview/Tyler,2020-07-25,234.0
 H,Lufkin,2020-04-12,15.0
 H,Lufkin,2020-04-13,18.0
 H,Lufkin,2020-04-14,23.0
@@ -831,6 +838,7 @@ H,Lufkin,2020-07-21,101.0
 H,Lufkin,2020-07-22,106.0
 H,Lufkin,2020-07-23,104.0
 H,Lufkin,2020-07-24,101.0
+H,Lufkin,2020-07-25,108.0
 I,El Paso,2020-04-12,14.0
 I,El Paso,2020-04-13,23.0
 I,El Paso,2020-04-14,12.0
@@ -935,6 +943,7 @@ I,El Paso,2020-07-21,302.0
 I,El Paso,2020-07-22,306.0
 I,El Paso,2020-07-23,183.0
 I,El Paso,2020-07-24,317.0
+I,El Paso,2020-07-25,322.0
 J,Midland/Odessa,2020-04-12,10.0
 J,Midland/Odessa,2020-04-13,11.0
 J,Midland/Odessa,2020-04-14,17.0
@@ -1039,6 +1048,7 @@ J,Midland/Odessa,2020-07-21,110.0
 J,Midland/Odessa,2020-07-22,119.0
 J,Midland/Odessa,2020-07-23,47.0
 J,Midland/Odessa,2020-07-24,116.0
+J,Midland/Odessa,2020-07-25,125.0
 K,San Angelo,2020-04-12,0.0
 K,San Angelo,2020-04-13,0.0
 K,San Angelo,2020-04-14,0.0
@@ -1143,6 +1153,7 @@ K,San Angelo,2020-07-21,39.0
 K,San Angelo,2020-07-22,39.0
 K,San Angelo,2020-07-23,37.0
 K,San Angelo,2020-07-24,40.0
+K,San Angelo,2020-07-25,41.0
 L,Belton/Killeen,2020-04-12,11.0
 L,Belton/Killeen,2020-04-13,12.0
 L,Belton/Killeen,2020-04-14,13.0
@@ -1247,6 +1258,7 @@ L,Belton/Killeen,2020-07-21,87.0
 L,Belton/Killeen,2020-07-22,84.0
 L,Belton/Killeen,2020-07-23,142.0
 L,Belton/Killeen,2020-07-24,83.0
+L,Belton/Killeen,2020-07-25,70.0
 M,Waco,2020-04-12,9.0
 M,Waco,2020-04-13,2.0
 M,Waco,2020-04-14,5.0
@@ -1351,6 +1363,7 @@ M,Waco,2020-07-21,76.0
 M,Waco,2020-07-22,79.0
 M,Waco,2020-07-23,79.0
 M,Waco,2020-07-24,82.0
+M,Waco,2020-07-25,78.0
 N,Bryan/College Station,2020-04-12,24.0
 N,Bryan/College Station,2020-04-13,31.0
 N,Bryan/College Station,2020-04-14,13.0
@@ -1455,6 +1468,7 @@ N,Bryan/College Station,2020-07-21,66.0
 N,Bryan/College Station,2020-07-22,71.0
 N,Bryan/College Station,2020-07-23,64.0
 N,Bryan/College Station,2020-07-24,60.0
+N,Bryan/College Station,2020-07-25,60.0
 O,Austin,2020-04-12,22.0
 O,Austin,2020-04-13,26.0
 O,Austin,2020-04-14,28.0
@@ -1559,6 +1573,7 @@ O,Austin,2020-07-21,577.0
 O,Austin,2020-07-22,575.0
 O,Austin,2020-07-23,160.0
 O,Austin,2020-07-24,302.0
+O,Austin,2020-07-25,429.0
 P,San Antonio,2020-04-12,57.0
 P,San Antonio,2020-04-13,57.0
 P,San Antonio,2020-04-14,64.0
@@ -1663,6 +1678,7 @@ P,San Antonio,2020-07-21,1475.0
 P,San Antonio,2020-07-22,1432.0
 P,San Antonio,2020-07-23,619.0
 P,San Antonio,2020-07-24,908.0
+P,San Antonio,2020-07-25,934.0
 Q,Houston,2020-04-12,516.0
 Q,Houston,2020-04-13,319.0
 Q,Houston,2020-04-14,527.0
@@ -1767,6 +1783,7 @@ Q,Houston,2020-07-21,2803.0
 Q,Houston,2020-07-22,2729.0
 Q,Houston,2020-07-23,2369.0
 Q,Houston,2020-07-24,2531.0
+Q,Houston,2020-07-25,2471.0
 R,Galveston,2020-04-12,76.0
 R,Galveston,2020-04-13,84.0
 R,Galveston,2020-04-14,97.0
@@ -1871,6 +1888,7 @@ R,Galveston,2020-07-21,372.0
 R,Galveston,2020-07-22,417.0
 R,Galveston,2020-07-23,430.0
 R,Galveston,2020-07-24,415.0
+R,Galveston,2020-07-25,418.0
 S,Victoria,2020-04-12,16.0
 S,Victoria,2020-04-13,21.0
 S,Victoria,2020-04-14,22.0
@@ -1975,6 +1993,7 @@ S,Victoria,2020-07-21,167.0
 S,Victoria,2020-07-22,169.0
 S,Victoria,2020-07-23,178.0
 S,Victoria,2020-07-24,184.0
+S,Victoria,2020-07-25,179.0
 T,Laredo,2020-04-12,25.0
 T,Laredo,2020-04-13,24.0
 T,Laredo,2020-04-14,28.0
@@ -2079,6 +2098,7 @@ T,Laredo,2020-07-21,168.0
 T,Laredo,2020-07-22,169.0
 T,Laredo,2020-07-23,167.0
 T,Laredo,2020-07-24,180.0
+T,Laredo,2020-07-25,164.0
 U,Corpus Christi,2020-04-12,9.0
 U,Corpus Christi,2020-04-13,12.0
 U,Corpus Christi,2020-04-14,9.0
@@ -2183,6 +2203,7 @@ U,Corpus Christi,2020-07-21,414.0
 U,Corpus Christi,2020-07-22,411.0
 U,Corpus Christi,2020-07-23,528.0
 U,Corpus Christi,2020-07-24,448.0
+U,Corpus Christi,2020-07-25,445.0
 V,Lower Rio Grande Valley,2020-04-12,57.0
 V,Lower Rio Grande Valley,2020-04-13,65.0
 V,Lower Rio Grande Valley,2020-04-14,68.0
@@ -2287,6 +2308,7 @@ V,Lower Rio Grande Valley,2020-07-21,1595.0
 V,Lower Rio Grande Valley,2020-07-22,1606.0
 V,Lower Rio Grande Valley,2020-07-23,1269.0
 V,Lower Rio Grande Valley,2020-07-24,1584.0
+V,Lower Rio Grande Valley,2020-07-25,1531.0
 Total,Statewide Total,2020-04-12,1338.0
 Total,Statewide Total,2020-04-13,1176.0
 Total,Statewide Total,2020-04-14,1409.0
@@ -2391,3 +2413,4 @@ Total,Statewide Total,2020-07-21,10848.0
 Total,Statewide Total,2020-07-22,10893.0
 Total,Statewide Total,2020-07-23,8858.0
 Total,Statewide Total,2020-07-24,10036.0
+Total,Statewide Total,2020-07-25,9827.0
