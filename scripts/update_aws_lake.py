@@ -24,10 +24,7 @@ from covidactnow.datapublic.common_fields import (
     COMMON_FIELDS_TIMESERIES_KEYS,
     COMMON_LEGACY_REGION_FIELDS,
 )
-from scripts.update_covid_data_scraper import (
-    FieldNameAndCommonField,
-    load_county_fips_data,
-)
+from scripts.update_helpers import FieldNameAndCommonField, load_county_fips_data
 from scripts.update_test_and_trace import load_census_state
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"

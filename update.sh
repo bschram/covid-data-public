@@ -10,9 +10,7 @@ python scripts/update_nytimes_data.py
 python scripts/update_test_and_trace.py
 python scripts/update_texas_tsa_hospitalizations.py
 python scripts/update_texas_fips_hospitalizations.py
-# Temporarily disabling cds scraper while we integrate new record format/data.
-# Needs to run after scripts/update.py call to update_cds_data returns.
-# python scripts/update_covid_data_scraper.py
+python scripts/update_covid_data_scraper.py
 
 python scripts/update_cmdc.py
 # AWS Lake seems to be hanging the build right now.

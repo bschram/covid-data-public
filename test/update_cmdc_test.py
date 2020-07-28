@@ -4,6 +4,8 @@ from more_itertools import one
 from scripts.update_cmdc import CmdcTransformer, DATA_ROOT
 import requests_mock
 
+from scripts.update_helpers import UNEXPECTED_COLUMNS_MESSAGE
+
 
 def test_update_cmdc():
     # This test and others depend on data files that can be updated by:
@@ -23,7 +25,7 @@ def test_update_cmdc():
         )
         # TODO(tom): Pass in apikey when https://github.com/valorumdata/cmdc.py/issues/9 is fixed.
         # Same in other tests.
-        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None)
+        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None, structlog.get_logger())
         df = transformer.transform()
     assert not df.empty
     assert logs == []
@@ -41,11 +43,11 @@ def test_update_cmdc_renamed_field():
             .replace("hospital_beds_in_use_covid_confirmed", "foobar")
         )
         m.get("https://api.covid.valorum.ai/covid_us", text=covid_json)
-        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None)
+        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None, structlog.get_logger())
         df = transformer.transform()
     assert not df.empty
     log_entry = one(logs)
-    assert log_entry["event"] == "columns from cmdc do not match Fields"
+    assert log_entry["event"] == UNEXPECTED_COLUMNS_MESSAGE
     assert log_entry["missing_fields"] == {"hospital_beds_in_use_covid_confirmed"}
     assert log_entry["extra_fields"] == {"foobar"}
 
@@ -58,7 +60,7 @@ def test_update_cmdc_bad_fips():
         )
         covid_json = open("test/data/api.covid.valorum.ai_covid_us").read().replace("6075", "31337")
         m.get("https://api.covid.valorum.ai/covid_us", text=covid_json)
-        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None)
+        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None, structlog.get_logger())
         df = transformer.transform()
     assert not df.empty
     log_entry = one(logs)
@@ -74,7 +76,7 @@ def test_update_cmdc_drop_empty_state():
         )
         covid_json = open("test/data/api.covid.valorum.ai_covid_us").read().replace("6075", "0")
         m.get("https://api.covid.valorum.ai/covid_us", text=covid_json)
-        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None)
+        transformer = CmdcTransformer.make_with_data_root(DATA_ROOT, None, structlog.get_logger())
         df = transformer.transform()
     assert not df.empty
     log_entry = one(logs)

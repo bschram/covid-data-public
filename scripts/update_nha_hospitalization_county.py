@@ -16,7 +16,7 @@ from structlog._config import BoundLoggerLazyProxy
 
 from covidactnow.datapublic import common_df, common_init
 from covidactnow.datapublic.common_fields import CommonFields
-from scripts.update_covid_data_scraper import load_county_fips_data
+from scripts.update_helpers import load_county_fips_data
 
 SOURCE_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzkytQW_yyyjLU_cKZYYf8ARa9nngLp9VWSUOpiXNha7rTOrdJxYW7Ryurfzjw-e05KkJv8inMe5S-/pub?gid=0&single=true&output=csv"
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"

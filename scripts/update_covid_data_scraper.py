@@ -1,17 +1,19 @@
 from enum import Enum
-from typing import Union, Optional, Mapping, MutableMapping
+from typing import Union
+
+import click
 import pandas as pd
-import numpy
+import requests
 import structlog
 from covidactnow.datapublic import common_init, common_df
 from pydantic import BaseModel
 import pathlib
-from covidactnow.datapublic.common_df import write_df_as_csv, strip_whitespace, only_common_columns
 from covidactnow.datapublic.common_fields import (
     CommonFields,
     GetByValueMixin,
     COMMON_FIELDS_TIMESERIES_KEYS,
 )
+from scripts.update_helpers import FieldNameAndCommonField, rename_fields
 from scripts.update_test_and_trace import load_census_state
 from structlog._config import BoundLoggerLazyProxy
 
@@ -19,66 +21,45 @@ from structlog._config import BoundLoggerLazyProxy
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
 
-class FieldNameAndCommonField(str):
-    """Represents the original field/column name and CommonField it maps to or None if dropped."""
-
-    def __new__(cls, field_name: str, common_field: Optional[CommonFields]):
-        o = super().__new__(cls, field_name)
-        o.common_field = common_field
-        return o
+TIMESERIES_CSV_URL = r"https://coronadatascraper.com/timeseries.csv.zip"
 
 
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
+    LOCATION_ID = "locationID", None
+    SLUG = "slug", None
     NAME = "name", None
+    LEVEL = "level", CommonFields.AGGREGATE_LEVEL
     CITY = "city", None
     COUNTY = "county", CommonFields.COUNTY
-    AGGREGATE_LEVEL = "aggregate_level", CommonFields.AGGREGATE_LEVEL
-    STATE = "state", CommonFields.STATE
+    STATE = "state", None
     COUNTRY = "country", CommonFields.COUNTRY
-    DATE = "date", CommonFields.DATE
-    POPULATION = "population", CommonFields.POPULATION
     LATITUDE = "lat", None
     LONGITUDE = "long", None
-    URL = "url", None
-    CASES = "cases", CommonFields.CASES
+    POPULATION = "population", CommonFields.POPULATION
+    AGGREGATE = "aggregate", None
+    TZ = "tz", None
+    CASES = "cases", None  # Special handling below
     DEATHS = "deaths", CommonFields.DEATHS
     RECOVERED = "recovered", None
     ACTIVE = "active", None
     TESTED = "tested", None
-    GROWTH_FACTOR = "growthFactor", None
-    NEGATIVE_TESTS = "negative_tests", CommonFields.NEGATIVE_TESTS
     HOSPITALIZED = "hospitalized", CommonFields.CUMULATIVE_HOSPITALIZED
+    HOSPITALIZED_CURRENT = "hospitalized_current", None
+    DISCHARGED = "discharged", None
     ICU = "icu", CommonFields.CUMULATIVE_ICU
-
-
-def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
-    df = pd.read_csv(fips_csv, dtype={"fips": str})
-    df["fips"] = df.fips.str.zfill(5)
-    return df
-
-
-def fill_missing_county_with_city(row):
-    """Fills in missing county data with city if available.
-    """
-    if pd.isnull(row.county) and not pd.isnull(row.city):
-        if row.city == "New York City":
-            return "New York"
-        return row.city
-
-    return row.county
+    ICU_CURRENT = "icu_current", None
+    # Not in Project Li output: GROWTH_FACTOR = "growthFactor", None
+    DATE = "date", CommonFields.DATE
 
 
 class CovidDataScraperTransformer(BaseModel):
     """Transforms the raw CovidDataScraper timeseries on disk to a DataFrame using CAN CommonFields."""
 
     # Source for raw CovidDataScraper timeseries.
-    cds_source_path: pathlib.Path
+    timeseries_csv_local_path: pathlib.Path
 
     # Path of a text file of state names, copied from census.gov
     census_state_path: pathlib.Path
-
-    # FIPS for each county, by name
-    county_fips_csv: pathlib.Path
 
     log: Union[structlog.BoundLoggerBase, BoundLoggerLazyProxy]
 
@@ -86,132 +67,115 @@ class CovidDataScraperTransformer(BaseModel):
         arbitrary_types_allowed = True
 
     @staticmethod
-    def make_with_data_root(data_root: pathlib.Path) -> "CovidDataScraperTransformer":
+    def make_with_data_root(
+        data_root: pathlib.Path, log: structlog.BoundLoggerBase
+    ) -> "CovidDataScraperTransformer":
         return CovidDataScraperTransformer(
-            cds_source_path=data_root / "cases-cds" / "timeseries.csv",
+            timeseries_csv_local_path=data_root / "cases-cds" / "timeseries.csv.zip",
             census_state_path=data_root / "misc" / "state.txt",
-            county_fips_csv=data_root / "misc" / "fips_population.csv",
-            log=structlog.get_logger(),
+            log=log,
         )
+
+    def fetch(self):
+        self.timeseries_csv_local_path.write_bytes(requests.get(TIMESERIES_CSV_URL).content)
 
     def transform(self) -> pd.DataFrame:
         """Read data from disk and return a DataFrame using CAN CommonFields."""
-        # TODO(tom): When I have more confidence in our ability to do large re-factors switch to the CDS json struct
-        # as seen in https://github.com/covid-projections/covid-data-public/compare/update-cds-source
-        df = pd.read_csv(self.cds_source_path, parse_dates=[Fields.DATE], low_memory=False)
-        # Code from here down is copied almost verbatim from
-        # https://github.com/covid-projections/covid-data-model/blob/d1a104f/libs/datasets/sources/cds_dataset.py#L103-L152
-        df = strip_whitespace(df)
-
-        data = remove_duplicate_city_data(df)
-
-        state_df = load_census_state(self.census_state_path)
-        state_df.set_index("state_name", inplace=True)
-        US_STATE_ABBREV = state_df.loc[:, "state"].to_dict()
-
-        # CDS state level aggregates are identifiable by not having a city or county.
-        only_county = data["county"].notnull() & data["state"].notnull()
-        county_hits = numpy.where(only_county, "county", None)
-        only_state = (
-            data[Fields.COUNTY].isnull() & data[Fields.CITY].isnull() & data[Fields.STATE].notnull()
-        )
-        only_country = (
-            data[Fields.COUNTY].isnull()
-            & data[Fields.CITY].isnull()
-            & data[Fields.STATE].isnull()
-            & data[Fields.COUNTRY].notnull()
+        df = pd.read_csv(
+            self.timeseries_csv_local_path, parse_dates=[Fields.DATE], low_memory=False
         )
 
-        state_hits = numpy.where(only_state, "state", None)
-        county_hits[state_hits != None] = state_hits[state_hits != None]
-        county_hits[only_country] = "country"
-        data[Fields.AGGREGATE_LEVEL] = county_hits
+        df_us_mask = df[Fields.COUNTRY] == "United States"
 
-        # Backfilling FIPS data based on county names.
-        # The following abbrev mapping only makes sense for the US
-        # TODO: Fix all missing cases
-        data = data[data["country"] == "United States"]
-        data[CommonFields.COUNTRY] = "USA"
-        data[CommonFields.STATE] = data[Fields.STATE].apply(
-            lambda x: US_STATE_ABBREV[x] if x in US_STATE_ABBREV else x
+        df_counties = df[df_us_mask & (df[Fields.LEVEL] == "county")].copy()
+        # Using str.slice instead of str.extract is really ugly but is easier than fixing the DataFrame assignment
+        # errors I had with str.extract.
+        bad_location_id = ~df_counties[Fields.LOCATION_ID].str.match(
+            r"\Aiso1:us#iso2:us-..#fips:\d{5}\Z"
         )
-
-        fips_data = load_county_fips_data(self.county_fips_csv)
-        fips_data.set_index(["state", "county"], inplace=True)
-        data = data.merge(
-            fips_data[["fips"]],
-            left_on=["state", "county"],
-            suffixes=(False, False),
-            how="left",
-            right_index=True,
-        )
-        no_fips = data[CommonFields.FIPS].isna()
-        if no_fips.sum() > 0:
-            self.log.error(
-                "Removing rows without fips id",
-                no_fips=data[no_fips].groupby(["state", "county"]).size().to_dict(),
+        if bad_location_id.any():
+            self.log.warning(
+                "Dropping county rows with unexpected locationID",
+                bad_location_id=df_counties.loc[bad_location_id, Fields.LOCATION_ID],
             )
-            data = data.loc[~no_fips]
+            df_counties = df_counties[~bad_location_id]
+        df_counties.loc[:, CommonFields.FIPS] = df_counties[Fields.LOCATION_ID].str.slice(start=24)
+        df_counties[CommonFields.STATE] = (
+            df_counties[Fields.LOCATION_ID].str.slice(start=16, stop=18).str.upper()
+        )
+
+        df_states = df[df_us_mask & (df[Fields.LEVEL] == "state")].copy()
+        bad_location_id = ~df_states[Fields.LOCATION_ID].str.match(r"\Aiso1:us#iso2:us-..\Z")
+        if bad_location_id.any():
+            self.log.warning(
+                "Dropping state rows with unexpected locationID",
+                bad_location_id=df_states.loc[bad_location_id, Fields.LOCATION_ID],
+            )
+            df_states = df_states[~bad_location_id]
+
+        df_states[CommonFields.STATE] = (
+            df_states[Fields.LOCATION_ID].str.slice(start=16, stop=18).str.upper()
+        )
+        states_by_abbrev = load_census_state(self.census_state_path).set_index("state")
+        df_states = df_states.merge(
+            states_by_abbrev["fips"],
+            how="left",
+            left_on=CommonFields.STATE,
+            right_index=True,
+            suffixes=(False, False),
+            copy=False,
+        )
+
+        df = pd.concat([df_counties, df_states])
+
+        no_fips = df[CommonFields.FIPS].isna()
+        if no_fips.any():
+            self.log.error(
+                "Rows without fips", no_fips=df.loc[no_fips, Fields.LOCATION_ID].value_counts(),
+            )
+            df = df.loc[~no_fips, :]
 
         # Use keep=False when logging so the output contains all duplicated rows, not just the first or last
         # instance of each duplicate.
-        duplicates_mask = data.duplicated(COMMON_FIELDS_TIMESERIES_KEYS, keep=False)
-        duplicates_df = data.loc[duplicates_mask, :]
-        if not duplicates_df.empty:
-            names_by_fips = duplicates_df.groupby([CommonFields.FIPS])[Fields.NAME].unique()
+        duplicates_mask = df.duplicated(COMMON_FIELDS_TIMESERIES_KEYS, keep=False)
+        if duplicates_mask.any():
             self.log.error(
-                "Removing duplicate timeseries points", names_by_fips=names_by_fips.to_dict()
+                "Removing duplicate timeseries points",
+                duplicates=df.loc[
+                    duplicates_mask, [Fields.LOCATION_ID, CommonFields.FIPS, Fields.DATE]
+                ],
             )
-            data = data.loc[~duplicates_mask, :]
+            df = df.loc[~duplicates_mask, :]
 
-        # ADD Negative tests
-        data[Fields.NEGATIVE_TESTS] = data[Fields.TESTED] - data[Fields.CASES]
+        df[CommonFields.CASES] = pd.to_numeric(df[Fields.CASES])
+        df[CommonFields.NEGATIVE_TESTS] = pd.to_numeric(df[Fields.TESTED]) - df[CommonFields.CASES]
 
-        # Rename and sort columns in data to match CommonFields. I'm not very happy with this code.
-        # It'd be cleaner if any column not in Fields caused a failure, but that might be annoying
-        # to maintain. columns that don't appear in the input file but are added to `data` in the
-        # above code are another annoying corner case; do they belong in Fields?
+        # Already transformed from Fields to CommonFields
+        already_transformed_fields = {
+            CommonFields.FIPS,
+            CommonFields.STATE,
+            CommonFields.CASES,
+            CommonFields.NEGATIVE_TESTS,
+        }
 
-        # Columns not in Fields or CommonFields will be logged
-        col_not_in_fields_or_common = []
-        # Map from name in the input/added so far -> name in the output
-        rename: MutableMapping[str, str] = {}
-        for col in data.columns:
-            field = Fields.get(col)
-            if field is not None:
-                if field.common_field is not None:
-                    rename[field.value] = field.common_field.value
-            elif CommonFields.get(col) is not None:
-                rename[col] = col
-            else:
-                col_not_in_fields_or_common.append(col)
-        # Sort contents of `rename` to match the order of CommonFields.
-        common_order = {common: i for i, common in enumerate(CommonFields)}
-        names_in, names_out = zip(*sorted(rename.items(), key=lambda f_c: common_order[f_c[1]]))
-        # Copy only columns in `rename.keys()` to a new DataFrame and rename.
-        data = data.loc[:, list(names_in)].rename(columns=rename)
-        if col_not_in_fields_or_common:
-            self.log.warning(
-                "Removing columns not in CommonFields", columns=col_not_in_fields_or_common
-            )
+        df = rename_fields(df, Fields, already_transformed_fields, self.log)
 
-        return data
+        df[CommonFields.COUNTRY] = "USA"
+        return df
 
 
-def remove_duplicate_city_data(data):
-    # City data before 3-23 was not duplicated, copy the city name to the county field.
-    select_pre_march_23 = data.date < "2020-03-23"
-    data.loc[select_pre_march_23, "county"] = data.loc[select_pre_march_23].apply(
-        fill_missing_county_with_city, axis=1
-    )
-    # Don't want to return city data because it's duplicated in county
-    return data.loc[select_pre_march_23 | ((~select_pre_march_23) & data["city"].isnull())].copy()
+@click.command()
+@click.option("--fetch/--no-fetch", default=True)
+def main(fetch: bool):
+    common_init.configure_logging()
+    log = structlog.get_logger(updater="CovidDataScraperTransformer")
+    local_path = DATA_ROOT / "cases-cds" / "timeseries-common.csv"
+
+    transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT, log)
+    if fetch:
+        transformer.fetch()
+    common_df.write_csv(transformer.transform(), local_path, log)
 
 
 if __name__ == "__main__":
-    common_init.configure_logging()
-    log = structlog.get_logger()
-    transformer = CovidDataScraperTransformer.make_with_data_root(DATA_ROOT)
-    common_df.write_csv(
-        transformer.transform(), DATA_ROOT / "cases-cds" / "timeseries-common.csv", log,
-    )
+    main()  # pylint: disable=no-value-for-parameter

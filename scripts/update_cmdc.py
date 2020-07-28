@@ -20,7 +20,7 @@ from covidactnow.datapublic.common_fields import (
     CommonFields,
     COMMON_FIELDS_TIMESERIES_KEYS,
 )
-from scripts.update_covid_data_scraper import FieldNameAndCommonField, load_county_fips_data
+from scripts.update_helpers import FieldNameAndCommonField, load_county_fips_data, rename_fields
 import cmdc
 
 from scripts.update_test_and_trace import load_census_state
@@ -97,13 +97,13 @@ class CmdcTransformer(BaseModel):
 
     @staticmethod
     def make_with_data_root(
-        data_root: pathlib.Path, cmdc_key: Optional[str] = None
+        data_root: pathlib.Path, cmdc_key: Optional[str], log,
     ) -> "CmdcTransformer":
         return CmdcTransformer(
             cmdc_key=cmdc_key,
             census_state_path=data_root / "misc" / "state.txt",
             county_fips_csv=data_root / "misc" / "fips_population.csv",
-            log=structlog.get_logger(),
+            log=log,
         )
 
     def transform(self) -> pd.DataFrame:
@@ -118,30 +118,7 @@ class CmdcTransformer(BaseModel):
         # Already transformed from Fields to CommonFields
         already_transformed_fields = {CommonFields.FIPS}
 
-        extra_fields = set(df.columns) - set(Fields) - already_transformed_fields
-        missing_fields = set(Fields) - set(df.columns)
-        if extra_fields or missing_fields:
-            # If this warning happens in a test you may need to edit the sample data in test/data
-            # to make sure all the expected fields appear in the sample.
-            self.log.warning(
-                "columns from cmdc do not match Fields",
-                extra_fields=extra_fields,
-                missing_fields=missing_fields,
-            )
-
-        # TODO(tom): Factor out this rename and re-order code. It is stricter than
-        # update_covid_data_scraper because this code expects every field in the source DataFrame
-        # to appear in Fields.
-        rename: MutableMapping[str, str] = {f: f for f in already_transformed_fields}
-        for col in df.columns:
-            field = Fields.get(col)
-            if field and field.common_field:
-                if field.value in rename:
-                    raise AssertionError("Field misconfigured")
-                rename[field.value] = field.common_field.value
-
-        # Copy only columns in `rename.keys()` to a new DataFrame and rename.
-        df = df.loc[:, list(rename.keys())].rename(columns=rename)
+        df = rename_fields(df, Fields, already_transformed_fields, self.log)
 
         df[CommonFields.COUNTRY] = "USA"
 
@@ -206,7 +183,7 @@ if __name__ == "__main__":
     common_init.configure_logging()
     log = structlog.get_logger()
     transformer = CmdcTransformer.make_with_data_root(
-        DATA_ROOT, os.environ.get("CMDC_API_KEY", None)
+        DATA_ROOT, os.environ.get("CMDC_API_KEY", None), log,
     )
     write_df_as_csv(
         only_common_columns(transformer.transform(), log),
