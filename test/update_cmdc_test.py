@@ -4,7 +4,7 @@ from more_itertools import one
 from scripts.update_cmdc import CmdcTransformer, DATA_ROOT
 import requests_mock
 
-from scripts.update_helpers import UNEXPECTED_COLUMNS_MESSAGE
+from scripts.helpers import UNEXPECTED_COLUMNS_MESSAGE
 
 
 def test_update_cmdc():

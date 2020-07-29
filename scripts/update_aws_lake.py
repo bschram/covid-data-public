@@ -14,18 +14,17 @@ import pandas as pd
 import structlog
 from pydantic import BaseModel
 from structlog._config import BoundLoggerLazyProxy
-from structlog.threadlocal import tmp_bind
 
 from covidactnow.datapublic import common_init
-from covidactnow.datapublic.common_df import write_df_as_csv, sort_common_field_columns
+from covidactnow.datapublic.common_df import write_df_as_csv
 from covidactnow.datapublic.common_fields import (
     GetByValueMixin,
     CommonFields,
     COMMON_FIELDS_TIMESERIES_KEYS,
     COMMON_LEGACY_REGION_FIELDS,
+    FieldNameAndCommonField,
 )
-from scripts.update_helpers import FieldNameAndCommonField, load_county_fips_data
-from scripts.update_test_and_trace import load_census_state
+from scripts import helpers
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
@@ -173,13 +172,13 @@ class AwsDataLakeTransformer(BaseModel):
 
     @staticmethod
     def make_with_data_root(data_root: pathlib.Path) -> "AwsDataLakeTransformer":
-        county_geos = load_county_fips_data(data_root / "misc" / "fips_population.csv")
+        county_geos = helpers.load_county_fips_data(data_root / "misc" / "fips_population.csv")
         county_geos[Fields.GEO_VALUE] = pd.to_numeric(county_geos[CommonFields.FIPS])
         county_geos[Fields.GEO_TYPE] = "county"
         county_geos[CommonFields.AGGREGATE_LEVEL] = "county"
         county_geos[CommonFields.COUNTRY] = "USA"
 
-        state_geos = load_census_state(data_root / "misc" / "state.txt")
+        state_geos = helpers.load_census_state(data_root / "misc" / "state.txt")
         state_geos[Fields.GEO_VALUE] = state_geos[CommonFields.STATE].str.lower()
         state_geos[Fields.GEO_TYPE] = "state"
         state_geos[CommonFields.AGGREGATE_LEVEL] = "state"

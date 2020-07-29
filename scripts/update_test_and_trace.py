@@ -9,6 +9,8 @@ import re
 
 # Cam gave Tom this URL in a DM in https://testandtrace.slack.com/
 # The sheet name is "Data for CovidActNow"; I'm concerned that it isn't updated as part of their regular data push.
+from scripts import helpers
+
 SOURCE_URL = "https://docs.google.com/spreadsheets/d/11_o7IH6puGS7ftgq0m3-ATCvZylKepHV4hZX_axjBCg/export?format=csv"
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
@@ -17,15 +19,6 @@ STATE_NAME_REMAP = {
     "Virgin Islands": "U.S. Virgin Islands",
     "Northern Mariana": "Northern Mariana Islands",
 }
-
-
-def load_census_state(census_state_path: pathlib.Path) -> pd.DataFrame:
-    # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
-    state_df = pd.read_csv(census_state_path, delimiter="|", dtype={"STATE": str})
-    state_df.rename(
-        columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
-    )
-    return state_df
 
 
 class TestAndTraceSyncer(BaseModel):
@@ -47,7 +40,7 @@ class TestAndTraceSyncer(BaseModel):
         """Yield all rows in all the dated local CSV files that have a # of Contact Tracers."""
 
         # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
-        state_df = load_census_state(self.census_state_path)
+        state_df = helpers.load_census_state(self.census_state_path)
         state_df.set_index("state_name", inplace=True)
 
         for file_path in self.gsheets_copy_directory.iterdir():

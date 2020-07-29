@@ -12,9 +12,9 @@ from covidactnow.datapublic.common_fields import (
     CommonFields,
     GetByValueMixin,
     COMMON_FIELDS_TIMESERIES_KEYS,
+    FieldNameAndCommonField,
 )
-from scripts.update_helpers import FieldNameAndCommonField, rename_fields
-from scripts.update_test_and_trace import load_census_state
+from scripts import helpers
 from structlog._config import BoundLoggerLazyProxy
 
 
@@ -116,7 +116,7 @@ class CovidDataScraperTransformer(BaseModel):
         df_states[CommonFields.STATE] = (
             df_states[Fields.LOCATION_ID].str.slice(start=16, stop=18).str.upper()
         )
-        states_by_abbrev = load_census_state(self.census_state_path).set_index("state")
+        states_by_abbrev = helpers.load_census_state(self.census_state_path).set_index("state")
         df_states = df_states.merge(
             states_by_abbrev["fips"],
             how="left",
@@ -147,6 +147,7 @@ class CovidDataScraperTransformer(BaseModel):
             )
             df = df.loc[~duplicates_mask, :]
 
+        # Force conversion to numeric to fix `unsupported operand type(s) for -: 'str' and 'float'`.
         df[CommonFields.CASES] = pd.to_numeric(df[Fields.CASES])
         df[CommonFields.NEGATIVE_TESTS] = pd.to_numeric(df[Fields.TESTED]) - df[CommonFields.CASES]
 
@@ -158,7 +159,7 @@ class CovidDataScraperTransformer(BaseModel):
             CommonFields.NEGATIVE_TESTS,
         }
 
-        df = rename_fields(df, Fields, already_transformed_fields, self.log)
+        df = helpers.rename_fields(df, Fields, already_transformed_fields, self.log)
 
         df[CommonFields.COUNTRY] = "USA"
         return df

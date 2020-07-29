@@ -19,11 +19,11 @@ from covidactnow.datapublic.common_fields import (
     GetByValueMixin,
     CommonFields,
     COMMON_FIELDS_TIMESERIES_KEYS,
+    FieldNameAndCommonField,
 )
-from scripts.update_helpers import FieldNameAndCommonField, load_county_fips_data, rename_fields
+from scripts import helpers
 import cmdc
 
-from scripts.update_test_and_trace import load_census_state
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
@@ -97,7 +97,9 @@ class CmdcTransformer(BaseModel):
 
     @staticmethod
     def make_with_data_root(
-        data_root: pathlib.Path, cmdc_key: Optional[str], log,
+        data_root: pathlib.Path,
+        cmdc_key: Optional[str],
+        log: Union[structlog.BoundLoggerBase, BoundLoggerLazyProxy],
     ) -> "CmdcTransformer":
         return CmdcTransformer(
             cmdc_key=cmdc_key,
@@ -118,7 +120,7 @@ class CmdcTransformer(BaseModel):
         # Already transformed from Fields to CommonFields
         already_transformed_fields = {CommonFields.FIPS}
 
-        df = rename_fields(df, Fields, already_transformed_fields, self.log)
+        df = helpers.rename_fields(df, Fields, already_transformed_fields, self.log)
 
         df[CommonFields.COUNTRY] = "USA"
 
@@ -128,7 +130,9 @@ class CmdcTransformer(BaseModel):
         states = df.loc[state_mask, :]
         counties = df.loc[~state_mask, :]
 
-        fips_data = load_county_fips_data(self.county_fips_csv).set_index([CommonFields.FIPS])
+        fips_data = helpers.load_county_fips_data(self.county_fips_csv).set_index(
+            [CommonFields.FIPS]
+        )
         counties = counties.merge(
             fips_data[[CommonFields.STATE, CommonFields.COUNTY]],
             left_on=[CommonFields.FIPS],
@@ -145,7 +149,7 @@ class CmdcTransformer(BaseModel):
         counties = counties.loc[~no_match_counties_mask, :]
         counties[CommonFields.AGGREGATE_LEVEL] = "county"
 
-        state_df = load_census_state(self.census_state_path).set_index(CommonFields.FIPS)
+        state_df = helpers.load_census_state(self.census_state_path).set_index(CommonFields.FIPS)
         states = states.merge(
             state_df[[CommonFields.STATE]],
             left_on=[CommonFields.FIPS],

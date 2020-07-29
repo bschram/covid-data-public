@@ -10,7 +10,7 @@ from covidactnow.datapublic.common_test_helpers import to_dict
 from scripts import update_covid_data_scraper
 
 # turns all warnings into errors for this module
-from scripts.update_helpers import UNEXPECTED_COLUMNS_MESSAGE
+from scripts.helpers import UNEXPECTED_COLUMNS_MESSAGE
 
 pytestmark = pytest.mark.filterwarnings("error")
 

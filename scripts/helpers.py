@@ -8,15 +8,6 @@ from covidactnow.datapublic.common_fields import CommonFields
 UNEXPECTED_COLUMNS_MESSAGE = "DataFrame columns do not match expected fields"
 
 
-class FieldNameAndCommonField(str):
-    """Represents the original field/column name and CommonField it maps to or None if dropped."""
-
-    def __new__(cls, field_name: str, common_field: Optional[CommonFields]):
-        o = super().__new__(cls, field_name)
-        o.common_field = common_field
-        return o
-
-
 def load_county_fips_data(fips_csv: pathlib.Path) -> pd.DataFrame:
     df = pd.read_csv(fips_csv, dtype={"fips": str})
     df["fips"] = df.fips.str.zfill(5)
@@ -43,3 +34,12 @@ def rename_fields(df, fields, already_transformed_fields, log) -> pd.DataFrame:
     # Copy only columns in `rename.keys()` to a new DataFrame and rename.
     df = df.loc[:, list(rename.keys())].rename(columns=rename)
     return df
+
+
+def load_census_state(census_state_path: pathlib.Path) -> pd.DataFrame:
+    # By default pandas will parse the numeric values in the STATE column as ints but FIPS are two character codes.
+    state_df = pd.read_csv(census_state_path, delimiter="|", dtype={"STATE": str})
+    state_df.rename(
+        columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
+    )
+    return state_df
