@@ -2,7 +2,8 @@ name: Update source data
 
 on:
   schedule:
-    - cron: '0 0,11 45 * *'
+    # cron format: minute hour day-of-month month day-of-week
+    - cron: '45 0,11 * * *'
   # Hook to trigger a manual run.
   # See: https://goobar.io/2019/12/07/manually-trigger-a-github-actions-workflow/
   # A sample request looks like:
