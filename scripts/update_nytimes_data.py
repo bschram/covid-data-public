@@ -88,6 +88,11 @@ def remove_backfilled_cases(
             is_fips_data_after_date = is_on_or_after_date & (data[CommonFields.FIPS] == fips)
             data.loc[is_fips_data_after_date, CommonFields.CASES] -= int(count)
 
+        # Remove state counts also.
+        is_fips_data_after_date = is_on_or_after_date & (data[CommonFields.FIPS] == state_fips)
+        if is_fips_data_after_date.any():
+            data.loc[is_fips_data_after_date, CommonFields.CASES] -= cases
+
     return data
 
 
