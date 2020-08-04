@@ -16,6 +16,11 @@ on:
 #    branches:
 #    - <YOUR BRANCH HERE>
 
+env:
+  # Used by python code that reports errors to sentry.
+  SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+
+
 jobs:
   update-source-data:
     runs-on: ubuntu-latest
