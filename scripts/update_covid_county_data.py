@@ -1,20 +1,16 @@
+from typing import Union, MutableMapping, Optional
 import os
 import pathlib
 import sys
 from enum import Enum
-from typing import Union, MutableMapping, Optional
 import pandas as pd
 
 import structlog
-from pydantic import BaseModel
+import pydantic
 from structlog._config import BoundLoggerLazyProxy
 
 from covidactnow.datapublic import common_init
-from covidactnow.datapublic.common_df import (
-    write_df_as_csv,
-    sort_common_field_columns,
-    only_common_columns,
-)
+from covidactnow.datapublic import common_df
 from covidactnow.datapublic.common_fields import (
     GetByValueMixin,
     CommonFields,
@@ -22,14 +18,14 @@ from covidactnow.datapublic.common_fields import (
     FieldNameAndCommonField,
 )
 from scripts import helpers
-import cmdc
+import covidcountydata
 
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
 
-# Keep in sync with COMMON_FIELD_MAP in cmdc.py in the covid-data-model repo.
-# Fields commented out with tag 20200616 were not found in the data used by update_cmdc_test.py.
+# Keep in sync with COMMON_FIELD_MAP in covid_county_data.py in the covid-data-model repo.
+# Fields commented out with tag 20200616 were not found in the data used by update_covid_county_data_test.py.
 class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     LOCATION = "location", None  # Special transformation to FIPS
     DT = "dt", CommonFields.DATE
@@ -77,12 +73,12 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
     # )
 
 
-class CmdcTransformer(BaseModel):
+class CovidCountyDataTransformer(pydantic.BaseModel):
     """Get the newest data from Valorum / Covid Modeling Data Collaborative and return a DataFrame
     of timeseries."""
 
-    # API key, see https://github.com/valorumdata/cmdc.py#api-keys
-    cmdc_key: Optional[str]
+    # API key, see https://github.com/valorumdata/covid_county_data.py#api-keys
+    covid_county_data_key: Optional[str]
 
     # Path of a text file of state names, copied from census.gov
     census_state_path: pathlib.Path
@@ -98,23 +94,24 @@ class CmdcTransformer(BaseModel):
     @staticmethod
     def make_with_data_root(
         data_root: pathlib.Path,
-        cmdc_key: Optional[str],
+        covid_county_data_key: Optional[str],
         log: Union[structlog.BoundLoggerBase, BoundLoggerLazyProxy],
-    ) -> "CmdcTransformer":
-        return CmdcTransformer(
-            cmdc_key=cmdc_key,
+    ) -> "CovidCountyDataTransformer":
+        return CovidCountyDataTransformer(
+            covid_county_data_key=covid_county_data_key,
             census_state_path=data_root / "misc" / "state.txt",
             county_fips_csv=data_root / "misc" / "fips_population.csv",
             log=log,
         )
 
     def transform(self) -> pd.DataFrame:
-        cmdc_client = cmdc.Client(apikey=self.cmdc_key)
+        client = covidcountydata.Client(apikey=self.covid_county_data_key)
 
-        cmdc_client.covid_us()
-        df = cmdc_client.fetch()
+        client.covid_us()
+        df = client.fetch()
         # Transform FIPS from an int64 to a string of 2 or 5 chars. See
-        # https://github.com/valorumdata/cmdc.py/issues/3
+        # https://github.com/valorumdata/covid_county_data.py/issues/3
+        print(df[Fields.LOCATION])
         df[CommonFields.FIPS] = df[Fields.LOCATION].apply(lambda v: f"{v:0>{2 if v < 100 else 5}}")
 
         # Already transformed from Fields to CommonFields
@@ -161,7 +158,7 @@ class CmdcTransformer(BaseModel):
 
         df = pd.concat([states, counties])
 
-        df = sort_common_field_columns(df)
+        df = common_df.sort_common_field_columns(df)
 
         bad_rows = (
             df[CommonFields.FIPS].isnull()
@@ -186,11 +183,11 @@ class CmdcTransformer(BaseModel):
 if __name__ == "__main__":
     common_init.configure_logging()
     log = structlog.get_logger()
-    transformer = CmdcTransformer.make_with_data_root(
+    transformer = CovidCountyDataTransformer.make_with_data_root(
         DATA_ROOT, os.environ.get("CMDC_API_KEY", None), log,
     )
-    write_df_as_csv(
-        only_common_columns(transformer.transform(), log),
-        DATA_ROOT / "cases-cmdc" / "timeseries-common.csv",
+    common_df.write_csv(
+        common_df.only_common_columns(transformer.transform(), log),
+        DATA_ROOT / "cases-covid-county-data" / "timeseries-common.csv",
         log,
     )

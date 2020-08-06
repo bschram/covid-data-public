@@ -12,6 +12,6 @@ python scripts/update_texas_tsa_hospitalizations.py
 python scripts/update_texas_fips_hospitalizations.py
 python scripts/update_covid_data_scraper.py
 
-python scripts/update_cmdc.py
+python scripts/update_covid_county_data.py
 # AWS Lake seems to be hanging the build right now.
 # python scripts/update_aws_lake.py --replace-local-mirror --cleanup-local-mirror

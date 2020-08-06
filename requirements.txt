@@ -9,7 +9,7 @@ python-dateutil==2.8.1
 pydantic==1.4
 structlog==20.1.0
 structlog-sentry==1.2.2
-cmdc==0.1.1
+covidcountydata==0.4.0
 -e .
 s3fs==0.4.2
 boto3==1.13.26
