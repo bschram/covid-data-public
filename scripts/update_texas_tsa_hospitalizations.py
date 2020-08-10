@@ -42,6 +42,11 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
         data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2)
         index = [Fields.TSA_REGION_ID, Fields.TSA_AREA]
 
+        # Fixing erroneous data on 08/08/2020.  Values in columns matched, so arbitrarily keeping
+        # one column.
+        data = data.drop(["2020-08-08.y"], axis="columns")
+        data = data.rename({"2020-08-08.x": "2020-08-08"}, axis="columns")
+
         data = (
             data.set_index(index)
             .stack()
