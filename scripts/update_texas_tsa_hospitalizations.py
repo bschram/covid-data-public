@@ -1,6 +1,7 @@
 import enum
 import pathlib
 import pandas as pd
+import datetime
 import dateutil.parser
 import pydantic
 import structlog
@@ -42,10 +43,10 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
         data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2)
         index = [Fields.TSA_REGION_ID, Fields.TSA_AREA]
 
-        # Fixing erroneous data on 08/08/2020.  Values in columns matched, so arbitrarily keeping
-        # one column.
-        data = data.drop(["2020-08-08.y"], axis="columns")
-        data = data.rename({"2020-08-08.x": "2020-08-08"}, axis="columns")
+        # Fixing erroneous data on 08/08/2020.  The column is being interpreted as
+        # a datetime, so converting back to string to keep consistent with rest of columns.
+        matched_datetime = datetime.datetime.fromisoformat("2020-08-08 00:00:00")
+        data = data.rename({matched_datetime: "2020-08-08"}, axis="columns")
 
         data = (
             data.set_index(index)
