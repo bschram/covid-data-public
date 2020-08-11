@@ -32,24 +32,28 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
 
     NEGATIVE_TESTS_TOTAL = "negative_tests_total", CommonFields.NEGATIVE_TESTS
     POSITIVE_TESTS_TOTAL = "positive_tests_total", CommonFields.POSITIVE_TESTS
+    TESTS_TOTAL = "tests_total", CommonFields.TOTAL_TESTS
 
-    # Not found 20200616 ACTIVE_TOTAL = "active_total", None
+    ACTIVE_TOTAL = "active_total", None
     CASES_TOTAL = "cases_total", CommonFields.CASES
-    # Not found 20200616 CASES_CONFIRMED = "cases_confirmed", None
-    # Not found 20200616 RECOVERED_TOTAL = "recovered_total", CommonFields.RECOVERED
+    CASES_CONFIRMED = "cases_confirmed", None
+    CASES_SUSPECTED = "cases_suspected", None
+    RECOVERED_TOTAL = "recovered_total", CommonFields.RECOVERED
     DEATHS_TOTAL = "deaths_total", CommonFields.DEATHS
-    # Not found 20200616 DEATHS_CONFIRMED = "deaths_confirmed", None
-    # Not found 20200616 DEATHS_SUSPECTED = "deaths_suspected", None
+    DEATHS_CONFIRMED = "deaths_confirmed", None
+    DEATHS_SUSPECTED = "deaths_suspected", None
 
     HOSPITAL_BEDS_CAPACITY_COUNT = "hospital_beds_capacity_count", CommonFields.STAFFED_BEDS
     HOSPITAL_BEDS_IN_USE_COVID_CONFIRMED = "hospital_beds_in_use_covid_confirmed", None
-    # Not found 20200616 HOSPITAL_BEDS_IN_USE_COVID_NEW = "hospital_beds_in_use_covid_new", None
+    HOSPITAL_BEDS_IN_USE_COVID_NEW = "hospital_beds_in_use_covid_new", None
     HOSPITAL_BEDS_IN_USE_COVID_SUSPECTED = "hospital_beds_in_use_covid_suspected", None
     HOSPITAL_BEDS_IN_USE_ANY = "hospital_beds_in_use_any", CommonFields.HOSPITAL_BEDS_IN_USE_ANY
     HOSPITAL_BEDS_IN_USE_COVID_TOTAL = (
         "hospital_beds_in_use_covid_total",
         CommonFields.CURRENT_HOSPITALIZED,
     )
+    NUM_HOSPITALS_REPORTING = "num_hospitals_reporting", None
+    NUM_OF_HOSPITALS = "num_of_hospitals", None
 
     ICU_BEDS_CAPACITY_COUNT = "icu_beds_capacity_count", CommonFields.ICU_BEDS
     ICU_BEDS_IN_USE_COVID_CONFIRMED = "icu_beds_in_use_covid_confirmed", None
@@ -60,17 +64,14 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, Enum):
         CommonFields.CURRENT_ICU,
     )
 
-    # Not found 20200616 VENTILATORS_CAPACITY_COUNT = "ventilators_capacity_count", None
+    VENTILATORS_IN_USE_ANY = "ventilators_in_use_any", None
+    VENTILATORS_CAPACITY_COUNT = "ventilators_capacity_count", None
     VENTILATORS_IN_USE_COVID_TOTAL = (
         "ventilators_in_use_covid_total",
         CommonFields.CURRENT_VENTILATED,
     )
-    # Not found 20200616 VENTILATORS_IN_USE_COVID_CONFIRMED = "ventilators_in_use_covid_confirmed", None
-    # Not found 20200616 VENTILATORS_IN_USE_COVID_SUSPECTED = "ventilators_in_use_covid_suspected", None
-    # Not found 20200616 VENTILATORS_IN_USE_ANY = (
-    #    "ventilators_in_use_any",
-    #    None,
-    # )
+    VENTILATORS_IN_USE_COVID_CONFIRMED = "ventilators_in_use_covid_confirmed", None
+    VENTILATORS_IN_USE_COVID_SUSPECTED = "ventilators_in_use_covid_suspected", None
 
 
 class CovidCountyDataTransformer(pydantic.BaseModel):
@@ -111,7 +112,6 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
         df = client.fetch()
         # Transform FIPS from an int64 to a string of 2 or 5 chars. See
         # https://github.com/valorumdata/covid_county_data.py/issues/3
-        print(df[Fields.LOCATION])
         df[CommonFields.FIPS] = df[Fields.LOCATION].apply(lambda v: f"{v:0>{2 if v < 100 else 5}}")
 
         # Already transformed from Fields to CommonFields

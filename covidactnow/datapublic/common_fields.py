@@ -49,6 +49,7 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
 
     POSITIVE_TESTS = "positive_tests"
     NEGATIVE_TESTS = "negative_tests"
+    TOTAL_TESTS = "total_tests"
 
     # Current values
     CURRENT_ICU = "current_icu"

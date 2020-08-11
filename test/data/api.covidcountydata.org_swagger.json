@@ -6,33 +6,178 @@
     "text/csv"
   ], 
   "definitions": {
-    "covid": {
-      "description": "This table contains relevant information on COVID-19\n\nThis table only includes the most recent observation for each date, location, and variable. For a full history of all data we have collected see `covid_historical`\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
+    "covid_global": {
+      "description": "This table contains the complete Our World in Data's COVID-19 dataset. Please see the [original source](https://ourworldindata.org/coronavirus-data) for more information.\r\n\r\nAll of Our World in Data is completely open access and all work is licensed under the Creative Commons BY license. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.\r\n\r\nThis data has been collected, aggregated, and documented by Diana Beltekian, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Edouard Mathieu, Esteban Ortiz-Ospina, Hannah Ritchie, Max Roser.\r\n\r\nThe mission of _Our World in Data_ is to make data and research on the world\u2019s largest problems understandable and accessible. [Read more about our mission](https://ourworldindata.org/about).\r\n\r\nThe following documentation is taken from the Our World in Data [COVID-19 page](https://ourworldindata.org/coronavirus-data) and the corresponding [GitHub repository](https://github.com/owid/covid-19-data/tree/master/public/data):\r\n\r\nThe complete COVID-19 dataset is a collection of the COVID-19 data maintained by Our World in Data. It is updated daily and includes data on confirmed cases, deaths, and testing, as well as other variables of potential interest.\r\n\r\n- **Confirmed cases and deaths:** our data comes from the [European Centre for Disease Prevention and Control](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) (ECDC). We discuss how and when the ECDC collects and publishes this data [here](https://ourworldindata.org/coronavirus-source-data). The cases & deaths dataset is updated daily. *Note: the number of cases or deaths reported by any institution\u2014including the ECDC, the WHO, Johns Hopkins and others\u2014on a given day does not necessarily represent the actual number on that date. This is because of the long reporting chain that exists between a new case/death and its inclusion in statistics. This also means that negative values in cases and deaths can sometimes appear when a country sends a correction to the ECDC, because it had previously overestimated the number of cases/deaths.*\r\n- **Testing for COVID-19:** this data is collected by the _Our World in Data_ team from official reports; you can find further details in our post on COVID-19 testing, including our [checklist of questions to understand testing data](https://ourworldindata.org/coronavirus-testing#our-checklist-for-covid-19-testing-data), information on [geographical and temporal coverage](https://ourworldindata.org/coronavirus-testing#which-countries-do-we-have-testing-data-for), and [detailed country-by-country source information](https://ourworldindata.org/coronavirus-testing#our-checklist-for-covid-19-testing-data). The testing dataset is updated around twice a week.\r\n- **Other variables:** this data is collected from a variety of sources (United Nations, World Bank, Global Burden of Disease, Blavatnik School of Government, etc.). More information is available in [our codebook](https://github.com/owid/covid-19-data/tree/master/public/data/owid-covid-data-codebook.md).\r\n", 
       "properties": {
-        "dt": {
-          "description": "The date that corresponds to the observed variable\n\nNote:\nThis is a Primary Key.<pk/>", 
-          "format": "date", 
-          "type": "string"
+        "aged_65_older": {
+          "description": "hare of the population that is 65 years and older, most recent year available|World Bank \u2013 World Development Indicators, based on age/sex distributions of United Nations Population Division's World Population Prospects: 2017 Revision", 
+          "format": "real", 
+          "type": "number"
         }, 
-        "fips": {
-          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
-          "format": "integer", 
-          "type": "integer"
+        "aged_70_older": {
+          "description": "Share of the population that is 70 years and older in 2015|United Nations, Department of Economic and Social Affairs, Population Division (2017), World Population Prospects: The 2017 Revision", 
+          "format": "real", 
+          "type": "number"
         }, 
-        "value": {
-          "description": "The value of the variable", 
-          "format": "integer", 
-          "type": "integer"
-        }, 
-        "variable": {
-          "description": "One of the variables described in the table description", 
+        "continent": {
+          "description": "Continent of the geographical location|Our World in Data", 
           "format": "text", 
           "type": "string"
         }, 
-        "vintage": {
-          "description": "The date/time the data was collected and stored in our database. Only the most recent vintage is returned. See `covid_historical` for data with all", 
+        "cvd_death_rate": {
+          "description": "Death rate from cardiovascular disease in 2017|Global Burden of Disease Collaborative Network, Global Burden of Disease Study 2017 Results", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "diabetes_prevalence": {
+          "description": "Diabetes prevalence (% of population aged 20 to 79) in 2017|World Bank \u2013 World Development Indicators, sourced from International Diabetes Federation, Diabetes Atlas", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "dt": {
+          "description": "Date of observation|Our World in Data\n\nNote:\nThis is a Primary Key.<pk/>", 
           "format": "date", 
           "type": "string"
+        }, 
+        "extreme_poverty": {
+          "description": "Share of the population living in extreme poverty, most recent year available since 2010|World Bank \u2013 World Development Indicators, sourced from World Bank Development Research Group", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "female_smokers": {
+          "description": "Share of women who smoke, most recent year available|World Bank \u2013 World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "gdp_per_capita": {
+          "description": "Gross domestic product at purchasing power parity (constant 2011 international dollars), most recent year available|World Bank \u2013 World Development Indicators, source from World Bank, International Comparison Program database", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "handwashing_facilities": {
+          "description": "Share of the population with basic handwashing facilities on premises, most recent year available|United Nations Statistics Division", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "hospital_beds_per_thousand": {
+          "description": "Hospital beds per 1,000 people, most recent year available since 2010|OECD, Eurostat, World Bank, national government records and other sources", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "iso_code": {
+          "description": "ISO 3166-1 alpha-3 \u2013 three-letter country codes|International Organization for Standardization\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `owid_locations.iso_code`.<fk table='owid_locations' column='iso_code'/>", 
+          "format": "text", 
+          "type": "string"
+        }, 
+        "life_expectancy": {
+          "description": "Life expectancy at birth in 2019|James C. Riley, Clio Infra, United Nations Population Division", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "location": {
+          "description": "Geographical location|Our World in Data", 
+          "format": "text", 
+          "type": "string"
+        }, 
+        "male_smokers": {
+          "description": "Share of men who smoke, most recent year available|World Bank \u2013 World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "median_age": {
+          "description": "Median age of the population, UN projection for 2020|UN Population Division, World Population Prospects, 2017 Revision", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "new_cases": {
+          "description": "New confirmed cases of COVID-19|European Centre for Disease Prevention and Control", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "new_cases_per_million": {
+          "description": "New confirmed cases of COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "new_deaths": {
+          "description": "New deaths attributed to COVID-19|European Centre for Disease Prevention and Control", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "new_deaths_per_million": {
+          "description": "New deaths attributed to COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "new_tests": {
+          "description": "New tests for COVID-19|National government reports", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "new_tests_per_thousand": {
+          "description": "New tests for COVID-19 per 1,000 people|National government reports", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "new_tests_smoothed": {
+          "description": "ew tests for COVID-19 (7-day smoothed). For countries that do not report testing data on a daily basis, we assume that testing changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window|National government reports", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "new_tests_smoothed_per_thousand": {
+          "description": "New tests for COVID-19 (7-day smoothed) per 1,000 people|National government reports", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "population": {
+          "description": "Population in 2020|United Nations, Department of Economic and Social Affairs, Population Division, World Population Prospects: The 2019 Revision", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "population_density": {
+          "description": "Number of people divided by land area, measured in square kilometers, most recent year available|World Bank \u2013 World Development Indicators, sourced from Food and Agriculture Organization and World Bank estimates", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "stringency_index": {
+          "description": "Government Response Stringency Index: composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)|Oxford COVID-19 Government Response Tracker, Blavatnik School of Government", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "tests_units": {
+          "description": "Units used by the location to report its testing data|National government reports", 
+          "format": "text", 
+          "type": "string"
+        }, 
+        "total_cases": {
+          "description": "Total confirmed cases of COVID-19|European Centre for Disease Prevention and Control", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "total_cases_per_million": {
+          "description": "Total confirmed cases of COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "total_deaths": {
+          "description": "Total deaths attributed to COVID-19|European Centre for Disease Prevention and Control", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "total_deaths_per_million": {
+          "description": "Total deaths attributed to COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+          "format": "real", 
+          "type": "number"
+        }, 
+        "total_tests": {
+          "description": "Total tests for COVID-19|National government reports", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "total_tests_per_thousand": {
+          "description": "Total tests for COVID-19 per 1,000 people|National government reports", 
+          "format": "real", 
+          "type": "number"
         }
       }, 
       "type": "object"
@@ -46,7 +191,7 @@
           "type": "string"
         }, 
         "fips": {
-          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -76,7 +221,7 @@
           "type": "string"
         }, 
         "location": {
-          "description": "Note:\nThis is a Primary Key.<pk/>", 
+          "description": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -91,11 +236,37 @@
       }, 
       "type": "object"
     }, 
+    "covidtrackingproject": {
+      "description": "This table contains the data from the COVID Tracking Project COVID data\n\nThis table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the CTP data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe COVID Tracking Project collects data on the number of cases, test results, and hospitaliztions at the state level. As always, if you intend to use this data, we recommend that you read the corresponding documentation on their [data page](https://covidtracking.com/data) as it provides insights into how data collection changed at various points in time and highlights other data caveats.\n\nThe data can also be found at on the [COVID Tracking Project page](https://covidtracking.com/data).\n\nThe COVID Tracking Project data is released under the following license:\n\nYou are welcome to copy, distribute, and develop data and website content from The COVID Tracking Project at The Atlantic for all healthcare, medical, journalistic and non-commercial uses, including any personal, editorial, academic, or research purposes.\n\nThe COVID Tracking Project at The Atlantic data and website content is published under a Creative Commons CC BY-NC-4.0 license, which requires users to attribute the source and license type (CC BY-NC-4.0) when sharing our data or website content. The COVID Tracking Project at The Atlantic also grants permission for any derivative use of this data and website content that supports healthcare or medical research (including institutional use by public health and for-profit organizations), or journalistic usage (by nonprofit or for-profit organizations). All other commercial uses are not permitted under the Creative Commons license, and will require permission from The COVID Tracking Project at The Atlantic.\n", 
+      "properties": {
+        "dt": {
+          "description": "The date of the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "fips": {
+          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "The value of the observation", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "variable": {
+          "description": "Denotes whether observation is total cases or total deaths", 
+          "format": "text", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
     "demographics": {
       "description": "This table contains information on the demographics of a particular geography\n\nFor the United States, this data comes from the American Community Survey that is administered by the US Census. Currently, the following variables are collected in the database\n\n* Total population\n* Median age\n* Fraction of the population over 65\n* Fraction of the population who identify as various races or as Hispanic/Latino\n* Fraction of the population with various degrees of education\n* Fraction of the population that commutes in various ways\n* Mean travel time to work (minutes)\n* Median household income\n* Mean household income\n* Fraction of the (civilian) population with/without health insurance\n* Fraction of families who had an income less than poverty level in the last year\n\nPlease note that we are willing (and easily able!) to add other years or variables if there is interest --- The variables that we do include are because people have asked about them.\n\nSource(s):\n\nUS Census American Community Survey (https://www.census.gov/programs-surveys/acs)\n", 
       "properties": {
         "location": {
-          "description": "This value is a numerical representation of a geography. For the United States, this number is the FIPS code. See our documentation page for more information.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "This value is a numerical representation of a geography. For the United States, this number is the FIPS code. See our documentation page for more information.\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "bigint", 
           "type": "integer"
         }, 
@@ -116,7 +287,7 @@
       "description": "This table contains information on economic characteristics of different geographic areas.\n\nThese variables are not typically collected at a sufficiently high frequency to use them as time-series data but rather we use\nthem to characterize the economic features of different locations. For example, while unemployment claims is observed on a\nweekly basis, data on the industry make-up of a geographic region is only available at a yearly frequency.\n\nThe variables currently included here are:\n\n* Industry specific GDP at the county/state level\n\nThese variables are collected from a variety of sources.\n\nSource(s):\n\n* Bureau of Economic Analysis\n", 
       "properties": {
         "location": {
-          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -158,29 +329,6 @@
       }, 
       "type": "object"
     }, 
-    "jhu_covid": {
-      "properties": {
-        "dt": {
-          "description": "Note:\nThis is a Primary Key.<pk/>", 
-          "format": "date", 
-          "type": "string"
-        }, 
-        "fips": {
-          "description": "Note:\nThis is a Primary Key.<pk/>", 
-          "format": "integer", 
-          "type": "integer"
-        }, 
-        "value": {
-          "format": "integer", 
-          "type": "integer"
-        }, 
-        "variable": {
-          "format": "text", 
-          "type": "string"
-        }
-      }, 
-      "type": "object"
-    }, 
     "mobility_devices": {
       "description": "The DEX, or device exposure index, is an index that measures how much movement there is within a particular geography (state or county). This data is currently only available for the US.\n\nThe DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
       "properties": {
@@ -190,7 +338,7 @@
           "type": "string"
         }, 
         "location": {
-          "description": "The fips code.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code.\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -216,12 +364,12 @@
           "type": "string"
         }, 
         "fips_prev": {
-          "description": "The state (county) for which a device was found in the previous 14 days.\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The state (county) for which a device was found in the previous 14 days.\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
         "fips_today": {
-          "description": "The state (county) for which a device was found on the given date\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The state (county) for which a device was found on the given date\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -229,6 +377,32 @@
           "description": "The LEX number", 
           "format": "numeric", 
           "type": "number"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "npi_us": {
+      "description": "This table contains information on the nonpharmaceutical interventions (NPIs) that were taken in the United States in response to COVID\n\nThe data begins on March 1, 2020 and covers approximately 650 different US geographies (states and counties). There are 10 different NPIs covered in this dataset which include:\n\n* closing_of_public_venues: Public venues closed. A government order closing gathering venues for in-person service, such as restaurants, bars, and theaters.\n* lockdown: Lock down\n* non-essential_services_closure: Non-essential services closure\n* religious_gatherings_banned: Cancelling of religious gatherings, either explicitly or implicitly by applying gathering size/shelter-in-place limitations to religious gatherings as well\n* shelter_in_place: An order indicating that people should shelter in their homes except for essential reasons\n* social_distancing: Social distancing mandate of at least 6 ft between people\n* gathering_size_10_0: Gatherings are limited to between 0 and 10 people\n* gathering_size_25_11: Gatherings are limited to between 11 and 25 people\n* gathering_size_100_26: Gatherings are limited to between 26 and 100 people\n* gathering_size_500_101: Gatherings are limited to between 101 and 500 people\n\nThe original data was collected by Keystone Strategy and is distributed under the Creative Commons Attribution 4.0 International Public License.\n\nKeystone Strategy COVID page: https://www.keystonestrategy.com/coronavirus-covid19-intervention-dataset-model/\nSource: https://github.com/Keystone-Strategy/covid19-intervention-data\n", 
+      "properties": {
+        "dt": {
+          "description": "The date at which the intervention is evaluated\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "format": "date", 
+          "type": "string"
+        }, 
+        "location": {
+          "description": "The FIPS code for the geography\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
+          "format": "integer", 
+          "type": "integer"
+        }, 
+        "value": {
+          "description": "Whether the intervention from `variable` was active in geography `location` on date `dt`", 
+          "format": "boolean", 
+          "type": "boolean"
+        }, 
+        "variable": {
+          "description": "The NPI being considered", 
+          "format": "text", 
+          "type": "string"
         }
       }, 
       "type": "object"
@@ -242,7 +416,7 @@
           "type": "string"
         }, 
         "fips": {
-          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -284,8 +458,7 @@
         }, 
         "name": {
           "description": "The county name", 
-          "format": "character varying", 
-          "maxLength": 30, 
+          "format": "text", 
           "type": "string"
         }
       }, 
@@ -316,8 +489,7 @@
         }, 
         "name": {
           "description": "The state name", 
-          "format": "character varying", 
-          "maxLength": 30, 
+          "format": "text", 
           "type": "string"
         }
       }, 
@@ -332,7 +504,7 @@
           "type": "string"
         }, 
         "fips": {
-          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>", 
+          "description": "The fips code corresponding to the observation\n\nNote:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `us_fips.fips`.<fk table='us_fips' column='fips'/>", 
           "format": "integer", 
           "type": "integer"
         }, 
@@ -354,20 +526,20 @@
     "description": "PostgREST Documentation", 
     "url": "https://postgrest.org/en/v7.0/api.html"
   }, 
-  "host": "api.covid.valorum.ai", 
+  "host": "api.covidcountydata.org", 
   "info": {
-    "description": "\nThis page provides documentation for the data available in the COVID Modeling Data Collaborative's database. It contains:\n\n1. A description of the different datasets, the variables in those datasets, and from where the datasets were sourced\n2. An interactive description of the API which describes the fields and allows you to submit sample requests\n\nIt is useful to note that the data is mostly stored in _long form_ rather than\n_wide form_. In long form each data observation, or value, is associated with\nits unique identifiers. For example, in many of our datasets the identifiers\nare `dt` (date of the observation), `fips` (geography of the observation), and\n`variable` (name of the variable being observed), and the value of the\nobservation is stored in `value`. This can be seen in the \n[table in the example subsection](##Examples).\n\n## Query Parameters\n\n\nThere are a two types of parameters that can be included in the queries:\n\n* _Data parameters_: Data parameters are used to select subsets of the data by performing some type of comparison between the parameter argument and the data.\n* _Keyword parameters_: Keyword parameters interact with how the data is returned. For example, `select` can modify which columns are returned, `order` changes how the data is ordered when it is returned, and `limit` changes the number of observations returned.\n\nBelow we will provide some examples for how to use the different types of parameters.\n\nOur API is build using [PostgREST](http://postgrest.org/en/v7.0.0/). For more information on the different features of our API, please see their [documentation](http://postgrest.org/en/v7.0.0/api.html).\n\n## Examples\n\nWe will do some examples using the example table below:\n\n| dt         | fips | variable             | value  |\n| ---------- | ---- | -------------------- | ------ |\n| 2020-06-01 | 6    | deaths_total         | 4251   |\n| 2020-06-01 | 12   | deaths_total         | 2543   |\n| 2020-06-01 | 48   | deaths_total         | 1678   |\n| 2020-06-02 | 6    | deaths_total         | 4286   |\n| 2020-06-02 | 12   | deaths_total         | 2613   |\n| 2020-06-02 | 48   | deaths_total         | 1698   |\n| 2020-06-01 | 6    | positive_tests_total | 113006 |\n| 2020-06-01 | 12   | positive_tests_total | 56830  |\n| 2020-06-01 | 48   | positive_tests_total | 64880  |\n| 2020-06-02 | 6    | positive_tests_total | 115310 |\n| 2020-06-02 | 12   | positive_tests_total | 57447  |\n| 2020-06-02 | 48   | positive_tests_total | 66568  |\n\n\n### Only data from CA\n\nIn order to select data from only California (fips code 06) we would use the parameter\n\n* `fips=eq.06`\n\n\n### Only observations with more than 100,000 tests\n\nIn order to only select observations with more than 100,000 tests, we would want to use the following parameters\n\n* `variable=eq.positive_tests_total`\n* `value=gt.100000`\n\n\n### Only observations after June 1, 2020\n\nIn order to only select the data from after June 1, 2020, we would use the following parameter\n\n* `dt=gt.\"2020-06-01\"`\n\n\n### Select total deaths for Texas ordered by date\n\nIn order to select only the total deaths variable for Texas and have the results be ordered by date, we would use the following parameters\n\n* `fips=eq.48`\n* `variable=eq.positive_tests_total`\n* `order=dt`\n\n\n## Software\n\nWe use the following open source technologies for this API.\n\n* The data is hosted in a [PostgreSQL database](https://www.postgresql.org/)\n* The API is built using [PostgREST](http://postgrest.org/en/v7.0.0/)\n* The documentation is generated using [RapiDoc](https://mrin9.github.io/RapiDoc/).\n\nWe are grateful to all of these projects for simplifying the task of building, deploying, and documenting our API. We are also grateful to Google Cloud for helping us host and distribute our data.\n", 
-    "title": "COVID Modeling Data Collaborative API", 
-    "version": "1.0"
+    "description": "\n# Rest API\n\nThe REST API does not require any software to be installed on your computer, it allows you to\ninteract with our data through standard web protocols.\n\nOur API is build using [PostgREST](http://postgrest.org/en/v7.0.0/). For more information on the\ndifferent features of this API, please see their [documentation](http://postgrest.org/en/v7.0.0/api.html).\n\n## API Key\n\nOur data is free and open for anyone to use (and always will be). Our team agreed that this was central to our mission when we agreed to begin this project. However, we do find it useful to have information about our users and to see how they use the data for two reasons:\n\n1. It helps us focus and improve the datasets that are seeing the most use.\n2. The number of users, as measured by active API keys, is one metric that we use to show that the\nproject is useful when we are discussing additional grant funding.\n\nWe are grateful to everyone who is willing to register for and use their API key when interacting\nwith our data.\n\nTo register for an API key, see the registration form [on our home page](https://covidcountydata.org#register).\n\nAfter obtaining an API key, please attach it as either the `apikey` header or query parameter in future requests\n\nFor example, if my API key were `abc123` and I was getting data from `https://api.covidcountydata.org/covid_us?location=eq.6`, I\nwould adjust the url to be `https://api.covidcountydata.org/covid_us?location=eq.6&apikey=abc123`\n\n\n## Request structure\n\nIn order to be able to request data, you will need to know which endpoint the data comes from and,\noptionally, which filters you would like to apply to the data before it's delivered:\n\n\n**API Endpoints**\n\nThe data in our database is broken into tables of related information with a separate endpoint for\neach table. For example, all of the U.S. COVID-19 related data is stored in the `covid_us` table\nand it has a corresponding endpoint of `https://api.covidcountydata.org/covid_us`. For a complete\nlist of the available endpoints, see the interactive playground near the bottom of the page.\n\n\n**Filters**\n\nThere are a two types of parameters that can be included as filters:\n\n* _Data parameters_: Data parameters are used to select subsets of the data by performing some\n  type of comparison between the parameter argument and the data.\n* _Keyword parameters_: Keyword parameters interact with how the data is returned. For example,\n  `select` can modify which columns are returned, `order` changes how the data is ordered when it\n  is returned, and `limit` changes the number of observations returned.\n\nThe data parameters that you are able to apply will depend on what columns are available in a\nparticular dataset. Many of the tables will have the columns `dt` (date of the obervation),\n`location` (a geographical identifier, for the U.S. this is often the fips code), `variable` (name\nof the variable being observed), and `value` (the value of the variable in that location at that\ntime).\n\nFor example, if you wanted to request 5 observations of the `tests_total` variable from after\nAugust 1, 2020 then you would use the following query:\n\n`https://api.covidcountydata.org/covid_us?dt=gt.2020-08-01&variable=eq.tests_total&limit=5`\n\nOf course, rather than input this address into your browser, you could query the API for this\ninformation using a more generic tool such as `curl` or `javascript`.\n\nWe make two additional observations:\n\n1. Rather than use `>`, `<`, `=`, etc..., the REST API expects you to use `gt.`, `lt.`, `eq.`,\n   etc... For a complete list of comparisons, see [PostgREST documentation](http://postgrest.org/en/v7.0.0/api.html#operators)\n2. Much of the data is stored in _long form_ rather than _wide form_. In long form each data\n  observation, or value, is associated with its unique identifiers. For example, in many of our\n  datasets the identifiers are `dt`, `location`, and `variable`, and the value of the observation\n  is stored in `value`. This can be seen in the example section below.\n\n\n### Examples\n\nWe will do some examples to illustrate these points using the example table below. We will demonstrate\nthe example api requests using the `covid_us` endpoint (at https://api.covidcountydata.org/covid_us),\nbut the same concepts apply to all endpoints. Note that we will add `limit=20` to most of the requests\nbelow to prevent unnecessary data transfer, but removing this query parameter will allow you to fetch the\nwhole dataset. Finally, note also that we'll use the same `apikey=abc123` argument as shown in the\nexample above, but the `abc123` should be replaced by your API key.\n\nBelow is an example table showing the structure of the data returned by the `covid_us` endpoint:\n\n\n| dt         | fips | variable             | value  |\n| ---------- | ---- | -------------------- | ------ |\n| 2020-06-01 | 6    | deaths_total         | 4251   |\n| 2020-06-01 | 12   | deaths_total         | 2543   |\n| 2020-06-01 | 48   | deaths_total         | 1678   |\n| 2020-06-02 | 6    | deaths_total         | 4286   |\n| 2020-06-02 | 12   | deaths_total         | 2613   |\n| 2020-06-02 | 48   | deaths_total         | 1698   |\n| 2020-06-01 | 6    | positive_tests_total | 113006 |\n| 2020-06-01 | 12   | positive_tests_total | 56830  |\n| 2020-06-01 | 48   | positive_tests_total | 64880  |\n| 2020-06-02 | 6    | positive_tests_total | 115310 |\n| 2020-06-02 | 12   | positive_tests_total | 57447  |\n| 2020-06-02 | 48   | positive_tests_total | 66568  |\n\n\n### Only data from CA\n\nIn order to select data from only California (fips code 06) we filter the parameter `location` to\nonly be 6\n\n`https://api.covidcountydata.org/covid_us?location=eq.06&limit=20&apikey=abc123`\n\n\n### Only observations with more than 100,000 tests\n\nIn order to only select observations with more than 100,000 tests, we would want to use the following parameters\n\n`https://api.covidcountydata.org/covid_us?variable=eq.positive_tests_total&value=gt.100000&limit=20&apikey=abc123`\n\n\n### Only observations after June 1, 2020\n\nIn order to only select the data from after June 1, 2020, we would use the following parameter\n\n`https://api.covidcountydata.org/covid_us?dt=gt.2020-06-01&limit=20&apikey=abc123`\n\n\n### Select total deaths for Texas ordered by date\n\nIn order to select only the total deaths variable for Texas and have the results be ordered by date, we would use the following parameters\n\n`https://api.covidcountydata.org/covid_us?location=eq.48&variable=eq.positive_tests_total&order=dt&limit=20&apikey=abc123`\n\n\n## Software\n\nWe use the following open source technologies to build this API.\n\n* The data is hosted in a [PostgreSQL database](https://www.postgresql.org/)\n* The API is built using [PostgREST](http://postgrest.org/en/v7.0.0/)\n* The documentation is generated using [RapiDoc](https://mrin9.github.io/RapiDoc/).\n\nWe are grateful to all of these projects for simplifying the task of building, deploying, and\ndocumenting our API. We are also grateful to Google Cloud for helping us host and distribute our\ndata.\n\n\n## API Endpoints\n\n", 
+    "title": "", 
+    "version": ""
   }, 
   "parameters": {
-    "body.covid": {
-      "description": "covid", 
+    "body.covid_global": {
+      "description": "covid_global", 
       "in": "body", 
-      "name": "covid", 
+      "name": "covid_global", 
       "required": false, 
       "schema": {
-        "$ref": "#/definitions/covid"
+        "$ref": "#/definitions/covid_global"
       }
     }, 
     "body.covid_historical": {
@@ -386,6 +558,15 @@
       "required": false, 
       "schema": {
         "$ref": "#/definitions/covid_us"
+      }
+    }, 
+    "body.covidtrackingproject": {
+      "description": "covidtrackingproject", 
+      "in": "body", 
+      "name": "covidtrackingproject", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/covidtrackingproject"
       }
     }, 
     "body.demographics": {
@@ -415,15 +596,6 @@
         "$ref": "#/definitions/economics"
       }
     }, 
-    "body.jhu_covid": {
-      "description": "jhu_covid", 
-      "in": "body", 
-      "name": "jhu_covid", 
-      "required": false, 
-      "schema": {
-        "$ref": "#/definitions/jhu_covid"
-      }
-    }, 
     "body.mobility_devices": {
       "description": "mobility_devices", 
       "in": "body", 
@@ -440,6 +612,15 @@
       "required": false, 
       "schema": {
         "$ref": "#/definitions/mobility_locations"
+      }
+    }, 
+    "body.npi_us": {
+      "description": "npi_us", 
+      "in": "body", 
+      "name": "npi_us", 
+      "required": false, 
+      "schema": {
+        "$ref": "#/definitions/npi_us"
       }
     }, 
     "body.nytimes_covid": {
@@ -553,43 +734,275 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.covid.dt": {
-      "description": "The date that corresponds to the observed variable", 
+    "rowFilter.covid_global.aged_65_older": {
+      "description": "hare of the population that is 65 years and older, most recent year available|World Bank \u2013 World Development Indicators, based on age/sex distributions of United Nations Population Division's World Population Prospects: 2017 Revision", 
+      "format": "real", 
+      "in": "query", 
+      "name": "aged_65_older", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.aged_70_older": {
+      "description": "Share of the population that is 70 years and older in 2015|United Nations, Department of Economic and Social Affairs, Population Division (2017), World Population Prospects: The 2017 Revision", 
+      "format": "real", 
+      "in": "query", 
+      "name": "aged_70_older", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.continent": {
+      "description": "Continent of the geographical location|Our World in Data", 
+      "format": "text", 
+      "in": "query", 
+      "name": "continent", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.cvd_death_rate": {
+      "description": "Death rate from cardiovascular disease in 2017|Global Burden of Disease Collaborative Network, Global Burden of Disease Study 2017 Results", 
+      "format": "real", 
+      "in": "query", 
+      "name": "cvd_death_rate", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.diabetes_prevalence": {
+      "description": "Diabetes prevalence (% of population aged 20 to 79) in 2017|World Bank \u2013 World Development Indicators, sourced from International Diabetes Federation, Diabetes Atlas", 
+      "format": "real", 
+      "in": "query", 
+      "name": "diabetes_prevalence", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.dt": {
+      "description": "Date of observation|Our World in Data", 
       "format": "date", 
       "in": "query", 
       "name": "dt", 
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.covid.fips": {
-      "description": "The fips code", 
-      "format": "integer", 
+    "rowFilter.covid_global.extreme_poverty": {
+      "description": "Share of the population living in extreme poverty, most recent year available since 2010|World Bank \u2013 World Development Indicators, sourced from World Bank Development Research Group", 
+      "format": "real", 
       "in": "query", 
-      "name": "fips", 
+      "name": "extreme_poverty", 
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.covid.value": {
-      "description": "The value of the variable", 
-      "format": "integer", 
+    "rowFilter.covid_global.female_smokers": {
+      "description": "Share of women who smoke, most recent year available|World Bank \u2013 World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository", 
+      "format": "real", 
       "in": "query", 
-      "name": "value", 
+      "name": "female_smokers", 
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.covid.variable": {
-      "description": "One of the variables described in the table description", 
+    "rowFilter.covid_global.gdp_per_capita": {
+      "description": "Gross domestic product at purchasing power parity (constant 2011 international dollars), most recent year available|World Bank \u2013 World Development Indicators, source from World Bank, International Comparison Program database", 
+      "format": "real", 
+      "in": "query", 
+      "name": "gdp_per_capita", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.handwashing_facilities": {
+      "description": "Share of the population with basic handwashing facilities on premises, most recent year available|United Nations Statistics Division", 
+      "format": "real", 
+      "in": "query", 
+      "name": "handwashing_facilities", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.hospital_beds_per_thousand": {
+      "description": "Hospital beds per 1,000 people, most recent year available since 2010|OECD, Eurostat, World Bank, national government records and other sources", 
+      "format": "real", 
+      "in": "query", 
+      "name": "hospital_beds_per_thousand", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.iso_code": {
+      "description": "ISO 3166-1 alpha-3 \u2013 three-letter country codes|International Organization for Standardization", 
       "format": "text", 
       "in": "query", 
-      "name": "variable", 
+      "name": "iso_code", 
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.covid.vintage": {
-      "description": "The date/time the data was collected and stored in our database. Only the most recent vintage is returned. See `covid_historical` for data with all", 
-      "format": "date", 
+    "rowFilter.covid_global.life_expectancy": {
+      "description": "Life expectancy at birth in 2019|James C. Riley, Clio Infra, United Nations Population Division", 
+      "format": "real", 
       "in": "query", 
-      "name": "vintage", 
+      "name": "life_expectancy", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.location": {
+      "description": "Geographical location|Our World in Data", 
+      "format": "text", 
+      "in": "query", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.male_smokers": {
+      "description": "Share of men who smoke, most recent year available|World Bank \u2013 World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository", 
+      "format": "real", 
+      "in": "query", 
+      "name": "male_smokers", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.median_age": {
+      "description": "Median age of the population, UN projection for 2020|UN Population Division, World Population Prospects, 2017 Revision", 
+      "format": "real", 
+      "in": "query", 
+      "name": "median_age", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_cases": {
+      "description": "New confirmed cases of COVID-19|European Centre for Disease Prevention and Control", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "new_cases", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_cases_per_million": {
+      "description": "New confirmed cases of COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+      "format": "real", 
+      "in": "query", 
+      "name": "new_cases_per_million", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_deaths": {
+      "description": "New deaths attributed to COVID-19|European Centre for Disease Prevention and Control", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "new_deaths", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_deaths_per_million": {
+      "description": "New deaths attributed to COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+      "format": "real", 
+      "in": "query", 
+      "name": "new_deaths_per_million", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_tests": {
+      "description": "New tests for COVID-19|National government reports", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "new_tests", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_tests_per_thousand": {
+      "description": "New tests for COVID-19 per 1,000 people|National government reports", 
+      "format": "real", 
+      "in": "query", 
+      "name": "new_tests_per_thousand", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_tests_smoothed": {
+      "description": "ew tests for COVID-19 (7-day smoothed). For countries that do not report testing data on a daily basis, we assume that testing changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window|National government reports", 
+      "format": "real", 
+      "in": "query", 
+      "name": "new_tests_smoothed", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.new_tests_smoothed_per_thousand": {
+      "description": "New tests for COVID-19 (7-day smoothed) per 1,000 people|National government reports", 
+      "format": "real", 
+      "in": "query", 
+      "name": "new_tests_smoothed_per_thousand", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.population": {
+      "description": "Population in 2020|United Nations, Department of Economic and Social Affairs, Population Division, World Population Prospects: The 2019 Revision", 
+      "format": "real", 
+      "in": "query", 
+      "name": "population", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.population_density": {
+      "description": "Number of people divided by land area, measured in square kilometers, most recent year available|World Bank \u2013 World Development Indicators, sourced from Food and Agriculture Organization and World Bank estimates", 
+      "format": "real", 
+      "in": "query", 
+      "name": "population_density", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.stringency_index": {
+      "description": "Government Response Stringency Index: composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)|Oxford COVID-19 Government Response Tracker, Blavatnik School of Government", 
+      "format": "real", 
+      "in": "query", 
+      "name": "stringency_index", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.tests_units": {
+      "description": "Units used by the location to report its testing data|National government reports", 
+      "format": "text", 
+      "in": "query", 
+      "name": "tests_units", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_cases": {
+      "description": "Total confirmed cases of COVID-19|European Centre for Disease Prevention and Control", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "total_cases", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_cases_per_million": {
+      "description": "Total confirmed cases of COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+      "format": "real", 
+      "in": "query", 
+      "name": "total_cases_per_million", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_deaths": {
+      "description": "Total deaths attributed to COVID-19|European Centre for Disease Prevention and Control", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "total_deaths", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_deaths_per_million": {
+      "description": "Total deaths attributed to COVID-19 per 1,000,000 people|European Centre for Disease Prevention and Control", 
+      "format": "real", 
+      "in": "query", 
+      "name": "total_deaths_per_million", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_tests": {
+      "description": "Total tests for COVID-19|National government reports", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "total_tests", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covid_global.total_tests_per_thousand": {
+      "description": "Total tests for COVID-19 per 1,000 people|National government reports", 
+      "format": "real", 
+      "in": "query", 
+      "name": "total_tests_per_thousand", 
       "required": false, 
       "type": "string"
     }, 
@@ -655,6 +1068,38 @@
       "type": "string"
     }, 
     "rowFilter.covid_us.variable": {
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covidtrackingproject.dt": {
+      "description": "The date of the observation", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covidtrackingproject.fips": {
+      "description": "The fips code corresponding to the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "fips", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covidtrackingproject.value": {
+      "description": "The value of the observation", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.covidtrackingproject.variable": {
+      "description": "Denotes whether observation is total cases or total deaths", 
       "format": "text", 
       "in": "query", 
       "name": "variable", 
@@ -740,34 +1185,6 @@
       "required": false, 
       "type": "string"
     }, 
-    "rowFilter.jhu_covid.dt": {
-      "format": "date", 
-      "in": "query", 
-      "name": "dt", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.jhu_covid.fips": {
-      "format": "integer", 
-      "in": "query", 
-      "name": "fips", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.jhu_covid.value": {
-      "format": "integer", 
-      "in": "query", 
-      "name": "value", 
-      "required": false, 
-      "type": "string"
-    }, 
-    "rowFilter.jhu_covid.variable": {
-      "format": "text", 
-      "in": "query", 
-      "name": "variable", 
-      "required": false, 
-      "type": "string"
-    }, 
     "rowFilter.mobility_devices.dt": {
       "description": "The date.", 
       "format": "date", 
@@ -829,6 +1246,38 @@
       "format": "numeric", 
       "in": "query", 
       "name": "lex", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.npi_us.dt": {
+      "description": "The date at which the intervention is evaluated", 
+      "format": "date", 
+      "in": "query", 
+      "name": "dt", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.npi_us.location": {
+      "description": "The FIPS code for the geography", 
+      "format": "integer", 
+      "in": "query", 
+      "name": "location", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.npi_us.value": {
+      "description": "Whether the intervention from `variable` was active in geography `location` on date `dt`", 
+      "format": "boolean", 
+      "in": "query", 
+      "name": "value", 
+      "required": false, 
+      "type": "string"
+    }, 
+    "rowFilter.npi_us.variable": {
+      "description": "The NPI being considered", 
+      "format": "text", 
+      "in": "query", 
+      "name": "variable", 
       "required": false, 
       "type": "string"
     }, 
@@ -898,7 +1347,7 @@
     }, 
     "rowFilter.us_counties.name": {
       "description": "The county name", 
-      "format": "character varying", 
+      "format": "text", 
       "in": "query", 
       "name": "name", 
       "required": false, 
@@ -938,7 +1387,7 @@
     }, 
     "rowFilter.us_states.name": {
       "description": "The state name", 
-      "format": "character varying", 
+      "format": "text", 
       "in": "query", 
       "name": "name", 
       "required": false, 
@@ -985,25 +1434,112 @@
     }
   }, 
   "paths": {
-    "/covid": {
+    "/covid_global": {
       "get": {
-        "description": "This table only includes the most recent observation for each date, location, and variable. For a full history of all data we have collected see `covid_historical`\n\nCurrently, the following variables are collected in the database\n\n* `cases_suspected`: Total number of suspected cases\n* `cases_confirmed`: Total number of confirmed cases\n* `cases_total`: The number of suspected or confirmed cases\n* `deaths_suspected`: The number of deaths that are suspected to have been caused by COVID-19\n* `deaths_confirmed`: The number of deaths that are confirmed to have been caused by COVID-19\n* `deaths_total`: The number of deaths that are either suspected or confirmed to have been caused by COVID-19\n* `positive_tests_total`: The total number of tests that have been positive\n* `negative_tests_total`: The total number of tests that have been negative\n* `icu_beds_capacity_count`: The number of ICU beds available in the geography\n* `icu_beds_in_use_any`: The number of ICU beds currently in use\n* `icu_beds_in_use_covid_suspected`: The number of ICU beds currently in use by a patient suspected of COVID-19\n* `icu_beds_in_use_covid_confirmed`: The number of ICU beds currently in use by a patient confirmed to have COVID-19\n* `icu_beds_in_use_covid_total`: The number of ICU beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `icu_beds_in_use_covid_new`: The number of ICU beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `hospital_beds_capacity_count`: The number of hospital beds available in the geography\n* `hospital_beds_in_use_any`: The number of hospital beds currently in use\n* `hospital_beds_in_use_covid_suspected`: The number of hospital beds currently in use by a patient suspected of COVID-19\n* `hospital_beds_in_use_covid_confirmed`: The number of hospital beds currently in use by a patient confirmed to have COVID-19\n* `hospital_beds_in_use_covid_total`: The number of hospital beds currently in use by a patient who is suspected of having or confirmed to have COVID-19\n* `hospital_beds_in_use_covid_new`: The number of hospital beds occupied by an individual suspected or confirmed of having COVID-19 that have been admitted today\n* `ventilators_capacity_count`: The number of individuals who can be supported by a ventilator\n* `ventilators_in_use_any`: The number of individuals who are currently on a ventilator\n* `ventilators_in_use_covid_suspected`: The number of individuals who are suspected of having COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_confirmed`: The number of individuals who are confirmed to have COVID-19 that are currently on a ventilator\n* `ventilators_in_use_covid_total`: The number of individuals who are either suspected of having or confirmed to have COVID-19 that are on a ventilator\n* `ventilators_in_use_covid_new`: The number of ventilators that are currently on a ventilator that are suspected of having or confirmed to have COVID-19 that started the ventilator today\n* `recovered_total`: The number of individuals who tested positive for COVID-19 and no longer test positive\n* `active_total`: The number of currently active COVID-19 cases\n\nThese variables are only collected from official US federal/state/county government sources\n", 
-        "operationId": "get_covid", 
+        "description": "\r\nAll of Our World in Data is completely open access and all work is licensed under the Creative Commons BY license. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.\r\n\r\nThis data has been collected, aggregated, and documented by Diana Beltekian, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Edouard Mathieu, Esteban Ortiz-Ospina, Hannah Ritchie, Max Roser.\r\n\r\nThe mission of _Our World in Data_ is to make data and research on the world\u2019s largest problems understandable and accessible. [Read more about our mission](https://ourworldindata.org/about).\r\n\r\nThe following documentation is taken from the Our World in Data [COVID-19 page](https://ourworldindata.org/coronavirus-data) and the corresponding [GitHub repository](https://github.com/owid/covid-19-data/tree/master/public/data):\r\n\r\nThe complete COVID-19 dataset is a collection of the COVID-19 data maintained by Our World in Data. It is updated daily and includes data on confirmed cases, deaths, and testing, as well as other variables of potential interest.\r\n\r\n- **Confirmed cases and deaths:** our data comes from the [European Centre for Disease Prevention and Control](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) (ECDC). We discuss how and when the ECDC collects and publishes this data [here](https://ourworldindata.org/coronavirus-source-data). The cases & deaths dataset is updated daily. *Note: the number of cases or deaths reported by any institution\u2014including the ECDC, the WHO, Johns Hopkins and others\u2014on a given day does not necessarily represent the actual number on that date. This is because of the long reporting chain that exists between a new case/death and its inclusion in statistics. This also means that negative values in cases and deaths can sometimes appear when a country sends a correction to the ECDC, because it had previously overestimated the number of cases/deaths.*\r\n- **Testing for COVID-19:** this data is collected by the _Our World in Data_ team from official reports; you can find further details in our post on COVID-19 testing, including our [checklist of questions to understand testing data](https://ourworldindata.org/coronavirus-testing#our-checklist-for-covid-19-testing-data), information on [geographical and temporal coverage](https://ourworldindata.org/coronavirus-testing#which-countries-do-we-have-testing-data-for), and [detailed country-by-country source information](https://ourworldindata.org/coronavirus-testing#our-checklist-for-covid-19-testing-data). The testing dataset is updated around twice a week.\r\n- **Other variables:** this data is collected from a variety of sources (United Nations, World Bank, Global Burden of Disease, Blavatnik School of Government, etc.). More information is available in [our codebook](https://github.com/owid/covid-19-data/tree/master/public/data/owid-covid-data-codebook.md).\r\n", 
+        "operationId": "get_covid_global", 
         "parameters": [
           {
-            "$ref": "#/parameters/rowFilter.covid.vintage"
+            "$ref": "#/parameters/rowFilter.covid_global.iso_code"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.covid.dt"
+            "$ref": "#/parameters/rowFilter.covid_global.continent"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.covid.fips"
+            "$ref": "#/parameters/rowFilter.covid_global.location"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.covid.variable"
+            "$ref": "#/parameters/rowFilter.covid_global.dt"
           }, 
           {
-            "$ref": "#/parameters/rowFilter.covid.value"
+            "$ref": "#/parameters/rowFilter.covid_global.total_cases"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_cases"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.total_deaths"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_deaths"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.total_cases_per_million"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_cases_per_million"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.total_deaths_per_million"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_deaths_per_million"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.total_tests"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_tests"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_tests_smoothed"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.total_tests_per_thousand"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_tests_per_thousand"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.new_tests_smoothed_per_thousand"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.tests_units"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.stringency_index"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.population"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.population_density"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.median_age"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.aged_65_older"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.aged_70_older"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.gdp_per_capita"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.extreme_poverty"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.cvd_death_rate"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.diabetes_prevalence"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.female_smokers"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.male_smokers"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.handwashing_facilities"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.hospital_beds_per_thousand"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covid_global.life_expectancy"
           }, 
           {
             "$ref": "#/parameters/select"
@@ -1032,7 +1568,7 @@
             "description": "OK", 
             "schema": {
               "items": {
-                "$ref": "#/definitions/covid"
+                "$ref": "#/definitions/covid_global"
               }, 
               "type": "array"
             }
@@ -1046,9 +1582,9 @@
             "APIKeyHeader": []
           }
         ], 
-        "summary": "This table contains relevant information on COVID-19", 
+        "summary": "This table contains the complete Our World in Data's COVID-19 dataset. Please see the [original source](https://ourworldindata.org/coronavirus-data) for more information.\r", 
         "tags": [
-          "covid"
+          "covid_global"
         ]
       }
     }, 
@@ -1178,6 +1714,70 @@
         ], 
         "tags": [
           "covid_us"
+        ]
+      }
+    }, 
+    "/covidtrackingproject": {
+      "get": {
+        "description": "This table only includes the most recent observation for each date, location, and variable. If you are interested in historical revisions of this data, please reach out -- We have previous \"vintages\" of the CTP data but, in order to simplify our list of tables, we have chosen not to expose (but are happy to if it would be useful).\n\nThe COVID Tracking Project collects data on the number of cases, test results, and hospitaliztions at the state level. As always, if you intend to use this data, we recommend that you read the corresponding documentation on their [data page](https://covidtracking.com/data) as it provides insights into how data collection changed at various points in time and highlights other data caveats.\n\nThe data can also be found at on the [COVID Tracking Project page](https://covidtracking.com/data).\n\nThe COVID Tracking Project data is released under the following license:\n\nYou are welcome to copy, distribute, and develop data and website content from The COVID Tracking Project at The Atlantic for all healthcare, medical, journalistic and non-commercial uses, including any personal, editorial, academic, or research purposes.\n\nThe COVID Tracking Project at The Atlantic data and website content is published under a Creative Commons CC BY-NC-4.0 license, which requires users to attribute the source and license type (CC BY-NC-4.0) when sharing our data or website content. The COVID Tracking Project at The Atlantic also grants permission for any derivative use of this data and website content that supports healthcare or medical research (including institutional use by public health and for-profit organizations), or journalistic usage (by nonprofit or for-profit organizations). All other commercial uses are not permitted under the Creative Commons license, and will require permission from The COVID Tracking Project at The Atlantic.\n", 
+        "operationId": "get_covidtrackingproject", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.covidtrackingproject.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covidtrackingproject.fips"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covidtrackingproject.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.covidtrackingproject.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/covidtrackingproject"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains the data from the COVID Tracking Project COVID data", 
+        "tags": [
+          "covidtrackingproject"
         ]
       }
     }, 
@@ -1367,68 +1967,6 @@
         ]
       }
     }, 
-    "/jhu_covid": {
-      "get": {
-        "operationId": "get_jhu_covid", 
-        "parameters": [
-          {
-            "$ref": "#/parameters/rowFilter.jhu_covid.dt"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.jhu_covid.fips"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.jhu_covid.variable"
-          }, 
-          {
-            "$ref": "#/parameters/rowFilter.jhu_covid.value"
-          }, 
-          {
-            "$ref": "#/parameters/select"
-          }, 
-          {
-            "$ref": "#/parameters/order"
-          }, 
-          {
-            "$ref": "#/parameters/range"
-          }, 
-          {
-            "$ref": "#/parameters/rangeUnit"
-          }, 
-          {
-            "$ref": "#/parameters/offset"
-          }, 
-          {
-            "$ref": "#/parameters/limit"
-          }, 
-          {
-            "$ref": "#/parameters/preferCount"
-          }
-        ], 
-        "responses": {
-          "200": {
-            "description": "OK", 
-            "schema": {
-              "items": {
-                "$ref": "#/definitions/jhu_covid"
-              }, 
-              "type": "array"
-            }
-          }, 
-          "206": {
-            "description": "Partial Content"
-          }
-        }, 
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ], 
-        "tags": [
-          "jhu_covid"
-        ]
-      }
-    }, 
     "/mobility_devices": {
       "get": {
         "description": "The DEX answers the question, for a smartphone residing in a given geography, how many distinct devices also visited any of the commercial venues that this device visited today?\n\nThe state-level (county-level) DEX reports the state-level average of this number across all devices residing in the state (county) that day. The DEX values are necessarily only a fraction of the number of distinct individuals that also visited any of the commercial venues visited by a device, since only a fraction of individuals, venues, and visits are in the device sample.\n\nIn the context of the ongoing pandemic, the DEX measure may be biased if devices sheltering-in-place are not in the sample due to lack of movement. We report adjusted DEX values to help address this selection bias. DEX-adjusted is computed assuming that the number of devices has not declined since the early-2020 peak and that unobserved devices did not visit any commercial venues.\n\nBoth the county and state level DEX have information on the number of devices in the sample and the adjusted DEX values as described above. Additionally, the state DEX has information in which the data has been separated into geographic regions that share demographic characteristics...\n\nThis data is produced by Victor Couture, Jonathan Dingel, Allison Green, Jessie Handbury, and Kevin Williams with assistance from Hayden Parsley and Serena Xu. They are derived from anonymized, aggregated smartphone movement data provided by PlaceIQ. We are grateful to the authors and to PlaceIQ for making this data available to us.\n\nIf you use this dataset, we recommend seeing the [notes for users of the DEX dataset](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX_notes.md) and [DEX documentation](https://github.com/COVIDExposureIndices/COVIDExposureIndices/blob/master/documentation/DEX.pdf) produced by the original authors.\n\nSource: https://github.com/COVIDExposureIndices/COVIDExposureIndices\n", 
@@ -1554,6 +2092,70 @@
         "summary": "The Location Exposure Index (LEX) is a measure of how much exposure there is across different geographies. This data is currently only available for the US.", 
         "tags": [
           "mobility_locations"
+        ]
+      }
+    }, 
+    "/npi_us": {
+      "get": {
+        "description": "The data begins on March 1, 2020 and covers approximately 650 different US geographies (states and counties). There are 10 different NPIs covered in this dataset which include:\n\n* closing_of_public_venues: Public venues closed. A government order closing gathering venues for in-person service, such as restaurants, bars, and theaters.\n* lockdown: Lock down\n* non-essential_services_closure: Non-essential services closure\n* religious_gatherings_banned: Cancelling of religious gatherings, either explicitly or implicitly by applying gathering size/shelter-in-place limitations to religious gatherings as well\n* shelter_in_place: An order indicating that people should shelter in their homes except for essential reasons\n* social_distancing: Social distancing mandate of at least 6 ft between people\n* gathering_size_10_0: Gatherings are limited to between 0 and 10 people\n* gathering_size_25_11: Gatherings are limited to between 11 and 25 people\n* gathering_size_100_26: Gatherings are limited to between 26 and 100 people\n* gathering_size_500_101: Gatherings are limited to between 101 and 500 people\n\nThe original data was collected by Keystone Strategy and is distributed under the Creative Commons Attribution 4.0 International Public License.\n\nKeystone Strategy COVID page: https://www.keystonestrategy.com/coronavirus-covid19-intervention-dataset-model/\nSource: https://github.com/Keystone-Strategy/covid19-intervention-data\n", 
+        "operationId": "get_npi_us", 
+        "parameters": [
+          {
+            "$ref": "#/parameters/rowFilter.npi_us.dt"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.npi_us.location"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.npi_us.variable"
+          }, 
+          {
+            "$ref": "#/parameters/rowFilter.npi_us.value"
+          }, 
+          {
+            "$ref": "#/parameters/select"
+          }, 
+          {
+            "$ref": "#/parameters/order"
+          }, 
+          {
+            "$ref": "#/parameters/range"
+          }, 
+          {
+            "$ref": "#/parameters/rangeUnit"
+          }, 
+          {
+            "$ref": "#/parameters/offset"
+          }, 
+          {
+            "$ref": "#/parameters/limit"
+          }, 
+          {
+            "$ref": "#/parameters/preferCount"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "OK", 
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/npi_us"
+              }, 
+              "type": "array"
+            }
+          }, 
+          "206": {
+            "description": "Partial Content"
+          }
+        }, 
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ], 
+        "summary": "This table contains information on the nonpharmaceutical interventions (NPIs) that were taken in the United States in response to COVID", 
+        "tags": [
+          "npi_us"
         ]
       }
     }, 
