@@ -62,3 +62,14 @@ Once you have activated the venv run `make setup-dev` to install packages in it.
 We use [black](https://github.com/psf/black) to automatically format python code.
 One way we keep this maintainable is by using a pre-commit step that automatically
 reformats modified files on commit.
+
+
+# Trigger Data Update
+
+To manually kick off a data update (e.g. if a previous update failed and a fix was merged), get a
+[github personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line),
+and run:
+
+```bash
+GITHUB_TOKEN=<YOUR PERSONAL GITHUB TOKEN> ./tools/trigger-data-update.sh
+```
