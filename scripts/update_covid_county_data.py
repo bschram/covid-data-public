@@ -156,6 +156,16 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
         )
         states[CommonFields.AGGREGATE_LEVEL] = "state"
 
+        # State level bed data is coming from HHS which tend to not match
+        # numbers we're seeing from Covid Care Map.
+        state_columns_to_drop = [
+            CommonFields.ICU_BEDS,
+            CommonFields.HOSPITAL_BEDS_IN_USE_ANY,
+            CommonFields.STAFFED_BEDS,
+            CommonFields.CURRENT_ICU_TOTAL,
+        ]
+        states = states.drop(state_columns_to_drop, axis="columns")
+
         df = pd.concat([states, counties])
 
         df = common_df.sort_common_field_columns(df)
