@@ -150,6 +150,20 @@ def test_read_csv():
     assert one(df.loc[("06045", "2020-04-01"), "cases"]) == 234
 
 
+def test_read_csv_no_index():
+    input_csv = """fips,date,cases
+06045,2020-04-01,234
+45123,2020-04-02,456
+    """
+
+    with temppathlib.NamedTemporaryFile("w+") as tmp:
+        tmp.path.write_text(input_csv)
+        df = common_df.read_csv(tmp.path, set_index=False)
+
+    expected_first_row = ["06045", pd.Timestamp("2020-04-01 00:00:00"), 234]
+    assert list(df.iloc[0]) == expected_first_row
+
+
 def test_float_formatting():
     input_csv = """fips,date,col_1,col_2,col_3,col_4,col_5,col_6
 99123,2020-04-01,1,2.0000000,3,0.0004,0.00005,6000000000

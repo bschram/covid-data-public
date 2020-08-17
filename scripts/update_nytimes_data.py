@@ -96,6 +96,33 @@ def remove_backfilled_cases(
     return data
 
 
+def _remove_ma_county_zeroes_data(data: pd.DataFrame, county_reporting_stopped_date="2020-08-11"):
+    """Removes county data for mass where cases are not increasing due to data reporting change.
+
+    Massachussetts stopped reporting county case data after 8/11.  This code removes data for those
+    days, treating the data as missing rather than a count of 0.
+
+    Args:
+        data: Data to clean up.
+        county_reporting_stopped_date: Date to start checking for no case count increases.
+
+    Returns: Data with Mass county data properly cleaned up.
+    """
+    # Sorting on fips and date to ensure the diff is applied in ascending date order below.
+    data = data.sort_values([CommonFields.FIPS, CommonFields.DATE])
+
+    is_county = data[CommonFields.AGGREGATE_LEVEL] == "county"
+    is_ma = data[CommonFields.STATE] == "MA"
+    is_after_reporting_stopped = data[CommonFields.DATE] >= county_reporting_stopped_date
+    is_ma_county_after_reporting = is_county & is_ma & is_after_reporting_stopped
+    ma_county_data = data.loc[is_ma_county_after_reporting]
+    cases_to_remove = ma_county_data.groupby(Fields.FIPS)[CommonFields.CASES].diff() == 0
+    _logger.info("Removing stale MA county cases", num_records=sum(cases_to_remove))
+    return pd.concat(
+        [data.loc[~is_ma_county_after_reporting], ma_county_data.loc[~cases_to_remove]]
+    )
+
+
 class Fields(GetByValueMixin, FieldNameAndCommonField, enum.Enum):
     DATE = "date", CommonFields.DATE
     COUNTY = "county", CommonFields.COUNTY
@@ -207,6 +234,7 @@ class NYTimesUpdater(pydantic.BaseModel):
         data.loc[data[CommonFields.COUNTY] == "New York County", CommonFields.FIPS] = "36061"
 
         data = remove_backfilled_cases(data, BACKFILLED_CASES)
+        data = _remove_ma_county_zeroes_data(data)
 
         no_fips = data[CommonFields.FIPS].isna()
         if no_fips.any():

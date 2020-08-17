@@ -70,14 +70,26 @@ def write_csv(
 write_df_as_csv = write_csv
 
 
-def read_csv(path_or_buf: Union[pathlib.Path, TextIO]) -> pd.DataFrame:
-    """Read `path_or_buf` containing CommonFields and return a DataFrame with timeseries index set."""
-    return pd.read_csv(
+def read_csv(path_or_buf: Union[pathlib.Path, TextIO], set_index: bool = True) -> pd.DataFrame:
+    """Read `path_or_buf` containing CommonFields and return a DataFrame with index optionally set.
+
+    Args:
+        path_or_buf: Path to csv file, or buffer containing csv timseries data.
+        set_index: If True, sets index to common fields timeseries_keys.
+
+    Returns: DataFrame of timeseries data.
+    """
+    data = pd.read_csv(
         path_or_buf,
         parse_dates=[CommonFields.DATE],
         dtype={CommonFields.FIPS: str},
         low_memory=False,
-    ).set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+    )
+
+    if set_index:
+        return data.set_index(COMMON_FIELDS_TIMESERIES_KEYS)
+
+    return data
 
 
 # Alias to support old name. Please `import common_df` and call `common_df.read_csv(...)`.

@@ -60,3 +60,35 @@ def test_remove_ct_cases(is_ct_county):
         expected_cases = pd.Series([1000, 1288, 1388], name="cases")
 
     pd.testing.assert_series_equal(expected_cases, results.cases)
+
+
+def test_remove_ma_county_cases():
+    data_buf = io.StringIO(
+        "fips,state,date,aggregate_level,cases\n"
+        "25025,MA,2020-08-10,county,1000\n"
+        "25025,MA,2020-08-11,county,1000\n"
+        "25025,MA,2020-08-12,county,1000\n"
+        "25025,MA,2020-08-13,county,1000\n"
+        "25025,MA,2020-08-14,county,1025\n"
+        "25,MA,2020-08-11,state,1000\n"
+        "25,MA,2020-08-12,state,1000\n"
+        "25,MA,2020-08-13,state,1000\n"
+    )
+    data = common_df.read_csv(data_buf, set_index=False)
+
+    results = update_nytimes_data._remove_ma_county_zeroes_data(data).reset_index(drop=True)
+
+    # State data should be untouched
+    # MA County data on/before 8/11 should be untouched
+    # MA County data that changes after 8/11 should be picked up.
+    data_buf = io.StringIO(
+        "fips,state,date,aggregate_level,cases\n"
+        "25,MA,2020-08-11,state,1000\n"
+        "25,MA,2020-08-12,state,1000\n"
+        "25,MA,2020-08-13,state,1000\n"
+        "25025,MA,2020-08-10,county,1000\n"
+        "25025,MA,2020-08-11,county,1000\n"
+        "25025,MA,2020-08-14,county,1025\n"
+    )
+    expected = common_df.read_csv(data_buf, set_index=False)
+    pd.testing.assert_frame_equal(results, expected)
