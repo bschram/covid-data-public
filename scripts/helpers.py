@@ -43,3 +43,8 @@ def load_census_state(census_state_path: pathlib.Path) -> pd.DataFrame:
         columns={"STUSAB": "state", "STATE": "fips", "STATE_NAME": "state_name"}, inplace=True,
     )
     return state_df
+
+
+def extract_state_fips(fips: str) -> str:
+    """Extracts the state FIPS code from a county or state FIPS code."""
+    return fips[:2]

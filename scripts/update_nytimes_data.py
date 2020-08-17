@@ -12,6 +12,7 @@ import pandas as pd
 import pydantic
 import structlog
 import click
+
 from covidactnow.datapublic import common_init
 from covidactnow.datapublic import common_df
 from covidactnow.datapublic.common_fields import (
@@ -27,12 +28,19 @@ DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 _logger = structlog.get_logger(__name__)
 
 
-BACKFILLED_CASES = [
+STATE_BACKFILLED_CASES = [
     # On 2020-07-24, CT reported a backfill of 440 additional positive cases.
     # https://portal.ct.gov/Office-of-the-Governor/News/Press-Releases/2020/07-2020/Governor-Lamont-Coronavirus-Update-July-24
     ("09", "2020-07-24", 440),
     # https://portal.ct.gov/Office-of-the-Governor/News/Press-Releases/2020/07-2020/Governor-Lamont-Coronavirus-Update-July-29
     ("09", "2020-07-29", 384),
+]
+
+
+COUNTY_BACKFILLED_CASES = [
+    # https://www.dallasnews.com/news/public-health/2020/08/16/backlog-in-state-reporting-adds-more-than-5000-coronavirus-cases-in-dallas-county/
+    # Of the 5,361 cases reported Sunday, 5,195 came from the backlog, according to a news release from Dallas County Judge Clay Jenkins.
+    ("48113", "2020-08-16", 5195)
 ]
 
 
@@ -70,7 +78,7 @@ def _calculate_county_adjustments(
     return (cases_on_date / cases_on_date.sum() * backfilled_cases).round().to_dict()
 
 
-def remove_backfilled_cases(
+def remove_state_backfilled_cases(
     data: pd.DataFrame, backfilled_cases: List[Tuple[str, str, int]]
 ) -> pd.DataFrame:
     """Removes reported backfilled cases from case totals.
@@ -89,6 +97,31 @@ def remove_backfilled_cases(
             data.loc[is_fips_data_after_date, CommonFields.CASES] -= int(count)
 
         # Remove state counts also.
+        is_fips_data_after_date = is_on_or_after_date & (data[CommonFields.FIPS] == state_fips)
+        if is_fips_data_after_date.any():
+            data.loc[is_fips_data_after_date, CommonFields.CASES] -= cases
+
+    return data
+
+
+def remove_county_backfilled_cases(
+    data: pd.DataFrame, backfilled_cases: List[Tuple[str, str, int]]
+) -> pd.DataFrame:
+    """Removes reported county backfilled cases from case totals.
+
+    Args:
+        data: Data
+        backfilled_cases: List of backfilled case info.
+
+    Returns: Updated data frame.
+    """
+    for county_fips, date, cases in backfilled_cases:
+        is_on_or_after_date = data[CommonFields.DATE] >= date
+        is_fips_data_after_date = is_on_or_after_date & (data[CommonFields.FIPS] == county_fips)
+        data.loc[is_fips_data_after_date, CommonFields.CASES] -= cases
+
+        # Remove county count from state counts as well
+        state_fips = helpers.extract_state_fips(county_fips)
         is_fips_data_after_date = is_on_or_after_date & (data[CommonFields.FIPS] == state_fips)
         if is_fips_data_after_date.any():
             data.loc[is_fips_data_after_date, CommonFields.CASES] -= cases
@@ -233,7 +266,9 @@ class NYTimesUpdater(pydantic.BaseModel):
         ] = "New York County"
         data.loc[data[CommonFields.COUNTY] == "New York County", CommonFields.FIPS] = "36061"
 
-        data = remove_backfilled_cases(data, BACKFILLED_CASES)
+        data = remove_state_backfilled_cases(data, STATE_BACKFILLED_CASES)
+        data = remove_county_backfilled_cases(data, COUNTY_BACKFILLED_CASES)
+
         data = _remove_ma_county_zeroes_data(data)
 
         no_fips = data[CommonFields.FIPS].isna()

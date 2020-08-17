@@ -52,7 +52,7 @@ def test_remove_ct_cases(is_ct_county):
     data = common_df.read_csv(data_buf)
     data = data.reset_index()
 
-    results = update_nytimes_data.remove_backfilled_cases(data, backfill_records)
+    results = update_nytimes_data.remove_state_backfilled_cases(data, backfill_records)
 
     if is_ct_county:
         expected_cases = pd.Series([1000, 1100, 1200], name="cases")
@@ -60,6 +60,41 @@ def test_remove_ct_cases(is_ct_county):
         expected_cases = pd.Series([1000, 1288, 1388], name="cases")
 
     pd.testing.assert_series_equal(expected_cases, results.cases)
+
+
+def test_remove_county_backfill():
+
+    backfill = [("48113", "2020-08-17", 500)]
+    data_buf = io.StringIO(
+        "fips,state,date,aggregate_level,cases\n"
+        f"48112,TX,2020-08-17,county,1700\n"
+        f"48112,TX,2020-08-18,county,1700\n"
+        f"48113,TX,2020-08-16,county,1000\n"
+        f"48113,TX,2020-08-17,county,1600\n"
+        f"48113,TX,2020-08-18,county,1700\n"
+        f"48,TX,2020-08-16,state,2600\n"
+        f"48,TX,2020-08-17,state,3600\n"
+        f"48,TX,2020-08-18,state,4700\n"
+    )
+    data = common_df.read_csv(data_buf, set_index=False)
+    results = update_nytimes_data.remove_county_backfilled_cases(data, backfill)
+
+    # Days before 8/17 should be the same
+    # days on/after 8/17 should have 500 less cases
+    data_buf = io.StringIO(
+        "fips,state,date,aggregate_level,cases\n"
+        f"48112,TX,2020-08-17,county,1700\n"
+        f"48112,TX,2020-08-18,county,1700\n"
+        f"48113,TX,2020-08-16,county,1000\n"
+        f"48113,TX,2020-08-17,county,1100\n"
+        f"48113,TX,2020-08-18,county,1200\n"
+        f"48,TX,2020-08-16,state,2600\n"
+        f"48,TX,2020-08-17,state,3100\n"
+        f"48,TX,2020-08-18,state,4200\n"
+    )
+    expected = common_df.read_csv(data_buf, set_index=False)
+
+    pd.testing.assert_frame_equal(results, expected)
 
 
 def test_remove_ma_county_cases():
