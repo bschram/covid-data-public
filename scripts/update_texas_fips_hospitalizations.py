@@ -18,8 +18,11 @@ TSA_HOSPITALIZATIONS_URL = (
 
 class Fields(common_fields.GetByValueMixin, common_fields.FieldNameAndCommonField, enum.Enum):
     DATE = "date", CommonFields.DATE
+    TSA_REGION_ID = "TSA ID", None
+    TSA_AREA = "TSA AREA", None
     FIPS = CommonFields.FIPS, CommonFields.FIPS
     CURRENT_HOSPITALIZED = CommonFields.CURRENT_HOSPITALIZED, CommonFields.CURRENT_HOSPITALIZED
+    CURRENT_ICU = CommonFields.CURRENT_ICU, CommonFields.CURRENT_ICU
 
 
 def build_hospitalizations_spread_by_population(hosp_by_tsa_date, census_data, tsa_to_fips):
@@ -34,14 +37,23 @@ def build_hospitalizations_spread_by_population(hosp_by_tsa_date, census_data, t
 
     df = hosp_by_tsa_date.merge(
         tsa_to_fips[["tsa_region", Fields.FIPS, pop_ratio_field, CommonFields.STATE]],
-        left_on="TSA ID",
+        left_on=Fields.TSA_REGION_ID,
         right_on="tsa_region",
     )
     df[Fields.CURRENT_HOSPITALIZED] = (
         df[Fields.CURRENT_HOSPITALIZED] * df[pop_ratio_field]
     ).round()
+    df[Fields.CURRENT_ICU] = (df[Fields.CURRENT_ICU] * df[pop_ratio_field]).round()
 
-    return df[[Fields.DATE, Fields.FIPS, Fields.CURRENT_HOSPITALIZED, CommonFields.STATE]]
+    return df[
+        [
+            Fields.DATE,
+            Fields.FIPS,
+            Fields.CURRENT_HOSPITALIZED,
+            Fields.CURRENT_ICU,
+            CommonFields.STATE,
+        ]
+    ]
 
 
 class TexasFipsHospitalizationsUpdater(pydantic.BaseModel):

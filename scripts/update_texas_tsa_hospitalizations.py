@@ -39,29 +39,52 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
             output_csv=data_root / "states" / "tx" / "tx_tsa_hospitalizations.csv"
         )
 
-    def update(self):
-        data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2)
+    @staticmethod
+    def parse_data(data, field):
         index = [Fields.TSA_REGION_ID, Fields.TSA_AREA]
 
         # Fixing erroneous data on 08/08/2020.  The column is being interpreted as
         # a datetime, so converting back to string to keep consistent with rest of columns.
         matched_datetime = datetime.datetime.fromisoformat("2020-08-08 00:00:00")
-        data = data.rename({matched_datetime: "2020-08-08"}, axis="columns")
+        data = data.rename({matched_datetime: "2020-08-08", "44051": "2020-08-08"}, axis="columns")
 
         data = (
             data.set_index(index)
             .stack()
             .reset_index()
-            .rename({"level_2": Fields.DATE, 0: Fields.CURRENT_HOSPITALIZED}, axis=1)
+            .rename({"level_2": Fields.DATE, 0: field}, axis=1)
         )
+        # Dates in the TSA excel spreadsheets have lots of small data issues.  This addresses
+        # some known inconsistencies and handles when columns are duplicated (for example,
+        # '2020-08-17.x' and '2020-08-17.y' containing almost identical data).
         data[Fields.DATE] = data[Fields.DATE].str.lstrip("Hospitalizations ")
+        data[Fields.DATE] = data[Fields.DATE].str.rstrip(".x").str.rstrip(".y")
+        data = data.set_index(index + [Fields.DATE])
+        data = data.loc[~data.index.duplicated(keep="last")]
+
+        data = data.reset_index()
         data[Fields.DATE] = data[Fields.DATE].apply(
             lambda x: dateutil.parser.parse(x).date().isoformat()
         )
+
         # Drop all state level values
         data = data.loc[data[Fields.TSA_REGION_ID].notnull(), :]
         data[Fields.TSA_REGION_ID] = data[Fields.TSA_REGION_ID].apply(lambda x: x.rstrip("."))
         return data
+
+    def update(self):
+        data = pd.read_excel(TSA_HOSPITALIZATIONS_URL, header=2, sheet_name=None)
+        hosp_data = self.parse_data(
+            data["COVID-19 Hospitalizations"], CommonFields.CURRENT_HOSPITALIZED
+        )
+        icu_data = self.parse_data(data["COVID-19 ICU"], CommonFields.CURRENT_ICU)
+        index = [Fields.TSA_REGION_ID, Fields.TSA_AREA, CommonFields.DATE]
+        hosp_data.set_index(index, inplace=True)
+        icu_data.set_index(index, inplace=True)
+
+        return hosp_data.merge(
+            icu_data, left_index=True, right_index=True, how="outer"
+        ).reset_index()
 
 
 if __name__ == "__main__":
