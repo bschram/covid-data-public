@@ -181,11 +181,6 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
             )
             df = df.loc[~bad_rows]
 
-        fl_data_rows = df[CommonFields.FIPS].str.match(r"^12")
-        if fl_data_rows.any():
-            self.log.warning("Dropping rows for FL", dropped_rows=str(df.loc[fl_data_rows]))
-            df = df.loc[~fl_data_rows]
-
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
         return df
 
