@@ -38,9 +38,23 @@ STATE_BACKFILLED_CASES = [
 
 
 COUNTY_BACKFILLED_CASES = [
+    # https://www.collincountytx.gov/public_information/news/Pages/08142020_COVIDreport.aspx
+    # Collin county had a large backfill of 1175 cases.  It's not known how many of these cases
+    # are backfill vs new cases. Assuming that cases are around the previous and next day
+    # (132 and 395) subtracting 900 cases to give 275 new cases for that day.
+    ("48085", "2020-08-14", 900),
     # https://www.dallasnews.com/news/public-health/2020/08/16/backlog-in-state-reporting-adds-more-than-5000-coronavirus-cases-in-dallas-county/
     # Of the 5,361 cases reported Sunday, 5,195 came from the backlog, according to a news release from Dallas County Judge Clay Jenkins.
-    ("48113", "2020-08-16", 5195)
+    ("48113", "2020-08-16", 5195),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/081720-PressRelease-DallasCountyReports1850AdditionalPositiveCOVID-19Cases.pdf
+    # Dallas County has requested the breakdown of backfilled/non-backfilled cases
+    # but has not yet received it: https://twitter.com/JudgeClayJ/status/1295836564887678976?s=20
+    # 1500 is an estimate that puts daily increases inline with other days (leaving around 300 new cases).
+    # 2519 represents the number of probables from the day before. Nytimes seems to be including
+    # the cumulative probables twice.
+    ("48113", "2020-08-17", 2515 + 1500),
+    # https://www.dallasnews.com/news/public-health/2020/08/18/dallas-county-expects-to-report-about-550-backlogged-coronavirus-cases-237-new-cases/
+    ("48113", "2020-08-18", 550),
 ]
 
 
