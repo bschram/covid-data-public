@@ -181,6 +181,11 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
             )
             df = df.loc[~bad_rows]
 
+        # Removing a string of misleading FL current_icu values.
+        is_incorrect_fl_icu_dates = df[CommonFields.DATE].between("2020-05-14", "2020-05-20")
+        is_fl_state = df[CommonFields.FIPS] == "12"
+        df.loc[is_fl_state & is_incorrect_fl_icu_dates, CommonFields.CURRENT_ICU] = None
+
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
         return df
 
