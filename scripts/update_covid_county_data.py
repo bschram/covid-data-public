@@ -19,7 +19,7 @@ from covidactnow.datapublic.common_fields import (
 )
 from scripts import helpers
 import covidcountydata
-
+from scripts import update_nytimes_data
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
@@ -146,6 +146,24 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
         counties = counties.loc[~no_match_counties_mask, :]
         counties[CommonFields.AGGREGATE_LEVEL] = "county"
 
+        # TX county data is shifted forward one day.
+        # it's possible that more regions are also shifted, see
+        # https://trello.com/c/wvH5sgfi/404-valorum-tx-data-shifted-forward-one-day
+        # for more information.
+        counties = counties.set_index(CommonFields.DATE)
+        is_tx_counties = counties[CommonFields.FIPS].str.startswith("48")
+        tx_counties = counties.loc[is_tx_counties]
+        tx_counties = tx_counties.shift(-1)
+        # Drop the column at the end with all nulls.
+        tx_counties = tx_counties.dropna(how="all")
+        counties = pd.concat([counties.loc[~is_tx_counties], tx_counties]).reset_index()
+
+        # Hacky way of re-using nytimes code to remove county backfills.
+        # TODO(chris): make code more generic. May be that the code belongs further
+        # downstream in the data pipeline.
+        backfilled_cases = update_nytimes_data.COUNTY_BACKFILLED_CASES
+        counties = update_nytimes_data.remove_county_backfilled_cases(counties, backfilled_cases)
+
         state_df = helpers.load_census_state(self.census_state_path).set_index(CommonFields.FIPS)
         states = states.merge(
             state_df[[CommonFields.STATE]],
@@ -187,6 +205,7 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
         df.loc[is_fl_state & is_incorrect_fl_icu_dates, CommonFields.CURRENT_ICU] = None
 
         df = df.set_index(COMMON_FIELDS_TIMESERIES_KEYS, verify_integrity=True)
+
         return df
 
 

@@ -43,10 +43,13 @@ class TexasTraumaServiceAreaHospitalizationsUpdater(pydantic.BaseModel):
     def parse_data(data, field):
         index = [Fields.TSA_REGION_ID, Fields.TSA_AREA]
 
-        # Fixing erroneous data on 08/08/2020.  The column is being interpreted as
-        # a datetime, so converting back to string to keep consistent with rest of columns.
-        matched_datetime = datetime.datetime.fromisoformat("2020-08-08 00:00:00")
-        data = data.rename({matched_datetime: "2020-08-08", "44051": "2020-08-08"}, axis="columns")
+        # Fixing strange type mismatches from excel sheet
+        date_replacements = {
+            "44051": "2020-08-08",
+            "44059": "2020-08-16",
+            "39668": "2020-08-08",
+        }
+        data = data.rename(date_replacements, axis="columns")
 
         data = (
             data.set_index(index)

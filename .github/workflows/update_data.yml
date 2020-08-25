@@ -19,6 +19,7 @@ on:
 env:
   # Used by python code that reports errors to sentry.
   SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+  SENTRY_ENVIRONMENT: 'production'
 
 
 jobs:
