@@ -50,11 +50,19 @@ COUNTY_BACKFILLED_CASES = [
     # Dallas County has requested the breakdown of backfilled/non-backfilled cases
     # but has not yet received it: https://twitter.com/JudgeClayJ/status/1295836564887678976?s=20
     # 1500 is an estimate that puts daily increases inline with other days (leaving around 300 new cases).
-    # 2519 represents the number of probables from the day before. Nytimes seems to be including
-    # the cumulative probables twice.
-    ("48113", "2020-08-17", 2515 + 1500),
+    ("48113", "2020-08-17", 1500),
     # https://www.dallasnews.com/news/public-health/2020/08/18/dallas-county-expects-to-report-about-550-backlogged-coronavirus-cases-237-new-cases/
     ("48113", "2020-08-18", 550),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082020-PressRelease-DallasCountyReports308AdditionalPositiveCOVID-19Cases.pdf
+    ("48113", "2020-08-19", 206),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082120-PressRelease-DallasCountyReports714AdditionalPositiveCOVID-19Cases.pdf
+    ("48113", "2020-08-21", 459),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082220-PressRelease-DallasCountyReports1086AdditionalPositiveCOVID-19Cases.pdf
+    ("48113", "2020-08-22", 862),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082320-PressRelease-DallasCountyReports1086AdditionalPositiveCOVID-19Cases.pdf
+    ("48113", "2020-08-23", 93),
+    # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082420-PressRelease-DallasCountyReports182AdditionalPositiveCOVID-19Cases.pdf
+    ("48113", "2020-08-24", 84),
 ]
 
 
