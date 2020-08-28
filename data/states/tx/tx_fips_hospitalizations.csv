@@ -136,6 +136,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48001,2020-08-24,TX,USA,county,4,12
 48001,2020-08-25,TX,USA,county,4,12
 48001,2020-08-26,TX,USA,county,4,11
+48001,2020-08-27,TX,USA,county,4,12
 48003,2020-04-12,TX,USA,county,0,0
 48003,2020-04-13,TX,USA,county,0,0
 48003,2020-04-14,TX,USA,county,0,1
@@ -273,6 +274,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48003,2020-08-24,TX,USA,county,1,3
 48003,2020-08-25,TX,USA,county,1,2
 48003,2020-08-26,TX,USA,county,1,3
+48003,2020-08-27,TX,USA,county,1,2
 48005,2020-04-12,TX,USA,county,2,5
 48005,2020-04-13,TX,USA,county,1,6
 48005,2020-04-14,TX,USA,county,2,7
@@ -410,6 +412,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48005,2020-08-24,TX,USA,county,6,22
 48005,2020-08-25,TX,USA,county,7,17
 48005,2020-08-26,TX,USA,county,5,15
+48005,2020-08-27,TX,USA,county,7,20
 48007,2020-04-12,TX,USA,county,0,0
 48007,2020-04-13,TX,USA,county,0,0
 48007,2020-04-14,TX,USA,county,0,0
@@ -547,6 +550,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48007,2020-08-24,TX,USA,county,3,10
 48007,2020-08-25,TX,USA,county,3,11
 48007,2020-08-26,TX,USA,county,3,10
+48007,2020-08-27,TX,USA,county,3,8
 48009,2020-04-12,TX,USA,county,0,0
 48009,2020-04-13,TX,USA,county,0,0
 48009,2020-04-14,TX,USA,county,0,0
@@ -684,6 +688,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48009,2020-08-24,TX,USA,county,1,2
 48009,2020-08-25,TX,USA,county,0,1
 48009,2020-08-26,TX,USA,county,0,1
+48009,2020-08-27,TX,USA,county,0,1
 48011,2020-04-12,TX,USA,county,0,0
 48011,2020-04-13,TX,USA,county,0,0
 48011,2020-04-14,TX,USA,county,0,0
@@ -821,6 +826,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48011,2020-08-24,TX,USA,county,0,0
 48011,2020-08-25,TX,USA,county,0,0
 48011,2020-08-26,TX,USA,county,0,0
+48011,2020-08-27,TX,USA,county,0,0
 48013,2020-04-12,TX,USA,county,0,1
 48013,2020-04-13,TX,USA,county,0,1
 48013,2020-04-14,TX,USA,county,0,1
@@ -958,6 +964,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48013,2020-08-24,TX,USA,county,4,10
 48013,2020-08-25,TX,USA,county,4,10
 48013,2020-08-26,TX,USA,county,4,9
+48013,2020-08-27,TX,USA,county,4,9
 48015,2020-04-12,TX,USA,county,1,2
 48015,2020-04-13,TX,USA,county,1,1
 48015,2020-04-14,TX,USA,county,1,2
@@ -1095,6 +1102,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48015,2020-08-24,TX,USA,county,2,5
 48015,2020-08-25,TX,USA,county,2,5
 48015,2020-08-26,TX,USA,county,2,5
+48015,2020-08-27,TX,USA,county,1,4
 48017,2020-04-12,TX,USA,county,0,0
 48017,2020-04-13,TX,USA,county,0,0
 48017,2020-04-14,TX,USA,county,0,0
@@ -1232,6 +1240,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48017,2020-08-24,TX,USA,county,1,1
 48017,2020-08-25,TX,USA,county,1,1
 48017,2020-08-26,TX,USA,county,1,1
+48017,2020-08-27,TX,USA,county,1,1
 48019,2020-04-12,TX,USA,county,0,0
 48019,2020-04-13,TX,USA,county,0,0
 48019,2020-04-14,TX,USA,county,0,1
@@ -1369,6 +1378,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48019,2020-08-24,TX,USA,county,2,4
 48019,2020-08-25,TX,USA,county,2,4
 48019,2020-08-26,TX,USA,county,2,4
+48019,2020-08-27,TX,USA,county,2,4
 48021,2020-04-12,TX,USA,county,0,1
 48021,2020-04-13,TX,USA,county,1,1
 48021,2020-04-14,TX,USA,county,1,1
@@ -1506,6 +1516,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48021,2020-08-24,TX,USA,county,3,7
 48021,2020-08-25,TX,USA,county,3,7
 48021,2020-08-26,TX,USA,county,3,7
+48021,2020-08-27,TX,USA,county,3,6
 48023,2020-04-12,TX,USA,county,0,0
 48023,2020-04-13,TX,USA,county,0,0
 48023,2020-04-14,TX,USA,county,0,0
@@ -1643,6 +1654,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48023,2020-08-24,TX,USA,county,0,1
 48023,2020-08-25,TX,USA,county,0,0
 48023,2020-08-26,TX,USA,county,0,0
+48023,2020-08-27,TX,USA,county,0,0
 48025,2020-04-12,TX,USA,county,0,0
 48025,2020-04-13,TX,USA,county,0,1
 48025,2020-04-14,TX,USA,county,0,0
@@ -1780,6 +1792,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48025,2020-08-24,TX,USA,county,4,14
 48025,2020-08-25,TX,USA,county,4,15
 48025,2020-08-26,TX,USA,county,4,13
+48025,2020-08-27,TX,USA,county,4,12
 48027,2020-04-12,TX,USA,county,7,8
 48027,2020-04-13,TX,USA,county,4,8
 48027,2020-04-14,TX,USA,county,4,9
@@ -1917,6 +1930,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48027,2020-08-24,TX,USA,county,12,43
 48027,2020-08-25,TX,USA,county,12,42
 48027,2020-08-26,TX,USA,county,12,42
+48027,2020-08-27,TX,USA,county,13,32
 48029,2020-04-12,TX,USA,county,15,40
 48029,2020-04-13,TX,USA,county,15,40
 48029,2020-04-14,TX,USA,county,18,45
@@ -2054,6 +2068,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48029,2020-08-24,TX,USA,county,147,386
 48029,2020-08-25,TX,USA,county,144,380
 48029,2020-08-26,TX,USA,county,137,352
+48029,2020-08-27,TX,USA,county,144,347
 48031,2020-04-12,TX,USA,county,0,0
 48031,2020-04-13,TX,USA,county,0,0
 48031,2020-04-14,TX,USA,county,0,0
@@ -2191,6 +2206,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48031,2020-08-24,TX,USA,county,0,1
 48031,2020-08-25,TX,USA,county,0,1
 48031,2020-08-26,TX,USA,county,0,1
+48031,2020-08-27,TX,USA,county,0,1
 48033,2020-04-12,TX,USA,county,0,0
 48033,2020-04-13,TX,USA,county,0,0
 48033,2020-04-14,TX,USA,county,0,0
@@ -2328,6 +2344,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48033,2020-08-24,TX,USA,county,0,0
 48033,2020-08-25,TX,USA,county,0,0
 48033,2020-08-26,TX,USA,county,0,0
+48033,2020-08-27,TX,USA,county,0,0
 48035,2020-04-12,TX,USA,county,0,1
 48035,2020-04-13,TX,USA,county,0,0
 48035,2020-04-14,TX,USA,county,0,0
@@ -2465,6 +2482,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48035,2020-08-24,TX,USA,county,1,3
 48035,2020-08-25,TX,USA,county,1,3
 48035,2020-08-26,TX,USA,county,1,3
+48035,2020-08-27,TX,USA,county,1,2
 48037,2020-04-12,TX,USA,county,4,5
 48037,2020-04-13,TX,USA,county,4,5
 48037,2020-04-14,TX,USA,county,3,7
@@ -2602,6 +2620,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48037,2020-08-24,TX,USA,county,19,38
 48037,2020-08-25,TX,USA,county,9,27
 48037,2020-08-26,TX,USA,county,9,26
+48037,2020-08-27,TX,USA,county,8,25
 48039,2020-04-12,TX,USA,county,9,22
 48039,2020-04-13,TX,USA,county,10,24
 48039,2020-04-14,TX,USA,county,11,28
@@ -2739,6 +2758,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48039,2020-08-24,TX,USA,county,14,61
 48039,2020-08-25,TX,USA,county,16,55
 48039,2020-08-26,TX,USA,county,21,65
+48039,2020-08-27,TX,USA,county,13,43
 48041,2020-04-12,TX,USA,county,5,15
 48041,2020-04-13,TX,USA,county,11,20
 48041,2020-04-14,TX,USA,county,4,8
@@ -2876,6 +2896,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48041,2020-08-24,TX,USA,county,1,10
 48041,2020-08-25,TX,USA,county,2,11
 48041,2020-08-26,TX,USA,county,1,13
+48041,2020-08-27,TX,USA,county,1,13
 48043,2020-04-12,TX,USA,county,0,0
 48043,2020-04-13,TX,USA,county,0,0
 48043,2020-04-14,TX,USA,county,0,0
@@ -3013,6 +3034,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48043,2020-08-24,TX,USA,county,0,1
 48043,2020-08-25,TX,USA,county,0,1
 48043,2020-08-26,TX,USA,county,0,1
+48043,2020-08-27,TX,USA,county,0,1
 48045,2020-04-12,TX,USA,county,0,0
 48045,2020-04-13,TX,USA,county,0,0
 48045,2020-04-14,TX,USA,county,0,0
@@ -3150,6 +3172,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48045,2020-08-24,TX,USA,county,0,0
 48045,2020-08-25,TX,USA,county,0,0
 48045,2020-08-26,TX,USA,county,0,0
+48045,2020-08-27,TX,USA,county,0,0
 48047,2020-04-12,TX,USA,county,0,0
 48047,2020-04-13,TX,USA,county,0,0
 48047,2020-04-14,TX,USA,county,0,0
@@ -3287,6 +3310,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48047,2020-08-24,TX,USA,county,1,3
 48047,2020-08-25,TX,USA,county,1,3
 48047,2020-08-26,TX,USA,county,1,3
+48047,2020-08-27,TX,USA,county,1,3
 48049,2020-04-12,TX,USA,county,0,1
 48049,2020-04-13,TX,USA,county,0,1
 48049,2020-04-14,TX,USA,county,0,0
@@ -3424,6 +3448,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48049,2020-08-24,TX,USA,county,3,5
 48049,2020-08-25,TX,USA,county,2,4
 48049,2020-08-26,TX,USA,county,2,3
+48049,2020-08-27,TX,USA,county,2,3
 48051,2020-04-12,TX,USA,county,0,1
 48051,2020-04-13,TX,USA,county,1,2
 48051,2020-04-14,TX,USA,county,0,1
@@ -3561,6 +3586,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48051,2020-08-24,TX,USA,county,0,1
 48051,2020-08-25,TX,USA,county,0,1
 48051,2020-08-26,TX,USA,county,0,1
+48051,2020-08-27,TX,USA,county,0,1
 48053,2020-04-12,TX,USA,county,0,0
 48053,2020-04-13,TX,USA,county,0,1
 48053,2020-04-14,TX,USA,county,0,1
@@ -3698,6 +3724,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48053,2020-08-24,TX,USA,county,1,4
 48053,2020-08-25,TX,USA,county,2,4
 48053,2020-08-26,TX,USA,county,2,4
+48053,2020-08-27,TX,USA,county,2,4
 48055,2020-04-12,TX,USA,county,0,0
 48055,2020-04-13,TX,USA,county,0,0
 48055,2020-04-14,TX,USA,county,0,1
@@ -3835,6 +3862,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48055,2020-08-24,TX,USA,county,1,4
 48055,2020-08-25,TX,USA,county,1,3
 48055,2020-08-26,TX,USA,county,1,3
+48055,2020-08-27,TX,USA,county,1,3
 48057,2020-04-12,TX,USA,county,0,2
 48057,2020-04-13,TX,USA,county,1,3
 48057,2020-04-14,TX,USA,county,1,3
@@ -3972,6 +4000,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48057,2020-08-24,TX,USA,county,4,10
 48057,2020-08-25,TX,USA,county,3,10
 48057,2020-08-26,TX,USA,county,4,11
+48057,2020-08-27,TX,USA,county,4,11
 48059,2020-04-12,TX,USA,county,0,0
 48059,2020-04-13,TX,USA,county,0,0
 48059,2020-04-14,TX,USA,county,0,0
@@ -4109,6 +4138,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48059,2020-08-24,TX,USA,county,1,2
 48059,2020-08-25,TX,USA,county,1,1
 48059,2020-08-26,TX,USA,county,1,1
+48059,2020-08-27,TX,USA,county,1,1
 48061,2020-04-12,TX,USA,county,6,18
 48061,2020-04-13,TX,USA,county,7,20
 48061,2020-04-14,TX,USA,county,10,21
@@ -4246,6 +4276,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48061,2020-08-24,TX,USA,county,78,192
 48061,2020-08-25,TX,USA,county,76,199
 48061,2020-08-26,TX,USA,county,70,187
+48061,2020-08-27,TX,USA,county,70,181
 48063,2020-04-12,TX,USA,county,0,0
 48063,2020-04-13,TX,USA,county,0,0
 48063,2020-04-14,TX,USA,county,0,0
@@ -4383,6 +4414,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48063,2020-08-24,TX,USA,county,1,3
 48063,2020-08-25,TX,USA,county,1,3
 48063,2020-08-26,TX,USA,county,1,3
+48063,2020-08-27,TX,USA,county,1,3
 48065,2020-04-12,TX,USA,county,0,0
 48065,2020-04-13,TX,USA,county,0,0
 48065,2020-04-14,TX,USA,county,0,0
@@ -4520,6 +4552,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48065,2020-08-24,TX,USA,county,0,1
 48065,2020-08-25,TX,USA,county,0,1
 48065,2020-08-26,TX,USA,county,0,1
+48065,2020-08-27,TX,USA,county,0,1
 48067,2020-04-12,TX,USA,county,1,2
 48067,2020-04-13,TX,USA,county,1,2
 48067,2020-04-14,TX,USA,county,1,2
@@ -4657,6 +4690,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48067,2020-08-24,TX,USA,county,6,12
 48067,2020-08-25,TX,USA,county,3,9
 48067,2020-08-26,TX,USA,county,3,8
+48067,2020-08-27,TX,USA,county,3,8
 48069,2020-04-12,TX,USA,county,0,1
 48069,2020-04-13,TX,USA,county,0,1
 48069,2020-04-14,TX,USA,county,0,0
@@ -4794,6 +4828,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48069,2020-08-24,TX,USA,county,1,1
 48069,2020-08-25,TX,USA,county,1,1
 48069,2020-08-26,TX,USA,county,1,1
+48069,2020-08-27,TX,USA,county,1,1
 48071,2020-04-12,TX,USA,county,1,3
 48071,2020-04-13,TX,USA,county,1,3
 48071,2020-04-14,TX,USA,county,1,3
@@ -4931,6 +4966,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48071,2020-08-24,TX,USA,county,2,7
 48071,2020-08-25,TX,USA,county,2,6
 48071,2020-08-26,TX,USA,county,2,8
+48071,2020-08-27,TX,USA,county,2,5
 48073,2020-04-12,TX,USA,county,1,2
 48073,2020-04-13,TX,USA,county,1,1
 48073,2020-04-14,TX,USA,county,1,2
@@ -5068,6 +5104,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48073,2020-08-24,TX,USA,county,4,11
 48073,2020-08-25,TX,USA,county,4,11
 48073,2020-08-26,TX,USA,county,4,10
+48073,2020-08-27,TX,USA,county,4,11
 48075,2020-04-12,TX,USA,county,0,0
 48075,2020-04-13,TX,USA,county,0,0
 48075,2020-04-14,TX,USA,county,0,0
@@ -5205,6 +5242,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48075,2020-08-24,TX,USA,county,0,1
 48075,2020-08-25,TX,USA,county,0,1
 48075,2020-08-26,TX,USA,county,0,1
+48075,2020-08-27,TX,USA,county,0,1
 48077,2020-04-12,TX,USA,county,0,0
 48077,2020-04-13,TX,USA,county,0,0
 48077,2020-04-14,TX,USA,county,0,0
@@ -5342,6 +5380,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48077,2020-08-24,TX,USA,county,1,2
 48077,2020-08-25,TX,USA,county,0,1
 48077,2020-08-26,TX,USA,county,0,1
+48077,2020-08-27,TX,USA,county,0,1
 48079,2020-04-12,TX,USA,county,0,0
 48079,2020-04-13,TX,USA,county,0,0
 48079,2020-04-14,TX,USA,county,0,0
@@ -5479,6 +5518,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48079,2020-08-24,TX,USA,county,0,0
 48079,2020-08-25,TX,USA,county,0,0
 48079,2020-08-26,TX,USA,county,0,0
+48079,2020-08-27,TX,USA,county,0,0
 48081,2020-04-12,TX,USA,county,0,0
 48081,2020-04-13,TX,USA,county,0,0
 48081,2020-04-14,TX,USA,county,0,0
@@ -5616,6 +5656,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48081,2020-08-24,TX,USA,county,0,1
 48081,2020-08-25,TX,USA,county,0,1
 48081,2020-08-26,TX,USA,county,0,1
+48081,2020-08-27,TX,USA,county,0,1
 48083,2020-04-12,TX,USA,county,0,0
 48083,2020-04-13,TX,USA,county,0,0
 48083,2020-04-14,TX,USA,county,0,0
@@ -5753,6 +5794,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48083,2020-08-24,TX,USA,county,1,1
 48083,2020-08-25,TX,USA,county,0,1
 48083,2020-08-26,TX,USA,county,0,1
+48083,2020-08-27,TX,USA,county,0,1
 48085,2020-04-12,TX,USA,county,21,48
 48085,2020-04-13,TX,USA,county,33,47
 48085,2020-04-14,TX,USA,county,19,48
@@ -5890,6 +5932,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48085,2020-08-24,TX,USA,county,41,125
 48085,2020-08-25,TX,USA,county,39,120
 48085,2020-08-26,TX,USA,county,40,121
+48085,2020-08-27,TX,USA,county,38,118
 48087,2020-04-12,TX,USA,county,0,0
 48087,2020-04-13,TX,USA,county,0,0
 48087,2020-04-14,TX,USA,county,0,0
@@ -6027,6 +6070,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48087,2020-08-24,TX,USA,county,0,0
 48087,2020-08-25,TX,USA,county,0,0
 48087,2020-08-26,TX,USA,county,0,0
+48087,2020-08-27,TX,USA,county,0,0
 48089,2020-04-12,TX,USA,county,1,2
 48089,2020-04-13,TX,USA,county,0,1
 48089,2020-04-14,TX,USA,county,1,2
@@ -6164,6 +6208,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48089,2020-08-24,TX,USA,county,1,3
 48089,2020-08-25,TX,USA,county,1,3
 48089,2020-08-26,TX,USA,county,1,3
+48089,2020-08-27,TX,USA,county,1,3
 48091,2020-04-12,TX,USA,county,1,3
 48091,2020-04-13,TX,USA,county,1,3
 48091,2020-04-14,TX,USA,county,1,3
@@ -6301,6 +6346,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48091,2020-08-24,TX,USA,county,11,30
 48091,2020-08-25,TX,USA,county,11,30
 48091,2020-08-26,TX,USA,county,11,27
+48091,2020-08-27,TX,USA,county,11,27
 48093,2020-04-12,TX,USA,county,0,0
 48093,2020-04-13,TX,USA,county,0,0
 48093,2020-04-14,TX,USA,county,0,0
@@ -6438,6 +6484,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48093,2020-08-24,TX,USA,county,1,2
 48093,2020-08-25,TX,USA,county,1,1
 48093,2020-08-26,TX,USA,county,1,1
+48093,2020-08-27,TX,USA,county,1,1
 48095,2020-04-12,TX,USA,county,0,0
 48095,2020-04-13,TX,USA,county,0,0
 48095,2020-04-14,TX,USA,county,0,0
@@ -6575,6 +6622,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48095,2020-08-24,TX,USA,county,0,1
 48095,2020-08-25,TX,USA,county,0,1
 48095,2020-08-26,TX,USA,county,0,1
+48095,2020-08-27,TX,USA,county,0,1
 48097,2020-04-12,TX,USA,county,1,2
 48097,2020-04-13,TX,USA,county,1,2
 48097,2020-04-14,TX,USA,county,1,2
@@ -6712,6 +6760,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48097,2020-08-24,TX,USA,county,2,5
 48097,2020-08-25,TX,USA,county,2,5
 48097,2020-08-26,TX,USA,county,2,5
+48097,2020-08-27,TX,USA,county,2,5
 48099,2020-04-12,TX,USA,county,1,2
 48099,2020-04-13,TX,USA,county,1,2
 48099,2020-04-14,TX,USA,county,1,2
@@ -6849,6 +6898,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48099,2020-08-24,TX,USA,county,3,9
 48099,2020-08-25,TX,USA,county,3,9
 48099,2020-08-26,TX,USA,county,3,9
+48099,2020-08-27,TX,USA,county,3,7
 48101,2020-04-12,TX,USA,county,0,0
 48101,2020-04-13,TX,USA,county,0,0
 48101,2020-04-14,TX,USA,county,0,0
@@ -6986,6 +7036,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48101,2020-08-24,TX,USA,county,0,0
 48101,2020-08-25,TX,USA,county,0,0
 48101,2020-08-26,TX,USA,county,0,0
+48101,2020-08-27,TX,USA,county,0,0
 48103,2020-04-12,TX,USA,county,0,0
 48103,2020-04-13,TX,USA,county,0,0
 48103,2020-04-14,TX,USA,county,0,0
@@ -7123,6 +7174,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48103,2020-08-24,TX,USA,county,0,1
 48103,2020-08-25,TX,USA,county,0,1
 48103,2020-08-26,TX,USA,county,0,1
+48103,2020-08-27,TX,USA,county,0,1
 48105,2020-04-12,TX,USA,county,0,0
 48105,2020-04-13,TX,USA,county,0,0
 48105,2020-04-14,TX,USA,county,0,0
@@ -7260,6 +7312,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48105,2020-08-24,TX,USA,county,0,1
 48105,2020-08-25,TX,USA,county,0,1
 48105,2020-08-26,TX,USA,county,0,1
+48105,2020-08-27,TX,USA,county,0,1
 48107,2020-04-12,TX,USA,county,0,0
 48107,2020-04-13,TX,USA,county,0,0
 48107,2020-04-14,TX,USA,county,0,0
@@ -7397,6 +7450,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48107,2020-08-24,TX,USA,county,0,1
 48107,2020-08-25,TX,USA,county,0,1
 48107,2020-08-26,TX,USA,county,0,1
+48107,2020-08-27,TX,USA,county,0,1
 48109,2020-04-12,TX,USA,county,0,0
 48109,2020-04-13,TX,USA,county,0,0
 48109,2020-04-14,TX,USA,county,0,0
@@ -7534,6 +7588,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48109,2020-08-24,TX,USA,county,0,0
 48109,2020-08-25,TX,USA,county,0,0
 48109,2020-08-26,TX,USA,county,0,0
+48109,2020-08-27,TX,USA,county,0,0
 48111,2020-04-12,TX,USA,county,0,0
 48111,2020-04-13,TX,USA,county,0,0
 48111,2020-04-14,TX,USA,county,0,0
@@ -7671,6 +7726,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48111,2020-08-24,TX,USA,county,0,1
 48111,2020-08-25,TX,USA,county,0,1
 48111,2020-08-26,TX,USA,county,0,1
+48111,2020-08-27,TX,USA,county,0,1
 48113,2020-04-12,TX,USA,county,53,122
 48113,2020-04-13,TX,USA,county,85,121
 48113,2020-04-14,TX,USA,county,50,123
@@ -7808,6 +7864,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48113,2020-08-24,TX,USA,county,104,318
 48113,2020-08-25,TX,USA,county,99,306
 48113,2020-08-26,TX,USA,county,101,308
+48113,2020-08-27,TX,USA,county,97,301
 48115,2020-04-12,TX,USA,county,0,1
 48115,2020-04-13,TX,USA,county,0,1
 48115,2020-04-14,TX,USA,county,0,1
@@ -7945,6 +8002,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48115,2020-08-24,TX,USA,county,1,2
 48115,2020-08-25,TX,USA,county,1,2
 48115,2020-08-26,TX,USA,county,1,2
+48115,2020-08-27,TX,USA,county,1,2
 48117,2020-04-12,TX,USA,county,0,1
 48117,2020-04-13,TX,USA,county,0,1
 48117,2020-04-14,TX,USA,county,0,1
@@ -8082,6 +8140,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48117,2020-08-24,TX,USA,county,1,3
 48117,2020-08-25,TX,USA,county,1,2
 48117,2020-08-26,TX,USA,county,1,2
+48117,2020-08-27,TX,USA,county,1,2
 48119,2020-04-12,TX,USA,county,0,0
 48119,2020-04-13,TX,USA,county,0,0
 48119,2020-04-14,TX,USA,county,0,0
@@ -8219,6 +8278,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48119,2020-08-24,TX,USA,county,1,2
 48119,2020-08-25,TX,USA,county,0,2
 48119,2020-08-26,TX,USA,county,0,1
+48119,2020-08-27,TX,USA,county,0,1
 48121,2020-04-12,TX,USA,county,18,41
 48121,2020-04-13,TX,USA,county,28,41
 48121,2020-04-14,TX,USA,county,17,41
@@ -8356,6 +8416,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48121,2020-08-24,TX,USA,county,35,107
 48121,2020-08-25,TX,USA,county,33,103
 48121,2020-08-26,TX,USA,county,34,104
+48121,2020-08-27,TX,USA,county,33,101
 48123,2020-04-12,TX,USA,county,0,2
 48123,2020-04-13,TX,USA,county,1,2
 48123,2020-04-14,TX,USA,county,1,3
@@ -8493,6 +8554,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48123,2020-08-24,TX,USA,county,3,10
 48123,2020-08-25,TX,USA,county,3,10
 48123,2020-08-26,TX,USA,county,4,11
+48123,2020-08-27,TX,USA,county,4,11
 48125,2020-04-12,TX,USA,county,0,0
 48125,2020-04-13,TX,USA,county,0,0
 48125,2020-04-14,TX,USA,county,0,0
@@ -8630,6 +8692,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48125,2020-08-24,TX,USA,county,0,0
 48125,2020-08-25,TX,USA,county,0,0
 48125,2020-08-26,TX,USA,county,0,0
+48125,2020-08-27,TX,USA,county,0,0
 48127,2020-04-12,TX,USA,county,0,0
 48127,2020-04-13,TX,USA,county,0,0
 48127,2020-04-14,TX,USA,county,0,0
@@ -8767,6 +8830,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48127,2020-08-24,TX,USA,county,1,2
 48127,2020-08-25,TX,USA,county,1,2
 48127,2020-08-26,TX,USA,county,1,2
+48127,2020-08-27,TX,USA,county,1,2
 48129,2020-04-12,TX,USA,county,0,0
 48129,2020-04-13,TX,USA,county,0,0
 48129,2020-04-14,TX,USA,county,0,0
@@ -8904,6 +8968,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48129,2020-08-24,TX,USA,county,0,0
 48129,2020-08-25,TX,USA,county,0,0
 48129,2020-08-26,TX,USA,county,0,0
+48129,2020-08-27,TX,USA,county,0,0
 48131,2020-04-12,TX,USA,county,0,0
 48131,2020-04-13,TX,USA,county,0,0
 48131,2020-04-14,TX,USA,county,0,0
@@ -9041,6 +9106,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48131,2020-08-24,TX,USA,county,1,5
 48131,2020-08-25,TX,USA,county,1,5
 48131,2020-08-26,TX,USA,county,1,5
+48131,2020-08-27,TX,USA,county,1,4
 48133,2020-04-12,TX,USA,county,0,0
 48133,2020-04-13,TX,USA,county,0,0
 48133,2020-04-14,TX,USA,county,0,0
@@ -9178,6 +9244,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48133,2020-08-24,TX,USA,county,2,2
 48133,2020-08-25,TX,USA,county,1,2
 48133,2020-08-26,TX,USA,county,1,2
+48133,2020-08-27,TX,USA,county,1,2
 48135,2020-04-12,TX,USA,county,1,3
 48135,2020-04-13,TX,USA,county,1,4
 48135,2020-04-14,TX,USA,county,3,6
@@ -9315,6 +9382,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48135,2020-08-24,TX,USA,county,6,24
 48135,2020-08-25,TX,USA,county,7,21
 48135,2020-08-26,TX,USA,county,6,23
+48135,2020-08-27,TX,USA,county,6,21
 48137,2020-04-12,TX,USA,county,0,0
 48137,2020-04-13,TX,USA,county,0,0
 48137,2020-04-14,TX,USA,county,0,0
@@ -9452,6 +9520,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48137,2020-08-24,TX,USA,county,0,0
 48137,2020-08-25,TX,USA,county,0,0
 48137,2020-08-26,TX,USA,county,0,0
+48137,2020-08-27,TX,USA,county,0,0
 48139,2020-04-12,TX,USA,county,4,9
 48139,2020-04-13,TX,USA,county,6,8
 48139,2020-04-14,TX,USA,county,3,9
@@ -9589,6 +9658,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48139,2020-08-24,TX,USA,county,7,22
 48139,2020-08-25,TX,USA,county,7,21
 48139,2020-08-26,TX,USA,county,7,22
+48139,2020-08-27,TX,USA,county,7,21
 48141,2020-04-12,TX,USA,county,6,14
 48141,2020-04-13,TX,USA,county,9,23
 48141,2020-04-14,TX,USA,county,6,12
@@ -9726,6 +9796,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48141,2020-08-24,TX,USA,county,53,135
 48141,2020-08-25,TX,USA,county,55,130
 48141,2020-08-26,TX,USA,county,51,130
+48141,2020-08-27,TX,USA,county,50,133
 48143,2020-04-12,TX,USA,county,1,2
 48143,2020-04-13,TX,USA,county,1,2
 48143,2020-04-14,TX,USA,county,1,2
@@ -9863,6 +9934,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48143,2020-08-24,TX,USA,county,2,5
 48143,2020-08-25,TX,USA,county,2,5
 48143,2020-08-26,TX,USA,county,2,5
+48143,2020-08-27,TX,USA,county,2,5
 48145,2020-04-12,TX,USA,county,0,0
 48145,2020-04-13,TX,USA,county,0,0
 48145,2020-04-14,TX,USA,county,0,0
@@ -10000,6 +10072,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48145,2020-08-24,TX,USA,county,1,2
 48145,2020-08-25,TX,USA,county,1,2
 48145,2020-08-26,TX,USA,county,1,2
+48145,2020-08-27,TX,USA,county,1,2
 48147,2020-04-12,TX,USA,county,1,2
 48147,2020-04-13,TX,USA,county,1,2
 48147,2020-04-14,TX,USA,county,1,2
@@ -10137,6 +10210,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48147,2020-08-24,TX,USA,county,1,4
 48147,2020-08-25,TX,USA,county,1,4
 48147,2020-08-26,TX,USA,county,1,4
+48147,2020-08-27,TX,USA,county,1,4
 48149,2020-04-12,TX,USA,county,0,0
 48149,2020-04-13,TX,USA,county,0,0
 48149,2020-04-14,TX,USA,county,0,0
@@ -10274,6 +10348,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48149,2020-08-24,TX,USA,county,1,2
 48149,2020-08-25,TX,USA,county,1,2
 48149,2020-08-26,TX,USA,county,1,2
+48149,2020-08-27,TX,USA,county,1,2
 48151,2020-04-12,TX,USA,county,0,0
 48151,2020-04-13,TX,USA,county,0,0
 48151,2020-04-14,TX,USA,county,0,0
@@ -10411,6 +10486,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48151,2020-08-24,TX,USA,county,0,1
 48151,2020-08-25,TX,USA,county,0,0
 48151,2020-08-26,TX,USA,county,0,0
+48151,2020-08-27,TX,USA,county,0,0
 48153,2020-04-12,TX,USA,county,0,0
 48153,2020-04-13,TX,USA,county,0,0
 48153,2020-04-14,TX,USA,county,0,0
@@ -10548,6 +10624,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48153,2020-08-24,TX,USA,county,0,1
 48153,2020-08-25,TX,USA,county,0,1
 48153,2020-08-26,TX,USA,county,0,1
+48153,2020-08-27,TX,USA,county,0,1
 48155,2020-04-12,TX,USA,county,0,0
 48155,2020-04-13,TX,USA,county,0,0
 48155,2020-04-14,TX,USA,county,0,0
@@ -10685,6 +10762,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48155,2020-08-24,TX,USA,county,0,0
 48155,2020-08-25,TX,USA,county,0,0
 48155,2020-08-26,TX,USA,county,0,0
+48155,2020-08-27,TX,USA,county,0,0
 48157,2020-04-12,TX,USA,county,27,66
 48157,2020-04-13,TX,USA,county,17,41
 48157,2020-04-14,TX,USA,county,30,67
@@ -10822,6 +10900,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48157,2020-08-24,TX,USA,county,45,125
 48157,2020-08-25,TX,USA,county,44,128
 48157,2020-08-26,TX,USA,county,44,128
+48157,2020-08-27,TX,USA,county,39,109
 48159,2020-04-12,TX,USA,county,0,0
 48159,2020-04-13,TX,USA,county,0,0
 48159,2020-04-14,TX,USA,county,0,0
@@ -10959,6 +11038,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48159,2020-08-24,TX,USA,county,1,2
 48159,2020-08-25,TX,USA,county,1,2
 48159,2020-08-26,TX,USA,county,1,2
+48159,2020-08-27,TX,USA,county,1,2
 48161,2020-04-12,TX,USA,county,0,1
 48161,2020-04-13,TX,USA,county,0,1
 48161,2020-04-14,TX,USA,county,0,1
@@ -11096,6 +11176,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48161,2020-08-24,TX,USA,county,1,4
 48161,2020-08-25,TX,USA,county,1,4
 48161,2020-08-26,TX,USA,county,1,4
+48161,2020-08-27,TX,USA,county,1,4
 48163,2020-04-12,TX,USA,county,0,0
 48163,2020-04-13,TX,USA,county,0,0
 48163,2020-04-14,TX,USA,county,0,0
@@ -11233,6 +11314,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48163,2020-08-24,TX,USA,county,1,4
 48163,2020-08-25,TX,USA,county,1,4
 48163,2020-08-26,TX,USA,county,1,4
+48163,2020-08-27,TX,USA,county,1,4
 48165,2020-04-12,TX,USA,county,1,1
 48165,2020-04-13,TX,USA,county,1,2
 48165,2020-04-14,TX,USA,county,1,1
@@ -11370,6 +11452,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48165,2020-08-24,TX,USA,county,2,3
 48165,2020-08-25,TX,USA,county,2,4
 48165,2020-08-26,TX,USA,county,2,3
+48165,2020-08-27,TX,USA,county,2,4
 48167,2020-04-12,TX,USA,county,8,20
 48167,2020-04-13,TX,USA,county,9,22
 48167,2020-04-14,TX,USA,county,10,26
@@ -11507,6 +11590,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48167,2020-08-24,TX,USA,county,13,56
 48167,2020-08-25,TX,USA,county,15,50
 48167,2020-08-26,TX,USA,county,19,59
+48167,2020-08-27,TX,USA,county,12,39
 48169,2020-04-12,TX,USA,county,0,0
 48169,2020-04-13,TX,USA,county,0,0
 48169,2020-04-14,TX,USA,county,0,0
@@ -11644,6 +11728,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48169,2020-08-24,TX,USA,county,0,1
 48169,2020-08-25,TX,USA,county,1,1
 48169,2020-08-26,TX,USA,county,0,1
+48169,2020-08-27,TX,USA,county,0,1
 48171,2020-04-12,TX,USA,county,0,1
 48171,2020-04-13,TX,USA,county,0,1
 48171,2020-04-14,TX,USA,county,0,1
@@ -11781,6 +11866,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48171,2020-08-24,TX,USA,county,2,5
 48171,2020-08-25,TX,USA,county,2,5
 48171,2020-08-26,TX,USA,county,2,5
+48171,2020-08-27,TX,USA,county,2,5
 48173,2020-04-12,TX,USA,county,0,0
 48173,2020-04-13,TX,USA,county,0,0
 48173,2020-04-14,TX,USA,county,0,0
@@ -11918,6 +12004,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48173,2020-08-24,TX,USA,county,0,0
 48173,2020-08-25,TX,USA,county,0,0
 48173,2020-08-26,TX,USA,county,0,0
+48173,2020-08-27,TX,USA,county,0,0
 48175,2020-04-12,TX,USA,county,0,1
 48175,2020-04-13,TX,USA,county,0,1
 48175,2020-04-14,TX,USA,county,0,1
@@ -12055,6 +12142,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48175,2020-08-24,TX,USA,county,1,4
 48175,2020-08-25,TX,USA,county,1,4
 48175,2020-08-26,TX,USA,county,2,4
+48175,2020-08-27,TX,USA,county,1,4
 48177,2020-04-12,TX,USA,county,0,0
 48177,2020-04-13,TX,USA,county,0,0
 48177,2020-04-14,TX,USA,county,0,0
@@ -12192,6 +12280,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48177,2020-08-24,TX,USA,county,2,4
 48177,2020-08-25,TX,USA,county,2,4
 48177,2020-08-26,TX,USA,county,1,4
+48177,2020-08-27,TX,USA,county,2,4
 48179,2020-04-12,TX,USA,county,0,1
 48179,2020-04-13,TX,USA,county,0,1
 48179,2020-04-14,TX,USA,county,0,1
@@ -12329,6 +12418,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48179,2020-08-24,TX,USA,county,1,3
 48179,2020-08-25,TX,USA,county,1,3
 48179,2020-08-26,TX,USA,county,1,3
+48179,2020-08-27,TX,USA,county,1,3
 48181,2020-04-12,TX,USA,county,3,6
 48181,2020-04-13,TX,USA,county,4,6
 48181,2020-04-14,TX,USA,county,3,6
@@ -12466,6 +12556,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48181,2020-08-24,TX,USA,county,5,16
 48181,2020-08-25,TX,USA,county,5,16
 48181,2020-08-26,TX,USA,county,5,16
+48181,2020-08-27,TX,USA,county,5,16
 48183,2020-04-12,TX,USA,county,2,4
 48183,2020-04-13,TX,USA,county,2,3
 48183,2020-04-14,TX,USA,county,2,4
@@ -12603,6 +12694,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48183,2020-08-24,TX,USA,county,9,25
 48183,2020-08-25,TX,USA,county,9,26
 48183,2020-08-26,TX,USA,county,8,25
+48183,2020-08-27,TX,USA,county,8,25
 48185,2020-04-12,TX,USA,county,1,2
 48185,2020-04-13,TX,USA,county,1,2
 48185,2020-04-14,TX,USA,county,0,1
@@ -12740,6 +12832,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48185,2020-08-24,TX,USA,county,0,1
 48185,2020-08-25,TX,USA,county,0,1
 48185,2020-08-26,TX,USA,county,0,2
+48185,2020-08-27,TX,USA,county,0,2
 48187,2020-04-12,TX,USA,county,1,3
 48187,2020-04-13,TX,USA,county,1,3
 48187,2020-04-14,TX,USA,county,1,4
@@ -12877,6 +12970,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48187,2020-08-24,TX,USA,county,12,32
 48187,2020-08-25,TX,USA,county,12,32
 48187,2020-08-26,TX,USA,county,11,29
+48187,2020-08-27,TX,USA,county,12,29
 48189,2020-04-12,TX,USA,county,1,2
 48189,2020-04-13,TX,USA,county,1,2
 48189,2020-04-14,TX,USA,county,1,2
@@ -13014,6 +13108,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48189,2020-08-24,TX,USA,county,2,5
 48189,2020-08-25,TX,USA,county,3,6
 48189,2020-08-26,TX,USA,county,3,5
+48189,2020-08-27,TX,USA,county,2,5
 48191,2020-04-12,TX,USA,county,0,0
 48191,2020-04-13,TX,USA,county,0,0
 48191,2020-04-14,TX,USA,county,0,0
@@ -13151,6 +13246,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48191,2020-08-24,TX,USA,county,0,0
 48191,2020-08-25,TX,USA,county,0,0
 48191,2020-08-26,TX,USA,county,0,0
+48191,2020-08-27,TX,USA,county,0,0
 48193,2020-04-12,TX,USA,county,0,0
 48193,2020-04-13,TX,USA,county,0,0
 48193,2020-04-14,TX,USA,county,0,0
@@ -13288,6 +13384,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48193,2020-08-24,TX,USA,county,0,1
 48193,2020-08-25,TX,USA,county,0,1
 48193,2020-08-26,TX,USA,county,0,1
+48193,2020-08-27,TX,USA,county,0,1
 48195,2020-04-12,TX,USA,county,0,0
 48195,2020-04-13,TX,USA,county,0,0
 48195,2020-04-14,TX,USA,county,0,0
@@ -13425,6 +13522,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48195,2020-08-24,TX,USA,county,0,1
 48195,2020-08-25,TX,USA,county,0,1
 48195,2020-08-26,TX,USA,county,0,1
+48195,2020-08-27,TX,USA,county,0,1
 48197,2020-04-12,TX,USA,county,0,0
 48197,2020-04-13,TX,USA,county,0,0
 48197,2020-04-14,TX,USA,county,0,0
@@ -13562,6 +13660,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48197,2020-08-24,TX,USA,county,0,1
 48197,2020-08-25,TX,USA,county,0,0
 48197,2020-08-26,TX,USA,county,0,0
+48197,2020-08-27,TX,USA,county,0,0
 48199,2020-04-12,TX,USA,county,1,3
 48199,2020-04-13,TX,USA,county,2,4
 48199,2020-04-14,TX,USA,county,2,4
@@ -13699,6 +13798,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48199,2020-08-24,TX,USA,county,2,9
 48199,2020-08-25,TX,USA,county,3,8
 48199,2020-08-26,TX,USA,county,3,10
+48199,2020-08-27,TX,USA,county,2,7
 48201,2020-04-12,TX,USA,county,158,381
 48201,2020-04-13,TX,USA,county,99,235
 48201,2020-04-14,TX,USA,county,173,389
@@ -13836,6 +13936,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48201,2020-08-24,TX,USA,county,264,727
 48201,2020-08-25,TX,USA,county,254,743
 48201,2020-08-26,TX,USA,county,257,741
+48201,2020-08-27,TX,USA,county,224,634
 48203,2020-04-12,TX,USA,county,1,2
 48203,2020-04-13,TX,USA,county,1,2
 48203,2020-04-14,TX,USA,county,1,2
@@ -13973,6 +14074,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48203,2020-08-24,TX,USA,county,5,13
 48203,2020-08-25,TX,USA,county,5,14
 48203,2020-08-26,TX,USA,county,4,13
+48203,2020-08-27,TX,USA,county,5,14
 48205,2020-04-12,TX,USA,county,0,0
 48205,2020-04-13,TX,USA,county,0,0
 48205,2020-04-14,TX,USA,county,0,0
@@ -14110,6 +14212,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48205,2020-08-24,TX,USA,county,0,1
 48205,2020-08-25,TX,USA,county,0,1
 48205,2020-08-26,TX,USA,county,0,1
+48205,2020-08-27,TX,USA,county,0,1
 48207,2020-04-12,TX,USA,county,0,0
 48207,2020-04-13,TX,USA,county,0,0
 48207,2020-04-14,TX,USA,county,0,0
@@ -14247,6 +14350,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48207,2020-08-24,TX,USA,county,1,1
 48207,2020-08-25,TX,USA,county,0,1
 48207,2020-08-26,TX,USA,county,0,1
+48207,2020-08-27,TX,USA,county,0,1
 48209,2020-04-12,TX,USA,county,1,2
 48209,2020-04-13,TX,USA,county,1,3
 48209,2020-04-14,TX,USA,county,2,3
@@ -14384,6 +14488,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48209,2020-08-24,TX,USA,county,7,19
 48209,2020-08-25,TX,USA,county,7,18
 48209,2020-08-26,TX,USA,county,7,18
+48209,2020-08-27,TX,USA,county,7,17
 48211,2020-04-12,TX,USA,county,0,0
 48211,2020-04-13,TX,USA,county,0,0
 48211,2020-04-14,TX,USA,county,0,0
@@ -14521,6 +14626,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48211,2020-08-24,TX,USA,county,0,1
 48211,2020-08-25,TX,USA,county,0,0
 48211,2020-08-26,TX,USA,county,0,0
+48211,2020-08-27,TX,USA,county,0,0
 48213,2020-04-12,TX,USA,county,1,3
 48213,2020-04-13,TX,USA,county,1,2
 48213,2020-04-14,TX,USA,county,1,3
@@ -14658,6 +14764,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48213,2020-08-24,TX,USA,county,6,17
 48213,2020-08-25,TX,USA,county,6,18
 48213,2020-08-26,TX,USA,county,6,16
+48213,2020-08-27,TX,USA,county,6,17
 48215,2020-04-12,TX,USA,county,11,36
 48215,2020-04-13,TX,USA,county,14,41
 48215,2020-04-14,TX,USA,county,20,43
@@ -14795,6 +14902,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48215,2020-08-24,TX,USA,county,160,393
 48215,2020-08-25,TX,USA,county,157,408
 48215,2020-08-26,TX,USA,county,144,385
+48215,2020-08-27,TX,USA,county,143,371
 48217,2020-04-12,TX,USA,county,1,1
 48217,2020-04-13,TX,USA,county,0,0
 48217,2020-04-14,TX,USA,county,0,1
@@ -14932,6 +15040,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48217,2020-08-24,TX,USA,county,3,7
 48217,2020-08-25,TX,USA,county,2,6
 48217,2020-08-26,TX,USA,county,2,5
+48217,2020-08-27,TX,USA,county,2,5
 48219,2020-04-12,TX,USA,county,1,2
 48219,2020-04-13,TX,USA,county,1,2
 48219,2020-04-14,TX,USA,county,1,1
@@ -15069,6 +15178,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48219,2020-08-24,TX,USA,county,2,4
 48219,2020-08-25,TX,USA,county,2,4
 48219,2020-08-26,TX,USA,county,2,4
+48219,2020-08-27,TX,USA,county,2,4
 48221,2020-04-12,TX,USA,county,1,3
 48221,2020-04-13,TX,USA,county,2,3
 48221,2020-04-14,TX,USA,county,1,3
@@ -15206,6 +15316,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48221,2020-08-24,TX,USA,county,2,7
 48221,2020-08-25,TX,USA,county,2,7
 48221,2020-08-26,TX,USA,county,2,7
+48221,2020-08-27,TX,USA,county,2,7
 48223,2020-04-12,TX,USA,county,2,2
 48223,2020-04-13,TX,USA,county,1,2
 48223,2020-04-14,TX,USA,county,1,3
@@ -15343,6 +15454,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48223,2020-08-24,TX,USA,county,8,15
 48223,2020-08-25,TX,USA,county,3,11
 48223,2020-08-26,TX,USA,county,3,10
+48223,2020-08-27,TX,USA,county,3,10
 48225,2020-04-12,TX,USA,county,0,1
 48225,2020-04-13,TX,USA,county,0,1
 48225,2020-04-14,TX,USA,county,0,1
@@ -15480,6 +15592,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48225,2020-08-24,TX,USA,county,2,5
 48225,2020-08-25,TX,USA,county,2,5
 48225,2020-08-26,TX,USA,county,2,5
+48225,2020-08-27,TX,USA,county,2,5
 48227,2020-04-12,TX,USA,county,0,1
 48227,2020-04-13,TX,USA,county,0,1
 48227,2020-04-14,TX,USA,county,1,1
@@ -15617,6 +15730,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48227,2020-08-24,TX,USA,county,1,5
 48227,2020-08-25,TX,USA,county,1,5
 48227,2020-08-26,TX,USA,county,1,5
+48227,2020-08-27,TX,USA,county,1,5
 48229,2020-04-12,TX,USA,county,0,0
 48229,2020-04-13,TX,USA,county,0,0
 48229,2020-04-14,TX,USA,county,0,0
@@ -15754,6 +15868,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48229,2020-08-24,TX,USA,county,0,1
 48229,2020-08-25,TX,USA,county,0,1
 48229,2020-08-26,TX,USA,county,0,1
+48229,2020-08-27,TX,USA,county,0,1
 48231,2020-04-12,TX,USA,county,2,5
 48231,2020-04-13,TX,USA,county,3,5
 48231,2020-04-14,TX,USA,county,2,5
@@ -15891,6 +16006,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48231,2020-08-24,TX,USA,county,4,12
 48231,2020-08-25,TX,USA,county,4,11
 48231,2020-08-26,TX,USA,county,4,12
+48231,2020-08-27,TX,USA,county,4,11
 48233,2020-04-12,TX,USA,county,0,1
 48233,2020-04-13,TX,USA,county,0,1
 48233,2020-04-14,TX,USA,county,0,1
@@ -16028,6 +16144,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48233,2020-08-24,TX,USA,county,1,3
 48233,2020-08-25,TX,USA,county,1,3
 48233,2020-08-26,TX,USA,county,1,3
+48233,2020-08-27,TX,USA,county,1,2
 48235,2020-04-12,TX,USA,county,0,0
 48235,2020-04-13,TX,USA,county,0,0
 48235,2020-04-14,TX,USA,county,0,0
@@ -16165,6 +16282,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48235,2020-08-24,TX,USA,county,0,0
 48235,2020-08-25,TX,USA,county,0,0
 48235,2020-08-26,TX,USA,county,0,0
+48235,2020-08-27,TX,USA,county,0,0
 48237,2020-04-12,TX,USA,county,0,0
 48237,2020-04-13,TX,USA,county,0,0
 48237,2020-04-14,TX,USA,county,0,0
@@ -16302,6 +16420,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48237,2020-08-24,TX,USA,county,1,2
 48237,2020-08-25,TX,USA,county,0,1
 48237,2020-08-26,TX,USA,county,0,1
+48237,2020-08-27,TX,USA,county,0,1
 48239,2020-04-12,TX,USA,county,0,1
 48239,2020-04-13,TX,USA,county,1,2
 48239,2020-04-14,TX,USA,county,0,2
@@ -16439,6 +16558,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48239,2020-08-24,TX,USA,county,3,7
 48239,2020-08-25,TX,USA,county,2,7
 48239,2020-08-26,TX,USA,county,3,8
+48239,2020-08-27,TX,USA,county,3,8
 48241,2020-04-12,TX,USA,county,1,2
 48241,2020-04-13,TX,USA,county,1,2
 48241,2020-04-14,TX,USA,county,1,3
@@ -16576,6 +16696,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48241,2020-08-24,TX,USA,county,1,6
 48241,2020-08-25,TX,USA,county,2,5
 48241,2020-08-26,TX,USA,county,2,6
+48241,2020-08-27,TX,USA,county,1,4
 48243,2020-04-12,TX,USA,county,0,0
 48243,2020-04-13,TX,USA,county,0,0
 48243,2020-04-14,TX,USA,county,0,0
@@ -16713,6 +16834,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48243,2020-08-24,TX,USA,county,0,0
 48243,2020-08-25,TX,USA,county,0,0
 48243,2020-08-26,TX,USA,county,0,0
+48243,2020-08-27,TX,USA,county,0,0
 48245,2020-04-12,TX,USA,county,6,15
 48245,2020-04-13,TX,USA,county,7,16
 48245,2020-04-14,TX,USA,county,7,19
@@ -16850,6 +16972,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48245,2020-08-24,TX,USA,county,10,41
 48245,2020-08-25,TX,USA,county,11,37
 48245,2020-08-26,TX,USA,county,14,43
+48245,2020-08-27,TX,USA,county,9,29
 48247,2020-04-12,TX,USA,county,0,0
 48247,2020-04-13,TX,USA,county,0,0
 48247,2020-04-14,TX,USA,county,0,0
@@ -16987,6 +17110,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48247,2020-08-24,TX,USA,county,1,3
 48247,2020-08-25,TX,USA,county,1,3
 48247,2020-08-26,TX,USA,county,1,3
+48247,2020-08-27,TX,USA,county,1,3
 48249,2020-04-12,TX,USA,county,0,1
 48249,2020-04-13,TX,USA,county,0,1
 48249,2020-04-14,TX,USA,county,0,1
@@ -17124,6 +17248,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48249,2020-08-24,TX,USA,county,5,17
 48249,2020-08-25,TX,USA,county,5,18
 48249,2020-08-26,TX,USA,county,5,17
+48249,2020-08-27,TX,USA,county,5,15
 48251,2020-04-12,TX,USA,county,4,8
 48251,2020-04-13,TX,USA,county,6,8
 48251,2020-04-14,TX,USA,county,3,8
@@ -17261,6 +17386,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48251,2020-08-24,TX,USA,county,7,21
 48251,2020-08-25,TX,USA,county,7,20
 48251,2020-08-26,TX,USA,county,7,21
+48251,2020-08-27,TX,USA,county,7,20
 48253,2020-04-12,TX,USA,county,0,0
 48253,2020-04-13,TX,USA,county,0,0
 48253,2020-04-14,TX,USA,county,0,0
@@ -17398,6 +17524,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48253,2020-08-24,TX,USA,county,2,3
 48253,2020-08-25,TX,USA,county,1,2
 48253,2020-08-26,TX,USA,county,1,2
+48253,2020-08-27,TX,USA,county,1,2
 48255,2020-04-12,TX,USA,county,0,0
 48255,2020-04-13,TX,USA,county,0,0
 48255,2020-04-14,TX,USA,county,0,0
@@ -17535,6 +17662,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48255,2020-08-24,TX,USA,county,1,3
 48255,2020-08-25,TX,USA,county,1,3
 48255,2020-08-26,TX,USA,county,1,3
+48255,2020-08-27,TX,USA,county,1,3
 48257,2020-04-12,TX,USA,county,3,6
 48257,2020-04-13,TX,USA,county,4,6
 48257,2020-04-14,TX,USA,county,3,6
@@ -17672,6 +17800,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48257,2020-08-24,TX,USA,county,5,16
 48257,2020-08-25,TX,USA,county,5,16
 48257,2020-08-26,TX,USA,county,5,16
+48257,2020-08-27,TX,USA,county,5,16
 48259,2020-04-12,TX,USA,county,0,1
 48259,2020-04-13,TX,USA,county,0,1
 48259,2020-04-14,TX,USA,county,0,1
@@ -17809,6 +17938,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48259,2020-08-24,TX,USA,county,3,9
 48259,2020-08-25,TX,USA,county,3,9
 48259,2020-08-26,TX,USA,county,3,8
+48259,2020-08-27,TX,USA,county,3,8
 48261,2020-04-12,TX,USA,county,0,0
 48261,2020-04-13,TX,USA,county,0,0
 48261,2020-04-14,TX,USA,county,0,0
@@ -17946,6 +18076,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48261,2020-08-24,TX,USA,county,0,0
 48261,2020-08-25,TX,USA,county,0,0
 48261,2020-08-26,TX,USA,county,0,0
+48261,2020-08-27,TX,USA,county,0,0
 48263,2020-04-12,TX,USA,county,0,0
 48263,2020-04-13,TX,USA,county,0,0
 48263,2020-04-14,TX,USA,county,0,0
@@ -18083,6 +18214,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48263,2020-08-24,TX,USA,county,0,0
 48263,2020-08-25,TX,USA,county,0,0
 48263,2020-08-26,TX,USA,county,0,0
+48263,2020-08-27,TX,USA,county,0,0
 48265,2020-04-12,TX,USA,county,0,1
 48265,2020-04-13,TX,USA,county,0,1
 48265,2020-04-14,TX,USA,county,0,1
@@ -18220,6 +18352,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48265,2020-08-24,TX,USA,county,4,10
 48265,2020-08-25,TX,USA,county,4,10
 48265,2020-08-26,TX,USA,county,4,9
+48265,2020-08-27,TX,USA,county,4,9
 48267,2020-04-12,TX,USA,county,0,0
 48267,2020-04-13,TX,USA,county,0,0
 48267,2020-04-14,TX,USA,county,0,0
@@ -18357,6 +18490,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48267,2020-08-24,TX,USA,county,0,1
 48267,2020-08-25,TX,USA,county,0,1
 48267,2020-08-26,TX,USA,county,0,1
+48267,2020-08-27,TX,USA,county,0,1
 48269,2020-04-12,TX,USA,county,0,0
 48269,2020-04-13,TX,USA,county,0,0
 48269,2020-04-14,TX,USA,county,0,0
@@ -18494,6 +18628,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48269,2020-08-24,TX,USA,county,0,0
 48269,2020-08-25,TX,USA,county,0,0
 48269,2020-08-26,TX,USA,county,0,0
+48269,2020-08-27,TX,USA,county,0,0
 48271,2020-04-12,TX,USA,county,0,0
 48271,2020-04-13,TX,USA,county,0,0
 48271,2020-04-14,TX,USA,county,0,0
@@ -18631,6 +18766,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48271,2020-08-24,TX,USA,county,0,1
 48271,2020-08-25,TX,USA,county,0,1
 48271,2020-08-26,TX,USA,county,0,1
+48271,2020-08-27,TX,USA,county,0,1
 48273,2020-04-12,TX,USA,county,0,0
 48273,2020-04-13,TX,USA,county,0,1
 48273,2020-04-14,TX,USA,county,0,0
@@ -18768,6 +18904,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48273,2020-08-24,TX,USA,county,4,13
 48273,2020-08-25,TX,USA,county,4,14
 48273,2020-08-26,TX,USA,county,4,13
+48273,2020-08-27,TX,USA,county,4,11
 48275,2020-04-12,TX,USA,county,0,0
 48275,2020-04-13,TX,USA,county,0,0
 48275,2020-04-14,TX,USA,county,0,0
@@ -18905,6 +19042,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48275,2020-08-24,TX,USA,county,0,0
 48275,2020-08-25,TX,USA,county,0,0
 48275,2020-08-26,TX,USA,county,0,0
+48275,2020-08-27,TX,USA,county,0,0
 48277,2020-04-12,TX,USA,county,2,3
 48277,2020-04-13,TX,USA,county,2,3
 48277,2020-04-14,TX,USA,county,2,4
@@ -19042,6 +19180,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48277,2020-08-24,TX,USA,county,10,20
 48277,2020-08-25,TX,USA,county,5,14
 48277,2020-08-26,TX,USA,county,5,14
+48277,2020-08-27,TX,USA,county,4,13
 48279,2020-04-12,TX,USA,county,0,1
 48279,2020-04-13,TX,USA,county,0,1
 48279,2020-04-14,TX,USA,county,0,1
@@ -19179,6 +19318,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48279,2020-08-24,TX,USA,county,1,2
 48279,2020-08-25,TX,USA,county,1,2
 48279,2020-08-26,TX,USA,county,1,2
+48279,2020-08-27,TX,USA,county,1,2
 48281,2020-04-12,TX,USA,county,0,0
 48281,2020-04-13,TX,USA,county,0,0
 48281,2020-04-14,TX,USA,county,0,1
@@ -19316,6 +19456,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48281,2020-08-24,TX,USA,county,1,3
 48281,2020-08-25,TX,USA,county,1,2
 48281,2020-08-26,TX,USA,county,1,2
+48281,2020-08-27,TX,USA,county,1,2
 48283,2020-04-12,TX,USA,county,0,0
 48283,2020-04-13,TX,USA,county,0,0
 48283,2020-04-14,TX,USA,county,0,0
@@ -19453,6 +19594,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48283,2020-08-24,TX,USA,county,1,1
 48283,2020-08-25,TX,USA,county,1,1
 48283,2020-08-26,TX,USA,county,1,1
+48283,2020-08-27,TX,USA,county,1,1
 48285,2020-04-12,TX,USA,county,0,2
 48285,2020-04-13,TX,USA,county,1,2
 48285,2020-04-14,TX,USA,county,1,3
@@ -19590,6 +19732,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48285,2020-08-24,TX,USA,county,3,10
 48285,2020-08-25,TX,USA,county,3,10
 48285,2020-08-26,TX,USA,county,4,11
+48285,2020-08-27,TX,USA,county,4,11
 48287,2020-04-12,TX,USA,county,0,0
 48287,2020-04-13,TX,USA,county,0,0
 48287,2020-04-14,TX,USA,county,0,0
@@ -19727,6 +19870,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48287,2020-08-24,TX,USA,county,1,1
 48287,2020-08-25,TX,USA,county,1,1
 48287,2020-08-26,TX,USA,county,1,1
+48287,2020-08-27,TX,USA,county,1,1
 48289,2020-04-12,TX,USA,county,0,1
 48289,2020-04-13,TX,USA,county,1,1
 48289,2020-04-14,TX,USA,county,0,1
@@ -19864,6 +20008,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48289,2020-08-24,TX,USA,county,0,1
 48289,2020-08-25,TX,USA,county,0,1
 48289,2020-08-26,TX,USA,county,0,1
+48289,2020-08-27,TX,USA,county,0,1
 48291,2020-04-12,TX,USA,county,2,5
 48291,2020-04-13,TX,USA,county,2,6
 48291,2020-04-14,TX,USA,county,3,7
@@ -20001,6 +20146,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48291,2020-08-24,TX,USA,county,3,14
 48291,2020-08-25,TX,USA,county,4,13
 48291,2020-08-26,TX,USA,county,5,15
+48291,2020-08-27,TX,USA,county,3,10
 48293,2020-04-12,TX,USA,county,0,1
 48293,2020-04-13,TX,USA,county,0,0
 48293,2020-04-14,TX,USA,county,0,0
@@ -20138,6 +20284,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48293,2020-08-24,TX,USA,county,2,4
 48293,2020-08-25,TX,USA,county,1,4
 48293,2020-08-26,TX,USA,county,1,3
+48293,2020-08-27,TX,USA,county,1,3
 48295,2020-04-12,TX,USA,county,0,0
 48295,2020-04-13,TX,USA,county,0,0
 48295,2020-04-14,TX,USA,county,0,0
@@ -20275,6 +20422,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48295,2020-08-24,TX,USA,county,0,0
 48295,2020-08-25,TX,USA,county,0,0
 48295,2020-08-26,TX,USA,county,0,0
+48295,2020-08-27,TX,USA,county,0,0
 48297,2020-04-12,TX,USA,county,0,0
 48297,2020-04-13,TX,USA,county,0,0
 48297,2020-04-14,TX,USA,county,0,0
@@ -20412,6 +20560,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48297,2020-08-24,TX,USA,county,2,5
 48297,2020-08-25,TX,USA,county,2,5
 48297,2020-08-26,TX,USA,county,2,5
+48297,2020-08-27,TX,USA,county,2,4
 48299,2020-04-12,TX,USA,county,0,0
 48299,2020-04-13,TX,USA,county,0,0
 48299,2020-04-14,TX,USA,county,0,0
@@ -20549,6 +20698,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48299,2020-08-24,TX,USA,county,1,2
 48299,2020-08-25,TX,USA,county,1,2
 48299,2020-08-26,TX,USA,county,1,2
+48299,2020-08-27,TX,USA,county,1,2
 48301,2020-04-12,TX,USA,county,0,0
 48301,2020-04-13,TX,USA,county,0,0
 48301,2020-04-14,TX,USA,county,0,0
@@ -20686,6 +20836,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48301,2020-08-24,TX,USA,county,0,0
 48301,2020-08-25,TX,USA,county,0,0
 48301,2020-08-26,TX,USA,county,0,0
+48301,2020-08-27,TX,USA,county,0,0
 48303,2020-04-12,TX,USA,county,7,21
 48303,2020-04-13,TX,USA,county,7,22
 48303,2020-04-14,TX,USA,county,9,19
@@ -20823,6 +20974,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48303,2020-08-24,TX,USA,county,23,50
 48303,2020-08-25,TX,USA,county,25,52
 48303,2020-08-26,TX,USA,county,25,50
+48303,2020-08-27,TX,USA,county,23,51
 48305,2020-04-12,TX,USA,county,0,0
 48305,2020-04-13,TX,USA,county,0,0
 48305,2020-04-14,TX,USA,county,0,0
@@ -20960,6 +21112,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48305,2020-08-24,TX,USA,county,0,1
 48305,2020-08-25,TX,USA,county,0,1
 48305,2020-08-26,TX,USA,county,0,1
+48305,2020-08-27,TX,USA,county,0,1
 48307,2020-04-12,TX,USA,county,0,0
 48307,2020-04-13,TX,USA,county,0,0
 48307,2020-04-14,TX,USA,county,0,0
@@ -21097,6 +21250,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48307,2020-08-24,TX,USA,county,1,2
 48307,2020-08-25,TX,USA,county,1,2
 48307,2020-08-26,TX,USA,county,1,2
+48307,2020-08-27,TX,USA,county,0,2
 48309,2020-04-12,TX,USA,county,4,7
 48309,2020-04-13,TX,USA,county,2,2
 48309,2020-04-14,TX,USA,county,2,4
@@ -21234,6 +21388,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48309,2020-08-24,TX,USA,county,18,46
 48309,2020-08-25,TX,USA,county,15,44
 48309,2020-08-26,TX,USA,county,15,37
+48309,2020-08-27,TX,USA,county,15,34
 48311,2020-04-12,TX,USA,county,0,0
 48311,2020-04-13,TX,USA,county,0,0
 48311,2020-04-14,TX,USA,county,0,0
@@ -21371,6 +21526,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48311,2020-08-24,TX,USA,county,0,0
 48311,2020-08-25,TX,USA,county,0,0
 48311,2020-08-26,TX,USA,county,0,0
+48311,2020-08-27,TX,USA,county,0,0
 48313,2020-04-12,TX,USA,county,0,1
 48313,2020-04-13,TX,USA,county,1,1
 48313,2020-04-14,TX,USA,county,0,1
@@ -21508,6 +21664,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48313,2020-08-24,TX,USA,county,0,1
 48313,2020-08-25,TX,USA,county,0,1
 48313,2020-08-26,TX,USA,county,0,1
+48313,2020-08-27,TX,USA,county,0,1
 48315,2020-04-12,TX,USA,county,0,0
 48315,2020-04-13,TX,USA,county,0,0
 48315,2020-04-14,TX,USA,county,0,0
@@ -21645,6 +21802,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48315,2020-08-24,TX,USA,county,1,2
 48315,2020-08-25,TX,USA,county,1,2
 48315,2020-08-26,TX,USA,county,1,2
+48315,2020-08-27,TX,USA,county,1,2
 48317,2020-04-12,TX,USA,county,0,0
 48317,2020-04-13,TX,USA,county,0,0
 48317,2020-04-14,TX,USA,county,0,0
@@ -21782,6 +21940,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48317,2020-08-24,TX,USA,county,0,1
 48317,2020-08-25,TX,USA,county,0,1
 48317,2020-08-26,TX,USA,county,0,1
+48317,2020-08-27,TX,USA,county,0,1
 48319,2020-04-12,TX,USA,county,0,0
 48319,2020-04-13,TX,USA,county,0,0
 48319,2020-04-14,TX,USA,county,0,0
@@ -21919,6 +22078,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48319,2020-08-24,TX,USA,county,0,1
 48319,2020-08-25,TX,USA,county,0,1
 48319,2020-08-26,TX,USA,county,0,1
+48319,2020-08-27,TX,USA,county,0,1
 48321,2020-04-12,TX,USA,county,1,3
 48321,2020-04-13,TX,USA,county,1,2
 48321,2020-04-14,TX,USA,county,1,3
@@ -22056,6 +22216,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48321,2020-08-24,TX,USA,county,2,6
 48321,2020-08-25,TX,USA,county,2,6
 48321,2020-08-26,TX,USA,county,2,6
+48321,2020-08-27,TX,USA,county,2,5
 48323,2020-04-12,TX,USA,county,0,1
 48323,2020-04-13,TX,USA,county,0,1
 48323,2020-04-14,TX,USA,county,1,1
@@ -22193,6 +22354,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48323,2020-08-24,TX,USA,county,4,11
 48323,2020-08-25,TX,USA,county,4,11
 48323,2020-08-26,TX,USA,county,4,10
+48323,2020-08-27,TX,USA,county,4,10
 48325,2020-04-12,TX,USA,county,0,1
 48325,2020-04-13,TX,USA,county,0,1
 48325,2020-04-14,TX,USA,county,0,1
@@ -22330,6 +22492,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48325,2020-08-24,TX,USA,county,4,10
 48325,2020-08-25,TX,USA,county,4,10
 48325,2020-08-26,TX,USA,county,4,9
+48325,2020-08-27,TX,USA,county,4,9
 48327,2020-04-12,TX,USA,county,0,0
 48327,2020-04-13,TX,USA,county,0,0
 48327,2020-04-14,TX,USA,county,0,0
@@ -22467,6 +22630,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48327,2020-08-24,TX,USA,county,0,1
 48327,2020-08-25,TX,USA,county,0,1
 48327,2020-08-26,TX,USA,county,0,1
+48327,2020-08-27,TX,USA,county,0,0
 48329,2020-04-12,TX,USA,county,1,4
 48329,2020-04-13,TX,USA,county,1,4
 48329,2020-04-14,TX,USA,county,3,6
@@ -22604,6 +22768,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48329,2020-08-24,TX,USA,county,7,25
 48329,2020-08-25,TX,USA,county,7,22
 48329,2020-08-26,TX,USA,county,7,24
+48329,2020-08-27,TX,USA,county,6,22
 48331,2020-04-12,TX,USA,county,0,1
 48331,2020-04-13,TX,USA,county,0,1
 48331,2020-04-14,TX,USA,county,0,1
@@ -22741,6 +22906,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48331,2020-08-24,TX,USA,county,1,3
 48331,2020-08-25,TX,USA,county,1,3
 48331,2020-08-26,TX,USA,county,1,3
+48331,2020-08-27,TX,USA,county,1,2
 48333,2020-04-12,TX,USA,county,0,0
 48333,2020-04-13,TX,USA,county,0,0
 48333,2020-04-14,TX,USA,county,0,0
@@ -22878,6 +23044,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48333,2020-08-24,TX,USA,county,0,1
 48333,2020-08-25,TX,USA,county,0,1
 48333,2020-08-26,TX,USA,county,0,1
+48333,2020-08-27,TX,USA,county,0,0
 48335,2020-04-12,TX,USA,county,0,0
 48335,2020-04-13,TX,USA,county,0,0
 48335,2020-04-14,TX,USA,county,0,0
@@ -23015,6 +23182,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48335,2020-08-24,TX,USA,county,1,1
 48335,2020-08-25,TX,USA,county,0,1
 48335,2020-08-26,TX,USA,county,0,1
+48335,2020-08-27,TX,USA,county,0,1
 48337,2020-04-12,TX,USA,county,0,0
 48337,2020-04-13,TX,USA,county,0,0
 48337,2020-04-14,TX,USA,county,0,1
@@ -23152,6 +23320,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48337,2020-08-24,TX,USA,county,2,4
 48337,2020-08-25,TX,USA,county,1,2
 48337,2020-08-26,TX,USA,county,1,2
+48337,2020-08-27,TX,USA,county,1,2
 48339,2020-04-12,TX,USA,county,20,49
 48339,2020-04-13,TX,USA,county,13,30
 48339,2020-04-14,TX,USA,county,22,50
@@ -23289,6 +23458,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48339,2020-08-24,TX,USA,county,34,94
 48339,2020-08-25,TX,USA,county,33,96
 48339,2020-08-26,TX,USA,county,33,95
+48339,2020-08-27,TX,USA,county,29,82
 48341,2020-04-12,TX,USA,county,0,1
 48341,2020-04-13,TX,USA,county,0,1
 48341,2020-04-14,TX,USA,county,0,1
@@ -23426,6 +23596,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48341,2020-08-24,TX,USA,county,1,3
 48341,2020-08-25,TX,USA,county,1,3
 48341,2020-08-26,TX,USA,county,1,3
+48341,2020-08-27,TX,USA,county,1,2
 48343,2020-04-12,TX,USA,county,1,1
 48343,2020-04-13,TX,USA,county,0,1
 48343,2020-04-14,TX,USA,county,0,1
@@ -23563,6 +23734,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48343,2020-08-24,TX,USA,county,3,5
 48343,2020-08-25,TX,USA,county,1,4
 48343,2020-08-26,TX,USA,county,1,3
+48343,2020-08-27,TX,USA,county,1,3
 48345,2020-04-12,TX,USA,county,0,0
 48345,2020-04-13,TX,USA,county,0,0
 48345,2020-04-14,TX,USA,county,0,0
@@ -23700,6 +23872,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48345,2020-08-24,TX,USA,county,0,0
 48345,2020-08-25,TX,USA,county,0,0
 48345,2020-08-26,TX,USA,county,0,0
+48345,2020-08-27,TX,USA,county,0,0
 48347,2020-04-12,TX,USA,county,1,4
 48347,2020-04-13,TX,USA,county,1,4
 48347,2020-04-14,TX,USA,county,1,6
@@ -23837,6 +24010,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48347,2020-08-24,TX,USA,county,5,16
 48347,2020-08-25,TX,USA,county,5,13
 48347,2020-08-26,TX,USA,county,4,11
+48347,2020-08-27,TX,USA,county,6,15
 48349,2020-04-12,TX,USA,county,1,2
 48349,2020-04-13,TX,USA,county,2,2
 48349,2020-04-14,TX,USA,county,1,2
@@ -23974,6 +24148,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48349,2020-08-24,TX,USA,county,2,6
 48349,2020-08-25,TX,USA,county,2,6
 48349,2020-08-26,TX,USA,county,2,6
+48349,2020-08-27,TX,USA,county,2,6
 48351,2020-04-12,TX,USA,county,0,1
 48351,2020-04-13,TX,USA,county,0,1
 48351,2020-04-14,TX,USA,county,0,1
@@ -24111,6 +24286,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48351,2020-08-24,TX,USA,county,1,2
 48351,2020-08-25,TX,USA,county,1,2
 48351,2020-08-26,TX,USA,county,1,2
+48351,2020-08-27,TX,USA,county,0,2
 48353,2020-04-12,TX,USA,county,0,0
 48353,2020-04-13,TX,USA,county,0,0
 48353,2020-04-14,TX,USA,county,0,0
@@ -24248,6 +24424,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48353,2020-08-24,TX,USA,county,1,2
 48353,2020-08-25,TX,USA,county,1,1
 48353,2020-08-26,TX,USA,county,1,1
+48353,2020-08-27,TX,USA,county,1,1
 48355,2020-04-12,TX,USA,county,3,5
 48355,2020-04-13,TX,USA,county,3,7
 48355,2020-04-14,TX,USA,county,3,5
@@ -24385,6 +24562,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48355,2020-08-24,TX,USA,county,45,153
 48355,2020-08-25,TX,USA,county,48,162
 48355,2020-08-26,TX,USA,county,47,150
+48355,2020-08-27,TX,USA,county,48,131
 48357,2020-04-12,TX,USA,county,0,0
 48357,2020-04-13,TX,USA,county,0,0
 48357,2020-04-14,TX,USA,county,0,0
@@ -24522,6 +24700,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48357,2020-08-24,TX,USA,county,0,1
 48357,2020-08-25,TX,USA,county,0,1
 48357,2020-08-26,TX,USA,county,0,1
+48357,2020-08-27,TX,USA,county,0,1
 48359,2020-04-12,TX,USA,county,0,0
 48359,2020-04-13,TX,USA,county,0,0
 48359,2020-04-14,TX,USA,county,0,0
@@ -24659,6 +24838,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48359,2020-08-24,TX,USA,county,0,0
 48359,2020-08-25,TX,USA,county,0,0
 48359,2020-08-26,TX,USA,county,0,0
+48359,2020-08-27,TX,USA,county,0,0
 48361,2020-04-12,TX,USA,county,2,5
 48361,2020-04-13,TX,USA,county,2,5
 48361,2020-04-14,TX,USA,county,2,6
@@ -24796,6 +24976,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48361,2020-08-24,TX,USA,county,3,14
 48361,2020-08-25,TX,USA,county,4,12
 48361,2020-08-26,TX,USA,county,5,14
+48361,2020-08-27,TX,USA,county,3,10
 48363,2020-04-12,TX,USA,county,1,1
 48363,2020-04-13,TX,USA,county,1,1
 48363,2020-04-14,TX,USA,county,1,1
@@ -24933,6 +25114,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48363,2020-08-24,TX,USA,county,1,4
 48363,2020-08-25,TX,USA,county,1,3
 48363,2020-08-26,TX,USA,county,1,3
+48363,2020-08-27,TX,USA,county,1,3
 48365,2020-04-12,TX,USA,county,0,1
 48365,2020-04-13,TX,USA,county,0,1
 48365,2020-04-14,TX,USA,county,0,1
@@ -25070,6 +25252,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48365,2020-08-24,TX,USA,county,2,5
 48365,2020-08-25,TX,USA,county,2,5
 48365,2020-08-26,TX,USA,county,2,5
+48365,2020-08-27,TX,USA,county,2,5
 48367,2020-04-12,TX,USA,county,3,7
 48367,2020-04-13,TX,USA,county,5,7
 48367,2020-04-14,TX,USA,county,3,7
@@ -25207,6 +25390,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48367,2020-08-24,TX,USA,county,6,17
 48367,2020-08-25,TX,USA,county,5,17
 48367,2020-08-26,TX,USA,county,5,17
+48367,2020-08-27,TX,USA,county,5,16
 48369,2020-04-12,TX,USA,county,0,0
 48369,2020-04-13,TX,USA,county,0,0
 48369,2020-04-14,TX,USA,county,0,0
@@ -25344,6 +25528,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48369,2020-08-24,TX,USA,county,0,1
 48369,2020-08-25,TX,USA,county,0,1
 48369,2020-08-26,TX,USA,county,0,1
+48369,2020-08-27,TX,USA,county,0,1
 48371,2020-04-12,TX,USA,county,0,0
 48371,2020-04-13,TX,USA,county,0,0
 48371,2020-04-14,TX,USA,county,0,1
@@ -25481,6 +25666,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48371,2020-08-24,TX,USA,county,1,2
 48371,2020-08-25,TX,USA,county,1,2
 48371,2020-08-26,TX,USA,county,1,2
+48371,2020-08-27,TX,USA,county,1,2
 48373,2020-04-12,TX,USA,county,1,3
 48373,2020-04-13,TX,USA,county,1,3
 48373,2020-04-14,TX,USA,county,1,4
@@ -25618,6 +25804,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48373,2020-08-24,TX,USA,county,4,13
 48373,2020-08-25,TX,USA,county,4,10
 48373,2020-08-26,TX,USA,county,3,9
+48373,2020-08-27,TX,USA,county,4,12
 48375,2020-04-12,TX,USA,county,1,5
 48375,2020-04-13,TX,USA,county,1,5
 48375,2020-04-14,TX,USA,county,1,5
@@ -25755,6 +25942,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48375,2020-08-24,TX,USA,county,6,16
 48375,2020-08-25,TX,USA,county,6,15
 48375,2020-08-26,TX,USA,county,5,14
+48375,2020-08-27,TX,USA,county,6,13
 48377,2020-04-12,TX,USA,county,0,0
 48377,2020-04-13,TX,USA,county,0,0
 48377,2020-04-14,TX,USA,county,0,0
@@ -25892,6 +26080,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48377,2020-08-24,TX,USA,county,0,1
 48377,2020-08-25,TX,USA,county,0,1
 48377,2020-08-26,TX,USA,county,0,1
+48377,2020-08-27,TX,USA,county,0,1
 48379,2020-04-12,TX,USA,county,0,0
 48379,2020-04-13,TX,USA,county,0,0
 48379,2020-04-14,TX,USA,county,0,0
@@ -26029,6 +26218,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48379,2020-08-24,TX,USA,county,1,3
 48379,2020-08-25,TX,USA,county,1,3
 48379,2020-08-26,TX,USA,county,1,2
+48379,2020-08-27,TX,USA,county,1,3
 48381,2020-04-12,TX,USA,county,1,5
 48381,2020-04-13,TX,USA,county,2,5
 48381,2020-04-14,TX,USA,county,2,5
@@ -26166,6 +26356,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48381,2020-08-24,TX,USA,county,7,19
 48381,2020-08-25,TX,USA,county,6,18
 48381,2020-08-26,TX,USA,county,6,16
+48381,2020-08-27,TX,USA,county,6,16
 48383,2020-04-12,TX,USA,county,0,0
 48383,2020-04-13,TX,USA,county,0,0
 48383,2020-04-14,TX,USA,county,0,0
@@ -26303,6 +26494,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48383,2020-08-24,TX,USA,county,0,1
 48383,2020-08-25,TX,USA,county,0,1
 48383,2020-08-26,TX,USA,county,0,1
+48383,2020-08-27,TX,USA,county,0,1
 48385,2020-04-12,TX,USA,county,0,0
 48385,2020-04-13,TX,USA,county,0,0
 48385,2020-04-14,TX,USA,county,0,0
@@ -26440,6 +26632,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48385,2020-08-24,TX,USA,county,0,1
 48385,2020-08-25,TX,USA,county,0,1
 48385,2020-08-26,TX,USA,county,0,1
+48385,2020-08-27,TX,USA,county,0,1
 48387,2020-04-12,TX,USA,county,1,1
 48387,2020-04-13,TX,USA,county,0,1
 48387,2020-04-14,TX,USA,county,0,1
@@ -26577,6 +26770,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48387,2020-08-24,TX,USA,county,3,5
 48387,2020-08-25,TX,USA,county,1,3
 48387,2020-08-26,TX,USA,county,1,3
+48387,2020-08-27,TX,USA,county,1,3
 48389,2020-04-12,TX,USA,county,0,0
 48389,2020-04-13,TX,USA,county,0,0
 48389,2020-04-14,TX,USA,county,0,1
@@ -26714,6 +26908,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48389,2020-08-24,TX,USA,county,1,2
 48389,2020-08-25,TX,USA,county,1,2
 48389,2020-08-26,TX,USA,county,1,2
+48389,2020-08-27,TX,USA,county,1,2
 48391,2020-04-12,TX,USA,county,0,0
 48391,2020-04-13,TX,USA,county,0,0
 48391,2020-04-14,TX,USA,county,0,0
@@ -26851,6 +27046,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48391,2020-08-24,TX,USA,county,1,3
 48391,2020-08-25,TX,USA,county,1,3
 48391,2020-08-26,TX,USA,county,1,3
+48391,2020-08-27,TX,USA,county,1,3
 48393,2020-04-12,TX,USA,county,0,0
 48393,2020-04-13,TX,USA,county,0,0
 48393,2020-04-14,TX,USA,county,0,0
@@ -26988,6 +27184,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48393,2020-08-24,TX,USA,county,0,0
 48393,2020-08-25,TX,USA,county,0,0
 48393,2020-08-26,TX,USA,county,0,0
+48393,2020-08-27,TX,USA,county,0,0
 48395,2020-04-12,TX,USA,county,0,1
 48395,2020-04-13,TX,USA,county,1,1
 48395,2020-04-14,TX,USA,county,0,1
@@ -27125,6 +27322,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48395,2020-08-24,TX,USA,county,0,1
 48395,2020-08-25,TX,USA,county,0,1
 48395,2020-08-26,TX,USA,county,0,1
+48395,2020-08-27,TX,USA,county,0,1
 48397,2020-04-12,TX,USA,county,2,5
 48397,2020-04-13,TX,USA,county,3,5
 48397,2020-04-14,TX,USA,county,2,5
@@ -27262,6 +27460,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48397,2020-08-24,TX,USA,county,4,13
 48397,2020-08-25,TX,USA,county,4,12
 48397,2020-08-26,TX,USA,county,4,12
+48397,2020-08-27,TX,USA,county,4,12
 48399,2020-04-12,TX,USA,county,0,0
 48399,2020-04-13,TX,USA,county,0,0
 48399,2020-04-14,TX,USA,county,0,0
@@ -27399,6 +27598,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48399,2020-08-24,TX,USA,county,1,3
 48399,2020-08-25,TX,USA,county,1,3
 48399,2020-08-26,TX,USA,county,1,3
+48399,2020-08-27,TX,USA,county,1,2
 48401,2020-04-12,TX,USA,county,1,2
 48401,2020-04-13,TX,USA,county,1,1
 48401,2020-04-14,TX,USA,county,1,2
@@ -27536,6 +27736,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48401,2020-08-24,TX,USA,county,4,11
 48401,2020-08-25,TX,USA,county,4,12
 48401,2020-08-26,TX,USA,county,4,11
+48401,2020-08-27,TX,USA,county,4,11
 48403,2020-04-12,TX,USA,county,0,1
 48403,2020-04-13,TX,USA,county,0,1
 48403,2020-04-14,TX,USA,county,0,1
@@ -27673,6 +27874,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48403,2020-08-24,TX,USA,county,1,3
 48403,2020-08-25,TX,USA,county,1,2
 48403,2020-08-26,TX,USA,county,1,2
+48403,2020-08-27,TX,USA,county,1,2
 48405,2020-04-12,TX,USA,county,0,0
 48405,2020-04-13,TX,USA,county,0,1
 48405,2020-04-14,TX,USA,county,0,1
@@ -27810,6 +28012,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48405,2020-08-24,TX,USA,county,1,2
 48405,2020-08-25,TX,USA,county,1,2
 48405,2020-08-26,TX,USA,county,0,1
+48405,2020-08-27,TX,USA,county,1,2
 48407,2020-04-12,TX,USA,county,1,2
 48407,2020-04-13,TX,USA,county,0,2
 48407,2020-04-14,TX,USA,county,1,2
@@ -27947,6 +28150,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48407,2020-08-24,TX,USA,county,2,7
 48407,2020-08-25,TX,USA,county,2,6
 48407,2020-08-26,TX,USA,county,2,5
+48407,2020-08-27,TX,USA,county,2,7
 48409,2020-04-12,TX,USA,county,1,1
 48409,2020-04-13,TX,USA,county,1,1
 48409,2020-04-14,TX,USA,county,1,1
@@ -28084,6 +28288,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48409,2020-08-24,TX,USA,county,8,28
 48409,2020-08-25,TX,USA,county,9,30
 48409,2020-08-26,TX,USA,county,9,28
+48409,2020-08-27,TX,USA,county,9,24
 48411,2020-04-12,TX,USA,county,0,0
 48411,2020-04-13,TX,USA,county,0,0
 48411,2020-04-14,TX,USA,county,0,0
@@ -28221,6 +28426,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48411,2020-08-24,TX,USA,county,0,1
 48411,2020-08-25,TX,USA,county,0,0
 48411,2020-08-26,TX,USA,county,0,0
+48411,2020-08-27,TX,USA,county,0,0
 48413,2020-04-12,TX,USA,county,0,0
 48413,2020-04-13,TX,USA,county,0,0
 48413,2020-04-14,TX,USA,county,0,0
@@ -28358,6 +28564,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48413,2020-08-24,TX,USA,county,0,1
 48413,2020-08-25,TX,USA,county,0,1
 48413,2020-08-26,TX,USA,county,0,1
+48413,2020-08-27,TX,USA,county,0,1
 48415,2020-04-12,TX,USA,county,0,1
 48415,2020-04-13,TX,USA,county,0,1
 48415,2020-04-14,TX,USA,county,0,1
@@ -28495,6 +28702,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48415,2020-08-24,TX,USA,county,1,3
 48415,2020-08-25,TX,USA,county,1,3
 48415,2020-08-26,TX,USA,county,1,3
+48415,2020-08-27,TX,USA,county,1,3
 48417,2020-04-12,TX,USA,county,0,0
 48417,2020-04-13,TX,USA,county,0,0
 48417,2020-04-14,TX,USA,county,0,0
@@ -28632,6 +28840,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48417,2020-08-24,TX,USA,county,0,0
 48417,2020-08-25,TX,USA,county,0,0
 48417,2020-08-26,TX,USA,county,0,0
+48417,2020-08-27,TX,USA,county,0,0
 48419,2020-04-12,TX,USA,county,0,1
 48419,2020-04-13,TX,USA,county,0,1
 48419,2020-04-14,TX,USA,county,0,1
@@ -28769,6 +28978,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48419,2020-08-24,TX,USA,county,2,5
 48419,2020-08-25,TX,USA,county,2,5
 48419,2020-08-26,TX,USA,county,2,5
+48419,2020-08-27,TX,USA,county,2,5
 48421,2020-04-12,TX,USA,county,0,0
 48421,2020-04-13,TX,USA,county,0,0
 48421,2020-04-14,TX,USA,county,0,0
@@ -28906,6 +29116,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48421,2020-08-24,TX,USA,county,0,0
 48421,2020-08-25,TX,USA,county,0,0
 48421,2020-08-26,TX,USA,county,0,0
+48421,2020-08-27,TX,USA,county,0,0
 48423,2020-04-12,TX,USA,county,4,8
 48423,2020-04-13,TX,USA,county,3,6
 48423,2020-04-14,TX,USA,county,4,8
@@ -29043,6 +29254,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48423,2020-08-24,TX,USA,county,16,47
 48423,2020-08-25,TX,USA,county,16,50
 48423,2020-08-26,TX,USA,county,16,46
+48423,2020-08-27,TX,USA,county,16,48
 48425,2020-04-12,TX,USA,county,0,0
 48425,2020-04-13,TX,USA,county,0,0
 48425,2020-04-14,TX,USA,county,0,0
@@ -29180,6 +29392,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48425,2020-08-24,TX,USA,county,0,1
 48425,2020-08-25,TX,USA,county,0,1
 48425,2020-08-26,TX,USA,county,0,1
+48425,2020-08-27,TX,USA,county,0,1
 48427,2020-04-12,TX,USA,county,1,3
 48427,2020-04-13,TX,USA,county,1,3
 48427,2020-04-14,TX,USA,county,2,3
@@ -29317,6 +29530,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48427,2020-08-24,TX,USA,county,12,29
 48427,2020-08-25,TX,USA,county,12,30
 48427,2020-08-26,TX,USA,county,11,29
+48427,2020-08-27,TX,USA,county,11,28
 48429,2020-04-12,TX,USA,county,0,0
 48429,2020-04-13,TX,USA,county,0,0
 48429,2020-04-14,TX,USA,county,0,0
@@ -29454,6 +29668,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48429,2020-08-24,TX,USA,county,1,1
 48429,2020-08-25,TX,USA,county,0,1
 48429,2020-08-26,TX,USA,county,0,1
+48429,2020-08-27,TX,USA,county,0,1
 48431,2020-04-12,TX,USA,county,0,0
 48431,2020-04-13,TX,USA,county,0,0
 48431,2020-04-14,TX,USA,county,0,0
@@ -29591,6 +29806,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48431,2020-08-24,TX,USA,county,0,0
 48431,2020-08-25,TX,USA,county,0,0
 48431,2020-08-26,TX,USA,county,0,0
+48431,2020-08-27,TX,USA,county,0,0
 48433,2020-04-12,TX,USA,county,0,0
 48433,2020-04-13,TX,USA,county,0,0
 48433,2020-04-14,TX,USA,county,0,0
@@ -29728,6 +29944,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48433,2020-08-24,TX,USA,county,0,0
 48433,2020-08-25,TX,USA,county,0,0
 48433,2020-08-26,TX,USA,county,0,0
+48433,2020-08-27,TX,USA,county,0,0
 48435,2020-04-12,TX,USA,county,0,0
 48435,2020-04-13,TX,USA,county,0,0
 48435,2020-04-14,TX,USA,county,0,0
@@ -29865,6 +30082,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48435,2020-08-24,TX,USA,county,0,1
 48435,2020-08-25,TX,USA,county,0,1
 48435,2020-08-26,TX,USA,county,0,1
+48435,2020-08-27,TX,USA,county,0,1
 48437,2020-04-12,TX,USA,county,0,0
 48437,2020-04-13,TX,USA,county,0,0
 48437,2020-04-14,TX,USA,county,0,0
@@ -30002,6 +30220,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48437,2020-08-24,TX,USA,county,0,1
 48437,2020-08-25,TX,USA,county,0,1
 48437,2020-08-26,TX,USA,county,0,1
+48437,2020-08-27,TX,USA,county,0,1
 48439,2020-04-12,TX,USA,county,42,97
 48439,2020-04-13,TX,USA,county,67,96
 48439,2020-04-14,TX,USA,county,40,98
@@ -30139,6 +30358,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48439,2020-08-24,TX,USA,county,83,254
 48439,2020-08-25,TX,USA,county,79,244
 48439,2020-08-26,TX,USA,county,81,245
+48439,2020-08-27,TX,USA,county,78,240
 48441,2020-04-12,TX,USA,county,1,3
 48441,2020-04-13,TX,USA,county,1,3
 48441,2020-04-14,TX,USA,county,0,1
@@ -30276,6 +30496,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48441,2020-08-24,TX,USA,county,12,18
 48441,2020-08-25,TX,USA,county,7,13
 48441,2020-08-26,TX,USA,county,7,12
+48441,2020-08-27,TX,USA,county,7,12
 48443,2020-04-12,TX,USA,county,0,0
 48443,2020-04-13,TX,USA,county,0,0
 48443,2020-04-14,TX,USA,county,0,0
@@ -30413,6 +30634,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48443,2020-08-24,TX,USA,county,0,0
 48443,2020-08-25,TX,USA,county,0,0
 48443,2020-08-26,TX,USA,county,0,0
+48443,2020-08-27,TX,USA,county,0,0
 48445,2020-04-12,TX,USA,county,0,1
 48445,2020-04-13,TX,USA,county,0,1
 48445,2020-04-14,TX,USA,county,0,1
@@ -30550,6 +30772,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48445,2020-08-24,TX,USA,county,1,2
 48445,2020-08-25,TX,USA,county,1,2
 48445,2020-08-26,TX,USA,county,1,2
+48445,2020-08-27,TX,USA,county,1,2
 48447,2020-04-12,TX,USA,county,0,0
 48447,2020-04-13,TX,USA,county,0,0
 48447,2020-04-14,TX,USA,county,0,0
@@ -30687,6 +30910,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48447,2020-08-24,TX,USA,county,0,0
 48447,2020-08-25,TX,USA,county,0,0
 48447,2020-08-26,TX,USA,county,0,0
+48447,2020-08-27,TX,USA,county,0,0
 48449,2020-04-12,TX,USA,county,1,2
 48449,2020-04-13,TX,USA,county,1,2
 48449,2020-04-14,TX,USA,county,1,3
@@ -30824,6 +31048,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48449,2020-08-24,TX,USA,county,7,13
 48449,2020-08-25,TX,USA,county,3,9
 48449,2020-08-26,TX,USA,county,3,9
+48449,2020-08-27,TX,USA,county,3,9
 48451,2020-04-12,TX,USA,county,0,0
 48451,2020-04-13,TX,USA,county,0,0
 48451,2020-04-14,TX,USA,county,0,0
@@ -30961,6 +31186,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48451,2020-08-24,TX,USA,county,8,34
 48451,2020-08-25,TX,USA,county,9,31
 48451,2020-08-26,TX,USA,county,8,29
+48451,2020-08-27,TX,USA,county,7,24
 48453,2020-04-12,TX,USA,county,6,12
 48453,2020-04-13,TX,USA,county,8,14
 48453,2020-04-14,TX,USA,county,9,15
@@ -31098,6 +31324,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48453,2020-08-24,TX,USA,county,39,108
 48453,2020-08-25,TX,USA,county,40,98
 48453,2020-08-26,TX,USA,county,41,98
+48453,2020-08-27,TX,USA,county,41,93
 48455,2020-04-12,TX,USA,county,0,0
 48455,2020-04-13,TX,USA,county,0,0
 48455,2020-04-14,TX,USA,county,0,1
@@ -31235,6 +31462,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48455,2020-08-24,TX,USA,county,1,3
 48455,2020-08-25,TX,USA,county,1,3
 48455,2020-08-26,TX,USA,county,1,3
+48455,2020-08-27,TX,USA,county,1,3
 48457,2020-04-12,TX,USA,county,0,1
 48457,2020-04-13,TX,USA,county,0,1
 48457,2020-04-14,TX,USA,county,0,2
@@ -31372,6 +31600,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48457,2020-08-24,TX,USA,county,2,5
 48457,2020-08-25,TX,USA,county,2,4
 48457,2020-08-26,TX,USA,county,1,4
+48457,2020-08-27,TX,USA,county,2,5
 48459,2020-04-12,TX,USA,county,1,1
 48459,2020-04-13,TX,USA,county,1,1
 48459,2020-04-14,TX,USA,county,1,1
@@ -31509,6 +31738,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48459,2020-08-24,TX,USA,county,3,8
 48459,2020-08-25,TX,USA,county,3,9
 48459,2020-08-26,TX,USA,county,3,8
+48459,2020-08-27,TX,USA,county,3,9
 48461,2020-04-12,TX,USA,county,0,0
 48461,2020-04-13,TX,USA,county,0,0
 48461,2020-04-14,TX,USA,county,0,0
@@ -31646,6 +31876,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48461,2020-08-24,TX,USA,county,0,1
 48461,2020-08-25,TX,USA,county,0,0
 48461,2020-08-26,TX,USA,county,0,0
+48461,2020-08-27,TX,USA,county,0,0
 48463,2020-04-12,TX,USA,county,0,1
 48463,2020-04-13,TX,USA,county,0,1
 48463,2020-04-14,TX,USA,county,0,1
@@ -31783,6 +32014,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48463,2020-08-24,TX,USA,county,2,5
 48463,2020-08-25,TX,USA,county,2,5
 48463,2020-08-26,TX,USA,county,2,5
+48463,2020-08-27,TX,USA,county,2,5
 48465,2020-04-12,TX,USA,county,0,1
 48465,2020-04-13,TX,USA,county,0,1
 48465,2020-04-14,TX,USA,county,0,1
@@ -31920,6 +32152,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48465,2020-08-24,TX,USA,county,4,9
 48465,2020-08-25,TX,USA,county,4,9
 48465,2020-08-26,TX,USA,county,3,9
+48465,2020-08-27,TX,USA,county,4,9
 48467,2020-04-12,TX,USA,county,1,2
 48467,2020-04-13,TX,USA,county,1,2
 48467,2020-04-14,TX,USA,county,1,2
@@ -32057,6 +32290,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48467,2020-08-24,TX,USA,county,4,11
 48467,2020-08-25,TX,USA,county,4,12
 48467,2020-08-26,TX,USA,county,4,11
+48467,2020-08-27,TX,USA,county,4,12
 48469,2020-04-12,TX,USA,county,2,8
 48469,2020-04-13,TX,USA,county,3,11
 48469,2020-04-14,TX,USA,county,3,12
@@ -32194,6 +32428,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48469,2020-08-24,TX,USA,county,16,44
 48469,2020-08-25,TX,USA,county,15,45
 48469,2020-08-26,TX,USA,county,18,48
+48469,2020-08-27,TX,USA,county,18,49
 48471,2020-04-12,TX,USA,county,2,6
 48471,2020-04-13,TX,USA,county,2,4
 48471,2020-04-14,TX,USA,county,3,6
@@ -32331,6 +32566,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48471,2020-08-24,TX,USA,county,4,11
 48471,2020-08-25,TX,USA,county,4,11
 48471,2020-08-26,TX,USA,county,4,11
+48471,2020-08-27,TX,USA,county,3,10
 48473,2020-04-12,TX,USA,county,2,4
 48473,2020-04-13,TX,USA,county,1,3
 48473,2020-04-14,TX,USA,county,2,5
@@ -32468,6 +32704,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48473,2020-08-24,TX,USA,county,3,9
 48473,2020-08-25,TX,USA,county,3,9
 48473,2020-08-26,TX,USA,county,3,9
+48473,2020-08-27,TX,USA,county,3,7
 48475,2020-04-12,TX,USA,county,0,0
 48475,2020-04-13,TX,USA,county,0,0
 48475,2020-04-14,TX,USA,county,0,0
@@ -32605,6 +32842,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48475,2020-08-24,TX,USA,county,0,2
 48475,2020-08-25,TX,USA,county,0,2
 48475,2020-08-26,TX,USA,county,0,2
+48475,2020-08-27,TX,USA,county,0,2
 48477,2020-04-12,TX,USA,county,1,2
 48477,2020-04-13,TX,USA,county,2,3
 48477,2020-04-14,TX,USA,county,1,1
@@ -32742,6 +32980,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48477,2020-08-24,TX,USA,county,0,2
 48477,2020-08-25,TX,USA,county,0,2
 48477,2020-08-26,TX,USA,county,0,2
+48477,2020-08-27,TX,USA,county,0,2
 48479,2020-04-12,TX,USA,county,11,23
 48479,2020-04-13,TX,USA,county,10,22
 48479,2020-04-14,TX,USA,county,10,26
@@ -32879,6 +33118,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48479,2020-08-24,TX,USA,county,62,151
 48479,2020-08-25,TX,USA,county,60,151
 48479,2020-08-26,TX,USA,county,57,143
+48479,2020-08-27,TX,USA,county,60,145
 48481,2020-04-12,TX,USA,county,1,3
 48481,2020-04-13,TX,USA,county,1,2
 48481,2020-04-14,TX,USA,county,2,3
@@ -33016,6 +33256,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48481,2020-08-24,TX,USA,county,2,6
 48481,2020-08-25,TX,USA,county,2,7
 48481,2020-08-26,TX,USA,county,2,7
+48481,2020-08-27,TX,USA,county,2,6
 48483,2020-04-12,TX,USA,county,0,0
 48483,2020-04-13,TX,USA,county,0,0
 48483,2020-04-14,TX,USA,county,0,0
@@ -33153,6 +33394,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48483,2020-08-24,TX,USA,county,0,1
 48483,2020-08-25,TX,USA,county,0,1
 48483,2020-08-26,TX,USA,county,0,1
+48483,2020-08-27,TX,USA,county,0,1
 48485,2020-04-12,TX,USA,county,1,3
 48485,2020-04-13,TX,USA,county,0,3
 48485,2020-04-14,TX,USA,county,0,4
@@ -33290,6 +33532,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48485,2020-08-24,TX,USA,county,11,25
 48485,2020-08-25,TX,USA,county,4,16
 48485,2020-08-26,TX,USA,county,4,14
+48485,2020-08-27,TX,USA,county,4,14
 48487,2020-04-12,TX,USA,county,0,0
 48487,2020-04-13,TX,USA,county,0,0
 48487,2020-04-14,TX,USA,county,0,0
@@ -33427,6 +33670,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48487,2020-08-24,TX,USA,county,1,2
 48487,2020-08-25,TX,USA,county,0,2
 48487,2020-08-26,TX,USA,county,0,1
+48487,2020-08-27,TX,USA,county,0,1
 48489,2020-04-12,TX,USA,county,0,1
 48489,2020-04-13,TX,USA,county,0,1
 48489,2020-04-14,TX,USA,county,0,1
@@ -33564,6 +33808,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48489,2020-08-24,TX,USA,county,4,10
 48489,2020-08-25,TX,USA,county,4,10
 48489,2020-08-26,TX,USA,county,4,9
+48489,2020-08-27,TX,USA,county,4,9
 48491,2020-04-12,TX,USA,county,3,6
 48491,2020-04-13,TX,USA,county,4,7
 48491,2020-04-14,TX,USA,county,4,7
@@ -33701,6 +33946,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48491,2020-08-24,TX,USA,county,18,50
 48491,2020-08-25,TX,USA,county,19,46
 48491,2020-08-26,TX,USA,county,19,46
+48491,2020-08-27,TX,USA,county,19,43
 48493,2020-04-12,TX,USA,county,0,1
 48493,2020-04-13,TX,USA,county,0,1
 48493,2020-04-14,TX,USA,county,0,1
@@ -33838,6 +34084,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48493,2020-08-24,TX,USA,county,4,10
 48493,2020-08-25,TX,USA,county,4,10
 48493,2020-08-26,TX,USA,county,3,9
+48493,2020-08-27,TX,USA,county,4,9
 48495,2020-04-12,TX,USA,county,0,0
 48495,2020-04-13,TX,USA,county,0,0
 48495,2020-04-14,TX,USA,county,0,0
@@ -33975,6 +34222,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48495,2020-08-24,TX,USA,county,0,1
 48495,2020-08-25,TX,USA,county,0,1
 48495,2020-08-26,TX,USA,county,0,1
+48495,2020-08-27,TX,USA,county,0,1
 48497,2020-04-12,TX,USA,county,1,3
 48497,2020-04-13,TX,USA,county,2,3
 48497,2020-04-14,TX,USA,county,1,3
@@ -34112,6 +34360,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48497,2020-08-24,TX,USA,county,3,8
 48497,2020-08-25,TX,USA,county,3,8
 48497,2020-08-26,TX,USA,county,3,8
+48497,2020-08-27,TX,USA,county,3,8
 48499,2020-04-12,TX,USA,county,1,2
 48499,2020-04-13,TX,USA,county,1,1
 48499,2020-04-14,TX,USA,county,1,2
@@ -34249,6 +34498,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48499,2020-08-24,TX,USA,county,3,9
 48499,2020-08-25,TX,USA,county,3,10
 48499,2020-08-26,TX,USA,county,3,9
+48499,2020-08-27,TX,USA,county,3,9
 48501,2020-04-12,TX,USA,county,0,1
 48501,2020-04-13,TX,USA,county,0,1
 48501,2020-04-14,TX,USA,county,0,1
@@ -34386,6 +34636,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48501,2020-08-24,TX,USA,county,1,1
 48501,2020-08-25,TX,USA,county,1,1
 48501,2020-08-26,TX,USA,county,1,1
+48501,2020-08-27,TX,USA,county,1,1
 48503,2020-04-12,TX,USA,county,0,0
 48503,2020-04-13,TX,USA,county,0,0
 48503,2020-04-14,TX,USA,county,0,0
@@ -34523,6 +34774,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48503,2020-08-24,TX,USA,county,2,3
 48503,2020-08-25,TX,USA,county,1,2
 48503,2020-08-26,TX,USA,county,1,2
+48503,2020-08-27,TX,USA,county,0,2
 48505,2020-04-12,TX,USA,county,1,1
 48505,2020-04-13,TX,USA,county,1,1
 48505,2020-04-14,TX,USA,county,1,1
@@ -34660,6 +34912,7 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48505,2020-08-24,TX,USA,county,3,8
 48505,2020-08-25,TX,USA,county,3,8
 48505,2020-08-26,TX,USA,county,3,7
+48505,2020-08-27,TX,USA,county,3,7
 48507,2020-04-12,TX,USA,county,0,0
 48507,2020-04-13,TX,USA,county,0,0
 48507,2020-04-14,TX,USA,county,0,0
@@ -34797,3 +35050,4 @@ fips,date,state,country,aggregate_level,current_icu,current_hospitalized
 48507,2020-08-24,TX,USA,county,1,2
 48507,2020-08-25,TX,USA,county,1,2
 48507,2020-08-26,TX,USA,county,1,2
+48507,2020-08-27,TX,USA,county,1,2
