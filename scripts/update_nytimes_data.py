@@ -34,6 +34,8 @@ STATE_BACKFILLED_CASES = [
     ("09", "2020-07-24", 440),
     # https://portal.ct.gov/Office-of-the-Governor/News/Press-Releases/2020/07-2020/Governor-Lamont-Coronavirus-Update-July-29
     ("09", "2020-07-29", 384),
+    # http://www.floridahealth.gov/newsroom/2020/09/090120-1112-covid19.pr.html
+    ("12", "2020-09-01", 3870),
 ]
 
 
