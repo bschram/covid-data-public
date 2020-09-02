@@ -112,8 +112,7 @@ class CovidCountyDataTransformer(pydantic.BaseModel):
         df = client.fetch()
         # Transform FIPS from an int64 to a string of 2 or 5 chars. See
         # https://github.com/valorumdata/covid_county_data.py/issues/3
-        df[CommonFields.FIPS] = df[Fields.LOCATION].apply(lambda v: f"{v:0>{2 if v < 100 else 5}}")
-
+        df[CommonFields.FIPS] = df[Fields.LOCATION].apply(lambda v: f"{v:0>{2 if v < 100 else 5}g}")
         # Already transformed from Fields to CommonFields
         already_transformed_fields = {CommonFields.FIPS}
 
