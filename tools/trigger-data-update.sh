@@ -22,7 +22,7 @@ execute () {
       --data "{\"event_type\": \"update-source-data\" }" \
       https://api.github.com/repos/covid-projections/covid-data-public/dispatches
 
-  echo "Publish requested. Go to https://github.com/covid-projections/covid-data-public/actions to monitor progress."
+  echo "Data sources update requested. Go to https://github.com/covid-projections/covid-data-public/actions to monitor progress."
 }
 
 prepare "$@"
