@@ -36,6 +36,10 @@ STATE_BACKFILLED_CASES = [
     ("09", "2020-07-29", 384),
     # http://www.floridahealth.gov/newsroom/2020/09/090120-1112-covid19.pr.html
     ("12", "2020-09-01", 3870),
+    # https://twitter.com/DHSWI/status/1301980028209713153?s=20
+    # This number is a bit fuzzy, but on 9/3 there were 767 cases.  There were 1400 cases
+    # on 9/4 including backfill.  Estimating 800 cases on 9/4.
+    ("55", "2020-09-04", 1400 - 800),
 ]
 
 
@@ -65,6 +69,8 @@ COUNTY_BACKFILLED_CASES = [
     ("48113", "2020-08-23", 93),
     # https://www.dallascounty.org/Assets/uploads/docs/covid-19/press-releases/august/082420-PressRelease-DallasCountyReports182AdditionalPositiveCOVID-19Cases.pdf
     ("48113", "2020-08-24", 84),
+    # https://covid-19-in-jefferson-county-ky-lojic.hub.arcgis.com/
+    ("21111", "2020-09-03", 500),
 ]
 
 
