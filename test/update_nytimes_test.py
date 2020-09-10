@@ -105,14 +105,16 @@ def test_remove_ma_county_cases():
         "25025,MA,2020-08-12,county,1000\n"
         "25025,MA,2020-08-13,county,1000\n"
         "25025,MA,2020-08-14,county,1025\n"
+        "25025,MA,2020-08-19,county,1030\n"
+        "25025,MA,2020-08-20,county,1030\n"
         "25,MA,2020-08-11,state,1000\n"
         "25,MA,2020-08-12,state,1000\n"
         "25,MA,2020-08-13,state,1000\n"
     )
     data = common_df.read_csv(data_buf, set_index=False)
 
-    results = update_nytimes_data._remove_ma_county_zeroes_data(data).reset_index(drop=True)
-
+    results = update_nytimes_data._remove_ma_county_zeroes_data(data)
+    results = results.sort_values(["fips", "date"]).reset_index(drop=True)
     # State data should be untouched
     # MA County data on/before 8/11 should be untouched
     # MA County data that changes after 8/11 should be picked up.
@@ -124,6 +126,8 @@ def test_remove_ma_county_cases():
         "25025,MA,2020-08-10,county,1000\n"
         "25025,MA,2020-08-11,county,1000\n"
         "25025,MA,2020-08-14,county,1025\n"
+        "25025,MA,2020-08-19,county,1030\n"
+        "25025,MA,2020-08-20,county,1030\n"
     )
     expected = common_df.read_csv(data_buf, set_index=False)
     pd.testing.assert_frame_equal(results, expected)

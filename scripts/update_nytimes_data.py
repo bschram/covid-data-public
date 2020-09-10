@@ -159,7 +159,11 @@ def remove_county_backfilled_cases(
     return data
 
 
-def _remove_ma_county_zeroes_data(data: pd.DataFrame, county_reporting_stopped_date="2020-08-11"):
+def _remove_ma_county_zeroes_data(
+    data: pd.DataFrame,
+    county_reporting_stopped_date="2020-08-11",
+    county_reporting_restart_date="2020-08-18",
+):
     """Removes county data for mass where cases are not increasing due to data reporting change.
 
     Massachussetts stopped reporting county case data after 8/11.  This code removes data for those
@@ -168,6 +172,7 @@ def _remove_ma_county_zeroes_data(data: pd.DataFrame, county_reporting_stopped_d
     Args:
         data: Data to clean up.
         county_reporting_stopped_date: Date to start checking for no case count increases.
+        county_reporting_restart_date: Date that MA county reporting started up again.
 
     Returns: Data with Mass county data properly cleaned up.
     """
@@ -176,8 +181,10 @@ def _remove_ma_county_zeroes_data(data: pd.DataFrame, county_reporting_stopped_d
 
     is_county = data[CommonFields.AGGREGATE_LEVEL] == "county"
     is_ma = data[CommonFields.STATE] == "MA"
-    is_after_reporting_stopped = data[CommonFields.DATE] >= county_reporting_stopped_date
-    is_ma_county_after_reporting = is_county & is_ma & is_after_reporting_stopped
+    is_during_reporting_lull = data[CommonFields.DATE].between(
+        county_reporting_stopped_date, county_reporting_restart_date
+    )
+    is_ma_county_after_reporting = is_county & is_ma & is_during_reporting_lull
     ma_county_data = data.loc[is_ma_county_after_reporting]
     cases_to_remove = ma_county_data.groupby(Fields.FIPS)[CommonFields.CASES].diff() == 0
     _logger.info("Removing stale MA county cases", num_records=sum(cases_to_remove))
