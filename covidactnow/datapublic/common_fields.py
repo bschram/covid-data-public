@@ -44,6 +44,19 @@ class CommonFields(GetByValueMixin, ValueAsStrMixin, str, Enum):
     CASES = "cases"
     DEATHS = "deaths"
     RECOVERED = "recovered"
+
+    # Incidence Values
+    NEW_CASES = "new_cases"
+    NEW_DEATHS = "new_deaths"
+    WEEKLY_NEW_CASES = "weekly_new_cases"
+    WEEKLY_NEW_DEATHS = "weekly_new_deaths"
+
+    # Forecast Specific Columns
+    MODEL_ABBR = "model_abbr"  # The label of the model used for prediction
+    FORECAST_DATE = "forecast_date"  # The prediction made with data up to that date
+    QUANTILE = "quantile"  # Prediction Levels
+
+    # Cumulative values
     CUMULATIVE_HOSPITALIZED = "cumulative_hospitalized"
     CUMULATIVE_ICU = "cumulative_icu"
 

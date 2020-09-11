@@ -12,10 +12,15 @@ import datetime
 import zoltpy.util
 from zoltpy.cdc_io import YYYY_MM_DD_DATE_FORMAT
 
-from covidactnow.datapublic import common_init
+from covidactnow.datapublic import common_init, common_df
+from scripts import helpers
 
-# from covidactnow.datapublic import common_df
-from covidactnow.datapublic.common_fields import CommonFields
+
+from covidactnow.datapublic.common_fields import (
+    GetByValueMixin,
+    CommonFields,
+    FieldNameAndCommonField,
+)
 
 DATA_ROOT = pathlib.Path(__file__).parent.parent / "data"
 
@@ -28,6 +33,16 @@ class ForecastModel(enum.Enum):
     ENSEMBLE = "COVIDhub-ensemble"
     BASELINE = "COVIDhub-baseline"
     GOOGLE = "Google_Harvard-CPF"
+
+
+class Fields(GetByValueMixin, FieldNameAndCommonField, enum.Enum):
+    MODEL_ABBR = "model_abbr", CommonFields.MODEL_ABBR
+    REGION = "unit", CommonFields.FIPS
+    FORECAST_DATE = "forecast_date", CommonFields.FORECAST_DATE
+    TARGET_DATE = "target_date", CommonFields.DATE
+    QUANTILE = "quantile", CommonFields.QUANTILE
+    NEW_CASES = "case", CommonFields.WEEKLY_NEW_CASES
+    NEW_DEATHS = "death", CommonFields.WEEKLY_NEW_DEATHS
 
 
 class ForecastHubUpdater(pydantic.BaseModel):
@@ -89,45 +104,57 @@ class ForecastHubUpdater(pydantic.BaseModel):
 
     def load_source_data(self) -> pd.DataFrame:
         _logger.info("Updating ForecastHub Ensemble dataset.")
-        data = pd.read_csv(self.raw_path, parse_dates=["forecast_date"])
-        # data = helpers.rename_fields(data, Fields, set(), _logger)
+        data = pd.read_csv(self.raw_path, parse_dates=["forecast_date"], dtype={"unit": str})
         return data
 
     @staticmethod
-    def transform(data: pd.DataFrame) -> pd.DataFrame:
-        df = data.rename(columns={"unit": "region_id"}, inplace=False)
-        # Target information is provided as strings of form "X wk ahead inc/cum death/cases"
-        # Take the first split (X weeks) and calculate the datetime for the prediction
+    def transform(df: pd.DataFrame) -> pd.DataFrame:
         df["target_date"] = df.apply(
             lambda x: x.forecast_date + pd.Timedelta(weeks=int(x.target.split(" ")[0])),
             axis="columns",
         )
+        # The targets have the form "X wk inc/cum cases/deaths"
         # Take the final split (death/cases) and use that as target type
         df["target_type"] = df.target.str.split(" ").str[-1]
-        # Rename using the CommonFields values
-        df["target_type"] = df["target_type"].replace(
-            {"death": CommonFields.DEATHS.value, "case": CommonFields.CASES.value}
-        )
+        # Take the penultimate split (inc/cum) and use that as aggregation type
+        df["target_summation"] = df.target.str.split(" ").str[-2]
 
         masks = [
-            df["region_id"] != "US",  # Drop the national forecast
-            df["class"] == "point",  # Only keep point forecasts
-            df["target"].str.contains("inc"),
+            df["unit"] != "US",  # Drop the national forecast
+            df["quantile"].notna(),  # Point forecasts are duplicate of quantile = 0.5
+            df["target_summation"] == "inc",  # Only return incident values
+            # Some models return both incident and cumulative values
             # Only keep incident targets (drop cumulative targets)
             df["target_date"] <= df["forecast_date"] + pd.Timedelta(weeks=4)
-            # Time Horizon
+            # Time Horizon - Only keep up to 4 week forecasts.
+            # Almost all forecasts only provide 4 wks.
         ]
         mask = np.logical_and.reduce(masks)
+
+        # The raw data is in long form and we need to pivot this to create a column for
+        # WEEKLY_NEW_CASES and WEEKLY_NEW_DEATHS. "target_type" has either death or cases. "value"
+        # has the predicted value. The rest of the columns create a unique index. For right now only
+        # one model and one forecast_date are being served, but we need to maintain the option of
+        # multiple values.
         COLUMNS = [
             "model_abbr",
-            "region_id",
+            "unit",
             "forecast_date",
             "target_date",
             "target_type",
+            "quantile",
             "value",
         ]
+        df = df[mask][COLUMNS].copy()
+        df = df.set_index(["model_abbr", "unit", "forecast_date", "target_date", "quantile"])
+        pivot = df.pivot(columns="target_type")
+        pivot = pivot.droplevel(level=0, axis=1).reset_index()
+        # This cleans up a MultiIndex Column that is an artifact of the pivot in preparation for a
+        # standard csv dump.
 
-        return df[mask][COLUMNS].reset_index()
+        # Rename and remove any columns without a CommonField
+        data = helpers.rename_fields(pivot, Fields, set(), _logger)
+        return data
 
 
 def get_latest_forecast_date(conn, project_name: str, model_abbr: str) -> str:
@@ -159,7 +186,7 @@ def get_latest_forecast_date(conn, project_name: str, model_abbr: str) -> str:
 
 
 @click.command()
-@click.option("--fetch/--no-fetch", default=True)
+@click.option("--fetch/--no-fetch", default=False)
 def main(fetch: bool):
     common_init.configure_logging()
     connection = zoltpy.util.authenticate()
@@ -172,8 +199,7 @@ def main(fetch: bool):
 
     data = transformer.load_source_data()
     data = transformer.transform(data)
-    # common_df.write_csv(data, transformer.timeseries_output_path, _logger)
-    data.to_csv(transformer.timeseries_output_path, index=False)
+    common_df.write_csv(data, transformer.timeseries_output_path, _logger)
 
 
 if __name__ == "__main__":
