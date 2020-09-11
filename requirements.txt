@@ -1,5 +1,5 @@
-zoltpy
-numpy
+zoltpy==0.0.5.dev0
+numpy==1.18.2
 certifi==2019.11.28
 chardet==3.0.4
 idna==2.9

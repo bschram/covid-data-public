@@ -41,8 +41,8 @@ class Fields(GetByValueMixin, FieldNameAndCommonField, enum.Enum):
     FORECAST_DATE = "forecast_date", CommonFields.FORECAST_DATE
     TARGET_DATE = "target_date", CommonFields.DATE
     QUANTILE = "quantile", CommonFields.QUANTILE
-    NEW_CASES = "case", CommonFields.WEEKLY_NEW_CASES
-    NEW_DEATHS = "death", CommonFields.WEEKLY_NEW_DEATHS
+    WEEKLY_NEW_CASES = "case", CommonFields.WEEKLY_NEW_CASES
+    WEEKLY_NEW_DEATHS = "death", CommonFields.WEEKLY_NEW_DEATHS
 
 
 class ForecastHubUpdater(pydantic.BaseModel):
@@ -78,7 +78,7 @@ class ForecastHubUpdater(pydantic.BaseModel):
     def write_version_file(self, forecast_date) -> None:
         stamp = datetime.datetime.utcnow().isoformat()
         version_path = self.raw_data_root / "version.txt"
-        with version_path.open("w+") as vf:
+        with version_path.open("w") as vf:
             vf.write(f"Updated on {stamp}\n")
             vf.write(f"Using forecast from {forecast_date}\n")
 
@@ -122,9 +122,9 @@ class ForecastHubUpdater(pydantic.BaseModel):
         masks = [
             df["unit"] != "US",  # Drop the national forecast
             df["quantile"].notna(),  # Point forecasts are duplicate of quantile = 0.5
-            df["target_summation"] == "inc",  # Only return incident values
-            # Some models return both incident and cumulative values
-            # Only keep incident targets (drop cumulative targets)
+            df["target_summation"] == "inc",  # Only return incidence values
+            # Some models return both incidence and cumulative values
+            # Only keep incidence targets (drop cumulative targets)
             df["target_date"] <= df["forecast_date"] + pd.Timedelta(weeks=4)
             # Time Horizon - Only keep up to 4 week forecasts.
             # Almost all forecasts only provide 4 wks.
@@ -137,16 +137,24 @@ class ForecastHubUpdater(pydantic.BaseModel):
         # one model and one forecast_date are being served, but we need to maintain the option of
         # multiple values.
         COLUMNS = [
-            "model_abbr",
-            "unit",
-            "forecast_date",
-            "target_date",
+            Fields.MODEL_ABBR,
+            Fields.REGION,
+            Fields.FORECAST_DATE,
+            Fields.TARGET_DATE,
             "target_type",
-            "quantile",
+            Fields.QUANTILE,
             "value",
         ]
         df = df[mask][COLUMNS].copy()
-        df = df.set_index(["model_abbr", "unit", "forecast_date", "target_date", "quantile"])
+        df = df.set_index(
+            [
+                Fields.MODEL_ABBR,
+                Fields.REGION,
+                Fields.FORECAST_DATE,
+                Fields.TARGET_DATE,
+                Fields.QUANTILE,
+            ]
+        )
         pivot = df.pivot(columns="target_type")
         pivot = pivot.droplevel(level=0, axis=1).reset_index()
         # This cleans up a MultiIndex Column that is an artifact of the pivot in preparation for a
@@ -158,9 +166,15 @@ class ForecastHubUpdater(pydantic.BaseModel):
         # Need to make the quantiles into a wide form for easier downstream processing
         # Mangling the column names into f"weekly_new_{cases/deaths}_{quantile}". This
         # would be a good candidate to handle in long/tidy-form and we could remove both pivots.
-        wide_df = data.set_index(["fips", "date", "model_abbr", "forecast_date"]).pivot(
-            columns="quantile"
-        )
+        # Using common_field because this is done after helpers.rename_fields
+        wide_df = data.set_index(
+            [
+                Fields.REGION.common_field,
+                Fields.TARGET_DATE.common_field,
+                Fields.MODEL_ABBR.common_field,
+                Fields.FORECAST_DATE.common_field,
+            ]
+        ).pivot(columns=Fields.QUANTILE.common_field)
         wide_df.columns = wide_df.columns = [
             x[0] + "_" + str(x[1]) for x in wide_df.columns.to_flat_index()
         ]
