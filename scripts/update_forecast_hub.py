@@ -154,7 +154,18 @@ class ForecastHubUpdater(pydantic.BaseModel):
 
         # Rename and remove any columns without a CommonField
         data = helpers.rename_fields(pivot, Fields, set(), _logger)
-        return data
+
+        # Need to make the quantiles into a wide form for easier downstream processing
+        # Mangling the column names into f"weekly_new_{cases/deaths}_{quantile}". This
+        # would be a good candidate to handle in long/tidy-form and we could remove both pivots.
+        wide_df = data.set_index(["fips", "date", "model_abbr", "forecast_date"]).pivot(
+            columns="quantile"
+        )
+        wide_df.columns = wide_df.columns = [
+            x[0] + "_" + str(x[1]) for x in wide_df.columns.to_flat_index()
+        ]
+        wide_df = wide_df.reset_index()
+        return wide_df
 
 
 def get_latest_forecast_date(conn, project_name: str, model_abbr: str) -> str:
@@ -186,7 +197,7 @@ def get_latest_forecast_date(conn, project_name: str, model_abbr: str) -> str:
 
 
 @click.command()
-@click.option("--fetch/--no-fetch", default=False)
+@click.option("--fetch/--no-fetch", default=True)
 def main(fetch: bool):
     common_init.configure_logging()
     connection = zoltpy.util.authenticate()
