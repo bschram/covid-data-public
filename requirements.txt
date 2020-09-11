@@ -17,3 +17,4 @@ boto3==1.13.26
 click==7.1.2
 xlrd==1.2.0
 git+https://github.com/reichlab/zoltpy/
+pymmwr==0.2.2
