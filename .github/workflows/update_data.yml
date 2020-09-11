@@ -1,9 +1,9 @@
 name: Update source data
 
 on:
-  schedule:
-    # cron format: minute hour day-of-month month day-of-week
-    - cron: '45 0,11 * * *'
+#  schedule:
+#    # cron format: minute hour day-of-month month day-of-week
+#    - cron: '45 0,11 * * *'
   # Hook to trigger a manual run.
   # See: https://goobar.io/2019/12/07/manually-trigger-a-github-actions-workflow/
   # A sample request looks like:
@@ -12,9 +12,9 @@ on:
     types: update-source-data
 # To debug, comment out above schedule, and uncomment the stanza below.
 # Fill in your own branch name, and each push will trigger a run
-#  push:
-#    branches:
-#    - <YOUR BRANCH HERE>
+  push:
+    branches:
+    - feature/include-forecast-hub
 
 env:
   # Used by python code that reports errors to sentry.
@@ -50,6 +50,10 @@ jobs:
         # Key was created for tom@covidactnow.org, then copied from ~/.cmdc/apikey to
         # https://github.com/organizations/covid-projections/settings/secrets
         CMDC_API_KEY: ${{ secrets.CMDC_API_KEY }}
+        # Z username and password are for the CDC Reich Lab Forecast Hub and were generated for
+        # brett@covidactnow.org and then copied to the github account secrets.
+        Z_USERNAME: ${{ secrets.Z_USERNAME }}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
     - name: Create Update Commit
       run: ./push_update.sh
     - name: Trigger Covid Data Model Dataset Update

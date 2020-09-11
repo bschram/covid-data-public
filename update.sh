@@ -12,6 +12,7 @@ python scripts/update_test_and_trace.py
 python scripts/update_texas_tsa_hospitalizations.py || echo "Failed to update Texas Hospitals"
 python scripts/update_texas_fips_hospitalizations.py
 python scripts/update_covid_data_scraper.py
+python scripts/update_forecast_hub.py
 
 python scripts/update_covid_county_data.py
 # AWS Lake seems to be hanging the build right now.
