@@ -104,7 +104,9 @@ class ForecastHubUpdater(pydantic.BaseModel):
 
     def load_source_data(self) -> pd.DataFrame:
         _logger.info("Updating ForecastHub Ensemble dataset.")
-        data = pd.read_csv(self.raw_path, parse_dates=["forecast_date"], dtype={"unit": str})
+        data = pd.read_csv(
+            self.raw_path, parse_dates=["forecast_date"], dtype={"unit": str}, low_memory=False
+        )
         return data
 
     @staticmethod
